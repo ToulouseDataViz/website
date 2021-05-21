@@ -1,0 +1,7 @@
+title, subtitle, slug, backgroungPicturePath, isInMenu
+L'association, "Nos missions, nos offres, nos membres", /association, pic01.jpg, true
+Nos offres, "Nos offres", /offres, , true
+Rencontres, Meetups passés et à venir, /meetups, pic02.jpg, true
+Le Club, Rejoingez la communauté, /club, pic05.jpg, false
+Hackaviz, "Pret, partez, visualisez !", /hackaviz, pic03.jpg, true
+Ressources et collections, Nisl sed aliquam, /ressourcescollections, pic04.jpg, true

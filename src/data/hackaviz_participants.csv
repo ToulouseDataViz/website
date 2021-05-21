@@ -1,0 +1,28 @@
+hackaviz, nom, outils, prix, pic_name, link, description,
+2020, Timothée DELUBAC et Olga Tihhonova (équipe : Pixel & Poivre),"Python, D3, HTML, CSS, JavaScript",1er prix,, https://olgatihhonova.github.io/hackaviz2020/,Le guide du voyageur en Occitanie (Hitchhiker’s Guide to Occitània) vous propose de découvrir lequel des départements de notre région se prêtera le mieux à vos prochaines vacances. Pensez à prendre votre serviette !,
+2020,Julien DEMEAUX,Tableau Desktop + Tableau Prep Builder,2ème prix,,https://public.tableau.com/profile/padatawan#!/vizhome/Hackaviz2020-Les1001nuitsoccitanes/Hackaviz2020?publish=yes,"Les 1001 nuits occitanes, une analyse des nuitées et flux touristiques en Occitanie en 2018 en 3 actes.
+1. Les visiteurs métropolitains
+2. A l’intérieur de la région
+3. L’Occitanie, terre de vacances",
+2020,Nolwenn LANNUEL – Sébastien QUINAULT (équipe : NoLaSéQui),"R Studio, PowerPoint",Prix spécial du jury,,tbd,"Le tourisme en Occitanie décomposé en trois grandes parties :
+1. La provenance des touristes est évoquée, et notamment la domination totale des Français parmi l’ensemble des voyageurs en Occitanie.
+2. La destination des touristes est, cette fois-ci, mise en valeur ainsi que l’influence majeure du département de l’Hérault.
+3. La double saisonnalité de la région occitane est mise en évidence grâce à une carte miroir de la fréquentation des départements en hiver et en été.",
+2020,Simon LAFOSSE,"Tableau Software, Tableau Prep, Mapbox",Prix de la pertinence,,https://public.tableau.com/profile/simon.lafosse#!/vizhome/HV2020-Test/Benvengut-Part01,"Benvengut !
+Des milliers de personnes qui viennent visiter la région Occitanie tout au long de l’année. Mais ces touristes, qui sont-t-ils exactement ? pourquoi et à quelle période de l’année viennent ‘ils ? et enfin est-ce que la région a la capacité de les accueillir ?
+Benvengut (Bienvenue en Occitan) dans cette visualisation interactive qui vous permettra d’obtenir un éclairage sur les réponses à ces questions.",
+2020,Christophe LOUAT (équipe Sensee),"Python, d3js",Prix de l’histoire,,https://festive-murdock-ceedcc.netlify.com/,"Dans cette visualisation, nous observons les nationalités dominantes par département au cours des saisons. L’Europe du sud privilégie ainsi les département pyrénéens et les anglais l’intérieur des terres. Les départements côtiers voient défiler toutes les nationalités au cours de l’année.","Dans cette visualisation, nous observons les nationalités dominantes par département au cours des saisons. L’Europe du sud privilégie ainsi les département pyrénéens et les anglais l’intérieur des terres. Les départements côtiers voient défiler toutes les nationalités au cours de l’année."
+2020,Xavier RAUCH,"MicroStrategy 2020, D3.JS (custom viz), SVG (maps, ring chart, pictos), The Noun Project (icons)",,,https://env-185525.customer.cloud.microstrategy.com/MicroStrategy/servlet/mstrWeb?evt=3140&src=mstrWeb.3140&documentID=0BAE9CF011EA647792A90080EF25EBF9&Server=ENV-185525LAIOUSE1&Project=MicroStrategy%20Tutorial&Port=34952&connmode=8&ru=1&share=1,"Ouvrir avec Chrome – Nom de l’utilisateur : HACKAVIZ – Mot de passe: HACKAVIZ2020
+
+▪Quels départements attirent le plus de touristes étrangers ?
+▪Quel sont leurs départements favoris en fonction de leur nationalité ?
+▪Quelle est la nationalité numéro 1 dans chaque département de la région ?
+▪Où les Occitans font-ils eux-mêmes du tourisme en Occitanie ?",
+2020,Evgenii MUNIN,"Data processing: Python (pandas, geopandas), Viz: Tableau",,,https://public.tableau.com/profile/evgenii.munin#!/vizhome/hackaviz2020_evgenii_munin/Dashboard1,"L’analyse est faite sur les aspects suivants :
+– L’attractivité relative des départements de l’Occitanie mesurée comme le rapport entre les nuitées sur la capacité totale d’hébergement pour chaque mois de l’année 2018.
+– Les origines principales des visiteurs (France ou étranger);
+– Le rapport entre les touristes vacanciers/ non-vacanciers pour chaque mois de l’année 2018.",
+2020,Florent POUSSEROT (équipe : Visualizar),"omniscope, javascript, html, css, flourish, vega-lite",,,https://toulouse-dataviz.fr/wp-content/uploads/2020/03/VISUALIZAR_FPOUSSEROT_SCREENSHOT-Florent-Pousserot-768x512.png,"Einar est avant tout un fan de musique. Dans son pays, le Danemark, c’est une star.
+Son rêve, créer un Festival de musique de Métal en plein air.
+Pour cela, il a entendu parler d’une nouvelle terre, appelé Occitanie.
+Pour intégrer la route des festivals d’Occitanie, Einar doit trouver sa destination finale et la période idéale.",

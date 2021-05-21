@@ -1,0 +1,152 @@
+import PageBanner from '../../components/PageBanner';
+import Button from '../../components/Button';
+
+<PageBanner 
+  styleId={1}
+  title={"Hackaviz"}
+  description={"TBD"}
+/>
+
+<section id="one">
+<div className="inner">
+
+# Le tourisme dans la région Occitanie en 2018
+
+Tout au long de l’année chaque nuit, des milliers de touristes dorment dans notre belle région. Nous avons réussi à assembler un jeu de données unique qui les localise et les compte par nuitée. Nous connaissons les capacités d’hébergement (hôtel, camping,..) de chaque département. Nous savons aussi d’où ils viennent que ce soit d’un département Français ou de l’étranger. Nous savons enfin le temps qu’il faisait et les principaux événements culturels du jour.
+A vous de jouer en utilisant tout ou partie des fichiers !
+
+## Synthétique et facile d’accès
+- nuitees.xlsx et .csv       
+- (365 lignes / 15 colonnes)
+- par jour en synthèse par dpt
+
+## Le plus détaillé mais pas le plus simple à exploiter
+- par_origines.xlsx et .csv
+- (493 235 lignes / 8 colonnes)
+- par jour avec tous les détails
+
+## Croisement capacités x nuités, sert de complément optionnel aux autres
+- capacites.xlsx, .csv et .geojson
+- (13 lignes / 61 colonnes)
+- par semaine en catégories de nuitées par dpt
+
+Il est possible de faire de belles visualisations à partir d’un seul de ces trois fichiers de données, le plus simple étant nuitees qui est un aggrégat de par_origines. Les plus experts arriveront à combiner les trois, mais il n’est pas certain que la plus belle histoire ait besoin de toutes ces données.  L’important est de raconter une belle histoire avec des graphiques de qualité.
+ 
+# Détails des fichiers et téléchargement
+
+## nuitées
+Regroupement des données à partir du fichier par_origines.
+*Pour chaque jour de l’année  (365 lignes / 15 colonnes)*
+- Date
+- Nombre de nuitées dans le département 09
+- Nombre de nuitées dans le département 11
+- Nombre de nuitées dans le département 12
+- Nombre de nuitées dans le département 30
+- Nombre de nuitées dans le département 31
+- Nombre de nuitées dans le département 32
+- Nombre de nuitées dans le département 34
+- Nombre de nuitées dans le département 46
+- Nombre de nuitées dans le département 48
+- Nombre de nuitées dans le département 65
+- Nombre de nuitées dans le département 66
+- Nombre de nuitées dans le département 81
+- Nombre de nuitées dans le département 82
+- Nombre de nuitées dans la région Occitanie
+
+<Button
+  link={"https://github.com/ToulouseDataViz/Hackaviz2020/blob/master/nuitees.csv"}
+  text={"nuitées.csv"}
+/>
+
+<Button
+  link={"https://github.com/ToulouseDataViz/Hackaviz2020/blob/master/nuitees.xlsx"}
+  text={"nuitées.xls"}
+/>
+
+## par_origines
+
+Pour chaque jour de l’année 2018 (532 399 lignes / 8 colonnes) :
+- Date
+- Département ou pays d’origine des touristes
+- Département de destination en Occitanie
+- Volume de nuitées dans le département de destination
+- Statut des vacances du département d’origine
+- Température à midi (solaire) du département de destination
+- Statut qualificatif de la météo du département de destination
+- Nombre d’événements majeurs dans le département de destination
+
+<Button
+  link={"https://github.com/ToulouseDataViz/Hackaviz2020/blob/master/par_origines.csv"}
+  text={"par_origine.csv"}
+/>
+
+<Button
+  link={"https://github.com/ToulouseDataViz/Hackaviz2020/blob/master/par_origines.xlsx"}
+  text={"par_origine.xls"}
+/>
+
+## capacités
+
+Pour chaque département (13 lignes / 61 colonnes)
+- Département
+- Nom du département
+- Population du département
+- Nombre de places (personnes) en hébergement collectif
+- Nombre de places (personnes) en hébergement locatif
+- Nombre de places (personnes) en hébergement de plein air
+- Nombre de places (personnes) en hébergement hôtellier
+- Nombre de places (personnes) total
+- Nombre de nuitées pour la semaine 1
+- Nombre de nuitées pour la semaine 53
+
+<Button
+  link={"https://github.com/ToulouseDataViz/Hackaviz2020/blob/master/capacites.csv"}
+  text={"capacites.csv"}
+/>
+
+<Button
+  link={"https://github.com/ToulouseDataViz/Hackaviz2020/blob/master/capacites.xlsx"}
+  text={"capacites.xls"}
+/>
+
+<Button
+  link={"https://github.com/ToulouseDataViz/Hackaviz2020/blob/master/capacites.geojson"}
+  text={"capacites.geojson"}
+/>
+
+
+Donnés complémentaires :codage des départements, codage des pays et liste des événements.
+
+<Button
+  link={"https://github.com/ToulouseDataViz/Hackaviz2020/blob/master/complements.xlsx"}
+  text={"complement.xls"}
+/>
+
+# Les sources des jeux de données :
+- Les volumes de nuitées ont été construites par un opérateur de téléphonie mobile à partir des bornages téléphoniques. Ces données ont été fournies par le Comité Régional du Tourisme (CRT) 
+- Les données concernant les capacités d’hébergement ont été construites par TDV à partir de données fournies par le Comité Régional du Tourisme (CRT).
+- Les données concernant les événements ont été construites par TDV à partir de données fournis par le Comité Régional du Tourisme (CRT)
+- Les données météo proviennent d’un site internet fournissant l’historique des données météo pour un grand nombre de villes en France et dans le monde
+- Les données de géométrie des départements sont incluses uniquement dans le fichier geojson. Ce format est adapté pour ceux qui souhaitent utiliser des outils de cartographie tels que le logiciel libre QGIS ou des librairies javascript telles que d3.js.
+
+ 
+Remarques : 
+- Les données de bornage téléphonique ne sont pas des données brutes mais le résultat d’un travail de traitement innovant (redressement, segmentation, anonymisation ) réalisé par l’opérateur de téléphonie avec la participation d’acteurs du tourisme. Les données “volume de nuitées” sont donc des estimations statistiques. 
+- Les jeux de données sont à l’usage exclusif de l’Hackaviz 2020. Pour toutes autres utilisations, veuillez contacter l’association Toulouse dataviz. 
+
+ 
+# Toutes les explications sur les données
+  
+<Button
+  link={"https://github.com/ToulouseDataViz/Hackaviz2020/blob/master/README.md"}
+  text={"Descriptif des données"}
+/>
+
+Les données et la documentation sont aussi sur notre site github.  
+<Button
+  link={"https://github.com/ToulouseDataViz/Hackaviz2020"}
+  text={"Github TDV"}
+/>
+
+</div>
+</section>

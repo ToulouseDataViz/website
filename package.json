@@ -1,0 +1,51 @@
+{
+  "name": "gatsby-starter-forty-v2",
+  "description": "Gatsby Starter - Forty V2",
+  "version": "1.0.0",
+  "author": "Hunter Chang",
+  "dependencies": {
+    "@aotten/scatterplot-routes-en-occitanie-v2-0": "https://api.observablehq.com/@aotten/scatterplot-routes-en-occitanie-v2-0.tgz?v=3",
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/styles": "^4.11.4",
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "@observablehq/runtime": "^4.8.2",
+    "clsx": "^1.1.1",
+    "gatsby": "^3.3.0",
+    "gatsby-plugin-image": "^1.4.0",
+    "gatsby-plugin-manifest": "^3.3.0",
+    "gatsby-plugin-mdx": "^2.3.0",
+    "gatsby-plugin-offline": "^4.3.0",
+    "gatsby-plugin-react-helmet": "^4.3.0",
+    "gatsby-plugin-sass": "^4.3.0",
+    "gatsby-plugin-sharp": "^3.4.0",
+    "gatsby-source-filesystem": "^3.3.0",
+    "gatsby-transformer-csv": "^3.3.0",
+    "gatsby-transformer-remark": "^4.0.0",
+    "gatsby-transformer-sharp": "^3.4.0",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "recharts": "^2.0.9",
+    "rehype-react": "^6.2.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write '**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  }
+}
