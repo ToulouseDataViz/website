@@ -38,7 +38,14 @@ const MarkdownText = ({ hast, className, ...rest }) => {
       h6: props => <h6 {...props} />,
       p: props => <p {...props} />,
       li: props => <li {...props} />,
+      iframe: props => <iframe style={{ backgroundColor: "white" }} {...props} />,
       a: ({ href, children, ...props }) => <Button link={href} text={children} size={'small'} {...props} />,
+      table: props => (
+        <div className="table-wrapper">
+          <table className="alt" {...props} />
+        </div>
+      ),
+      img: props => <img {...props} />,
     },
   }).Compiler;
 
