@@ -78,7 +78,7 @@ const Hackaviz = () => {
           </Grid>
 
           <Button
-            link={`${currentHackaviz}-results`}
+            link={`hackaviz/${currentHackaviz}-results`}
             type={'internal'}
             text={"Voir toutes les réalisations"}
           />
