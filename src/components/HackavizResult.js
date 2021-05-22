@@ -3,9 +3,11 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 import { Grid, Box } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import clsx from 'clsx';
 
 import Button from './Button';
 import usePics from '../hooks/usePics';
+import MarkdownText from './MarkdownText';
 
 import { getPic } from '../helper';
 
@@ -48,11 +50,15 @@ const HackavizResult = ({ nom, outils, prix, pic_name, link, description, column
   const resultsPics = usePics().filter(({ relativeDirectory }) => relativeDirectory === 'hachaviz-result-pics');
   const resultPic = getPic(resultsPics, pic_name);
 
+  const participantStyle = clsx({
+    [classes.participants] : !isDense,
+  });
+
   return (
     <Grid item xs={12} sm={columnValue}>
       <Box class={classes.content}>
         {prix && (getPrice(prix, isDense))} 
-        <Box class={classes.participants}>
+        <Box class={participantStyle}>
           {pic_name && (
             <Box className={classes.imageContainer}>
               <GatsbyImage className={classes.image} image={resultPic} alt={pic_name}/>
@@ -64,7 +70,7 @@ const HackavizResult = ({ nom, outils, prix, pic_name, link, description, column
           {link && (
             <Button
               link={link}
-              text={'Voir la réalisation'}
+              text={ isDense ? 'Voir' : 'Voir la réalisation'}
               size={ isDense ? 'small' : ''}
               display={'special'}
           />
