@@ -8,12 +8,14 @@ import useHackavizParticipants from '../hooks/useHackavizParticipants';
 import YoutubeEmbed from '../components/YoutubeEmbed';
 import Button from '../components/Button';
 import HackavizSponsors from '../components/HackavizSponsors';
+import HackavizResult from './HackavizResult';
 import { getVideoEmbedId } from '../helper';
 
 const Hackaviz = () => {
 
   const hackavizs = useHackaviz();
   const hackavizParticipants = useHackavizParticipants();
+  const winnersColumn = {columnValue: 2, isDense: true};
   
   return (
     <section className="spotlights">
@@ -35,6 +37,7 @@ const Hackaviz = () => {
               type={'internal'}
               text={"Voir le hackaviz"}
             />
+            <hr/>
             <h3>{"Les données"}</h3>
             <Button
               link={`hackaviz/${currentHackaviz}-data`}
@@ -42,16 +45,6 @@ const Hackaviz = () => {
               text={"Télécharger les données"}
             />
             <Box>{description}</Box>
-            <h3>{"Les gagnants"}</h3>
-            <Box>
-              <ul>
-              {winners.map(({ nom, prix }) => (
-                <li>
-                  <span><b>{prix}</b>{`: ${nom}`}</span>
-                </li>
-              ))}
-              </ul>
-            </Box>
           </Grid>
           {videoLink && (
             <Grid item xs={6}>
@@ -67,6 +60,30 @@ const Hackaviz = () => {
           )}
           </Grid>
 
+          <hr/>
+          <h3>{"Les gagnants"}</h3>
+          <Grid 
+            container 
+            spacing={2}
+            direction="row"
+            justify="space-between"
+            alignItems="flex-start"
+          >
+            {winners.map(participant => {
+              const mergedProps = {...participant, ...winnersColumn};
+              return (
+                <HackavizResult {...mergedProps} />
+              );
+            })}
+          </Grid>
+
+          <Button
+            link={`${currentHackaviz}-results`}
+            type={'internal'}
+            text={"Voir toutes les réalisations"}
+          />
+
+          <hr/>
           <h3>{"Les sponsors"}</h3>
           <HackavizSponsors
             currentHackaviz={currentHackaviz}
