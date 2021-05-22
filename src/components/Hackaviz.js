@@ -16,32 +16,32 @@ const Hackaviz = () => {
   const hackavizParticipants = useHackavizParticipants();
   
   return (
-    <>
-    {hackavizs.map(({ hackaviz, date, videoLink, description }) => {
+    <section className="spotlights">
+    {hackavizs.map(({ hackaviz, date, videoLink, description },index) => {
       const currentHackaviz = hackaviz;
       const videoEmbedId = getVideoEmbedId(videoLink);
       const winners = hackavizParticipants
         .filter(({ hackaviz, prix }) =>  hackaviz === currentHackaviz && prix);
 
       return (
-        <Box>
+        <section key={`hackaviz-section-${currentHackaviz}`}>
+          <div className="inner">
           <Grid container spacing={2}>
           <Grid item xs>
-            <h2>{`Hackaviz ${hackaviz}`}</h2>
+            <h2>{`Hackaviz ${currentHackaviz}`}</h2>
             <Box>{date}</Box>
             <Button
-              link={"hackaviz/2020-contest"}
+              link={`hackaviz/${currentHackaviz}-contest`}
               type={'internal'}
               text={"Voir le hackaviz"}
             />
             <h3>{"Les données"}</h3>
             <Button
-              link={"hackaviz/2020-data"}
+              link={`hackaviz/${currentHackaviz}-data`}
               type={'internal'}
               text={"Télécharger les données"}
             />
             <Box>{description}</Box>
-            <h3>{"En chiffres"}</h3>
             <h3>{"Les gagnants"}</h3>
             <Box>
               <ul>
@@ -71,10 +71,12 @@ const Hackaviz = () => {
           <HackavizSponsors
             currentHackaviz={currentHackaviz}
           />
-        </Box>
+     
+     </div>
+        </section>
       );
     })}
-    </>
+    </section>
   );
 }
 export default Hackaviz;
