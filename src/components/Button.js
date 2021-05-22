@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const Button = ({ link, text, size = "medium", type = 'external' }) => {
+const Button = ({ link, text, size = "medium", type = 'external', display = '' }) => {
   const classes = useStyles();
   const linkProps = type === "external"
    ? externalLinkProps
@@ -23,7 +23,7 @@ const Button = ({ link, text, size = "medium", type = 'external' }) => {
   return (
     <a 
       href={link}
-      className={clsx(["button"],[size],[classes.button])}
+      className={clsx(["button"], [size], [classes.button], [display])}
       { ...linkProps} 
     >
       {text}

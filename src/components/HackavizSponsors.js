@@ -10,9 +10,13 @@ import usePics from '../hooks/usePics';
 import { getPic } from '../helper';
 
 const useStyles = makeStyles(theme => ({
+  imageGridContainer: {
+    backgroundColor: 'white',
+    padding: theme.spacing(1,0),
+  },
   imageContainer: {
     maxWidth: 150,
-    backgroundColor: 'white',
+    
   },
 }));
 
@@ -26,14 +30,15 @@ const HackavizSponsors = ({ currentHackaviz }) => {
       container 
       spacing={2}
       direction="row"
-      justify="space-between"
+      justify="space-around"
       alignItems="center"
+      className={classes.imageGridContainer}
     >
       {hackavizSponsors.map(({ sponsor_pic }) => {
         const sponsorPic = getPic(sponsorsPics, sponsor_pic);
         return (
           <Grid item className={classes.imageContainer}>
-            <GatsbyImage className={classes.image} image={sponsorPic} alt={sponsor_pic}/>
+            <GatsbyImage image={sponsorPic} alt={sponsor_pic}/>
           </Grid>
         );
       })}

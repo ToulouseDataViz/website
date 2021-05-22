@@ -11,7 +11,6 @@ export const usePics = () => {
           childImageSharp {
             id
             gatsbyImageData(
-              width: 400
               layout: CONSTRAINED
               placeholder: BLURRED
             )
