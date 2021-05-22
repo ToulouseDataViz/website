@@ -1,19 +1,10 @@
 import React from 'react';
-import clsx from 'clsx';
 import Rehype2react from 'rehype-react';
 
 import Box from '@material-ui/core/Box';
-import {
-  Typography,
-  Table,
-  TableHead,
-  TableBody,
-  TableCell,
-  TableRow,
-} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
-import Button from './Button';
+import { formatH1, formatTable, formatIframe } from '../helper';
 
 const useStyles = makeStyles(theme => ({
   markdown: {
@@ -30,7 +21,7 @@ const MarkdownText = ({ hast, className, ...rest }) => {
     createElement: React.createElement,
     Fragment: React.Fragment,
     components: {
-      h1: ({ children, ...props }) => (<header className="major" {...props}><h1>{children}</h1></header>),
+      h1: ({ children, ...props }) => formatH1({ children, ...props }),
       h2: props => <h2 {...props} />,
       h3: props => <h3 {...props} />,
       h4: props => <h4 {...props} />,
@@ -38,13 +29,8 @@ const MarkdownText = ({ hast, className, ...rest }) => {
       h6: props => <h6 {...props} />,
       p: props => <p {...props} />,
       li: props => <li {...props} />,
-      iframe: props => <iframe style={{ backgroundColor: "white" }} {...props} />,
-      a: ({ href, children, ...props }) => <Button link={href} text={children} size={'small'} {...props} />,
-      table: props => (
-        <div className="table-wrapper">
-          <table className="alt" {...props} />
-        </div>
-      ),
+      iframe: props => formatIframe(props),
+      table: props => formatTable(props),
       img: props => <img {...props} />,
     },
   }).Compiler;
