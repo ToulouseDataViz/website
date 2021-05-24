@@ -79,5 +79,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-meetup-pages`,
     `gatsby-plugin-offres-pages`,
+    `gatsby-plugin-md-from-csv`,
   ],
 }
