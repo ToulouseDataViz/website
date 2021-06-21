@@ -28,68 +28,68 @@ const Hackaviz = () => {
       return (
         <section key={`hackaviz-section-${currentHackaviz}`}>
           <div className="inner">
-          <Grid container spacing={2}>
-          <Grid item xs>
-            <h2>{`Hackaviz ${currentHackaviz}`}</h2>
-            <Box>{date}</Box>
-            <Button
-              link={`hackaviz/${currentHackaviz}-contest`}
-              type={'internal'}
-              text={"Voir le hackaviz"}
-            />
-            <hr/>
-            <h3>{"Les données"}</h3>
-            <Button
-              link={`hackaviz/${currentHackaviz}-data`}
-              type={'internal'}
-              text={"Télécharger les données"}
-            />
-            <Box>{description}</Box>
-          </Grid>
-          {videoLink && (
-            <Grid item xs={6}>
-              <Button
-                link={videoLink}
-                text={"Revoir la remise des prix"}
-              />
-              <YoutubeEmbed
-                title={hackaviz}
-                embedId={videoEmbedId}
-              />
+            <Grid container spacing={2}>
+              <Grid item xs>
+                <h2>{`Hackaviz ${currentHackaviz}`}</h2>
+                <Box>{date}</Box>
+                <Button
+                  link={`hackaviz/${currentHackaviz}-contest`}
+                  type={'internal'}
+                  text={"Voir le hackaviz"}
+                />
+                <hr/>
+                <h3>{"Les données"}</h3>
+                <Box>{description}</Box>
+                <Button
+                  link={`hackaviz/${currentHackaviz}-data`}
+                  type={'internal'}
+                  text={"Télécharger les données"}
+                />
+              </Grid>
+
+              {videoLink && (
+                <Grid item xs={6}>
+                  <Button
+                    link={videoLink}
+                    text={"Revoir la remise des prix"}
+                  />
+                  <YoutubeEmbed
+                    title={hackaviz}
+                    embedId={videoEmbedId}
+                  />
+                </Grid>
+              )}
             </Grid>
-          )}
-          </Grid>
 
-          <hr/>
-          <h3>{"Les gagnants"}</h3>
-          <Grid 
-            container 
-            spacing={2}
-            direction="row"
-            justify="space-between"
-            alignItems="flex-start"
-          >
-            {winners.map(participant => {
-              const mergedProps = {...participant, ...winnersColumn};
-              return (
-                <HackavizResult {...mergedProps} />
-              );
-            })}
-          </Grid>
+            <hr/>
+            <h3>{"Les gagnants"}</h3>
+            <Grid 
+              container 
+              spacing={2}
+              direction="row"
+              justify="space-between"
+              alignItems="flex-start"
+            >
+              {winners.map(participant => {
+                const mergedProps = {...participant, ...winnersColumn};
+                return (
+                  <HackavizResult {...mergedProps} />
+                );
+              })}
+            </Grid>
 
-          <Button
-            link={`hackaviz/${currentHackaviz}-results`}
-            type={'internal'}
-            text={"Voir toutes les réalisations"}
-          />
+            <Button
+              link={`hackaviz/${currentHackaviz}-results`}
+              type={'internal'}
+              text={"Voir toutes les réalisations"}
+            />
 
-          <hr/>
-          <h3>{"Les sponsors"}</h3>
-          <HackavizSponsors
-            currentHackaviz={currentHackaviz}
-          />
-     
-     </div>
+            <hr/>
+            <h3>{"Les sponsors"}</h3>
+            <HackavizSponsors
+              currentHackaviz={currentHackaviz}
+            />
+          </div>
         </section>
       );
     })}

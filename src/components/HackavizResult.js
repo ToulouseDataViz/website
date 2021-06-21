@@ -32,7 +32,7 @@ const getName = (nom, isDense) => {
     return (<p>{ nom }</p>);
   }
   else {
-    return (<h2>{ nom }</h2>);
+    return (<h3>{ nom }</h3>);
   }
 };
 
