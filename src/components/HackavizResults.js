@@ -1,20 +1,11 @@
 import React from 'react';
 
-import { Grid, Box } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { Grid } from '@material-ui/core';
 
 import useHackavizParticipants from '../hooks/useHackavizParticipants';
 import HackavizResult from './HackavizResult';
 
-const useStyles = makeStyles(theme => ({
-  participants: {
-    backgroundColor: '#2e3450',
-    padding: theme.spacing(2),
-  },
-}));
-
 const HackavizResults = ({ currentHackaviz }) => {
-  const classes = useStyles();
   const hackavizParticipants = useHackavizParticipants().filter(({ hackaviz }) => hackaviz === currentHackaviz);
 
   const winnersColumn = {columnValue: 6};

@@ -32,7 +32,7 @@ const getName = (nom, isDense) => {
     return (<p>{ nom }</p>);
   }
   else {
-    return (<h2>{ nom }</h2>);
+    return (<h3>{ nom }</h3>);
   }
 };
 
@@ -45,7 +45,7 @@ const getPrice = (prix, isDense) => {
   }
 };
 
-const HackavizResult = ({ nom, outils, prix, pic_name, link, description, columnValue, isDense = false }) => {
+const HackavizResult = ({ nom, outils, prix, pic_name, link, children, columnValue, isDense = false }) => {
   const classes = useStyles();
   const resultsPics = usePics().filter(({ relativeDirectory }) => relativeDirectory === 'hachaviz-result-pics');
   const resultPic = getPic(resultsPics, pic_name);
@@ -53,6 +53,8 @@ const HackavizResult = ({ nom, outils, prix, pic_name, link, description, column
   const participantStyle = clsx({
     [classes.participants] : !isDense,
   });
+
+  const markdwonDescription = children[0]?.childMarkdownRemark?.htmlAst;
 
   return (
     <Grid item xs={12} sm={columnValue}>
@@ -65,7 +67,9 @@ const HackavizResult = ({ nom, outils, prix, pic_name, link, description, column
             </Box>
           )}
           { getName(nom, isDense) }
-          {!isDense && (<p>{ description }</p>)}
+          {!isDense && markdwonDescription && (
+            <MarkdownText hast={markdwonDescription} />
+          )}
           {!isDense && (<p><b>Outils</b>{`: ${outils}`}</p>)}
           {link && (
             <Button
