@@ -1,5 +1,5 @@
-﻿hackaviz,nom,pic_name,outils,prix,description,link
-2020,Timothée DELUBAC et Olga Tihhonova (équipe : Pixel & Poivre),2020-delubac-tihhonova,"Python, D3, HTML, CSS, JavaScript",1er prix,Le guide du voyageur en Occitanie _(Hitchhiker’s Guide to Occitània)_ vous propose de découvrir lequel des départements de notre région se prêtera le mieux à vos prochaines vacances. Pensez à prendre votre serviette !," https://olgatihhonova.github.io/hackaviz2020/"
+hackaviz,nom,pic_name,outils,prix,description,link
+2020,Timothée DELUBAC et Olga Tihhonova (équipe : Pixel & Poivre),2020-delubac-tihhonova,"Python, D3, HTML, CSS, JavaScript",1er prix,Le guide du voyageur en Occitanie _(Hitchhiker’s Guide to Occitània)_ vous propose de découvrir lequel des départements de notre région se prêtera le mieux à vos prochaines vacances. Pensez à prendre votre serviette !, https://olgatihhonova.github.io/hackaviz2020/
 2020,Evgenii MUNIN,2020-munin,"Data processing: Python (pandas, geopandas), Viz: Tableau",,"L’analyse est faite sur les aspects suivants : 
 - L’attractivité relative des départements de l’Occitanie mesurée comme le rapport entre les nuitées sur la capacité totale d’hébergement pour chaque mois de l’année 2018.
 - Les origines principales des visiteurs _(France ou étranger)_; 
@@ -98,3 +98,19 @@ Géoservice itinéraires du portail IGN, Mapbox",,,https://api.mapbox.com/styles
 2019,"Sarah DEROSAIS, Rebecca MEDDAHI, Matthieu SIRVENT (Équipe LP MIND)",2019-lpmind,Tableau Software,,,https://public.tableau.com/profile/matthieusirvent#!/vizhome/Tableau_Hackaviz2019/Tableaudebord1
 2019,Guillaume RICHARD,2019-richard,Non renseigné,,,https://drive.google.com/file/d/18I9lSQIa2ylrI9UDJRaqGbKZ0fVfJFzb/view?usp=sharing
 2019,Edith MAULANDI (hors concours),2019-maulandi,Kepler.gl,,,
+2018,Edith Maulandi,2018-maulandi,"Python (pandas + jupyter notebook), D3.js  (d3-legend, d3-annotation, d3-text-wrapper), Bootstrap Scrollspy
+",1er prix,,https://emaulandi.github.io/occitanie-hackaviz2018/
+2018,"Guillaume Devailly, Yann Labrune (équipe Genepi@INRA)",2018-genepi,"R,paquets here, tidyverse, cowplot, ggrepel, knitr, GhitHub",Prix spécial du jury,,
+2018,Mélanie Suescun,2018-suescun,"R packages – dplyr, reshape, ggplot2. Geojsonio, Leaflet + OpenStreetMap, PowerPoint",Prix de la pertinence,,
+2018,"Romain Leysenne, Julien Dillingham, Raphaël Jadeau, Maxime Boichon (Equipe : Les poulains de Guigui)",2018-poulains,"Excel, R pour les statistiques, Adobe Illustrator et Adobe XD pour la visualisation",Prix de l’originalité,,https://xd.adobe.com/view/42ec91fb-9de2-4af5-86b6-87b0084cf6c4/?fullscreen
+2018,"Theo Rousselle, Frédéric Kingue, Matthieu Olivari, Clément Borel, (Equipe : LP MIND)",2018-lpmind,"Illustrator, html",Mention spéciale,,https://clemb.github.io/HackaViz2018/index.html
+2018,Yahia Mehdi Seddik Cherifi,2018-cherifi,R (packages : tidyverse + geojsonio + cartography),,,
+2018,Bastien Sellah,2018-sellah,Tableau software,,,https://toulouse-dataviz.fr/wp-content/uploads/2018/03/Sellah-300x241.jpg
+2018,Thibault Nidelet,2018-nidelet,R + shiny,,,https://tnidelet.shinyapps.io/HackVizOccitanie/
+2018,"Paul Mycek, Coralie Mycek, Vincent Chabot, Alexandre Philip (Equipe : Statziki)",2018-statziki,"Python (numpy, pandas, matplotlib, shapeley, json), Qgis, Javascript, HTML, CSS, Code de création de cartogrammes",,,https://cocaux.gitlab.io/hackaviz/
+2018,"Stéphanie Fourcade, Vincent Boyer, Mathilde Fontanie (Equipe : VISEO MicroStrategy)",2018-microstrategy,EMicroStrategy 10.10,,,
+2018,"Bérengère Mathieu, Marianne Lajante, Jérémie Pardou, Benjamin Manguin (Equipe : Makina Corpus)",2018-makinacorpus,"Observablehq, D3.js, Leaflet",,,https://beta.observablehq.com/@m-marianne/1-le-crash-de-2008-mythe-ou-realite-la-preuve-par-les-chiffres
+2018,Clément Lesaulnier,2018-lesaulnier,"d3.js (d3-geo, ndjson, topojson,d3-scale-chromatic)",,,https://clesauln.github.io/hackaviz/index.html
+2018,Lucie Sieys,2018-sieys,"Excel, QGIS, Illustrator",,,
+2018,"Hamza Belbachir, Amine Lamriben, (Equipe : Haminzaviz)",2018-haminzaviz,Tableau software,,,https://public.tableau.com/profile/hamza.belbachir#!/vizhome/Haminzaviz1/HackAviz_Hamza_Amine
+2018,Alain Roan (hors concours),2018-roan,"Observablehq, d3.js",,,https://beta.observablehq.com/@alainro/hackaviz-toulouse-2018
