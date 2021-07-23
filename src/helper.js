@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './components/Button';
 
-const regexpVideoId = /v=(.*)&/;
+const regexpVideoId = /v=(.+?(?=\&|$))/;
 export const getVideoEmbedId = videoLink => {
   return videoLink
     ? videoLink.match(regexpVideoId)[1]
