@@ -2,10 +2,17 @@ import React, { useState } from 'react';
 
 import { Grid, FormControlLabel, Switch } from '@material-ui/core';
 import Meetup from './Meetup';
-import useMeetups from '../hooks/useMeetups';
+import useMeetupsNotion from '../hooks/useMeetupsNotion';
 
 const Meetups = () => {
-  const meetups = useMeetups();
+  const meetups = useMeetupsNotion();
+  /*
+  const meetups = useMeetupsNotion();
+  const meetupsNotion = useMeetupsNotion();
+  console.log(meetupsNotion);
+  */
+
+  // filter passed TBD
 
   const [onlyVideo, setOnlyVideo] = useState(false);
 
@@ -36,7 +43,7 @@ const Meetups = () => {
     </Grid>
 
     <Grid container spacing={2} >
-      {diplayMeetups.map(({ meetupid, year, videoLink, title, place, month, meetupLink, day, descriptionHtml }) => (
+      {diplayMeetups.map(({ meetupid, year, videoLink, title, place, month, meetupLink, day }) => (
         <React.Fragment key={meetupid}>      
           <Meetup
             meetupid={meetupid}

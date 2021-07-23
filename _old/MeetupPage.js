@@ -12,7 +12,7 @@ import Gallery from '../components/Gallery';
 import Button from '../components/Button';
 import MarkdownText from '../components/MarkdownText'
 
-import useMeetupsNotion from '../hooks/useMeetupsNotion';
+import useMeetups from '../hooks/useMeetups';
 import usePics from '../hooks/usePics';
 import { getVideoEmbedId } from '../helper';
 
@@ -29,23 +29,22 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const MeetupPage = ({ 
-  data: { meetup: { properties: { meetupid: { value } } }}
+  data: { 
+    meetup: { meetupid, day, month, year, videoLink, title, meetupLink, 
+    fields: { Markdown: { htmlAst } } },
+  },
 }) => {
   const classes = useStyles();
 
-  const currentMeetupid = value;
-  const meetups = useMeetupsNotion();
-  const { title, day, month, year, meetupLink, videoLink, descriptionHtmlAst } = meetups
-    .find(({ meetupid }) => meetupid === currentMeetupid);
-
+  const currentMeetupid = parseInt(meetupid);
+  const meetups = useMeetups();
   const lastMeetupId = Math.max(...meetups.map(({ meetupid }) => meetupid));
-  // filter status
-
-  console.log(getVideoEmbedId(videoLink));
 
   const meetupPics = usePics().filter(({ relativeDirectory, name }) => {
-    return relativeDirectory === 'meetup-pics' && name.match(/(\d*)_.*/)[1] === currentMeetupid
+    return relativeDirectory === 'meetup-pics' && name.match(/(\d*)_.*/)[1] === meetupid
   });
+
+  const videoEmbedId = getVideoEmbedId(videoLink);
 
   return (
     <Layout>
@@ -67,14 +66,19 @@ const MeetupPage = ({
                 </Box>
               )}
               <Box className={classes.griditemmargin}>
-                <span>{`${day}/${month}/${year}`}</span>
+                <span>{`${day} ${month} ${year}`}</span>
               </Box>
             </Grid>
             <h1>{title}</h1>
 
             <MarkdownText
-              hast={descriptionHtmlAst}
+              hast={htmlAst}
             />
+            
+            {/*<div className={classes.description}
+              dangerouslySetInnerHTML={{ __html: descriptionHtml }}
+            />
+              */}
 
             {meetupPics.length > 0 && (
               <Gallery picsToDisplay={meetupPics} />
@@ -87,7 +91,7 @@ const MeetupPage = ({
                 />
                 <YoutubeEmbed
                   title={title}
-                  embedId={getVideoEmbedId(videoLink)}
+                  embedId={videoEmbedId}
                 />
               </div>
             )}
@@ -120,10 +124,18 @@ export default MeetupPage;
 
 export const pageQuery = graphql`
   query MyQuery($id: String) {
-    meetup: notion(id: { eq: $id }) {
-      properties {
-        meetupid {
-          value
+    meetup: eventsCsv(id: { eq: $id }) {
+      meetupid
+      year
+      videoLink
+      title
+      place
+      month
+      meetupLink
+      day
+      fields {
+        Markdown {
+          htmlAst
         }
       }
     }

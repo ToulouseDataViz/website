@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     headerTitle: "Toulouse Dataviz",
@@ -74,11 +78,22 @@ module.exports = {
         path: `${__dirname}/src/content/pics/`,
       },
     },
+    {
+      resolve: `gatsby-source-notion-api`,
+      options: {
+        token: process.env.INTEGRATION_TOKEN,
+        databaseId: process.env.DATABASE_ID,
+        propsToFrontmatter: true,
+        lowerTitleLevel: true,
+      },
+    },
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-meetup-pages`,
+    // `gatsby-plugin-meetup-pages`,
     `gatsby-plugin-offres-pages`,
     `gatsby-plugin-md-from-csv`,
+    `gatsby-plugin-md-from-notion-table-attribute`,
+    `gatsby-plugin-meetup-pages-notion`,
   ],
 }
