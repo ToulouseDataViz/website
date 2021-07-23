@@ -71,10 +71,12 @@ const MeetupPage = ({
               </Box>
             </Grid>
             <h1>{title}</h1>
-
-            <MarkdownText
-              hast={descriptionHtmlAst}
-            />
+            
+            {descriptionHtmlAst && (
+              <MarkdownText
+                hast={descriptionHtmlAst}
+              />
+            )}
 
             {meetupPics.length > 0 && (
               <Gallery picsToDisplay={meetupPics} />
