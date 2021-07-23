@@ -4,15 +4,13 @@ import { Grid, FormControlLabel, Switch } from '@material-ui/core';
 import Meetup from './Meetup';
 import useMeetupsNotion from '../hooks/useMeetupsNotion';
 
-const Meetups = () => {
-  const meetups = useMeetupsNotion();
-  /*
-  const meetups = useMeetupsNotion();
-  const meetupsNotion = useMeetupsNotion();
-  console.log(meetupsNotion);
-  */
+import { pastMeetupStatusName } from '../settings';
 
-  // filter passed TBD
+const Meetups = ({ statusIsPast = true, wrapForPage = false }) => {
+  const meetups = useMeetupsNotion().filter(({ status }) => {
+    const meetupIsPast = status === pastMeetupStatusName;
+    return meetupIsPast && statusIsPast;
+  });
 
   const [onlyVideo, setOnlyVideo] = useState(false);
 
@@ -24,7 +22,11 @@ const Meetups = () => {
     setOnlyVideo(event.target.checked);
   };
 
-  return (
+  if (meetups.length === 0) {
+    return null;
+  }
+
+  const content = (
     <>
     <Grid container alignItems="center">
       <Grid item >
@@ -60,6 +62,18 @@ const Meetups = () => {
     </Grid>
     </>
   );
+
+  if (wrapForPage) {
+    return (
+      <section id="one">
+          <div className="inner">
+            { content }
+          </div>   
+        </section> 
+    )
+  }
+
+  return content;
 }
 
 export default Meetups;

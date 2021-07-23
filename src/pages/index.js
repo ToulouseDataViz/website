@@ -7,6 +7,7 @@ import Banner from '../components/Banner'
 import useSiteMetadata from '../hooks/useSiteMetadata'
 import useHomeContent from '../hooks/useHomeContent'
 import Gallery from '../components/Gallery'
+import Meetups from '../components/Meetups';
 
 import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
@@ -41,7 +42,11 @@ const HomeIndex = () => {
 
       <Banner />
 
-      <div id="main">       
+      <div id="main">
+        <Meetups
+          statusIsPast={false}
+          wrapForPage={true}
+        />
 
         <section id="two" class="spotlights">
           <div className="inner">
