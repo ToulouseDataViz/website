@@ -1,0 +1,5 @@
+[functions]
+
+  # Specifies `esbuild` for functions bundling
+  # to support optional chaining
+  node_bundler = "esbuild"
