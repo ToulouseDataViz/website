@@ -12,7 +12,9 @@ const Meetups = ({
   wrapForPage = false,
   title = null
 }) => {
-  const meetups = useMeetupsNotion().filter(({ status }) => includeStatus.includes(status));
+  const meetups = useMeetupsNotion()
+    .filter(({ status }) => includeStatus.includes(status))
+    .sort((meetup1, meetup2) => meetup2.meetupid - meetup1.meetupid);
 
   const [onlyVideo, setOnlyVideo] = useState(false);
 
