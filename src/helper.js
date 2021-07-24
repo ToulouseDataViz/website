@@ -18,3 +18,18 @@ export const formatTable = props => (
     <table className="alt" {...props} />
   </div>
 );
+
+export const parseMarkdownToString = markdownText => {
+	const htmlText = markdownText
+		.replace(/^### (.*$)/gim, '$1')
+		.replace(/^## (.*$)/gim, '$1')
+		.replace(/^# (.*$)/gim, '$1')
+		.replace(/^\> (.*$)/gim, '$1')
+		.replace(/\*\*(.*)\*\*/gim, '$1')
+		.replace(/\*(.*)\*/gim, '$1')
+		.replace(/!\[(.*?)\]\((.*?)\)/gim, "")
+		.replace(/\[(.*?)\]\((.*?)\)/gim, "$1")
+		.replace(/\n$/gim, '')
+
+	return htmlText.trim()
+}

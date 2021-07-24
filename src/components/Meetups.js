@@ -6,11 +6,15 @@ import useMeetupsNotion from '../hooks/useMeetupsNotion';
 
 import { pastMeetupStatusName } from '../settings';
 
-const Meetups = ({ statusIsPast = true, wrapForPage = false }) => {
-  const meetups = useMeetupsNotion().filter(({ status }) => {
-    const meetupIsPast = status === pastMeetupStatusName;
-    return meetupIsPast && statusIsPast;
-  });
+const Meetups = ({
+  includeStatus = [pastMeetupStatusName],
+  displayVideoFilter = true,
+  wrapForPage = false,
+  title = null
+}) => {
+  const meetups = useMeetupsNotion()
+    .filter(({ status }) => includeStatus.includes(status))
+    .sort((meetup1, meetup2) => meetup2.meetupid - meetup1.meetupid);
 
   const [onlyVideo, setOnlyVideo] = useState(false);
 
@@ -28,24 +32,32 @@ const Meetups = ({ statusIsPast = true, wrapForPage = false }) => {
 
   const content = (
     <>
-    <Grid container alignItems="center">
-      <Grid item >
-        <FormControlLabel
-          control={
-            <Switch 
-              checked={onlyVideo} 
-              onChange={handleChange} 
-            />
-          }
-        />
+    {title && (
+      <header className="major">
+        <h2>{ title } </h2>
+      </header>
+    )}
+    
+    {displayVideoFilter && (
+      <Grid container alignItems="center">
+        <Grid item >
+          <FormControlLabel
+            control={
+              <Switch 
+                checked={onlyVideo} 
+                onChange={handleChange} 
+              />
+            }
+          />
+        </Grid>
+        <Grid item >
+          <span>Filtrer pour voir les meetups avec vidéos uniquement</span>
+        </Grid>
       </Grid>
-      <Grid item >
-        <span>Filtrer pour voir les meetups avec vidéos uniquement</span>
-      </Grid>
-    </Grid>
+    )}
 
     <Grid container spacing={2} >
-      {diplayMeetups.map(({ meetupid, year, videoLink, title, place, month, meetupLink, day }) => (
+      {diplayMeetups.map(({ meetupid, year, videoLink, title, place, month, meetupLink, day, descriptionMarkdownString }) => (
         <React.Fragment key={meetupid}>      
           <Meetup
             meetupid={meetupid}
@@ -56,6 +68,7 @@ const Meetups = ({ statusIsPast = true, wrapForPage = false }) => {
             year={year}
             videoLink={videoLink}
             meetupLink={meetupLink}
+            descriptionMarkdownString={descriptionMarkdownString}
           />
         </React.Fragment>
       ))}

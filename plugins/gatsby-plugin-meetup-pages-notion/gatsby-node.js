@@ -20,13 +20,14 @@ exports.createPages = async ({ actions: { createPage }, graphql, reporter }) => 
     return;
   }
 
-  result.data.allNotion.nodes.forEach(({ id, properties: { meetupid: { value } }}) => {
-    if (value) {
+  result.data.allNotion.nodes.forEach(({ id, properties: { meetupid }}) => {
+    if (meetupid?.value) {
+      const meetupidValue = meetupid.value;
       /**
        * Create meetup pages
        */
       createPage({
-        path: path.join('meetup', value.toString()),
+        path: path.join('meetup', meetupidValue.toString()),
         component: path.resolve('./src/templates/MeetupPage.js'),
         context: { id },
       });
