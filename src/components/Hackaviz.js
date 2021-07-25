@@ -10,6 +10,7 @@ import Button from '../components/Button';
 import HackavizSponsors from '../components/HackavizSponsors';
 import HackavizResult from './HackavizResult';
 import { getVideoEmbedId } from '../helper';
+import { pastMeetupStatusName } from '../settings';
 
 const Hackaviz = () => {
 
@@ -19,11 +20,13 @@ const Hackaviz = () => {
   
   return (
     <section className="spotlights">
-    {hackavizs.map(({ hackaviz, date, videoLink, description },index) => {
+    {hackavizs.map(({ hackaviz, status, date, videoLink, description }) => {
       const currentHackaviz = hackaviz;
       const videoEmbedId = getVideoEmbedId(videoLink);
       const winners = hackavizParticipants
         .filter(({ hackaviz, prix }) =>  hackaviz === currentHackaviz && prix);
+      const hasWinners = winners.length != 0;
+      const isPastHackaviz = status === pastMeetupStatusName;
 
       return (
         <section key={`hackaviz-section-${currentHackaviz}`}>
@@ -31,20 +34,25 @@ const Hackaviz = () => {
             <Grid container spacing={2}>
               <Grid item xs>
                 <h2>{`Hackaviz ${currentHackaviz}`}</h2>
-                <Box>{date}</Box>
+                <Box><b>{date}</b></Box>
+                <Box>{description}</Box>
                 <Button
                   link={`hackaviz/${currentHackaviz}-contest`}
                   type={'internal'}
                   text={"Voir le hackaviz"}
                 />
-                <hr/>
-                <h3>{"Les données"}</h3>
-                <Box>{description}</Box>
-                <Button
-                  link={`hackaviz/${currentHackaviz}-data`}
-                  type={'internal'}
-                  text={"Télécharger les données"}
-                />
+
+                {isPastHackaviz && (
+                  <>
+                    <hr/>
+                    <h3>{"Les données"}</h3>
+                    <Button
+                      link={`hackaviz/${currentHackaviz}-data`}
+                      type={'internal'}
+                      text={"Télécharger les données"}
+                    />
+                  </>
+                )}
               </Grid>
 
               {videoLink && (
@@ -61,28 +69,32 @@ const Hackaviz = () => {
               )}
             </Grid>
 
-            <hr/>
-            <h3>{"Les gagnants"}</h3>
-            <Grid 
-              container 
-              spacing={2}
-              direction="row"
-              justify="space-between"
-              alignItems="flex-start"
-            >
-              {winners.map(participant => {
-                const mergedProps = {...participant, ...winnersColumn};
-                return (
-                  <HackavizResult {...mergedProps} />
-                );
-              })}
-            </Grid>
-
-            <Button
-              link={`hackaviz/${currentHackaviz}-results`}
-              type={'internal'}
-              text={"Voir toutes les réalisations"}
-            />
+            {(isPastHackaviz && hasWinners) && (
+              <>
+                <hr/>
+                <h3>{"Les gagnants"}</h3>
+                <Grid 
+                  container 
+                  spacing={2}
+                  direction="row"
+                  justify="space-between"
+                  alignItems="flex-start"
+                >
+                  {winners.map(participant => {
+                    const mergedProps = {...participant, ...winnersColumn};
+                    return (
+                      <HackavizResult {...mergedProps} />
+                    );
+                  })}
+                </Grid>
+    
+                <Button
+                  link={`hackaviz/${currentHackaviz}-results`}
+                  type={'internal'}
+                  text={"Voir toutes les réalisations"}
+                />
+              </>
+            )}
 
             <hr/>
             <h3>{"Les sponsors"}</h3>
