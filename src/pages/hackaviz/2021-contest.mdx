@@ -1,6 +1,9 @@
+import { getImage, GatsbyImage } from "gatsby-plugin-image";
+
 import PageBanner from '../../components/PageBanner';
 import Button from '../../components/Button';
 import HackavizSponsors from '../../components/HackavizSponsors';
+import InternalImage from '../../components/InternalImage';
 
 <PageBanner 
   styleId={1}
@@ -12,15 +15,21 @@ import HackavizSponsors from '../../components/HackavizSponsors';
 <div className="inner">
 
 L’association Toulouse Dataviz (TDV) organise son HACKAVIZ. Concours de visualisation de données en temps limité, seul ou en équipe, doté de récompenses, ouvert à un très large public.
-- Consultez [les résultats de l‘hackaviz 2018](/hackaviz/2018-results)
-- Consultez [les résultats de l’hackaviz 2019](/hackaviz/2019-results)
-- Consultez [les résultats de l’hackaviz 2020](/hackaviz/2020-results)
 
 <Button
   link={"https://tally.so/r/w4rRXm"}
   display={"special"}
   text={"S'inscrire"}
 />
+
+<InternalImage
+  name={"hackaviz2021"}
+  altText={""}
+/>
+
+- Consultez [les résultats de l‘hackaviz 2018](/hackaviz/2018-results)
+- Consultez [les résultats de l’hackaviz 2019](/hackaviz/2019-results)
+- Consultez [les résultats de l’hackaviz 2020](/hackaviz/2020-results)
 
 # LE PRINCIPE
 Raconter une histoire avec des graphiques, à partir d’un jeu de données inédit, seul ou en équipe.
