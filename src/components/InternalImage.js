@@ -1,6 +1,8 @@
 import React from 'react';
 import { GatsbyImage } from "gatsby-plugin-image";
 
+import { Grid } from '@material-ui/core';
+
 import usePics from '../hooks/usePics';
 import { getPic } from '../helper';
 
@@ -18,11 +20,18 @@ const InternalImage = ({ name, altText }) => {
   const pics = usePics();
   const image = getPic(pics, name);
   return (
-    <GatsbyImage 
-      image={image} 
-      alt={altText} 
-      class={classes.image} 
-    />
+    <Grid
+      container
+      direction="row"
+      justify="center"
+      alignItems="center"
+    >
+      <GatsbyImage 
+        image={image} 
+        alt={altText} 
+        class={classes.image} 
+      />
+    </Grid>
   );
 }
 

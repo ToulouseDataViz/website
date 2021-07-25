@@ -1,81 +1,66 @@
+import { getImage, GatsbyImage } from "gatsby-plugin-image";
+
 import PageBanner from '../../components/PageBanner';
 import Button from '../../components/Button';
 import HackavizSponsors from '../../components/HackavizSponsors';
+import InternalImage from '../../components/InternalImage';
 
 <PageBanner 
   styleId={1}
-  title={"Hackaviz"}
-  description={"TBD"}
+  title={"Hackaviz 2021"}
+  description={"Quatrième édition"}
 />
 
 <section id="one">
 <div className="inner">
 
-# HACKAVIZ 2020
-Troisième édition
 L’association Toulouse Dataviz (TDV) organise son HACKAVIZ. Concours de visualisation de données en temps limité, seul ou en équipe, doté de récompenses, ouvert à un très large public.
+
+<Button
+  link={"https://tally.so/r/w4rRXm"}
+  display={"special"}
+  text={"S'inscrire"}
+/>
+
+<InternalImage
+  name={"hackaviz2021"}
+  altText={""}
+/>
+
 - Consultez [les résultats de l‘hackaviz 2018](/hackaviz/2018-results)
 - Consultez [les résultats de l’hackaviz 2019](/hackaviz/2019-results)
-
+- Consultez [les résultats de l’hackaviz 2020](/hackaviz/2020-results)
 
 # LE PRINCIPE
 Raconter une histoire avec des graphiques, à partir d’un jeu de données inédit, seul ou en équipe.
 A partir du moment ou les données sont mises à disposition, les candidats ont 10 jours pour rendre leur création.
-- Date de mise à disposition des données : 12 Mars 2020
-- Date limite de remise des contributions : 22 Mars 2020
-- Hackaviz party : Présentation des réalisations et remise des prix  : 26 Mars 2020
+- Date de mise à disposition des données : **9 Septembre 2021**
+- Date limite de remise des contributions : **19 Septembre 2021**
+- Hackaviz party : Présentation des réalisations et remise des prix : **1er Octobre 2021**
 
  
 # PRÉPARER L’HACKAVIZ
 
-<Button
-  link={"https://www.notion.so/toulousedataviz/News-Letter-TDV-Hackaviz-2020-1-a7e85f7175574c0494e222c89db40cd3"}
-  display={"special"}
-  text={"#1 Pourquoi visualiser ?"}
-/>
-<Button
-  link={"https://www.notion.so/News-Letter-TDV-Hackaviz-2020-2-43c548bc7c9b4df7a3404ac540bba23d"}
-  display={"special"}
-  text={"#2 Comment visualiser ?"}
-/>
-<Button
-  link={"https://www.notion.so/toulousedataviz/News-Letter-TDV-Hackaviz-2020-3-17d4167f5340487c88072aa381eca43d"}
-  display={"special"}
-  text={"#3 Des outils et des exemples"}
-/>
-<Button
-  link={"https://www.notion.so/toulousedataviz/News-Letter-TDV-Hackaviz-2020-4-fbf173c0264b4d4e9ec5e04b7494ccae"}
-  display={"special"}
-  text={"#4 Exemples & entrainements"}
-/>
+à venir
 
 # LE JEU DE DONNÉES
 
-Un  jeu de données **exceptionnel** concernant la région Occitanie, libéré pour la première fois pour l’occasion.
-Le jour du début du Hackaviz, les candidats reçoivent un lien vers une page de téléchargement contenant:
-- les données au format xlsx, csv ou geojson,
-- un dictionnaire des données expliquant la nature des observations et la définition des variables
-
-<Button
-  link={"/hackaviz/2020-data"}
-  type={'internal'}
-  text={"Télécharger les données"}
-/>
+à venir
 
 # LES RÈGLES
 
 - Les candidats peuvent être des individus ou des équipes. Le nombre de personnes regroupées sous une candidature doit être précisé à l’inscription. Une fois inscrit, le candidat – ou l’équipe – s’engage à envoyer sa contribution avant la date de fin du concours.
-- Les candidats s’engagent à autoriser la publication de leur contribution sur le site toulouse-dataviz.fr 
-- Les candidats s’engagent à être présents ou représentés ou à défaut disponible par skype lors de l’Hackaviz party du 26 mars 2020.
+- Les candidats s’engagent à autoriser la publication de leur contribution sur le site toulouse-dataviz.fr
+- Les candidats s’engagent à être présents ou représentés ou à défaut disponible par vidéo lors de l’Hackaviz party du 1er octobre 2021.
 - Les candidats peuvent ensuite utiliser tous les outils qu’ils souhaitent pour explorer ces données et en proposer une représentation visuelle à base de graphiques.
 - Les candidats peuvent effectuer tous types de calcul à partir de ce jeu de données
 - Les candidats enverront leur contribution par mail avant la date limite à une adresse qui sera communiquée lors de la mise à disposition des données.
-- Le format de restitution de cette analyse visuelle sera au format pdf et ne devra pas dépasser l’équivalent de 2 pages A4 ou l’équivalent de 3 captures d’écran si la réalisation est sur le web.
+- Le format de restitution de cette analyse visuelle sera au **format pdf** et **ne devra pas dépasser l’équivalent de 2 pages A4** ou l’équivalent de **3 captures d’écran** si la réalisation est sur le web.
 - Dans le cas d’une création interactive ou utilisant des services web, le candidat (ou l’équipe) enverra un mail contenant uniquement l’URL valide de la réalisation.
 - Les candidats s’attacheront à ajouter des éléments contextuels pour commenter le ou les graphiques.
 - Les candidats fourniront la liste des outils utilisés pour la réalisation des graphiques
 - Les participants n’ont pas l’obligation d’utiliser toutes les données.
-- Hormis des fonds de carte, les candidats ne sont pas autorisés à utiliser d’autres données que celles fournies.
+- Hormis des fonds de carte, **les candidats ne sont pas autorisés à utiliser d’autres données que celles fournies**.
 
 # ÉVALUATION
 
@@ -92,14 +77,15 @@ Le jury de l’Hackaviz est souverain, ses décisions sont donc définitives. Le
  
 # HACKAVIZ PARTY
 
+L’hackaviz party se déroulera dans le cadre **des rencontres de la dataviz** de la [mêlée numérique](https://www.meleenumerique.com/programme/) le 1 oct 2020 à partir de 18:30 au quai des savoirs à Toulouse
 Avant la cérémonie de remise des prix, tous les participants pourront présenter leur réalisation et échanger autour de stands mis à leur disposition.
 Tous les candidats seront appelés à commenter leur réalisation sous forme de “pitch rapide” lors de la remise des prix.
-L’ Hackaviz party sera filmée en live pour permettre aux participants ne pouvant se déplacer de voir l’événement en direct
+L’ Hackaviz party sera filmée en live pour permettre aux participants ne pouvant se déplacer de voir l’événement en direct.
 
 # PARTENAIRES DE L’EVENEMENT
 
 <HackavizSponsors
-  currentHackaviz={'2020'}
+  currentHackaviz={'2021'}
 />
 
 </div>
