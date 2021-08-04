@@ -1,2 +1,2 @@
-export const pastMeetupStatusName = 'Réalisé';
-export const incomingMeetupStatusName = 'Planifié';
+export const pastEventStatusName = 'Réalisé';
+export const incomingEventStatusName = 'Planifié';

@@ -1,32 +1,32 @@
 import React, { useState } from 'react';
 
 import { Grid, FormControlLabel, Switch } from '@material-ui/core';
-import Meetup from './Meetup';
-import useMeetupsNotion from '../hooks/useMeetupsNotion';
+import Event from './Event';
+import useEventsNotion from '../hooks/useEventsNotion';
 
-import { pastMeetupStatusName } from '../settings';
+import { pastEventStatusName } from '../settings';
 
-const Meetups = ({
-  includeStatus = [pastMeetupStatusName],
+const Events = ({
+  includeStatus = [pastEventStatusName],
   displayVideoFilter = true,
   wrapForPage = false,
   title = null
 }) => {
-  const meetups = useMeetupsNotion()
+  const events = useEventsNotion()
     .filter(({ status }) => includeStatus.includes(status))
     .sort((meetup1, meetup2) => meetup2.meetupid - meetup1.meetupid);
 
   const [onlyVideo, setOnlyVideo] = useState(false);
 
-  const diplayMeetups = onlyVideo 
-    ? meetups.filter(({ videoLink }) => Boolean(videoLink))
-    : meetups;
+  const diplayEvents = onlyVideo 
+    ? events.filter(({ videoLink }) => videoLink)
+    : events;
 
   const handleChange = (event) => {
     setOnlyVideo(event.target.checked);
   };
 
-  if (meetups.length === 0) {
+  if (events.length === 0) {
     return null;
   }
 
@@ -51,15 +51,15 @@ const Meetups = ({
           />
         </Grid>
         <Grid item >
-          <span>Filtrer pour voir les meetups avec vidéos uniquement</span>
+          <span>Filtrer pour voir les events avec vidéos uniquement</span>
         </Grid>
       </Grid>
     )}
 
     <Grid container spacing={2} >
-      {diplayMeetups.map(meetup => (
+      {diplayEvents.map(meetup => (
         <React.Fragment key={meetup.meetupid}>      
-          <Meetup {...meetup} />
+          <Event {...meetup} />
         </React.Fragment>
       ))}
     </Grid>
@@ -79,4 +79,4 @@ const Meetups = ({
   return content;
 }
 
-export default Meetups;
+export default Events;

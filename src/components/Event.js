@@ -13,13 +13,13 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const Meetup = ({ meetupid, title, place, date, videoLink, meetupLink, descriptionMarkdownString }) => { 
+const Event = ({ meetupid, title, place, date, videoLink, meetupLink, descriptionMarkdownString }) => { 
   const classes = useStyles();
 
   return (
     <Grid item xs={12} sm={4} >
       <Box className={classes.meetup}>
-        <Link to={`/meetup/${meetupid}`}>
+        <Link to={`/event/${meetupid}`}>
           <h4>{title}</h4>
         </Link>
         <span>{place}</span>
@@ -45,4 +45,4 @@ const Meetup = ({ meetupid, title, place, date, videoLink, meetupLink, descripti
   );
 }
 
-export default Meetup;
+export default Event;

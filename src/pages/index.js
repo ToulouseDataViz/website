@@ -7,8 +7,8 @@ import Banner from '../components/Banner'
 import useSiteMetadata from '../hooks/useSiteMetadata'
 import useHomeContent from '../hooks/useHomeContent'
 import Gallery from '../components/Gallery'
-import Meetups from '../components/Meetups';
-import { incomingMeetupStatusName } from '../settings';
+import Events from '../components/Events';
+import { incomingEventStatusName } from '../settings';
 
 import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
@@ -44,8 +44,8 @@ const HomeIndex = () => {
       <Banner />
 
       <div id="main">
-        <Meetups
-          includeStatus={[incomingMeetupStatusName]}
+        <Events
+          includeStatus={[incomingEventStatusName]}
           displayVideoFilter={false}
           wrapForPage={true}
           title={"Les évènements à venir"}
