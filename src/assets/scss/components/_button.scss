@@ -20,8 +20,8 @@
 		background-color: transparent;
 		border: 0;
 		border-radius: 0;
-		box-shadow: inset 0 0 0 2px _palette(fg-bold);
-		color: _palette(fg-bold);
+		box-shadow: inset 0 0 0 2px _palette(highlight);
+		color: _palette(highlight);
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8em;
@@ -36,14 +36,14 @@
 		white-space: nowrap;
 
 		&:hover, &:active {
-			box-shadow: inset 0 0 0 2px _palette(highlight);
-			color: _palette(highlight);
+			box-shadow: inset 0 0 0 2px _palette(fg-bold);
+			color: _palette(fg-bold);
 		}
 
 		&:active {
-			background-color: transparentize(_palette(highlight), 0.9);
-			box-shadow: inset 0 0 0 2px desaturate(darken(_palette(highlight), 15), 5);
-			color: desaturate(darken(_palette(highlight), 15), 5);
+			background-color: transparentize(_palette(fg-bold), 0.9);
+			box-shadow: inset 0 0 0 2px desaturate(darken(_palette(fg-bold), 15), 5);
+			color: desaturate(darken(_palette(fg-bold), 15), 5);
 		}
 
 		&.icon {
@@ -111,15 +111,15 @@
 		&.special {
 			background-color: _palette(fg-bold);
 			box-shadow: none;
-			color: _palette(bg);
+			color: _palette(highlight);
 
 			&:hover, &:active {
 				background-color: _palette(highlight);
-				color: _palette(bg) !important;
+				color: _palette(fg-bold) !important;
 			}
 
 			&:active {
-				background-color: desaturate(darken(_palette(highlight), 15), 5);
+				background-color: desaturate(darken(_palette(fg-bold), 15), 5);
 			}
 		}
 
