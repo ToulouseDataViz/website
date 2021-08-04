@@ -25,7 +25,7 @@ const Hackaviz = () => {
       const videoEmbedId = getVideoEmbedId(videoLink);
       const winners = hackavizParticipants
         .filter(({ hackaviz, prix }) =>  hackaviz === currentHackaviz && prix);
-      const hasWinners = winners.length != 0;
+      const hasWinners = winners.length !== 0;
       const isPastHackaviz = status === pastMeetupStatusName;
 
       return (

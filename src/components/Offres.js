@@ -2,30 +2,12 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { GatsbyImage } from "gatsby-plugin-image";
 
-import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Box } from '@material-ui/core';
-
 import useOffres from '../hooks/useOffres';
 import usePics from '../hooks/usePics';
 
-import Button from '../components/Button';
 import { getPic } from '../helper';
 
-const useStyles = makeStyles(theme => ({
-  imageContainer: {
-    width: 200,
-  },
-  image: {
-    height: theme.spacing(25),
-  },
-  linkicon: {
-    margin: theme.spacing(1,0),
-  }
-}));
-
 const Offres = () => {
-  const classes = useStyles();
-
   const offres = useOffres();
   const offresPics = usePics().filter(({ relativeDirectory }) => relativeDirectory === 'offres-pics');
   
