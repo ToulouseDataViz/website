@@ -26,13 +26,6 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `meetup-description`,
-        path: `${__dirname}/src/content/meetup-description`,
-      },
-    },
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -90,7 +83,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // `gatsby-plugin-meetup-pages`,
     `gatsby-plugin-offres-pages`,
     `gatsby-plugin-md-from-csv`,
     `gatsby-plugin-md-from-notion-table-attribute`,

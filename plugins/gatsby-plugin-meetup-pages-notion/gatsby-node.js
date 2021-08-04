@@ -27,8 +27,8 @@ exports.createPages = async ({ actions: { createPage }, graphql, reporter }) => 
        * Create meetup pages
        */
       createPage({
-        path: path.join('meetup', meetupidValue.toString()),
-        component: path.resolve('./src/templates/MeetupPage.js'),
+        path: path.join('event', meetupidValue.toString()),
+        component: path.resolve('./src/templates/EventPage.js'),
         context: { id },
       });
     }

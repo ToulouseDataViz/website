@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
-export const useMeetupsNotion = () => {
+export const useEventsNotion = () => {
   const { allNotion: { nodes } } = useStaticQuery(graphql`
     query { 
       allNotion {
@@ -63,4 +63,4 @@ export const useMeetupsNotion = () => {
   // sort TBD
 };
 
-export default useMeetupsNotion;
+export default useEventsNotion;

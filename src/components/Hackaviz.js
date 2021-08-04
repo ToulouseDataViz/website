@@ -10,7 +10,7 @@ import Button from '../components/Button';
 import HackavizSponsors from '../components/HackavizSponsors';
 import HackavizResult from './HackavizResult';
 import { getVideoEmbedId } from '../helper';
-import { pastMeetupStatusName } from '../settings';
+import { pastEventStatusName } from '../settings';
 
 const Hackaviz = () => {
 
@@ -26,7 +26,7 @@ const Hackaviz = () => {
       const winners = hackavizParticipants
         .filter(({ hackaviz, prix }) =>  hackaviz === currentHackaviz && prix);
       const hasWinners = winners.length !== 0;
-      const isPastHackaviz = status === pastMeetupStatusName;
+      const isPastHackaviz = status === pastEventStatusName;
 
       return (
         <section key={`hackaviz-section-${currentHackaviz}`}>

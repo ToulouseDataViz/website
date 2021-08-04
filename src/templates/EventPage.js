@@ -12,10 +12,10 @@ import Gallery from '../components/Gallery';
 import Button from '../components/Button';
 import MarkdownText from '../components/MarkdownText'
 
-import useMeetupsNotion from '../hooks/useMeetupsNotion';
+import useEventsNotion from '../hooks/useEventsNotion';
 import usePics from '../hooks/usePics';
 import { getVideoEmbedId } from '../helper';
-import { pastMeetupStatusName } from '../settings';
+import { pastEventStatusName } from '../settings';
 
 const useStyles = makeStyles(theme => ({
   meetupnavitem: {
@@ -29,18 +29,18 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const MeetupPage = ({ 
+const EventPage = ({ 
   data: { meetup: { properties: { meetupid: { value } } }}
 }) => {
   const classes = useStyles();
 
   const currentMeetupid = value;
-  const meetups = useMeetupsNotion();
-  const { title, date, meetupLink, videoLink, descriptionHtmlAst } = meetups
+  const events = useEventsNotion();
+  const { title, date, meetupLink, videoLink, descriptionHtmlAst } = events
     .find(({ meetupid }) => meetupid === currentMeetupid);
 
-  const lastMeetupId = Math.max(...meetups
-    .filter(({ status }) => status === pastMeetupStatusName)
+  const lastMeetupId = Math.max(...events
+    .filter(({ status }) => status === pastEventStatusName)
     .map(({ meetupid }) => meetupid)
   );
 
@@ -59,7 +59,7 @@ const MeetupPage = ({
         <section id="one">
           <div className="inner">
             <header className="major">
-              <h1>Meetup</h1>
+              <h1>Les évènements</h1>
             </header>
             <Grid container >
               {meetupLink && (
@@ -102,14 +102,14 @@ const MeetupPage = ({
             >
               {(currentMeetupid > 1) && (
                 <a 
-                  href={`/meetup/${currentMeetupid - 1}`} 
+                  href={`/event/${currentMeetupid - 1}`} 
                   className={clsx(classes.meetupnavitem,"button", "medium")}
                 >
-                  Meetup précédent
+                  Évènement précédent
                 </a>
               )}
               {(currentMeetupid < lastMeetupId) && (
-                <a href={`/meetup/${currentMeetupid + 1}`} className="button medium">Meetup suivant</a>
+                <a href={`/event/${currentMeetupid + 1}`} className="button medium">Évènement suivant</a>
               )}
             </Grid>
           </div>
@@ -119,7 +119,7 @@ const MeetupPage = ({
   )
 }
 
-export default MeetupPage;
+export default EventPage;
 
 export const pageQuery = graphql`
   query MyQuery($id: String) {
