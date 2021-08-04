@@ -57,19 +57,9 @@ const Meetups = ({
     )}
 
     <Grid container spacing={2} >
-      {diplayMeetups.map(({ meetupid, year, videoLink, title, place, month, meetupLink, day, descriptionMarkdownString }) => (
-        <React.Fragment key={meetupid}>      
-          <Meetup
-            meetupid={meetupid}
-            title={title}
-            place={place}
-            day={day}
-            month={month}
-            year={year}
-            videoLink={videoLink}
-            meetupLink={meetupLink}
-            descriptionMarkdownString={descriptionMarkdownString}
-          />
+      {diplayMeetups.map(meetup => (
+        <React.Fragment key={meetup.meetupid}>      
+          <Meetup {...meetup} />
         </React.Fragment>
       ))}
     </Grid>

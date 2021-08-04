@@ -15,6 +15,7 @@ import MarkdownText from '../components/MarkdownText'
 import useMeetupsNotion from '../hooks/useMeetupsNotion';
 import usePics from '../hooks/usePics';
 import { getVideoEmbedId } from '../helper';
+import { pastMeetupStatusName } from '../settings';
 
 const useStyles = makeStyles(theme => ({
   meetupnavitem: {
@@ -35,13 +36,13 @@ const MeetupPage = ({
 
   const currentMeetupid = value;
   const meetups = useMeetupsNotion();
-  const { title, day, month, year, meetupLink, videoLink, descriptionHtmlAst } = meetups
+  const { title, date, meetupLink, videoLink, descriptionHtmlAst } = meetups
     .find(({ meetupid }) => meetupid === currentMeetupid);
 
-  const lastMeetupId = Math.max(...meetups.map(({ meetupid }) => meetupid));
-  // filter status
-
-  console.log(getVideoEmbedId(videoLink));
+  const lastMeetupId = Math.max(...meetups
+    .filter(({ status }) => status === pastMeetupStatusName)
+    .map(({ meetupid }) => meetupid)
+  );
 
   const meetupPics = usePics().filter(({ relativeDirectory, name }) => {
     return relativeDirectory === 'meetup-pics' && name.match(/(\d*)_.*/)[1] === currentMeetupid
@@ -67,7 +68,7 @@ const MeetupPage = ({
                 </Box>
               )}
               <Box className={classes.griditemmargin}>
-                <span>{`${day}/${month}/${year}`}</span>
+                <span>{date}</span>
               </Box>
             </Grid>
             <h1>{title}</h1>

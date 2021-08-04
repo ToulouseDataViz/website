@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const Meetup = ({ meetupid, title, place, day, month, year, videoLink, meetupLink, descriptionMarkdownString }) => { 
+const Meetup = ({ meetupid, title, place, date, videoLink, meetupLink, descriptionMarkdownString }) => { 
   const classes = useStyles();
 
   return (
@@ -29,7 +29,7 @@ const Meetup = ({ meetupid, title, place, day, month, year, videoLink, meetupLin
           justify="space-between"
           alignItems="center"
         >
-          <span>{`${day}/${month}/${year}`}</span>
+          <span>{date}</span>
           {descriptionMarkdownString && (
               <p>{ `${parseMarkdownToString(descriptionMarkdownString).substring(0, 200)}...` }</p>
             )}

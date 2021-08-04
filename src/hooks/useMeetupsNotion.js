@@ -12,20 +12,16 @@ export const useMeetupsNotion = () => {
                 name
               }
             }
-            day {
-              value
-            }
-            year {
-              value
-            }
             videoLink {
               value
             }
             place {
               value
             }
-            month {
-              value
+            Date {
+              value {
+                start
+              }
             }
             meetupid {
               value
@@ -59,9 +55,7 @@ export const useMeetupsNotion = () => {
     status: properties.Status?.value?.name,
     descriptionHtmlAst: childrenMarkdwonDescriptionFromNotion[0]?.childrenMarkdownRemark[0]?.htmlAst,
     descriptionMarkdownString: properties.description?.value,
-    day: properties.day?.value,
-    month: properties.month?.value,
-    year: properties.year?.value,
+    date: properties.Date?.value?.start,
     meetupLink: properties.meetupLink?.value,
     videoLink: properties.videoLink?.value,
     database_id: raw.parent?.database_id,
