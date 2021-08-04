@@ -2,21 +2,10 @@ import React from 'react';
 import Rehype2react from 'rehype-react';
 
 import Box from '@material-ui/core/Box';
-import { makeStyles } from '@material-ui/core/styles';
 
 import { formatH1, formatTable, formatIframe } from '../helper';
 
-const useStyles = makeStyles(theme => ({
-  markdown: {
-    '& .MuiTypography-body1 + .MuiTypography-body1:not(li)': {
-      margin: theme.spacing(2, 0),
-    },
-  }
-}));
-
 const MarkdownText = ({ hast, className, ...rest }) => {
-  const classes = useStyles();
-
   const renderAst = new Rehype2react({
     createElement: React.createElement,
     Fragment: React.Fragment,
