@@ -72,6 +72,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `site-images`,
+        path: `${__dirname}/src/assets/images/`,
+      },
+    },
+    {
       resolve: 'gatsby-source-notion',
       options: {
         token: process.env.INTEGRATION_TOKEN,
