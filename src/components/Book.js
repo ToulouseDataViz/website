@@ -1,50 +1,69 @@
 import React from 'react';
-import { GatsbyImage } from "gatsby-plugin-image";
 
 import { Grid, Box } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
-import usePics from '../hooks/usePics';
+import InternalImage from '../components/InternalImage';
+import PrevNextPage from '../components/PrevNextPage';
+import Button from '../components/Button';
 
-import { getPic } from '../helper';
-
-const useStyles = makeStyles(theme => ({
-  content: {
-
-  },
+const useStyles = makeStyles({
   imageContainer: {
     textAlign: 'center',
   },
-  image: {
-    border: '4px solid #242943',
-  }
-}));
+});
 
-const Book = ({ title, author, category, pic_name, year, comment }) => {
+const Book = ({ id, title, author, category, pic_name, year, comment, max = null, fullWidth = false }) => {
   const classes = useStyles();
-  const booksPics = usePics().filter(({ relativeDirectory }) => relativeDirectory === 'books-pics');
-  const bookPic = getPic(booksPics, pic_name);
+
+  const bookDescription = fullWidth
+    ? comment
+    : `${comment.substring(0, 400)}...`;
+
+  const gridSm = fullWidth
+    ? 12
+    : 6;
 
   return (
-    <Grid item xs={12} sm={6}>
+    <Grid item xs={12} sm={gridSm}>
       <Box class={classes.content}>
-        <Grid container spacing={2}
-        >
+        <Grid container spacing={2} >
           <Grid item xs={12}>
             <h3>{ title }</h3>
             <b>{ author }</b> { `(${year})` }
-            { category }
+            <p>Catégorie: <b>{category}</b></p>
           </Grid>
           <Grid item xs={4}>
             {pic_name && (
               <Box className={classes.imageContainer}>
-                <GatsbyImage className={classes.image} image={bookPic} alt={pic_name}/>
+                <InternalImage
+                  name={pic_name}
+                  altText={""}
+                />
               </Box>
             )}
           </Grid>
           <Grid item xs={8}>
-            { `${comment.substring(0, 400)}...` }
+            {bookDescription}
           </Grid>
+
+          {!fullWidth && (
+            <Button
+              link={`book/${id}`}
+              type={'internal'}
+              text={"Plus de détails"}
+              size={"small"}
+            />
+          )}
+
+          {fullWidth && max && (
+            <PrevNextPage
+              currentItemId={parseInt(id,10)}
+              lastItemId={max}
+              itemName={'Livre'}
+              itemPath={'book'}
+            />
+          )}
         </Grid>
       </Box>
     </Grid>

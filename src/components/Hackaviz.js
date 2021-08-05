@@ -43,24 +43,16 @@ const Hackaviz = () => {
                 />
 
                 {isPastHackaviz && (
-                  <>
-                    <hr/>
-                    <h3>{"Les données"}</h3>
-                    <Button
-                      link={`hackaviz/${currentHackaviz}-data`}
-                      type={'internal'}
-                      text={"Télécharger les données"}
-                    />
-                  </>
+                  <Button
+                    link={`hackaviz/${currentHackaviz}-data`}
+                    type={'internal'}
+                    text={"Télécharger les données"}
+                  />
                 )}
               </Grid>
 
               {videoLink && (
                 <Grid item xs={6}>
-                  <Button
-                    link={videoLink}
-                    text={"Revoir la remise des prix"}
-                  />
                   <YoutubeEmbed
                     title={hackaviz}
                     embedId={videoEmbedId}
@@ -69,7 +61,7 @@ const Hackaviz = () => {
               )}
             </Grid>
 
-            {(isPastHackaviz && hasWinners) && (
+            {isPastHackaviz && hasWinners && (
               <>
                 <hr/>
                 <h3>{"Les gagnants"}</h3>

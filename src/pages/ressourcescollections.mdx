@@ -1,15 +1,47 @@
-import PageBanner from '../components/PageBanner'
-import VizExampleRecharts from '../components/VizExampleRecharts'
-import Books from '../components/Books'
+import PageBanner from '../components/PageBanner';
+import VizExampleRecharts from '../components/VizExampleRecharts';
+import Books from '../components/Books';
+import Button from '../components/Button';
 
 <PageBanner 
-    styleId={1}
-    title={"Ressources & Collections"}
+  styleId={1}
+  title={"Ressources & Collections"}
 />
 
 <section id="one">
 <div className="inner">
 
+# Les newsletters
+<iframe 
+  id="advanced_iframe" name="advanced_iframe" 
+  src="https://newsletters.toulouse-dataviz.fr/" 
+  allowtransparency="true" 
+  width="100%" height="400" frameborder="0">
+</iframe>
+
+<Button
+  link={"https://newsletters.toulouse-dataviz.fr/"}
+  text={"Lire nos newsletter"}
+/>
+
+<hr />
+
+# Les collections
+<iframe 
+  id="advanced_iframe" name="advanced_iframe" 
+  src="https://collections.toulouse-dataviz.fr/" 
+  allowtransparency="true" 
+  width="100%" height="400" frameborder="0">
+</iframe>
+
+<Button
+  link={"https://collections.toulouse-dataviz.fr/"}
+  text={"Voir toutes les collections"}
+/>
+
+<hr />
+
+# Les livres
 <Books />
 
 </div>

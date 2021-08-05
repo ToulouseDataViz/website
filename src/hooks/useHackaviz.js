@@ -9,6 +9,7 @@ export const useHackaviz = () => {
           date
           videoLink
           description
+          status
         }
       }
     }

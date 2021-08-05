@@ -30,7 +30,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `meetup-description`,
+        name: `offres-description`,
         path: `${__dirname}/src/content/offres-description`,
       },
     },
@@ -87,5 +87,6 @@ module.exports = {
     `gatsby-plugin-md-from-csv`,
     `gatsby-plugin-md-from-notion-table-attribute`,
     `gatsby-plugin-meetup-pages-notion`,
+    `gatsby-plugin-books-pages`,
   ],
 }
