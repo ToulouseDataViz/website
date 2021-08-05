@@ -6,6 +6,7 @@
   "dependencies": {
     "@aotten/scatterplot-routes-en-occitanie-v2-0": "https://api.observablehq.com/@aotten/scatterplot-routes-en-occitanie-v2-0.tgz?v=3",
     "@material-ui/core": "^4.11.4",
+    "@material-ui/lab": "^4.0.0-alpha.60",
     "@material-ui/styles": "^4.11.4",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",

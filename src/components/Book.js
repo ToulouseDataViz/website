@@ -13,7 +13,7 @@ const useStyles = makeStyles({
   },
 });
 
-const Book = ({ id, title, author, category, pic_name, year, comment, max, fullWidth = false }) => {
+const Book = ({ id, title, author, category, pic_name, year, comment, max = null, fullWidth = false }) => {
   const classes = useStyles();
 
   const bookDescription = fullWidth
@@ -56,7 +56,7 @@ const Book = ({ id, title, author, category, pic_name, year, comment, max, fullW
             />
           )}
 
-          {fullWidth && (
+          {fullWidth && max && (
             <PrevNextPage
               currentItemId={parseInt(id,10)}
               lastItemId={max}
