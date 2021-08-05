@@ -87,5 +87,6 @@ module.exports = {
     `gatsby-plugin-md-from-csv`,
     `gatsby-plugin-md-from-notion-table-attribute`,
     `gatsby-plugin-meetup-pages-notion`,
+    `gatsby-plugin-books-pages`,
   ],
 }

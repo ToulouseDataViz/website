@@ -6,7 +6,7 @@ import useBooks from '../hooks/useBooks';
 import Book from './Book';
 
 const Books = () => {
-  const books = useBooks();
+  const { max, nodes: books } = useBooks();
   const categories = new Set(books.map(({ category }) => category));
 
   return (
@@ -19,8 +19,9 @@ const Books = () => {
         alignItems="flex-start"
       >
         {books.map(book => {
+          const bookProps = {...book, ...max};
           return (
-            <Book {...book} />
+            <Book {...bookProps} />
           );
         })}
       </Grid>

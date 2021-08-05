@@ -1,10 +1,12 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
 export const useBooks = () => {
-  const { allBooksCsv: { nodes } } = useStaticQuery(graphql`
+  const { allBooksCsv } = useStaticQuery(graphql`
     query {
       allBooksCsv {
+        max(field: id)
         nodes {
+          id
           title
           author
           category
@@ -16,7 +18,7 @@ export const useBooks = () => {
     }
   `);
 
-  return nodes;
+  return allBooksCsv;
 };
 
 export default useBooks;
