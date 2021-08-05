@@ -30,7 +30,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `meetup-description`,
+        name: `offres-description`,
         path: `${__dirname}/src/content/offres-description`,
       },
     },
