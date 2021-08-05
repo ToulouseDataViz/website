@@ -29,8 +29,9 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const EventPage = ({ 
-  data: { meetup: { properties: { meetupid: { value } } }}
+const EventPage = ({
+  data: { meetup: { properties: { meetupid: { number: value } } }}
+  //data: { meetup: { properties: { meetupid: { value } } }}
 }) => {
   const classes = useStyles();
 
@@ -38,6 +39,8 @@ const EventPage = ({
   const events = useEventsNotion();
   const { title, date, meetupLink, videoLink, descriptionHtmlAst } = events
     .find(({ meetupid }) => meetupid === currentMeetupid);
+
+  console.log(descriptionHtmlAst);
 
   const lastMeetupId = Math.max(...events
     .filter(({ status }) => status === pastEventStatusName)
@@ -112,6 +115,18 @@ export default EventPage;
 
 export const pageQuery = graphql`
   query MyQuery($id: String) {
+    meetup: notionPage(id: { eq: $id }) {
+      properties {
+        meetupid {
+          number
+        }
+      }
+    }
+  }
+`;
+/*
+export const pageQuery = graphql`
+  query MyQuery($id: String) {
     meetup: notion(id: { eq: $id }) {
       properties {
         meetupid {
@@ -121,3 +136,4 @@ export const pageQuery = graphql`
     }
   }
 `;
+*/

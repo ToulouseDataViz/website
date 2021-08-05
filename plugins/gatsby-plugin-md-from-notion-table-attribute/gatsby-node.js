@@ -6,16 +6,27 @@ exports.sourceNodes = async ({
 }) => {
   const { createNode, createParentChildLink } = actions;
 
-  const meetupsNotion = getNodesByType('Notion');
+  // const meetupsNotion = getNodesByType('Notion');
+  const meetupsNotion = getNodesByType('NotionPage').filter(node => node.properties?.meetupid?.number != null);
+  const meetupsRemark = getNodesByType('MarkdownRemark').filter(node => node.frontmatter?.meetupid != null);
 
-  meetupsNotion.forEach((parentNode, index) => {
+  console.log('meetupsNotion');
+
+  meetupsRemark.forEach((parentNode, index) => {
     const childrenNodeId = createNodeId(`Notion-${index}-MarkdownDescription`);
-    const descriptionContent = parentNode.properties.description?.value;
+    const descriptionContent = parentNode.frontmatter?.description;
 
-    if (descriptionContent) {
+    // get corresponding NotionPage node
+    const currentNodeId = parentNode.frontmatter?.meetupid;
+    const meetupNodeId = meetupsNotion.find(({ properties: { meetupid: { number } } }) => number === currentNodeId).id;
+    console.log(meetupNodeId);
+
+    //const descriptionContent = parentNode.properties.description?.value;
+
+    if (meetupNodeId && descriptionContent) {
       const markdownNode = {
         id: childrenNodeId,
-        parent: parentNode.id,
+        parent: meetupNodeId,
         children: [],
         internal: {
           type: `markdwonDescriptionFromNotion`,

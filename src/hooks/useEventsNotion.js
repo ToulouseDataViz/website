@@ -1,6 +1,75 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
 export const useEventsNotion = () => {
+  const { allNotionDatabase: { nodes } } = useStaticQuery(graphql`
+    query { 
+      allNotionDatabase(filter: {title: {eq: "meetups_full"}}) {
+        nodes {
+          childrenNotionPage {
+            properties {
+              Date {
+                date {
+                  start
+                }
+              }
+              Status {
+                select {
+                  name
+                }
+              }
+              meetupLink {
+                url
+              }
+              meetupid {
+                number
+              }
+              place {
+                rich_text {
+                  text {
+                    content
+                  }
+                }
+              }
+              title {
+                title {
+                  text {
+                    content
+                  }
+                }
+              }
+              videoLink {
+                url
+              }
+            }
+            childrenMarkdownRemark {
+              frontmatter {
+                description
+              }
+              childrenMarkdwonDescriptionFromNotion {
+                childMarkdownRemark {
+                  htmlAst
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const [{ childrenNotionPage }] = nodes;
+
+  return childrenNotionPage.map(({ properties, childrenMarkdownRemark }) => ({
+    meetupid: properties.meetupid?.number,
+    title: properties.title?.title[0]?.text?.content,
+    status: properties.Status?.select?.name,
+    descriptionMarkdownString: childrenMarkdownRemark[0]?.frontmatter?.description,
+    descriptionHtmlAst: childrenMarkdownRemark[0]?.childrenMarkdwonDescriptionFromNotion[0]?.childMarkdownRemark?.htmlAst,
+    date: properties.Date?.date?.start,
+    meetupLink: properties.meetupLink?.url,
+    videoLink: properties.videoLink?.url,
+  }));
+  /*
   const { allNotion: { nodes } } = useStaticQuery(graphql`
     query { 
       allNotion {
@@ -60,7 +129,7 @@ export const useEventsNotion = () => {
     videoLink: properties.videoLink?.value,
     database_id: raw.parent?.database_id,
   }));
-  // sort TBD
+  */
 };
 
 export default useEventsNotion;

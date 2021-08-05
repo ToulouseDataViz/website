@@ -72,6 +72,15 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-source-notion',
+      options: {
+        token: process.env.INTEGRATION_TOKEN,
+        databases: process.env.DATABASE_ID.split(','),
+        previewCallRate: 0,
+      },
+    },
+    /*
+    {
       resolve: `gatsby-source-notion-api`,
       options: {
         token: process.env.INTEGRATION_TOKEN,
@@ -79,7 +88,8 @@ module.exports = {
         propsToFrontmatter: true,
         lowerTitleLevel: true,
       },
-    },
+    }
+    */
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
