@@ -1,7 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import clsx from 'clsx';
 import { Grid, Box } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -10,7 +9,8 @@ import Layout from '../components/layout'
 import YoutubeEmbed from '../components/YoutubeEmbed';
 import Gallery from '../components/Gallery';
 import Button from '../components/Button';
-import MarkdownText from '../components/MarkdownText'
+import MarkdownText from '../components/MarkdownText';
+import PrevNextPage from '../components/PrevNextPage';
 
 import useEventsNotion from '../hooks/useEventsNotion';
 import usePics from '../hooks/usePics';
@@ -94,24 +94,13 @@ const EventPage = ({
                 />
               </div>
             )}
-            <Grid
-              container
-              direction="row"
-              justify="space-between"
-              alignItems="center"
-            >
-              {(currentMeetupid > 1) && (
-                <a 
-                  href={`/event/${currentMeetupid - 1}`} 
-                  className={clsx(classes.meetupnavitem,"button", "medium")}
-                >
-                  Évènement précédent
-                </a>
-              )}
-              {(currentMeetupid < lastMeetupId) && (
-                <a href={`/event/${currentMeetupid + 1}`} className="button medium">Évènement suivant</a>
-              )}
-            </Grid>
+
+            <PrevNextPage
+              currentItemId={currentMeetupid}
+              lastItemId={lastMeetupId}
+              itemName={'Évènement'}
+              itemPath={'event'}
+            />
           </div>
         </section>
       </div>
