@@ -29,8 +29,8 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const EventPage = ({
-  data: { meetup: { properties: { meetupid: { number: value } } }}
+const EventPage = ({ 
+  data: { meetup: { properties: { meetupid: { value } } }}
 }) => {
   const classes = useStyles();
 
@@ -112,10 +112,10 @@ export default EventPage;
 
 export const pageQuery = graphql`
   query MyQuery($id: String) {
-    meetup: notionPage(id: { eq: $id }) {
+    meetup: notion(id: { eq: $id }) {
       properties {
         meetupid {
-          number
+          value
         }
       }
     }

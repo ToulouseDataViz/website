@@ -79,17 +79,6 @@ module.exports = {
         previewCallRate: 0,
       },
     },
-    /*
-    {
-      resolve: `gatsby-source-notion-api`,
-      options: {
-        token: process.env.INTEGRATION_TOKEN,
-        databaseId: process.env.DATABASE_ID,
-        propsToFrontmatter: true,
-        lowerTitleLevel: true,
-      },
-    }
-    */
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

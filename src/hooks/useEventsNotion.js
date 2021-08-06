@@ -6,6 +6,12 @@ export const useEventsNotion = () => {
       allNotionDatabase(filter: {title: {eq: "meetups_full"}}) {
         nodes {
           childrenNotionPage {
+            title
+            childrenMarkdwonDescriptionFromNotion {
+              childrenMarkdownRemark {
+                htmlAst
+              }
+            }
             properties {
               Date {
                 date {
@@ -30,25 +36,18 @@ export const useEventsNotion = () => {
                   }
                 }
               }
-              title {
-                title {
-                  text {
-                    content
-                  }
+              description {
+                rich_text {
+                  plain_text
                 }
               }
               videoLink {
                 url
               }
             }
-            childrenMarkdownRemark {
-              frontmatter {
-                description
-              }
-              childrenMarkdwonDescriptionFromNotion {
-                childMarkdownRemark {
-                  htmlAst
-                }
+            childMarkdwonDescriptionFromNotion {
+              childrenMarkdownRemark {
+                htmlAst
               }
             }
           }
@@ -59,77 +58,16 @@ export const useEventsNotion = () => {
 
   const [{ childrenNotionPage }] = nodes;
 
-  return childrenNotionPage.map(({ properties, childrenMarkdownRemark }) => ({
+  return childrenNotionPage.map(({ title, childrenMarkdwonDescriptionFromNotion, properties }) => ({
     meetupid: properties.meetupid?.number,
-    title: properties.title?.title[0]?.text?.content,
+    title,
     status: properties.Status?.select?.name,
-    descriptionMarkdownString: childrenMarkdownRemark[0]?.frontmatter?.description,
-    descriptionHtmlAst: childrenMarkdownRemark[0]?.childrenMarkdwonDescriptionFromNotion[0]?.childMarkdownRemark?.htmlAst,
+    descriptionRawString: properties.description?.rich_text?.map(({ plain_text }) => plain_text).join(''),
+    descriptionHtmlAst: childrenMarkdwonDescriptionFromNotion[0]?.childrenMarkdownRemark[0]?.htmlAst,
     date: properties.Date?.date?.start,
     meetupLink: properties.meetupLink?.url,
     videoLink: properties.videoLink?.url,
   }));
-  /*
-  const { allNotion: { nodes } } = useStaticQuery(graphql`
-    query { 
-      allNotion {
-        nodes {
-          id
-          properties {
-            Status {
-              value {
-                name
-              }
-            }
-            videoLink {
-              value
-            }
-            place {
-              value
-            }
-            Date {
-              value {
-                start
-              }
-            }
-            meetupid {
-              value
-            }
-            meetupLink {
-              value
-            }
-            description {
-              value
-            }
-          }
-          title
-          childrenMarkdwonDescriptionFromNotion {
-            childrenMarkdownRemark {
-              htmlAst
-            }
-          }
-          raw {
-            parent {
-              database_id
-            }
-          }
-        }
-      }
-    }
-  `);
-
-  return nodes.map(({ properties, title, childrenMarkdwonDescriptionFromNotion, raw }) => ({
-    meetupid: properties.meetupid?.value,
-    title,
-    status: properties.Status?.value?.name,
-    descriptionHtmlAst: childrenMarkdwonDescriptionFromNotion[0]?.childrenMarkdownRemark[0]?.htmlAst,
-    descriptionMarkdownString: properties.description?.value,
-    date: properties.Date?.value?.start,
-    meetupLink: properties.meetupLink?.value,
-    videoLink: properties.videoLink?.value,
-    database_id: raw.parent?.database_id,
-  }));
-  */
 };
 
 export default useEventsNotion;

@@ -2,12 +2,12 @@ const path = require('path');
 exports.createPages = async ({ actions: { createPage }, graphql, reporter }) => {
   const result = await graphql(`
     {
-      allNotionPage(filter: {properties: {meetupid: {number: {ne: null}}}}) {
+      allNotion {
         nodes {
           id
           properties {
             meetupid {
-              number
+              value
             }
           }
         }
@@ -20,9 +20,9 @@ exports.createPages = async ({ actions: { createPage }, graphql, reporter }) => 
     return;
   }
 
-  result.data.allNotionPage.nodes.forEach(({ id, properties: { meetupid }}) => {
-    if (meetupid?.number) {
-      const meetupidValue = meetupid.number;
+  result.data.allNotion.nodes.forEach(({ id, properties: { meetupid }}) => {
+    if (meetupid?.value) {
+      const meetupidValue = meetupid.value;
       /**
        * Create meetup pages
        */

@@ -32,4 +32,4 @@ export const parseMarkdownToString = markdownText => {
 		.replace(/\n$/gim, '')
 
 	return htmlText.trim()
-}
+};

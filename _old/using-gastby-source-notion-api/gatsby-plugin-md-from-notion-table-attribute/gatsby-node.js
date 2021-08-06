@@ -6,11 +6,11 @@ exports.sourceNodes = async ({
 }) => {
   const { createNode, createParentChildLink } = actions;
 
-  const meetupsNotion = getNodesByType('NotionPage').filter(node => node.properties?.meetupid?.number != null);
+  const meetupsNotion = getNodesByType('Notion');
 
   meetupsNotion.forEach((parentNode, index) => {
     const childrenNodeId = createNodeId(`Notion-${index}-MarkdownDescription`);
-    const descriptionContent = parentNode.properties.description?.rich_text?.map(({ plain_text }) => plain_text).join('');
+    const descriptionContent = parentNode.properties.description?.value;
 
     if (descriptionContent) {
       const markdownNode = {
@@ -22,7 +22,7 @@ exports.sourceNodes = async ({
           // adding text/markdown as mediatype trigger to process of this node by the remark plugin
           mediaType: `text/markdown`,
           content: descriptionContent,
-          contentDigest: createContentDigest(descriptionContent),
+          contentDigest: descriptionContent,
         },
       }
       createNode(markdownNode);
