@@ -8,7 +8,6 @@ import { parseMarkdownToString } from '../helper';
 
 const useStyles = makeStyles(theme => ({
   meetup: {
-    backgroundColor: '#2e3450',
     padding: theme.spacing(2),
   },
 }));
@@ -18,7 +17,7 @@ const Event = ({ meetupid, title, place, date, videoLink, meetupLink, descriptio
 
   return (
     <Grid item xs={12} sm={4} >
-      <Box className={classes.meetup}>
+      <Box className={`${classes.meetup} container-background`}>
         <Link to={`/event/${meetupid}`}>
           <h4>{title}</h4>
         </Link>
