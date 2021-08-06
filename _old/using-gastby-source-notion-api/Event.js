@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const Event = ({ meetupid, title, place, date, videoLink, meetupLink, descriptionRawString }) => { 
+const Event = ({ meetupid, title, place, date, videoLink, meetupLink, descriptionMarkdownString }) => { 
   const classes = useStyles();
 
   return (
@@ -30,8 +30,8 @@ const Event = ({ meetupid, title, place, date, videoLink, meetupLink, descriptio
           alignItems="center"
         >
           <span>{date}</span>
-          {descriptionRawString && (
-              <p>{ `${parseMarkdownToString(descriptionRawString).substring(0, 200)}...` }</p>
+          {descriptionMarkdownString && (
+              <p>{ `${parseMarkdownToString(descriptionMarkdownString).substring(0, 200)}...` }</p>
             )}
           { videoLink && (
             <a href={videoLink} target="_blank" rel="noreferrer" className="icon alt fa-youtube"><span className="label">Youtube</span></a>

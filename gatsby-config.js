@@ -72,12 +72,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-notion-api`,
+      resolve: 'gatsby-source-notion',
       options: {
         token: process.env.INTEGRATION_TOKEN,
-        databaseId: process.env.DATABASE_ID,
-        propsToFrontmatter: true,
-        lowerTitleLevel: true,
+        databases: process.env.DATABASE_ID.split(','),
+        previewCallRate: 0,
       },
     },
     `gatsby-plugin-image`,

@@ -1,47 +1,54 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
 export const useEventsNotion = () => {
-  const { allNotion: { nodes } } = useStaticQuery(graphql`
+  const { allNotionDatabase: { nodes } } = useStaticQuery(graphql`
     query { 
-      allNotion {
+      allNotionDatabase(filter: {title: {eq: "meetups_full"}}) {
         nodes {
-          id
-          properties {
-            Status {
-              value {
-                name
+          childrenNotionPage {
+            title
+            childrenMarkdwonDescriptionFromNotion {
+              childrenMarkdownRemark {
+                htmlAst
               }
             }
-            videoLink {
-              value
-            }
-            place {
-              value
-            }
-            Date {
-              value {
-                start
+            properties {
+              Date {
+                date {
+                  start
+                }
+              }
+              Status {
+                select {
+                  name
+                }
+              }
+              meetupLink {
+                url
+              }
+              meetupid {
+                number
+              }
+              place {
+                rich_text {
+                  text {
+                    content
+                  }
+                }
+              }
+              description {
+                rich_text {
+                  plain_text
+                }
+              }
+              videoLink {
+                url
               }
             }
-            meetupid {
-              value
-            }
-            meetupLink {
-              value
-            }
-            description {
-              value
-            }
-          }
-          title
-          childrenMarkdwonDescriptionFromNotion {
-            childrenMarkdownRemark {
-              htmlAst
-            }
-          }
-          raw {
-            parent {
-              database_id
+            childMarkdwonDescriptionFromNotion {
+              childrenMarkdownRemark {
+                htmlAst
+              }
             }
           }
         }
@@ -49,18 +56,18 @@ export const useEventsNotion = () => {
     }
   `);
 
-  return nodes.map(({ properties, title, childrenMarkdwonDescriptionFromNotion, raw }) => ({
-    meetupid: properties.meetupid?.value,
+  const [{ childrenNotionPage }] = nodes;
+
+  return childrenNotionPage.map(({ title, childrenMarkdwonDescriptionFromNotion, properties }) => ({
+    meetupid: properties.meetupid?.number,
     title,
-    status: properties.Status?.value?.name,
+    status: properties.Status?.select?.name,
+    descriptionRawString: properties.description?.rich_text?.map(({ plain_text }) => plain_text).join(''),
     descriptionHtmlAst: childrenMarkdwonDescriptionFromNotion[0]?.childrenMarkdownRemark[0]?.htmlAst,
-    descriptionMarkdownString: properties.description?.value,
-    date: properties.Date?.value?.start,
-    meetupLink: properties.meetupLink?.value,
-    videoLink: properties.videoLink?.value,
-    database_id: raw.parent?.database_id,
+    date: properties.Date?.date?.start,
+    meetupLink: properties.meetupLink?.url,
+    videoLink: properties.videoLink?.url,
   }));
-  // sort TBD
 };
 
 export default useEventsNotion;
