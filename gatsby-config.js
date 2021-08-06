@@ -4,9 +4,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    headerTitle: "Toulouse Dataviz",
+    headerTitle: "Toulouse DataViz",
     headerSubtitle: "Bienvenue !",
-    headline: "Toulouse Dataviz",
+    headline: "Toulouse DataViz",
     description: "Notre but ? Promouvoir et diffuser la culture de l’analyse et de la visualisation des données. Découvrez comment ",
     actionButton: "Découvrir l'association",
   },
@@ -69,6 +69,13 @@ module.exports = {
       options: {
         name: `gallery`,
         path: `${__dirname}/src/content/pics/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `site-images`,
+        path: `${__dirname}/src/assets/images/`,
       },
     },
     {

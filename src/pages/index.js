@@ -18,12 +18,12 @@ import pic05 from '../assets/images/pic05.jpg'
 import pic06 from '../assets/images/pic06.jpg'
 
 const backgroundPics = {
-  0: pic01,
-  1: pic02,
-  2: pic03,
-  3: pic04,
-  4: pic05,
-  5: pic06,
+  'pic01': pic01,
+  'pic02': pic02,
+  'pic03': pic03,
+  'pic04': pic04,
+  'pic05': pic05,
+  'pic06': pic06,
 }
 
 const HomeIndex = () => {
@@ -60,9 +60,9 @@ const HomeIndex = () => {
         </section>
 
         <section id="one" className="tiles">
-          {homeContentCsv.map(({ title, subtitle, slug }, index) => {
+          {homeContentCsv.map(({ title, subtitle, slug, backgroungPicture }, index) => {
             return (
-              <article key={`article-${index}`} style={{backgroundImage: `url(${backgroundPics[index]})`}}>
+              <article key={`article-${index}`} style={{backgroundImage: `url(${backgroundPics[backgroungPicture]})`}}>
                 <header className="major">
                     <h3>{title}</h3>
                     <p>{subtitle}</p>
