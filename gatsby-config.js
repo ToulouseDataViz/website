@@ -4,9 +4,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    headerTitle: "Toulouse Dataviz",
+    headerTitle: "Toulouse DataViz",
     headerSubtitle: "Bienvenue !",
-    headline: "Toulouse Dataviz",
+    headline: "Toulouse DataViz",
     description: "Notre but ? Promouvoir et diffuser la culture de l’analyse et de la visualisation des données. Découvrez comment ",
     actionButton: "Découvrir l'association",
   },
