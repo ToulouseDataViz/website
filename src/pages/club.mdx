@@ -2,6 +2,8 @@ import PageBanner from '../components/PageBanner';
 import Gallery from '../components/Gallery';
 import Button from '../components/Button';
 
+import { newslettersUrl } from '../settings';
+
 <PageBanner 
     styleId={1}
     title={"Le club"}
@@ -27,7 +29,7 @@ En vous inscrivant gratuitement au club :
 
 <ul className="actions">
   <li><a href="http://eepurl.com/g8tVZL"  target="_blank" className="button medium">S'inscrire</a></li>
-  <li><a href="https://newsletters.toulouse-dataviz.fr/#e239c954d9a04780843e173559717360"  target="_blank" className="button medium">Voir les précédentes Newsletter</a></li>
+  <li><a href={newslettersUrl}  target="_blank" className="button medium">Voir les précédentes Newsletter</a></li>
 </ul>
 
 <Gallery />
