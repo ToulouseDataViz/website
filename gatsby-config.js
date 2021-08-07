@@ -89,6 +89,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-material-ui`,
     `gatsby-plugin-offres-pages`,
     `gatsby-plugin-md-from-csv`,
     `gatsby-plugin-md-from-notion-table-attribute`,
