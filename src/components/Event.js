@@ -4,6 +4,9 @@ import { Link } from "gatsby"
 import { Grid, Box } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
+import { IconContext } from "react-icons";
+import { FaMeetup, FaYoutube } from 'react-icons/fa';
+
 import { parseMarkdownToString } from '../helper';
 
 const useStyles = makeStyles(theme => ({
@@ -28,16 +31,22 @@ const Event = ({ meetupid, title, place, date, videoLink, meetupLink, descriptio
           justify="space-between"
           alignItems="center"
         >
-          <span>{date}</span>
-          {descriptionRawString && (
-              <p>{ `${parseMarkdownToString(descriptionRawString).substring(0, 200)}...` }</p>
+          <IconContext.Provider value={{ size: "1.5em" }}>
+            <span>{date}</span>
+            {descriptionRawString && (
+                <p>{ `${parseMarkdownToString(descriptionRawString).substring(0, 200)}...` }</p>
+              )}
+            { videoLink && (
+              <a href={videoLink} target="_blank" rel="noreferrer" className="icon">
+                <FaYoutube />
+              </a>
             )}
-          { videoLink && (
-            <a href={videoLink} target="_blank" rel="noreferrer" className="icon alt fa-youtube"><span className="label">Youtube</span></a>
-          )}
-          { meetupLink && (
-            <a href={meetupLink} target="_blank" rel="noreferrer" className="icon alt fa-meetup"><span className="label">Youtube</span></a>
-          )}
+            { meetupLink && (
+              <a href={meetupLink} target="_blank" rel="noreferrer" className="icon">
+                <FaMeetup />
+              </a>
+            )}
+          </IconContext.Provider>
         </Grid>
       </Box>
     </Grid>

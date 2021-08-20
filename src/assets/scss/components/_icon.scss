@@ -10,6 +10,7 @@
 		@include icon;
 		border-bottom: none;
 		position: relative;
+		color: _palette(fg-bold);
 
 		> .label {
 			display: none;
