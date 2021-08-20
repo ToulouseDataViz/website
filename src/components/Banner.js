@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { StaticImage } from 'gatsby-plugin-image';
+import { Link } from "gatsby"
 
 import { Grid } from '@material-ui/core';
 
@@ -27,7 +28,9 @@ const Banner = () => {
 				</div>
 				<div>				
 					<ul className="actions">
-					<li><a href="#one" className="button next scrolly">{actionButton}</a></li>
+					<li>
+						<Link className="button next scrolly" to="/association">{actionButton}</Link>
+					</li>
 				</ul>
 				</div>
 			</div>
