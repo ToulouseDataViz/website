@@ -2,7 +2,7 @@ import PageBanner from '../components/PageBanner';
 import Gallery from '../components/Gallery';
 import Button from '../components/Button';
 
-import { newslettersUrl } from '../settings';
+import { newslettersUrl, clubInscriptionLink, discordLink } from '../settings';
 
 <PageBanner 
     styleId={1}
@@ -24,12 +24,13 @@ données de tous secteurs, de toute nature et destinées à tout public.
 En vous inscrivant gratuitement au club :
 - vous recevrez directement notre **newsletter**,
 - vous serez avertis en avant-première de nos **événements** *(meetup, Hackaviz..)*
-- vous pourrez échanger avec la **communauté** via notre Slack Toulouse dataviz
+- vous pourrez échanger avec la **communauté** via notre Discord Toulouse dataviz
 - vous pourrez publier vos DataVisualisations sur le site TDV *(sous conditions – nous contacter)*
 
 <ul className="actions">
-  <li><a href="http://eepurl.com/g8tVZL"  target="_blank" className="button medium">S'inscrire</a></li>
-  <li><a href={newslettersUrl}  target="_blank" className="button medium">Voir les précédentes Newsletter</a></li>
+  <li><a href={clubInscriptionLink} target="_blank" rel="noreferrer" className="button medium">S'inscrire</a></li>
+  <li><a href={discordLink} target="_blank" rel="noreferrer" className="button medium">Voir le Discord</a></li>
+  <li><a href={newslettersUrl} target="_blank" rel="noreferrer" className="button medium">Voir les précédentes Newsletter</a></li>
 </ul>
 
 <Gallery />
