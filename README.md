@@ -6,6 +6,8 @@ Install the Gatsby CLI
 
 Clone the repository and run `npm install` to collect all dependencies
 
+Node >= 14
+
 ## Environment variables
 On the `.env` model, create `.env.development` file and add the corresponding information
 
