@@ -55,6 +55,7 @@ const HomeIndex = () => {
           <div className="inner">
             <Gallery
               type={'small'}
+              limit={8}
             />
           </div>
         </section>

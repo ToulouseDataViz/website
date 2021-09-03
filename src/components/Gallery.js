@@ -48,20 +48,25 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const Gallery = ({ picsToDisplay = null, type = 'large' }) => {
+const Gallery = ({ picsToDisplay = null, type = 'large', limit = null }) => {
   const classes = useStyles();
-  const defaultPics = usePics();
+  const defaultMeetupPics = usePics().filter(({ relativeDirectory }) => relativeDirectory === 'meetup-pics');
 
-  const pics = picsToDisplay 
+  let pics = picsToDisplay
     ? picsToDisplay
-    : defaultPics.filter(({ relativeDirectory }) => relativeDirectory === 'meetup-pics');
+    : defaultMeetupPics;
+
+  if (limit) {
+    // get [limit] random element
+    pics = defaultMeetupPics.sort(() => Math.random() - Math.random()).slice(0, limit)
+  }
   
   return (
     <Box className={clsx({ 
       [classes.galleryLarge]: (type === 'large'), 
       [classes.gallerySmall]: type === 'small'}
     )}>
-      {pics.map(({ id, relativePath, name, gatsbyImageData },i) => (
+      {pics.map(({ id, gatsbyImageData },i) => (
         <GatsbyImage key={id} image={gatsbyImageData} className={classes.image}/>
       ))}
     </Box>
