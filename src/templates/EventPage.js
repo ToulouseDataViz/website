@@ -45,7 +45,11 @@ const EventPage = ({
   );
 
   const meetupPics = usePics().filter(({ relativeDirectory, name }) => {
-    return relativeDirectory === 'meetup-pics' && name.match(/(\d*)_.*/)[1] === currentMeetupid
+    if (relativeDirectory === 'meetup-pics') {
+      const [_, id] = name.match(/(\d*)_.*/) || [_, null];
+      return id && parseInt(id) === currentMeetupid;
+    }
+    return false;
   });
 
   return (
@@ -79,9 +83,6 @@ const EventPage = ({
               />
             )}
 
-            {meetupPics.length > 0 && (
-              <Gallery picsToDisplay={meetupPics} />
-            )}
             {videoLink && (
               <div>
                 <Button
@@ -93,6 +94,12 @@ const EventPage = ({
                   embedId={getVideoEmbedId(videoLink)}
                 />
               </div>
+            )}
+
+            {meetupPics.length > 0 && (
+              <Box className={classes.griditemmargin}>
+                <Gallery picsToDisplay={meetupPics}/>
+              </Box>
             )}
 
             <PrevNextPage
