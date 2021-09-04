@@ -10,7 +10,7 @@ const Menu = ({ onToggleMenu }) => {
     <nav id="menu">
       <div className="inner">
         <ul className="links">
-          <li><Link onClick={onToggleMenu} to={"/"}>Home</Link></li>
+          <li><Link onClick={onToggleMenu} to={"/"}>Accueil</Link></li>
           {homeContentCsv.map(({ title, slug, isInMenu }, index) => {
             if (isInMenu === 'true') {
               return (
