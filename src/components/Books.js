@@ -48,7 +48,7 @@ const Books = () => {
 
   return (
     <>
-      <p>Filtrer les livres selon les catégorie</p>
+      <p>Filtrer les livres selon les catégories</p>
       <ToggleButtonGroup value={displayCategories} onChange={handleCategoriesChange}>
         {categories.map(category => (
           <ToggleButton value={category} classes={{
