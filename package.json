@@ -47,7 +47,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "gatsby-source-notion": "^1.0.1",
+    "gatsby-source-notion": "^1.0.3",
     "prettier": "^2.2.1"
   },
   "repository": {
