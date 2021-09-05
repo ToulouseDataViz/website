@@ -1,16 +1,15 @@
 # How to 
 
-Prerequisites
-[NodeJS](https://nodejs.org/en/download/) >= 14 LTS 
+- Prerequisites : [NodeJS](https://nodejs.org/en/download/) >= 14 LTS 
 
-Install the Gatsby CLI
+- Install the Gatsby CLI
 `npm install -g gatsby-cli`
 
-Clone the repository and run `npm install` to collect all dependencies
+- Clone the repository and run `npm install` to collect all dependencies
 
 ## Environment variables
 
-- Test the website locally : 
+- Test the website locally 
 
 On the `.env` model, create `.env.development` file and fill the fields with the corresponding information
 ```
@@ -18,10 +17,11 @@ INTEGRATION_TOKEN=secret_notionAPI_token
 DATABASE_ID=ae5354e0-d1ce-4b2a-bf3a-5396b14d206b
 ```
 
-- For deployment: 
+- For deployment
 
 Netlify hosts those environment variables so you do not need to edit the `.env`  file for website deployment.
-To prevent triggering a deploy on Netlify at pull request and merge on main, add [skip netlify] in the commit message [see more](https://docs.netlify.com/site-deploys/manage-deploys/#skip-a-deploy)
+
+To prevent triggering a deploy on Netlify at pull request and merge on main, add [skip netlify] in the commit message ([Details](https://docs.netlify.com/site-deploys/manage-deploys/#skip-a-deploy)).
 
 ## Run locally
 
