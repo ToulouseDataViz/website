@@ -86,6 +86,14 @@ module.exports = {
         previewCallRate: 0,
       },
     },
+    {
+      resolve: "gatsby-source-remote-file",
+      options: {
+        url: "https://raw.githubusercontent.com/ToulouseDataViz/Hackaviz2021/main/README.md",
+        name: "hackaviz21_description",
+        ext: ".md",
+      },
+    },
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

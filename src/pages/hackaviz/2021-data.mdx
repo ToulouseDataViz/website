@@ -1,0 +1,39 @@
+import { graphql } from "gatsby"
+
+import PageBanner from '../../components/PageBanner';
+import Button from '../../components/Button';
+
+<PageBanner 
+  styleId={1}
+  title={"Hackaviz 2021"}
+  description={"Les données"}
+/>
+
+<section id="one">
+<div className="inner">
+
+<Button
+  link={"https://github.com/ToulouseDataViz/Hackaviz2021"}
+  display={"special"}
+  text={"Voir la page Github dédiée au données"}
+/>
+
+<div
+  className="blog-post-content"
+  dangerouslySetInnerHTML={{ __html: props.data.allFile.nodes[0].childMarkdownRemark.html }}
+/>
+
+</div>
+</section>
+
+export const pageQuery = graphql`
+  query {
+    allFile(filter: {name: {eq: "hackaviz21_description"}}) {
+      nodes {
+        childMarkdownRemark {
+          html
+        }
+      }
+    }
+  }
+`
