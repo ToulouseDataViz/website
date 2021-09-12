@@ -7,6 +7,27 @@
 /* Footer */
 
 	#footer {
+		ul.icons {
+			margin-bottom: 0;
+
+			li:last-child {
+				margin-bottom: 6px;
+				display: inline-table;
+				align-items: baseline;
+				padding-bottom: -23px;
+				vertical-align: top;
+				float: right;
+			}
+		}
+
+		ul .flex {
+			display: flex;
+			div,svg { display: flex;}
+			div {
+				padding-right: 10px;
+				line-height: 1.4em;
+			}
+		}
 		.copyright {
 			font-size: 0.8em;
 			list-style: none;
@@ -25,6 +46,8 @@
 					margin-left: 0;
 					padding-left: 0;
 				}
+
+				
 			}
 		}
 
