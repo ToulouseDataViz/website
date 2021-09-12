@@ -8,7 +8,7 @@ export const useHomeContent = () => {
           title
           subtitle
           slug
-          backgroungPicture
+          backgroundPicture
           isInMenu
         }
       }

@@ -61,9 +61,9 @@ const HomeIndex = () => {
         </section>
 
         <section id="one" className="tiles">
-          {homeContentCsv.map(({ title, subtitle, slug, backgroungPicture }, index) => {
+          {homeContentCsv.map(({ title, subtitle, slug, backgroundPicture }, index) => {
             return (
-              <article key={`article-${index}`} style={{backgroundImage: `url(${backgroundPics[backgroungPicture]})`}}>
+              <article key={`article-${index}`} style={{backgroundImage: `url(${backgroundPics[backgroundPicture]})`}}>
                 <header className="major">
                     <h3>{title}</h3>
                     <p>{subtitle}</p>

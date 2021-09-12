@@ -101,7 +101,6 @@ module.exports = {
     `gatsby-plugin-offres-pages`,
     `gatsby-plugin-md-from-csv`,
     `gatsby-plugin-md-from-notion-table-attribute`,
-    `gatsby-plugin-meetup-pages-notion`,
-    `gatsby-plugin-books-pages`,
+    `gatsby-plugin-meetup-pages-notion`
   ],
 }
