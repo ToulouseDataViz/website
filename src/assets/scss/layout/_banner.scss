@@ -10,14 +10,14 @@
 		@include vendor('align-items', 'center');
 		@include vendor('background-image', 'url("../images/banner.jpg")');
 		@include vendor('display', 'flex');
-		@include padding(4em, 0, (2em, 0, 0, 0));
+		@include padding(10em, 0, (2em, 0, 0, 0));
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-bottom: 0 !important;
 		cursor: default;
-		height: 40vh;
+		height: 30vh;
 		margin-bottom: -3.25em;
 		max-height: 32em;
 		min-height: 22em;
@@ -95,9 +95,9 @@
 		}
 
 		&.major {
-			height: 60vh;
-			min-height: 20em;
-			max-height: 40em;
+			height: 30vh;
+			min-height: 10em;
+			max-height: 20em;
 
 			&.alt {
 				opacity: 0.75;

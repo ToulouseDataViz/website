@@ -51,15 +51,6 @@ const HomeIndex = () => {
           title={"Les évènements à venir"}
         />
 
-        <section id="two" class="spotlights">
-          <div className="inner">
-            <Gallery
-              type={'small'}
-              limit={8}
-            />
-          </div>
-        </section>
-
         <section id="one" className="tiles">
           {homeContentCsv.map(({ title, subtitle, slug, backgroundPicture }, index) => {
             return (
@@ -72,7 +63,15 @@ const HomeIndex = () => {
             </article>
             )
           })}
+        </section>
 
+        <section id="two" class="spotlights">
+          <div className="inner">
+            <Gallery
+              type={'small'}
+              limit={8}
+            />
+          </div>
         </section>
       </div>
     </Layout>
