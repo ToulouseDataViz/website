@@ -37,18 +37,12 @@ const Hackaviz = () => {
                 <Box><b>{date}</b></Box>
                 <Box>{description}</Box>
                 <Button
-                  link={`hackaviz/${currentHackaviz}-contest`}
+                  link={`${currentHackaviz}-contest`}
                   type={'internal'}
                   text={"Voir le hackaviz"}
                 />
 
-                {isPastHackaviz && (
-                  <Button
-                    link={`hackaviz/${currentHackaviz}-data`}
-                    type={'internal'}
-                    text={"Télécharger les données"}
-                  />
-                )}
+                
               </Grid>
 
               {videoLink && (
@@ -81,7 +75,7 @@ const Hackaviz = () => {
                 </Grid>
     
                 <Button
-                  link={`hackaviz/${currentHackaviz}-results`}
+                  link={`${currentHackaviz}-results`}
                   type={'internal'}
                   text={"Voir toutes les réalisations"}
                 />
@@ -89,10 +83,7 @@ const Hackaviz = () => {
             )}
 
             <hr/>
-            <h3>{"Les sponsors"}</h3>
-            <HackavizSponsors
-              currentHackaviz={currentHackaviz}
-            />
+           
           </div>
         </section>
       );
