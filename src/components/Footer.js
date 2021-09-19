@@ -91,9 +91,7 @@ const Footer = () => (
             <li>
               <a
                 href={websiteLegacyLink}
-                className="icon flex"
-                target="_blank"
-                rel="noreferrer"
+                className="icon flex"               
               >
                 <div>Ancien site Toulouse DataViz</div>
                 <GiBackwardTime />
