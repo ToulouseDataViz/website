@@ -62,7 +62,7 @@ const Gallery = ({ picsToDisplay = null, type = 'large', limit = null }) => {
 
     if (limit) {
       // get [limit] random element
-    pics = defaultMeetupPics.sort(() => Math.random() - Math.random()).slice(0, limit)
+      pics = pics.sort(() => Math.random() - Math.random()).slice(0, limit)
     }
     setPics(pics); // set State
   };

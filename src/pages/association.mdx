@@ -3,6 +3,7 @@ import InternalImage from "../components/InternalImage"
 import PageBanner from '../components/PageBanner';
 import Members from '../components/Members';
 import Button from '../components/Button';
+import Slides from '../components/Slides';
 
 <PageBanner 
     styleId={1}
@@ -90,7 +91,7 @@ Pour les associations à but non lucratif et les écoles, l'association fournit 
 <Button
   link={"/sponsors"}
   type={'internal'}
-  text={"Découvrez nos sponspors"}
+  text={"Découvrez nos sponsors"}
 />
 
 <Button
@@ -106,47 +107,8 @@ Pour les associations à but non lucratif et les écoles, l'association fournit 
 <div className="inner">
 
   # On parle de nous !
+  <Slides />
 
-  <div className="grid-wrapper">
-  <div className="col-6">
-    <InternalImage name="20200417_091048-717x1024" altText="yolo"/>
-  </div>
-  <div className="col-6">
-    <InternalImage name="article_CG31_juin_2019-435x1024" altText="yolo"/>
-  </div>
-  <div className="col-6">
-    <InternalImage name="pub_cd31_metro-225x300" altText="yolo"/>
-  </div>
-  <div className="col-6">
-    <a href="https://data.haute-garonne.fr/pages/datavisualisation-interview/" target="_blank">Conseil Départemental de la Haute-Garonne</a>
-    <iframe 
-      id="advanced_iframe" name="advanced_iframe" 
-      src="https://data.haute-garonne.fr/pages/datavisualisation-interview/" 
-      allowtransparency="true" 
-      width="100%" height="400" frameborder="0">
-    </iframe>
-  </div>
-
-  <div className="col-6">
-    <a href="https://decryptageo.fr/geodataviz-faites-le-plein-dinspiration-grace-au-hackaviz-2019/" target="_blank">Article de Françoise De Blomac – DécriptaGéo</a>
-    <iframe 
-      id="advanced_iframe" name="advanced_iframe" 
-      src="https://decryptageo.fr/geodataviz-faites-le-plein-dinspiration-grace-au-hackaviz-2019/" 
-      allowtransparency="true" 
-      width="100%" height="400" frameborder="0">
-    </iframe>
-  </div>
-
-  <div className="col-6">
-    <a href="https://blog.clever-age.com/fr/2019/04/16/hackaviz-2019-les-resultats-du-concours-de-visualisation-de-donnees/" target="_blank">Article de notre sponsor Clever-Age</a>
-    <iframe 
-      id="advanced_iframe" name="advanced_iframe" 
-      src="https://blog.clever-age.com/fr/2019/04/16/hackaviz-2019-les-resultats-du-concours-de-visualisation-de-donnees/" 
-      allowtransparency="true" 
-      width="100%" height="400" frameborder="0">
-    </iframe>
-  </div>
-  </div>
   
 </div>
 </section>
