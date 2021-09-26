@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -31,7 +31,7 @@ const useStyles = makeStyles(theme => ({
       gridColumn: 'span 1',
       gridRow: 'span 1',
     }
-  },
+    },
   gallerySmall:{
     margin: theme.spacing(1,0),
     display: 'grid',
@@ -42,8 +42,9 @@ const useStyles = makeStyles(theme => ({
     boxShadow: '0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19)',
 
     '&:hover': {
-      filter: 'blur(4px)',
-      transition:' all ease 0.5s',
+      transform: 'scale(2)',
+      transition:' all ease 1s',
+      zIndex: '42',
     },
   },
 }));
@@ -51,16 +52,34 @@ const useStyles = makeStyles(theme => ({
 const Gallery = ({ picsToDisplay = null, type = 'large', limit = null }) => {
   const classes = useStyles();
   const defaultMeetupPics = usePics().filter(({ relativeDirectory }) => relativeDirectory === 'meetup-pics');
-
-  let pics = picsToDisplay
-    ? picsToDisplay
-    : defaultMeetupPics;
-
-  if (limit) {
-    // get [limit] random element
-    pics = defaultMeetupPics.sort(() => Math.random() - Math.random()).slice(0, limit)
-  }
+  const refreshPeriodInSeconds = 10000;
   
+
+  const [pics, setPics] = useState([]);
+
+  const getPics = () => {
+    let pics = picsToDisplay ? picsToDisplay : defaultMeetupPics;
+
+    if (limit) {
+      // get [limit] random element
+      pics = pics.sort(() => Math.random() - Math.random()).slice(0, limit)
+    }
+    setPics(pics); // set State
+  };
+
+  useEffect(() => {
+    getPics();
+    const interval = setInterval(() => {
+      getPics();
+    }, refreshPeriodInSeconds);
+
+    return () => clearInterval(interval);
+  }, []);
+  /*
+   effect will only be triggered only once (on mount and unmount)
+   https://reactjs.org/docs/hooks-effect.html#tip-optimizing-performance-by-skipping-effects
+  */
+
   return (
     <Box className={clsx({ 
       [classes.galleryLarge]: (type === 'large'), 
