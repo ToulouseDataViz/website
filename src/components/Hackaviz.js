@@ -7,14 +7,13 @@ import useHackavizParticipants from '../hooks/useHackavizParticipants';
 
 import YoutubeEmbed from '../components/YoutubeEmbed';
 import Button from '../components/Button';
-import HackavizSponsors from '../components/HackavizSponsors';
 import HackavizResult from './HackavizResult';
 import { getVideoEmbedId } from '../helper';
 import { pastEventStatusName } from '../settings';
 
 const Hackaviz = () => {
 
-  const hackavizs = useHackaviz();
+  const hackavizs = useHackaviz().filter(item => item.status==="Réalisé");
   const hackavizParticipants = useHackavizParticipants();
   const winnersColumn = {columnValue: 2, isDense: true};
   
