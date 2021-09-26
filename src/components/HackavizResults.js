@@ -14,27 +14,35 @@ const HackavizResults = ({ currentHackaviz }) => {
     .filter(({ hackaviz, prix }) =>  hackaviz === currentHackaviz && prix);
   const others = hackavizParticipants
     .filter(({ hackaviz, prix }) =>  hackaviz === currentHackaviz && !prix);
+  const hasWinners = winners.length > 0;
+  const otherHeadline = hasWinners
+    ? 'et toutes les autres contributions'
+    : 'Les contributions';
 
   return (
     <>
-      <h2>Les gagnants de l'hackaviz</h2>
-      <Grid 
-        container 
-        spacing={2}
-        direction="row"
-        justify="space-between"
-        alignItems="flex-start"
-      >
-        {winners.map(participant => {
-          const mergedProps = {...participant, ...winnersColumn};
-          return (
-            <HackavizResult {...mergedProps} />
-          );
-        })}
-      </Grid>
-
+      {hasWinners && (
+        <>
+          <h2>Les gagnant.e.s</h2>
+          <Grid 
+            container 
+            spacing={2}
+            direction="row"
+            justify="space-between"
+            alignItems="flex-start"
+          >
+            {winners.map(participant => {
+              const mergedProps = {...participant, ...winnersColumn};
+              return (
+                <HackavizResult {...mergedProps} />
+              );
+            })}
+          </Grid>
+        </>
+      )}
+      
       <hr/>
-      <h2>et toutes les autres contributions</h2>
+      <h2>{otherHeadline}</h2>
       <Grid 
         container 
         spacing={2}
