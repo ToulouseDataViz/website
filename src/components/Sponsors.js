@@ -9,11 +9,13 @@ import usePics from '../hooks/usePics';
 
 const useStyles = makeStyles(theme => ({
   imageContainer: {
-    maxHeight: 200,
-    maxWidth: 200,
+    maxWidth: 150,
     padding: theme.spacing(2),
     backgroundColor: 'white',
   },
+  gatsbyImageCentered: {
+    verticalAlign: 'middle'
+  }
 }));
 
 const Sponsors = () => {
@@ -40,7 +42,7 @@ const Sponsors = () => {
                   { sponsorPic && ( 
                     <Box className={classes.imageContainer}>
                       <a href={link} target="_blank" rel="noreferrer">
-                        <GatsbyImage className={classes.image} image={sponsorPic} alt={pic_name}/>
+                        <GatsbyImage className={classes.gatsbyImageCentered} image={sponsorPic} alt={pic_name}/>
                       </a>
                     </Box>
                   )}
