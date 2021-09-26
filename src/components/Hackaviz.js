@@ -36,7 +36,7 @@ const Hackaviz = () => {
                 <Box><b>{date}</b></Box>
                 <Box>{description}</Box>
                 <Button
-                  link={`${currentHackaviz}-contest`}
+                  link={`/hackaviz/${currentHackaviz}-contest`}
                   type={'internal'}
                   text={"Voir le hackaviz"}
                 />
@@ -74,7 +74,7 @@ const Hackaviz = () => {
                 </Grid>
     
                 <Button
-                  link={`${currentHackaviz}-results`}
+                  link={`/hackaviz/${currentHackaviz}-results`}
                   type={'internal'}
                   text={"Voir toutes les réalisations"}
                 />
