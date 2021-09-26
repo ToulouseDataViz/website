@@ -12,7 +12,7 @@ const Hackaviz = () => {
   const currentHackaviz = hackavizs.filter((item) => isCurrent(item.hackaviz));
   if (currentHackaviz.length > 0) {
     const subPage =
-      currentHackaviz.status === "Realisé" ? "results" : "contest";
+      currentHackaviz[0].status === "Réalisé" ? "results" : "contest";
     redirectUrl = `/hackaviz/${currentYear}-${subPage}`;
   } else {
     redirectUrl = `/hackaviz/${previousYear}-results`;
