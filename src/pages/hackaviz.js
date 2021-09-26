@@ -17,7 +17,11 @@ const Hackaviz = () => {
   } else {
     redirectUrl = `/hackaviz/${previousYear}-results`;
   }
-  window.location.href = redirectUrl;
+
+  if (typeof window !== `undefined`) { 
+    window.location.href = redirectUrl;
+  }
+ 
   return <div />;
 };
 export default Hackaviz;
