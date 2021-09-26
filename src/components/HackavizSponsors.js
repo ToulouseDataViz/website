@@ -15,14 +15,23 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(1,0),
   },
   imageContainer: {
-    maxWidth: 150,
-    
+    maxWidth: '150px',    
   },
+  gatsbyImageCentered: {
+    verticalAlign: 'middle'
+  }
 }));
 
 const HackavizSponsors = ({ currentHackaviz }) => {
   const classes = useStyles();
-  const hackavizSponsors = useHackavizSponsors().filter(({ hackaviz }) => hackaviz === currentHackaviz);
+  let hackavizSponsors = useHackavizSponsors();
+  if (currentHackaviz!==null) { 
+    hackavizSponsors = hackavizSponsors.filter(({ hackaviz }) => hackaviz === currentHackaviz);
+  } else {
+    let hackavizSponsorsKeys=hackavizSponsors.map(({ sponsor_pic }) => sponsor_pic );
+    hackavizSponsorsKeys = [...new Set(hackavizSponsorsKeys)];
+    hackavizSponsors=hackavizSponsorsKeys.map( sponsor_pic  => {return { sponsor_pic }});
+  }
   const sponsorsPics = usePics().filter(({ relativeDirectory }) => relativeDirectory === 'sponsor-pics');
 
   return (
@@ -38,8 +47,9 @@ const HackavizSponsors = ({ currentHackaviz }) => {
         const sponsorPic = getPic(sponsorsPics, sponsor_pic);
         return (
           <Grid item className={classes.imageContainer}>
-            <GatsbyImage image={sponsorPic} alt={sponsor_pic}/>
+            <GatsbyImage image={sponsorPic} alt={sponsor_pic} className={classes.gatsbyImageCentered}/>
           </Grid>
+          
         );
       })}
     </Grid>
