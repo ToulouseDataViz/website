@@ -4,6 +4,7 @@ import { Grid } from '@material-ui/core';
 
 import useHackavizParticipants from '../hooks/useHackavizParticipants';
 import HackavizResult from './HackavizResult';
+import HackavizFooter from '../components/HackavizFooter';
 
 const HackavizResults = ({ currentHackaviz }) => {
   const hackavizParticipants = useHackavizParticipants().filter(({ hackaviz }) => hackaviz === currentHackaviz);
@@ -57,6 +58,7 @@ const HackavizResults = ({ currentHackaviz }) => {
           );
         })}
       </Grid>
+      <HackavizFooter year={currentHackaviz} />
     </>
   );
 }

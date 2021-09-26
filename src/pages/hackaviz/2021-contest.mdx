@@ -2,25 +2,19 @@ import { getImage, GatsbyImage } from "gatsby-plugin-image";
 
 import PageBanner from '../../components/PageBanner';
 import Button from '../../components/Button';
-import HackavizSponsors from '../../components/HackavizSponsors';
 import InternalImage from '../../components/InternalImage';
+import HackavizFooter from '../../components/HackavizFooter';
 
 <PageBanner 
   styleId={1}
   title={"Hackaviz 2021"}
-  description={"Quatrième édition"}
+  description={"La quatrième édition du Hackaviz revient en Septembre !"}
 />
 
 <section id="one">
 <div className="inner">
 
-L’association Toulouse Dataviz (TDV) organise son HACKAVIZ. Concours de visualisation de données en temps limité, seul ou en équipe, doté de récompenses, ouvert à un très large public.
-
-<Button
-  link={"https://tally.so/r/w4rRXm"}
-  display={"special"}
-  text={"S'inscrire"}
-/>
+L’association Toulouse Dataviz (TDV) organise son HACKAVIZ, un concours de visualisation de données en temps limité, seul ou en équipe, doté de récompenses, ouvert à un très large public.
 
 <InternalImage
   name={"hackaviz2021"}
@@ -40,6 +34,7 @@ A partir du moment ou les données sont mises à disposition, les candidats ont 
 
  
 # PRÉPARER L’HACKAVIZ
+Voici des newsletters pour vous préparer à l'Hackaviz.
 
 <Button
   link={"https://newsletters.toulouse-dataviz.fr/newsletter--toulouse-dataviz-13--spcial-hackaviz-2021"}
@@ -97,7 +92,7 @@ Les contributions seront jugées par un jury de spécialistes proposé par les o
 Les contributions seront évaluées en fonction de différents critères dont les suivants (liste non exhaustive, ordre non priorisé).
 - Pertinence pour servir la narration/histoire abordée.
 - Originalité
-- Maitrise des règles de l’art
+- Maîtrise des règles de l’art
 - Concision
 
 Le jury de l’Hackaviz est souverain, ses décisions sont donc définitives. Le jury se réserve le droit de pénaliser les contributions qui ne respecteraient pas les règles. Les résultats seront annoncés lors de l’Hackaviz Party .
@@ -110,11 +105,7 @@ Avant la cérémonie de remise des prix, tous les participants pourront présent
 Tous les candidats seront appelés à commenter leur réalisation sous forme de “pitch rapide” lors de la remise des prix.
 L’Hackaviz Party sera filmée en direct pour permettre aux participants ne pouvant se déplacer de voir l’événement à distance.
 
-# PARTENAIRES DE L’EVENEMENT
-
-<HackavizSponsors
-  currentHackaviz={'2021'}
-/>
+<HackavizFooter year={"2021"} />
 
 </div>
 </section>
