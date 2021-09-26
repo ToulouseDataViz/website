@@ -28,7 +28,7 @@ const Hackaviz = () => {
       const isPastHackaviz = status === pastEventStatusName;
 
       return (
-        <section key={`hackaviz/hackaviz-section-${currentHackaviz}`}>
+        <section key={`hackaviz-section-${currentHackaviz}`}>
           <div className="inner">
             <Grid container spacing={2}>
               <Grid item xs>
@@ -74,7 +74,7 @@ const Hackaviz = () => {
                 </Grid>
     
                 <Button
-                  link={`hackaviz/${currentHackaviz}-results`}
+                  link={`${currentHackaviz}-results`}
                   type={'internal'}
                   text={"Voir toutes les réalisations"}
                 />
