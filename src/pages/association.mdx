@@ -4,6 +4,7 @@ import PageBanner from '../components/PageBanner';
 import Members from '../components/Members';
 import Button from '../components/Button';
 import Slides from '../components/Slides';
+import AssoSponsors from '../components/AssoSponsors';
 
 <PageBanner 
     styleId={1}
@@ -58,9 +59,9 @@ Nous  développons des tableaux de bord et explorateurs de données sur le web.
 # Notre offre
 
 L'association Toulouse DataViz est soutenue et parrainée par des entreprises locales et par des acteurs institutionnels de l'Occitanie. 
-Nous  développons des tableaux de bord et explorateurs de données sur le web.
+Nous développons des tableaux de bord et explorateurs de données sur le web.
 Nous proposons des  services complets  à destination des entreprises et  des collectivités.
-Nous  offrons des conseils et apportons des services  dans notre cadre associatif. Si nécessaire  nous vous aiguillons vers des professionnels de notre éco-système.
+Nous offrons des conseils et apportons des services  dans notre cadre associatif. Si nécessaire  nous vous aiguillons vers des professionnels de notre éco-système.
 
 <Button
   link={"/offres"}
@@ -88,6 +89,10 @@ Pour les associations à but non lucratif et les écoles, l'association fournit 
 
 # Nos sponsors
 
+<div>
+<AssoSponsors/>
+</div>
+<p></p>
 <Button
   link={"/sponsors"}
   type={'internal'}
@@ -98,6 +103,8 @@ Pour les associations à but non lucratif et les écoles, l'association fournit 
   link={"mailto:contact@toulouse-dataviz.fr"}
   text={"Devenez sponsors"}
 />
+
+
 
 </div>
 </section>
