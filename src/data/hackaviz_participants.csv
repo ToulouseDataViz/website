@@ -1,11 +1,11 @@
 hackaviz,nom,pic_name,outils,prix,description,link
-2021,"Julie Auque, Pierre-Arnaud Auque",2021-aucque,"Excel, Python, D3js, Leaflet",1er Prix,"*Ouvrir avec Firefox pour toutes les fonctionnalités*
+2021,"Julie Auque, Pierre-Arnaud Auque",2021-aucque,"Excel, Python, D3js, Leaflet",1er prix,"*Ouvrir avec Firefox pour toutes les fonctionnalités*
 
 Vous êtes **auto-entrepreneur** ? Vous rêvez de monter votre entreprise ? Lancez-vous avec les Quartiers Prioritaires (QP) !
 Des avantages fiscaux inédits, une main d'œuvre qui n'attend que vous, des jeunes disponibles pour des contrats d'apprentissage et des localisations souvent centrales dans nos villes d'Occitanie !
 Voici un outil qui devrait vous aider à faire votre choix pour poser vos valises dans la ville idéale par rapport à votre projet.",https://pdeuxa.github.io/TeamOc_HackViz21/
-2021,Philippe Mallet-Ladeira,2021-mallet,"Python(Pandas, Geopandas), Scrollama, D3js",2ième prix,Nous regardons la démographie des Quartiers Prioritaires en Occitanie et son influence dans le classement des communes selon différents critères.,https://phml.github.io/hackaviz2021/
-2021,Guillemette Crozet,2021-crozet,Illustrator,3ième prix,"Comparé au volume de données proposées, je n'en ai pas utilisé beaucoup. Je me suis attachée à travailler la forme pour servir le fond (couleur, mise en page, typo, graphes, pictogrammes).
+2021,Philippe Mallet-Ladeira,2021-mallet,"Python(Pandas, Geopandas), Scrollama, D3js",2ème prix,Nous regardons la démographie des Quartiers Prioritaires en Occitanie et son influence dans le classement des communes selon différents critères.,https://phml.github.io/hackaviz2021/
+2021,Guillemette Crozet,2021-crozet,Illustrator,3ème prix,"Comparé au volume de données proposées, je n'en ai pas utilisé beaucoup. Je me suis attachée à travailler la forme pour servir le fond (couleur, mise en page, typo, graphes, pictogrammes).
 Le format poster a au moins **3 degrés de lecture** : de loin, à 30 cm, de près. Chaque élément du visuel participe à donner envie de s'approcher de plus en plus près pour lire et comprendre.
 
 L'esthétique participe du fait que le lecteur doit s'investir afin de préciser, s'il le désire, la valeur des chiffres. J'ai voulu faire un visuel pédagogique où comment *""lire du visuel""*, un peu comme on apprend à lire un texte pouren retirer quelque chose. C'est le travail du data designer : simplicité et clarté grâce au graphisme afin de *""faire parler""* la data.",/2021-crozet.pdf
