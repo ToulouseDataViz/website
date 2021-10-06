@@ -6,8 +6,7 @@ import {
   mailLink,
   twitterLink,
   youtubeLink,
-  meetupLink,
-  websiteLegacyLink,
+  meetupLink
 } from "../settings";
 
 import { IconContext } from "react-icons";
@@ -19,8 +18,6 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
-
-import { GiBackwardTime } from "react-icons/gi";
 
 const Footer = () => (
   <footer id="footer">
@@ -86,15 +83,6 @@ const Footer = () => (
                 rel="noreferrer"
               >
                 <FaEnvelope />
-              </a>
-            </li>
-            <li>
-              <a
-                href={websiteLegacyLink}
-                className="icon flex"               
-              >
-                <div>Ancien site Toulouse DataViz</div>
-                <GiBackwardTime />
               </a>
             </li>
           </ul>
