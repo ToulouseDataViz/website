@@ -1,5 +1,5 @@
 hackaviz,nom,pic_name,outils,prix,description,link
-2021,Guillemette Crozet,2021-crozet,Illustrator,,"Comparé au volume de données proposées, je n'en ai pas utilisé beaucoup. Je me suis attachée à travailler la forme pour servir le fond (couleur, mise en page, typo, graphes, pictogrammes).
+2021,Guillemette Crozet,2021-crozet,Illustrator,3ième prix,"Comparé au volume de données proposées, je n'en ai pas utilisé beaucoup. Je me suis attachée à travailler la forme pour servir le fond (couleur, mise en page, typo, graphes, pictogrammes).
 Le format poster a au moins **3 degrés de lecture** : de loin, à 30 cm, de près. Chaque élément du visuel participe à donner envie de s'approcher de plus en plus près pour lire et comprendre.
 
 L'esthétique participe du fait que le lecteur doit s'investir afin de préciser, s'il le désire, la valeur des chiffres. J'ai voulu faire un visuel pédagogique où comment *""lire du visuel""*, un peu comme on apprend à lire un texte pouren retirer quelque chose. C'est le travail du data designer : simplicité et clarté grâce au graphisme afin de *""faire parler""* la data.",/2021-crozet.pdf
@@ -9,18 +9,18 @@ La page comporte 3 grandes zones d'affichage:
 - Au centre, un graphique de type radar affiche 6 indicateurs
 - A droite, une carte dynamique qui affiche l'emprise des zones géographiques sélectionnées. 
 3 boutons situés au dessus  du menu de sélection permettent de voir quel niveau géographique est affiché, et de supprimer des éléments sélectionnés.",https://loicbcn.github.io/hackaviz_2021/
-2021,"Giuseppe Melillo, Thomas Cabrol, Marie-Cécile Maoui-Bounab, Brice Renouf",2021-melillo,Tableau Public,,"Paule souhaite créer une agence d'emploi pour la population défavorisée.
+2021,"Giuseppe Melillo, Thomas Cabrol, Marie-Cécile Maoui-Bounab, Brice Renouf",2021-melillo,Tableau Public,Prix Spécial,"Paule souhaite créer une agence d'emploi pour la population défavorisée.
 Aide-la à trouver la ville et le quartier le plus approprié !",https://public.tableau.com/app/profile/brice.renouf/viz/Hackathon_2021_16315469453390/pauleemploi
 2021,"Ru Yun, Huang Xuran, Fu Jingxin",2021-ru,"Python, Tableau, Excel, Procreate",,Voulez-vous **acheter un logement** dans les quartiers prioritaires en Occitanie? Découvrez les informations que nous vous offrons dans cette visualisation!,https://public.tableau.com/app/profile/yun.ru7807/viz/Hackaviz2021_TSE_GroupH/Dashboard1?publish=yes
 2021,"Alexandra Amani, Raquel Alcaraz Serna, Lucie Bertiere, Dot Ricart Martinez, Sophie Cuvillier",2021-amani,"R-studio, Tableau, Excel et Kepler",,Nous avons décidé de raconter l'histoire de la précarité des quartiers prioritaires toulousains. Pour ce faire nous nous sommes focalisés sur les **déterminants de la précarité** sur ces quartiers. Nous avons donc divisé le poster en 3 axes : population et revenus / emploi / mesures du gouvernement.,/2021-amani.pdf
-2021,Silvia Romanelli,2021-romanelli,"Alteryx, Tableau, Illustrator",,"Aperçu interactif de quelques données démographiques et statistiques des quartiers prioritaires d'Occitanie, d'abord du point de vue d'un habitant et ensuite en agrandissant la perspective pour explorer les données de manière comparative entre tous les quartiers prioritaires de la région.",https://public.tableau.com/views/HackavizToulouse/HACKAVIZ?:language=fr-FR&publish=yes&:display_count=n&:origin=viz_share_link
+2021,Silvia Romanelli,2021-romanelli,"Alteryx, Tableau, Illustrator",Prix Zen,"Aperçu interactif de quelques données démographiques et statistiques des quartiers prioritaires d'Occitanie, d'abord du point de vue d'un habitant et ensuite en agrandissant la perspective pour explorer les données de manière comparative entre tous les quartiers prioritaires de la région.",https://public.tableau.com/views/HackavizToulouse/HACKAVIZ?:language=fr-FR&publish=yes&:display_count=n&:origin=viz_share_link
 2021,Alain Ottenheimer,2021-ottenheimer,"d3.js, observablehq, excel, QGIS, illustrator, Vsual Studio Code HTML",,"*HORS CONCOURS*
 
 En représentant les données sur une vue globale, des formes apparaissent et révèlent des informations. Une forte disparité est observée entre le nombre de ventes par habitant entre les  quartiers prioritaires (QP). Deux groupes se détachent, les QP des centres villes et les QP périphériques. 
 
 Les caractéristiques associées aux QP confirment elles  la pertinence de ces deux regroupements? Qu'est-ce-qui pourrait expliquer un tel écart du nombre de vente?   
 ",http://www.datasens.fr/H2021_QP/H2021_QP.html
-2021,"Julie Auque, Pierre-Arnaud Auque",2021-aucque,"Excel, Python, D3js, Leaflet",,"*Ouvrir avec Firefox pour toutes les fonctionnalités*
+2021,"Julie Auque, Pierre-Arnaud Auque",2021-aucque,"Excel, Python, D3js, Leaflet",1er Prix,"*Ouvrir avec Firefox pour toutes les fonctionnalités*
 
 Vous êtes **auto-entrepreneur** ? Vous rêvez de monter votre entreprise ? Lancez-vous avec les Quartiers Prioritaires (QP) !
 Des avantages fiscaux inédits, une main d'œuvre qui n'attend que vous, des jeunes disponibles pour des contrats d'apprentissage et des localisations souvent centrales dans nos villes d'Occitanie !
@@ -66,7 +66,7 @@ La version interactive permet de sélectionner un QP, afin de comparer notamment
 Le taux d'activité des femmes y est ainsi inférieur de 16,2 points par rapport à celui des hommes. En particulier, près d'une femme sur deux est en dehors de l'emploi contre une femme sur trois dans les quartiers environnants.
 
 Ces cartes présentent le pourcentage de Femmes et d'Etrangers Actifs. On observe un important clustering des populations sous-employées en périphérie des villes, avec par exemple 16% des étrangers actifs à la Conte, Carcassonne.",https://moulbn.github.io/
-2021,Philippe Mallet-Ladeira,2021-mallet,"Python(Pandas, Geopandas), Scrollama, D3js",,Nous regardons la démographie des Quartiers Prioritaires en Occitanie et son influence dans le classement des communes selon différents critères.,https://phml.github.io/hackaviz2021/
+2021,Philippe Mallet-Ladeira,2021-mallet,"Python(Pandas, Geopandas), Scrollama, D3js",2ième prix,Nous regardons la démographie des Quartiers Prioritaires en Occitanie et son influence dans le classement des communes selon différents critères.,https://phml.github.io/hackaviz2021/
 2021,Elodie Tenet,2021-tenet,"Excel,Illustrator",,Les différentes données ont été triées pour ne faire ressortir que le foncier industriel dans les quartiers prioritaires. Le but était de voir si la **crise du Covid-19** avait eu un impact sur les transactions de locaux professionnels. ,/2021-tenet.pdf
 2021,"Joachim Beaslas , Guillaume Poullain",2021-beaslas,"Squore, Highchart",,Aperçu des ventes immobilières dans les quartiers prioritaires en Occitanie entre 2016 et 2020,/2021-beaslas.pdf
 2021,"Melvin Marre, Clarysse Hadrien, Golbe Succes, Abdallah Mahoudi, Tony Lamadonperie",2021-marre,"Rstudio, Tableau",,"*""Le meilleur programme anti-pauvreté est une éducation de classe mondiale .""* Barack Obama
