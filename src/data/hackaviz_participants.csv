@@ -1,4 +1,10 @@
 hackaviz,nom,pic_name,outils,prix,description,link
+2021,"Julie Auque, Pierre-Arnaud Auque",2021-aucque,"Excel, Python, D3js, Leaflet",1er Prix,"*Ouvrir avec Firefox pour toutes les fonctionnalités*
+
+Vous êtes **auto-entrepreneur** ? Vous rêvez de monter votre entreprise ? Lancez-vous avec les Quartiers Prioritaires (QP) !
+Des avantages fiscaux inédits, une main d'œuvre qui n'attend que vous, des jeunes disponibles pour des contrats d'apprentissage et des localisations souvent centrales dans nos villes d'Occitanie !
+Voici un outil qui devrait vous aider à faire votre choix pour poser vos valises dans la ville idéale par rapport à votre projet.",https://pdeuxa.github.io/TeamOc_HackViz21/
+2021,Philippe Mallet-Ladeira,2021-mallet,"Python(Pandas, Geopandas), Scrollama, D3js",2ième prix,Nous regardons la démographie des Quartiers Prioritaires en Occitanie et son influence dans le classement des communes selon différents critères.,https://phml.github.io/hackaviz2021/
 2021,Guillemette Crozet,2021-crozet,Illustrator,3ième prix,"Comparé au volume de données proposées, je n'en ai pas utilisé beaucoup. Je me suis attachée à travailler la forme pour servir le fond (couleur, mise en page, typo, graphes, pictogrammes).
 Le format poster a au moins **3 degrés de lecture** : de loin, à 30 cm, de près. Chaque élément du visuel participe à donner envie de s'approcher de plus en plus près pour lire et comprendre.
 
@@ -20,11 +26,6 @@ En représentant les données sur une vue globale, des formes apparaissent et r�
 
 Les caractéristiques associées aux QP confirment elles  la pertinence de ces deux regroupements? Qu'est-ce-qui pourrait expliquer un tel écart du nombre de vente?   
 ",http://www.datasens.fr/H2021_QP/H2021_QP.html
-2021,"Julie Auque, Pierre-Arnaud Auque",2021-aucque,"Excel, Python, D3js, Leaflet",1er Prix,"*Ouvrir avec Firefox pour toutes les fonctionnalités*
-
-Vous êtes **auto-entrepreneur** ? Vous rêvez de monter votre entreprise ? Lancez-vous avec les Quartiers Prioritaires (QP) !
-Des avantages fiscaux inédits, une main d'œuvre qui n'attend que vous, des jeunes disponibles pour des contrats d'apprentissage et des localisations souvent centrales dans nos villes d'Occitanie !
-Voici un outil qui devrait vous aider à faire votre choix pour poser vos valises dans la ville idéale par rapport à votre projet.",https://pdeuxa.github.io/TeamOc_HackViz21/
 2021,"Nhat Thang Le, Gia Bao Huynh, Emir Dakin Tarik, Yann Imbert",2021-thang,Python,,,/2021-thang.pdf
 2021,Vincent Roger,2021-roger,"pandas, python, bokeh, jekylls",,Mon travail est une visualisation du cumul des **transactions foncières** dans la région Occitanie sur les années de 2016 à 2020. En passant la souris sur les villes correspondant aux données reçu des détails sur le type de transaction et la valeur moyenne de ces transactions sont fournis.,https://website.vincent-roger.fr/blog/dev/2021/09/19/hackaviz_fr.html
 2021,Mathis Garcia,2021-garcia,Tableau Software et R,,"Cette visualisation a été orienté selon deux axes :
@@ -66,7 +67,6 @@ La version interactive permet de sélectionner un QP, afin de comparer notamment
 Le taux d'activité des femmes y est ainsi inférieur de 16,2 points par rapport à celui des hommes. En particulier, près d'une femme sur deux est en dehors de l'emploi contre une femme sur trois dans les quartiers environnants.
 
 Ces cartes présentent le pourcentage de Femmes et d'Etrangers Actifs. On observe un important clustering des populations sous-employées en périphérie des villes, avec par exemple 16% des étrangers actifs à la Conte, Carcassonne.",https://moulbn.github.io/
-2021,Philippe Mallet-Ladeira,2021-mallet,"Python(Pandas, Geopandas), Scrollama, D3js",2ième prix,Nous regardons la démographie des Quartiers Prioritaires en Occitanie et son influence dans le classement des communes selon différents critères.,https://phml.github.io/hackaviz2021/
 2021,Elodie Tenet,2021-tenet,"Excel,Illustrator",,Les différentes données ont été triées pour ne faire ressortir que le foncier industriel dans les quartiers prioritaires. Le but était de voir si la **crise du Covid-19** avait eu un impact sur les transactions de locaux professionnels. ,/2021-tenet.pdf
 2021,"Joachim Beaslas , Guillaume Poullain",2021-beaslas,"Squore, Highchart",,Aperçu des ventes immobilières dans les quartiers prioritaires en Occitanie entre 2016 et 2020,/2021-beaslas.pdf
 2021,"Melvin Marre, Clarysse Hadrien, Golbe Succes, Abdallah Mahoudi, Tony Lamadonperie",2021-marre,"Rstudio, Tableau",,"*""Le meilleur programme anti-pauvreté est une éducation de classe mondiale .""* Barack Obama
