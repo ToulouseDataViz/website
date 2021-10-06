@@ -10,7 +10,7 @@ Le format poster a au moins **3 degrés de lecture** : de loin, à 30 cm, de pr
 
 L'esthétique participe du fait que le lecteur doit s'investir afin de préciser, s'il le désire, la valeur des chiffres. J'ai voulu faire un visuel pédagogique où comment *""lire du visuel""*, un peu comme on apprend à lire un texte pouren retirer quelque chose. C'est le travail du data designer : simplicité et clarté grâce au graphisme afin de *""faire parler""* la data.",/2021-crozet.pdf
 2021,Loïc Donot,2021-donot,"QGIS, Postgre/gis, Highcharts.js, OpenLayers, jQuery, Bootstrap",,"Il s'agit d'un outil visant à comparer différents indicateurs à divers niveaux géographiques *(région, département, commune, quartier)*.
-La page comporte 3 grandes zones d'affichage:
+La page comporte 3 grandes zones d'affichage :
 - A gauche, un graphique affichant les populations qui sert aussi de menu de sélection 
 - Au centre, un graphique de type radar affiche 6 indicateurs
 - A droite, une carte dynamique qui affiche l'emprise des zones géographiques sélectionnées. 
