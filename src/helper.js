@@ -7,7 +7,7 @@ const regexpVideoStartTime= /t=(\d*)s/;
 export const getVideoEmbedId = videoLink => {
 	if (videoLink) {
 		const timeStartMatch = videoLink.match(regexpVideoStartTime)
-		const timeStartArg = "";
+		let timeStartArg = "";
 		if (timeStartMatch) {
 			timeStartArg=`?start=${timeStartMatch[1]}`;
 		}
