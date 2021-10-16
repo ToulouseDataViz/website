@@ -6,8 +6,8 @@ import { ToggleButton, ToggleButtonGroup } from '@material-ui/lab';
 
 import _vars from '../assets/scss/libs/_vars.scss';
 
-import useSlides from '../hooks/useSlides';
-import Slide from './Slide';
+import usePressReview from '../hooks/usePressReviews';
+import PressReview from './PressReview';
 
 // TBD : collect SCSS variables to use in JS
 const useStyles = makeStyles(theme => ({
@@ -29,19 +29,22 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const Slides = () => {
+const PressReviews = () => {
   const classes = useStyles();
   console.log(_vars);
 
-  const { nodes: slides } = useSlides();
-  const categories = Array.from(new Set(slides.map(({ category }) => category)));
+  const { nodes: pressReviews } = usePressReview();
+  const categories = Array.from(new Set(pressReviews.map(({ category }) => category)));
+  categories.sort();
 
   const [displayCategories, setDisplayCategories] = useState(categories);
   const handleCategoriesChange = (event, newCategories) => {
     setDisplayCategories(newCategories);
   };
 
-  const displayedSlides = slides.filter(({ category }) => displayCategories.includes(category));
+
+  let displayedPressReviews = pressReviews.filter(({ category }) => displayCategories.includes(category));
+  displayedPressReviews.sort((lhs,rhs)=> rhs.id-lhs.id);
 
   return (
     <>
@@ -66,9 +69,9 @@ const Slides = () => {
         justify="space-between"
         alignItems="flex-start"
       >
-        {displayedSlides.map(slide => {
+        {displayedPressReviews.map(review => {
           return (
-            <Slide {...slide} />
+            <PressReview {...review} />
           );
         })}
       </Grid>
@@ -76,4 +79,4 @@ const Slides = () => {
   );
 }
 
-export default Slides;
+export default PressReviews;

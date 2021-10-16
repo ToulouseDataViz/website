@@ -1,9 +1,9 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
-export const useSlides = () => {
-  const { allSlidesCsv } = useStaticQuery(graphql`
+export const usePressReview = () => {
+  const { allPressReviewsCsv } = useStaticQuery(graphql`
     query {
-      allSlidesCsv {
+      allPressReviewsCsv {
         max(field: id)
         nodes {
           id
@@ -19,7 +19,7 @@ export const useSlides = () => {
     }
   `);
 
-  return allSlidesCsv;
+  return allPressReviewsCsv;
 };
 
-export default useSlides;
+export default usePressReview;
