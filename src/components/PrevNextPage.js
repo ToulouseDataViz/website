@@ -12,7 +12,6 @@ const useStyles = makeStyles(theme => ({
 
 const PrevNextPage = ({ currentItemId, lastItemId, itemName, itemPath }) => {
   const classes = useStyles();
-  console.log(currentItemId);
 
   return (
     <Grid

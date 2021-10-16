@@ -45,11 +45,7 @@ const EventPage = ({
   );
 
   const meetupPics = usePics().filter(({ relativeDirectory, name }) => {
-    if (relativeDirectory === 'meetup-pics') {
-      const [_, id] = name.match(/(\d*)_.*/) || [_, null];
-      return id && parseInt(id) === currentMeetupid;
-    }
-    return false;
+    return relativeDirectory.startsWith(`meetup-pics/${currentMeetupid}`);
   });
 
   return (

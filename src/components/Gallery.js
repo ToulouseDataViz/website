@@ -51,7 +51,7 @@ const useStyles = makeStyles(theme => ({
 
 const Gallery = ({ picsToDisplay = null, type = 'large', limit = null }) => {
   const classes = useStyles();
-  const defaultMeetupPics = usePics().filter(({ relativeDirectory }) => relativeDirectory === 'meetup-pics');
+  const defaultMeetupPics = usePics().filter(({ relativeDirectory }) => relativeDirectory.startsWith('meetup-pics'));
   const refreshPeriodInSeconds = 10000;
   
 
