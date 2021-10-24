@@ -13,11 +13,19 @@ const Menu = ({ onToggleMenu }) => {
           <li><Link onClick={onToggleMenu} to={"/"}>Accueil</Link></li>
           {homeContentCsv.map(({ title, slug, isInMenu }, index) => {
             if (isInMenu === 'true') {
-              return (
-                <li key={`menu-li-${index}`}>
-                  <Link onClick={onToggleMenu} to={slug}>{title}</Link>
-                </li>
-              );
+              if (slug.startsWith("/")) {
+                return (
+                  <li key={`menu-li-${index}`}>
+                    <Link onClick={onToggleMenu} to={slug}>{title}</Link>
+                  </li>
+                );
+              } else {
+                return (
+                  <li key={`menu-li-${index}`}>
+                    <a href={slug}>{title}</a>
+                  </li>
+                );
+              }
             } 
             else {
               return (<></>);
