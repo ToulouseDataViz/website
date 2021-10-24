@@ -13,6 +13,7 @@ export const usePics = () => {
             gatsbyImageData(
               layout: CONSTRAINED
               placeholder: BLURRED
+              quality: 95
             )
           }
         }
