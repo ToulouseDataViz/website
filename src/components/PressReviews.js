@@ -17,10 +17,10 @@ const useStyles = makeStyles(theme => ({
     //https://material-ui.com/customization/components/#use-rulename-to-reference-a-local-rule-within-the-same-style-sheet
     '&$selected': {
       backgroundColor: '#ffffff',
-      "& > span": {
-        color: "#242943",
+      '& > span': {
+        color: '#242943',
         fontWeight: 'bold',
-      }
+      },
     },
   },
   selected: {},
@@ -31,7 +31,6 @@ const useStyles = makeStyles(theme => ({
 
 const PressReviews = () => {
   const classes = useStyles();
-  console.log(_vars);
 
   const { nodes: pressReviews } = usePressReview();
   const categories = Array.from(new Set(pressReviews.map(({ category }) => category)));
@@ -42,41 +41,35 @@ const PressReviews = () => {
     setDisplayCategories(newCategories);
   };
 
-
   let displayedPressReviews = pressReviews.filter(({ category }) => displayCategories.includes(category));
-  displayedPressReviews.sort((lhs,rhs)=> rhs.id-lhs.id);
+  displayedPressReviews.sort((lhs, rhs) => rhs.id - lhs.id);
 
   return (
     <>
       <p>Filtrer la revue de presse selon les catégories</p>
       <ToggleButtonGroup value={displayCategories} onChange={handleCategoriesChange}>
         {categories.map(category => (
-          <ToggleButton value={category} classes={{
-            selected: classes.selected,
-            root: classes.root,
-            label: classes.label,
-          }}>
+          <ToggleButton
+            value={category}
+            classes={{
+              selected: classes.selected,
+              root: classes.root,
+              label: classes.label,
+            }}
+          >
             {category}
           </ToggleButton>
         ))}
       </ToggleButtonGroup>
-      <hr/>
+      <hr />
 
-      <Grid 
-        container 
-        spacing={4}
-        direction="row"
-        justify="space-between"
-        alignItems="flex-start"
-      >
+      <Grid container spacing={4} direction="row" justify="space-between" alignItems="flex-start">
         {displayedPressReviews.map(review => {
-          return (
-            <PressReview {...review} />
-          );
+          return <PressReview {...review} />;
         })}
       </Grid>
     </>
   );
-}
+};
 
 export default PressReviews;
