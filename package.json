@@ -54,5 +54,12 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "bracketSameLine": true,
+    "arrowParens": "avoid",
+    "printWidth": 120
   }
 }

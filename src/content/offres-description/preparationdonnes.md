@@ -11,11 +11,11 @@ Un jeu de données propre et bien structuré est un préalable à une exploitati
 
 ## Nos outils
 
-Nous maitrisons les outils Python, Excel, Tableau, google sheet, Open Refine et bien d'autres ... 
+Nous maîtrisons les outils Python, Excel, Tableau, Google Sheets, Open Refine et bien d'autres ... 
 
-## Processus
+## Contenu
 
 | Etape | Détail |
 |----------------------|----------------|
-| Nettoyer les données | - Mettre les données dans les formats interprétables par les outils de réutilisation - Traiter les données manquantes  - Mettre les fichiers dans les formats  les plus communément utilisés |
-| Enrichir vos donnees | - Ajouter à des données économiques, démographiques, géographiques  pour rendre vos jeux de données plus attractifs et plus informatifs.  - Enrichir votre catalogue de données avec de nouvelles open data. |
+| Nettoyer les données | <ul><li> Mettre les données dans les formats interprétables par les outils de réutilisation</li><li>Traiter les données manquantes  </li><li>Mettre les fichiers dans les formats  les plus communément utilisés </ul>|
+| Enrichir vos donnees |  <ul><li>Ajouter à des données économiques, démographiques, géographiques  pour rendre vos jeux de données plus attractifs et plus informatifs.</li><li>Enrichir votre catalogue de données avec de nouvelles données ouvertes (Open data).</ul> |
