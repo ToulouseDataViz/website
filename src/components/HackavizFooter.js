@@ -12,13 +12,8 @@ const HackavizFooter = ({ year }) => (
         type={"internal"}
         text={isCurrent(year)?"Afficher":"Afficher les éditions précédentes"}
       />
-      {!isCurrent(year) && (
-      <Button link={"/hackaviz"} type={"internal"} text={"Revenir à l'édition courante"} />
-      )}
     </header>      
-    <header >
-      <Button link={"/hackaviz/apropos"} type={"internal"} text={"A propos"} />
-    </header>
+    
     <header class="major">
       <h2>PARTENAIRES DE L’EVENEMENT</h2>
       <HackavizSponsors currentHackaviz={year} />
