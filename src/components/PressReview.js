@@ -23,9 +23,6 @@ const useStyles = makeStyles({
   minHeightTitle: {
     minHeight: '3.4em'
   }
-
-
-  
 });
 
 const ellide = (content, length) => {
@@ -35,9 +32,9 @@ const ellide = (content, length) => {
     return content;
   }
 }
-const Slide = ({ id, title, author, category, pic_name, year, url, comment  }) => {
+const PressReview = ({ id, title, author, category, pic_name, year, url, comment  }) => {
   const classes = useStyles();
-  const slideDescription = `${ellide(comment,400)}`;
+  const description = `${ellide(comment,400)}`;
   const gridSm = 6;
 
   return (
@@ -60,7 +57,7 @@ const Slide = ({ id, title, author, category, pic_name, year, url, comment  }) =
             )}
           </Grid>
           <Grid item xs={8}>
-            {slideDescription}
+            {description}
           </Grid>
           <Grid item xs={12}>
           {(
@@ -79,4 +76,4 @@ const Slide = ({ id, title, author, category, pic_name, year, url, comment  }) =
 
 }
 
-export default Slide;
+export default PressReview;
