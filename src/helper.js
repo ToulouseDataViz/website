@@ -1,11 +1,20 @@
 import React from 'react';
 import Button from './components/Button';
 
+// strip out some values since YouTube embed API is different from YouTube main API
 const regexpVideoId = /v=(.+?(?=\&|$))/;
+const regexpVideoStartTime= /t=(\d*)s/;
 export const getVideoEmbedId = videoLink => {
-  return videoLink
-    ? videoLink.match(regexpVideoId)[1]
-    : null 
+	if (videoLink) {
+		const timeStartMatch = videoLink.match(regexpVideoStartTime)
+		let timeStartArg = "";
+		if (timeStartMatch) {
+			timeStartArg=`?start=${timeStartMatch[1]}`;
+		}
+		const videoLinkMatch = videoLink.match(regexpVideoId);
+		return videoLinkMatch?videoLinkMatch[1]+timeStartArg:null;
+	}
+  	return null;
 };
 
 export const getPic = (pics, myName) => pics.find(({ name }) => myName === name)?.gatsbyImageData;
