@@ -4,7 +4,6 @@ export const usePressReview = () => {
   const { allPressReviewsCsv } = useStaticQuery(graphql`
     query {
       allPressReviewsCsv {
-        max(field: id)
         nodes {
           id
           title
