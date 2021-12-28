@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides" >
+			
+			<section>
+			<h3 id="construire-un-jeu-de-données">Construire un jeu de données</h3>
+			<h4 id="rex-de-lhackaviz-2018">REX de l’hackaviz 2018</h4>
+			<small>
+			<p id="alain-ottenheimer">Alain Ottenheimer - 5 juillet 2018</p>
+			</small>
+			</section>
+			
+			
+			<section>
+			<h4 id="objectif">Objectif:</h4>
+			<small>
+			<ul>
+			<li>Créer un fichier contenant des données provenant de plusieurs fichiers open data.</li>
+			<li>Les données concernent toutes les communes de la région Occitanie.</li>
+			</ul>
+			<ul>
+			<p>Données économiques (Nb d’entreprises créées dans les communes dans le secteur informatique - base sirene)<br>
+			Données historique de la population<br>
+			Données population<br>
+			Données sociales et fiscales<br>
+			Données résultats électoraux<br>
+			Données réseau routier</p>
+			<ul>
+			</small>
+			</section>
+			
+			
+			<section>
+			<h4 id="les-points-durs-identifiés">Les points durs identifiés</h4>
+			<small>
+			<ul>
+			<li> Les données sont dans plusieurs onglets du fichier excel </li>
+			<li>La variation du nombre de communes diminue dans le temps</li>
+			<li>La manipulation du fichier sirene qui contient plusieurs millions de lignes </li>
+			<li>La construction du code commune (insee)  dans certains fichiers</li>
+			<li>Le traitement préalable des fichiers  pour trouver l'information</li>
+			<li>La manipulation des différents formats de fichier  (xls, csv, geojson)</li>
+			</ul>
+			</small>
+			</section>
+			
+			<section>
+			<h4 id="les-outils-utilisés">Les outils utilisés</h4>
+			<small>
+			<ul>
+			<li>Tableur (excel)  pour visualiser rapidement les fichiers .csv</li>
+			<li>python + notebook jupyter pour traiter les données (logiciel libre)</li>
+			<li>Mysql + MySql workbench pour manipuler le fichier sirene et extraire des données (logiciel libre)</li>
+			<li>Qgis pour construire un fichier geojson (logiciel libre)</li>
+			</ul>
+			</small>
+			</section>
+			
+			<section>
+			<h4 id="open-data">Open Data</h4>
+			<small>
+			<ul>
+			<li>Des fichiers par dizaines de milliers!  (ex open data gouv)</li>
+			<li>Il faut aimer faire des recherche sur le web.</li>
+			</ul>
+			</small>
+			</section>
+			
+			<section>
+			<h4 id="prétraitement--des-données-historique-de-population">Prétraitement  des données historique de population</h4>
+			<small>
+			<p>Reconstruire un fichier .csv à partir de plusieurs onglets d’un fichier .xls</p>
+			</small>
+			</section>
+			
+			<section>
+			<h4 id="prétraitement--des-données-électorales">Prétraitement  des données électorales</h4>
+			<small>
+			<p>Rechercher le candidat arrivé en tête et son pourcentage de voix à partir d’un fichier qui donne les résultats de chaque candidat par commune</p>
+			</small>
+			</section>
+			
+			<section>
+			<h4 id="prétraitement--des-données-sirene-des-entreprises">Prétraitement  des données sirene des entreprises</h4>
+			<small>
+			<p>A partir de l’extrait de la base de données, rechercher le nombre d’entreprises créées chaque année dans les communes pour créer une série temporelle.</p>
+			</small>
+			</section>
+			
+			<section>
+			<h4 id="construction-du-fichier-hackaviz-2018-en-.csv">Construction du fichier hackaviz 2018 en .csv</h4>
+			<small>
+			<p>Merge de l’ensemble des fichiers de données sur les communes</p>
+			</small>
+			</section>
+			
+			<section>
+			<h4 id="construction-dune-base-de-données-mysql-pour-les-gros-fichiers">
+			Construction d’une base de données MySql pour les gros fichiers</h4>
+			<small>
+			<p>Importation des données sirene dans une base données MySql en local</p>
+			</small>
+			</section>
+			
+			
+			<section>
+			<h4 id="construction--du-fichier-hackaviz-en-geojson">Construction  du fichier hackaviz en geojson</h4>
+			<small>
+			<p>Utilisation de QGIS</p>
+			</small>
+			</section>
+			
+			
+			<section>
+			<h4 id="synthèse">Synthèse</h4>
+			<small>
+			<ul>
+			<li>Data wrangling = 80% du temps en dataviz  : c’est pas faux!</li>
+			<li>Python + Notebook Jupyter facilite le travail (réutilisation, maitrise des calculs, testabilité)</li>
+			<li>beaucoup d’outils + beaucoup de fichiers = être méthodique</li>
+			<li>QGIS est un bon outil pour les visualisations cartographiques et offre beaucoup de fonctionalités intéréssantes notamment pour créer des .geojson</li>
+			</small>
+			</section>
+
+</div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+	// More info about config & dependencies:
+	// - https://github.com/hakimel/reveal.js#configuration
+	// - https://github.com/hakimel/reveal.js#dependencies
+	Reveal.initialize({
+		dependencies: [
+			{ src: 'plugin/markdown/marked.js' },
+			{ src: 'plugin/markdown/markdown.js' },
+			{ src: 'plugin/notes/notes.js', async: true },
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+		]
+	});
+</script>
+</body>
+</html>
+
+
+
+
+
