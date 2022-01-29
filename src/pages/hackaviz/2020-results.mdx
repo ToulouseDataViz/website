@@ -1,24 +1,24 @@
 import PageBanner from '../../components/PageBanner';
 import Button from '../../components/Button';
 import HackavizResults from '../../components/HackavizResults';
+import HackavizHeader from '../../components/HackavizHeader';
+import HackavizFooter from '../../components/HackavizFooter';
 
-<PageBanner 
-  styleId={1}
-  title={"Hackaviz"}
-/>
+<PageBanner styleId={1} title={'Résultats du Hackaviz 2020'} />
 
 <section id="one">
 <div className="inner">
 
 # HACKAVIZ 2020
+
 Troisième édition
 L’association Toulouse Dataviz (TDV) organise son HACKAVIZ. Concours de visualisation de données en temps limité, seul ou en équipe, doté de récompenses, ouvert à un très large public.
-- Consultez les résultats de l‘hackaviz 2018
-- Consultez les résultats de l’hackaviz 2019
 
-<HackavizResults
-  currentHackaviz={'2020'}
-/>
+<HackavizHeader year={'2020'} />
+
+<HackavizResults currentHackaviz={'2020'} />
+
+<HackavizFooter year={'2020'} />
 
 </div>
 </section>

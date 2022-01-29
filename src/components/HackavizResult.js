@@ -47,7 +47,7 @@ const getPrice = (prix, isDense) => {
 
 const HackavizResult = ({ nom, outils, prix, pic_name, link, children, columnValue, isDense = false }) => {
   const classes = useStyles();
-  const resultsPics = usePics().filter(({ relativeDirectory }) => relativeDirectory === 'hachaviz-result-pics');
+  const resultsPics = usePics().filter(({ relativeDirectory }) => relativeDirectory === 'hackaviz-result-pics');
   const resultPic = getPic(resultsPics, pic_name);
 
   const participantStyle = clsx({

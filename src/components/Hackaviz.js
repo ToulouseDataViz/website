@@ -7,14 +7,13 @@ import useHackavizParticipants from '../hooks/useHackavizParticipants';
 
 import YoutubeEmbed from '../components/YoutubeEmbed';
 import Button from '../components/Button';
-import HackavizSponsors from '../components/HackavizSponsors';
 import HackavizResult from './HackavizResult';
 import { getVideoEmbedId } from '../helper';
 import { pastEventStatusName } from '../settings';
 
 const Hackaviz = () => {
 
-  const hackavizs = useHackaviz();
+  const hackavizs = useHackaviz().filter(item => item.status==="Réalisé");
   const hackavizParticipants = useHackavizParticipants();
   const winnersColumn = {columnValue: 2, isDense: true};
   
@@ -37,18 +36,12 @@ const Hackaviz = () => {
                 <Box><b>{date}</b></Box>
                 <Box>{description}</Box>
                 <Button
-                  link={`hackaviz/${currentHackaviz}-contest`}
+                  link={`/hackaviz/${currentHackaviz}-contest`}
                   type={'internal'}
                   text={"Voir le hackaviz"}
                 />
 
-                {isPastHackaviz && (
-                  <Button
-                    link={`hackaviz/${currentHackaviz}-data`}
-                    type={'internal'}
-                    text={"Télécharger les données"}
-                  />
-                )}
+                
               </Grid>
 
               {videoLink && (
@@ -81,7 +74,7 @@ const Hackaviz = () => {
                 </Grid>
     
                 <Button
-                  link={`hackaviz/${currentHackaviz}-results`}
+                  link={`/hackaviz/${currentHackaviz}-results`}
                   type={'internal'}
                   text={"Voir toutes les réalisations"}
                 />
@@ -89,10 +82,7 @@ const Hackaviz = () => {
             )}
 
             <hr/>
-            <h3>{"Les sponsors"}</h3>
-            <HackavizSponsors
-              currentHackaviz={currentHackaviz}
-            />
+           
           </div>
         </section>
       );
