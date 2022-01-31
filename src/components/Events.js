@@ -51,7 +51,7 @@ const Events = ({
           />
         </Grid>
         <Grid item >
-          <span>Filtrer pour voir les events avec vidéos uniquement</span>
+          <span>Filtrer pour voir les événements avec vidéos uniquement</span>
         </Grid>
       </Grid>
     )}

@@ -15,7 +15,7 @@ exports.sourceNodes = async ({
       parent: parentNode.id,
       children: [],
       internal: {
-        type: `markdwonDescriptionFromHackavizParticipantsCsv`,
+        type: `markdownDescriptionFromHackavizParticipantsCsv`,
         // adding text/markdown as mediatype trigger to process of this node by the remark plugin
         mediaType: `text/markdown`,
         content: parentNode.description,

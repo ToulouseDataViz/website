@@ -51,7 +51,7 @@ const Book = ({ id, title, author, category, pic_name, year, comment, max = null
             <Button
               link={`book/${id}`}
               type={'internal'}
-              text={"Plus de détails"}
+              text={"Détails"}
               size={"small"}
             />
           )}

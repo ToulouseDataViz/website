@@ -54,7 +54,7 @@ const HackavizResult = ({ nom, outils, prix, pic_name, link, children, columnVal
     [classes.participants] : !isDense,
   });
 
-  const markdwonDescription = children[0]?.childMarkdownRemark?.htmlAst;
+  const markdownDescription = children[0]?.childMarkdownRemark?.htmlAst;
 
   return (
     <Grid item xs={12} sm={columnValue}>
@@ -67,8 +67,8 @@ const HackavizResult = ({ nom, outils, prix, pic_name, link, children, columnVal
             </Box>
           )}
           { getName(nom, isDense) }
-          {!isDense && markdwonDescription && (
-            <MarkdownText hast={markdwonDescription} />
+          {!isDense && markdownDescription && (
+            <MarkdownText hast={markdownDescription} />
           )}
           {!isDense && (<p><b>Outils</b>{`: ${outils}`}</p>)}
           {link && (
