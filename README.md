@@ -45,7 +45,7 @@ Currently the project use both local file and one remote source on Notion to sou
 Custom plugins :
 
 - **gatsby-plugin-offres-pages** : create pages from markdown files in `/src/content/offres-descriptions`
-- **gatsby-plugin-md-from-csv** : create markdown node (which will then be handle by `gatsby-transformer-remark`) from description attribute in `src/data/xxx.csv`
+- **gatsby-plugin-md-from-csv** : create markdown node (which will then be handle by `gatsby-transformer-remark`) from description attribute in `src/data/xxx.csv`. The CSV files are provided thru the plugin option `nodeTypes`.
 - **gatsby-plugin-meetup-pages-notion**: collect nodes created by `gatsby-source-notion-api` to create event pages
 - **gatsby-plugin-md-from-notion-table-attribute**: create markdown node (which will then be handle by `gatsby-transformer-remark`) from description attribute in nodes created by `gatsby-source-notion-api`
 
