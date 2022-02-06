@@ -47,7 +47,7 @@ exports.sourceNodes = async ({ actions, createContentDigest, createNodeId, getNo
         parent: parentNode.id,
         children: [],
         internal: {
-          type: `markdownDescriptionFromCsv}`,
+          type: `markdownDescriptionFromCsv`,
           // adding text/markdown as mediatype trigger to process of this node by the remark plugin
           mediaType: `text/markdown`,
           content: parentNode.description,
