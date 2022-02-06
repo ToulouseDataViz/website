@@ -7,7 +7,7 @@ export const useEventsNotion = () => {
         nodes {
           childrenNotionPage {
             title
-            childrenMarkdwonDescriptionFromNotion {
+            childrenMarkdownDescriptionFromNotion {
               childrenMarkdownRemark {
                 htmlAst
               }
@@ -45,7 +45,7 @@ export const useEventsNotion = () => {
                 url
               }
             }
-            childMarkdwonDescriptionFromNotion {
+            childMarkdownDescriptionFromNotion {
               childrenMarkdownRemark {
                 htmlAst
               }
@@ -58,12 +58,12 @@ export const useEventsNotion = () => {
 
   const [{ childrenNotionPage }] = nodes;
 
-  return childrenNotionPage.map(({ title, childrenMarkdwonDescriptionFromNotion, properties }) => ({
+  return childrenNotionPage.map(({ title, childrenMarkdownDescriptionFromNotion, properties }) => ({
     meetupid: properties.meetupid?.number,
     title,
     status: properties.Status?.select?.name,
     descriptionRawString: properties.description?.rich_text?.map(({ plain_text }) => plain_text).join(''),
-    descriptionHtmlAst: childrenMarkdwonDescriptionFromNotion[0]?.childrenMarkdownRemark[0]?.htmlAst,
+    descriptionHtmlAst: childrenMarkdownDescriptionFromNotion[0]?.childrenMarkdownRemark[0]?.htmlAst,
     date: properties.Date?.date?.start,
     meetupLink: properties.meetupLink?.url,
     videoLink: properties.videoLink?.url,
