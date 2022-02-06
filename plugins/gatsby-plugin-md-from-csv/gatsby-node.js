@@ -39,15 +39,15 @@ exports.sourceNodes = async ({ actions, createContentDigest, createNodeId, getNo
 
   csvFileSources.forEach(item => {
     const csvRows = getNodesByType(item);
-    let index = 0;
-    csvRows.forEach(parentNode => {
+    csvRows.forEach((parentNode,index) => {
+      // make index to each csv
       const childrenNodeId = createNodeId(`${item}-${index}-MarkdownDescription`);
       const markdownNode = {
         id: childrenNodeId,
         parent: parentNode.id,
         children: [],
         internal: {
-          type: `markdownDescriptionFrom${item}`,
+          type: `markdownDescriptionFromCsv}`,
           // adding text/markdown as mediatype trigger to process of this node by the remark plugin
           mediaType: `text/markdown`,
           content: parentNode.description,
@@ -57,7 +57,6 @@ exports.sourceNodes = async ({ actions, createContentDigest, createNodeId, getNo
       createNode(markdownNode);
 
       createParentChildLink({ parent: parentNode, child: markdownNode });
-      index++;
     });
   });
 };

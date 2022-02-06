@@ -12,7 +12,7 @@ export const useSponsors = () => {
           pic_name
           link
           children {
-            ... on markdownDescriptionFromSponsorsCsv {
+            ... on markdownDescriptionFromCsv {
               childMarkdownRemark {
                 htmlAst
               }

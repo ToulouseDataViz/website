@@ -14,7 +14,7 @@ export const useHackavizParticipants = () => {
           pic_name
           link
           children {
-            ... on markdownDescriptionFromHackavizParticipantsCsv {
+            ... on markdownDescriptionFromCsv {
               childMarkdownRemark {
                 htmlAst
               }
