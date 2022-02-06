@@ -24,11 +24,11 @@ const graphQLResult = useGraphQLResult()
 // GraphQL source CSV name
 let nodeTypes = [];
 exports.onPreInit = (_, pluginOptions) => {
-  nodeTypes = pluginOptions.csvFileSources;
+  nodeTypes = pluginOptions.nodeTypes;
 };
 exports.pluginOptionsSchema = ({ Joi }) => {
   return Joi.object({
-    csvFileSources: Joi.array()
+    nodeTypes: Joi.array()
       .required()
       .description(`array of GraphQL source CSV name with markdown formatted description column`),
   });
