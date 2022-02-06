@@ -100,8 +100,12 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-material-ui`,
     `gatsby-plugin-offres-pages`,
-    `gatsby-plugin-md-from-participants-hackaviz-csv`,
-    `gatsby-plugin-md-from-sponsors-csv`,
+    {
+      resolve: 'gatsby-plugin-md-from-csv',
+      options: {
+        csvFileSources: ['HackavizParticipantsCsv', 'SponsorsCsv'],
+      },
+    },
     `gatsby-plugin-md-from-notion-table-attribute`,
     `gatsby-plugin-meetup-pages-notion`,
   ],

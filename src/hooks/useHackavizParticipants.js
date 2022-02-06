@@ -1,7 +1,9 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
 export const useHackavizParticipants = () => {
-  const { allHackavizParticipantsCsv: { nodes } } = useStaticQuery(graphql`
+  const {
+    allHackavizParticipantsCsv: { nodes },
+  } = useStaticQuery(graphql`
     query {
       allHackavizParticipantsCsv {
         nodes {
