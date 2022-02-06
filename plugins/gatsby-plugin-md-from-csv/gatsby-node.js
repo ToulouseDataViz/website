@@ -22,9 +22,9 @@ const graphQLResult = useGraphQLResult()
 */
 
 // GraphQL source CSV name
-let csvFileSources = [];
+let nodeTypes = [];
 exports.onPreInit = (_, pluginOptions) => {
-  csvFileSources = pluginOptions.csvFileSources;
+  nodeTypes = pluginOptions.csvFileSources;
 };
 exports.pluginOptionsSchema = ({ Joi }) => {
   return Joi.object({
@@ -37,7 +37,7 @@ exports.pluginOptionsSchema = ({ Joi }) => {
 exports.sourceNodes = async ({ actions, createContentDigest, createNodeId, getNodesByType }) => {
   const { createNode, createParentChildLink } = actions;
 
-  csvFileSources.forEach(item => {
+  nodeTypes.forEach(item => {
     const csvRows = getNodesByType(item);
     csvRows.forEach((parentNode,index) => {
       // make index to each csv
