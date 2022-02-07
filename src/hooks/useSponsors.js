@@ -1,7 +1,9 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
 export const useSponsors = () => {
-  const { allSponsorsCsv: { nodes } } = useStaticQuery(graphql`
+  const {
+    allSponsorsCsv: { nodes },
+  } = useStaticQuery(graphql`
     query {
       allSponsorsCsv {
         nodes {
@@ -9,7 +11,13 @@ export const useSponsors = () => {
           type
           pic_name
           link
-          description
+          children {
+            ... on markdownDescriptionFromCsv {
+              childMarkdownRemark {
+                htmlAst
+              }
+            }
+          }
         }
       }
     }

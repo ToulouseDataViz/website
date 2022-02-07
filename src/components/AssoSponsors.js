@@ -4,7 +4,7 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 import { Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
-import useHackavizSponsors from '../hooks/useHackavizSponsors';
+import useSponsors from '../hooks/useSponsors';
 import usePics from '../hooks/usePics';
 
 import { getPic } from '../helper';
@@ -22,12 +22,9 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const HackavizSponsors = ({ currentHackaviz }) => {
+const AssoSponsors = () => {
   const classes = useStyles();
-  let hackavizSponsors = useHackavizSponsors();
-  hackavizSponsors = hackavizSponsors.filter(
-    ({ hackaviz }) => currentHackaviz === null || hackaviz === currentHackaviz
-  );
+  const assoSponsors = useSponsors();
   const sponsorsPics = usePics().filter(({ relativeDirectory }) => relativeDirectory === 'sponsor-pics');
 
   return (
@@ -39,16 +36,19 @@ const HackavizSponsors = ({ currentHackaviz }) => {
       alignItems="center"
       className={classes.imageGridContainer}
     >
-      {hackavizSponsors.map(({ sponsor_pic }) => {
-        const sponsorPic = getPic(sponsorsPics, sponsor_pic);
+      {assoSponsors.map(({ pic_name }) => {
+        const sponsorPic = getPic(sponsorsPics, pic_name);
         return (
-          <Grid item className={classes.imageContainer}>
-            <GatsbyImage image={sponsorPic} alt={sponsor_pic} className={classes.gatsbyImageCentered} />
-          </Grid>
+          <a href={'sponsors'} target="_blank" rel="noreferrer">
+            <Grid item className={classes.imageContainer}>
+              <GatsbyImage image={sponsorPic} alt={pic_name} className={classes.imageContainer} />
+              {/* <img src={sponsorPic.images.fallback.src} alt={pic_name} className={classes.imageContainer} /> */}
+            </Grid>
+          </a>
         );
       })}
     </Grid>
   );
 };
 
-export default HackavizSponsors;
+export default AssoSponsors;
