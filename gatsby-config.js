@@ -1,13 +1,14 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
+require('dotenv').config({
+  path: `.env.development`, //${process.env.NODE_ENV}
+});
 
 module.exports = {
   siteMetadata: {
-    headerTitle: "Toulouse DataViz",
-    headerSubtitle: "Bienvenue !",
-    headline: "Toulouse DataViz",
-    description: "Notre but ? Promouvoir et diffuser la culture de l’analyse et de la visualisation des données. Découvrez comment ",
+    headerTitle: 'Toulouse DataViz',
+    headerSubtitle: 'Bienvenue !',
+    headline: 'Toulouse DataViz',
+    description:
+      'Notre but ? Promouvoir et diffuser la culture de l’analyse et de la visualisation des données. Découvrez comment ',
     actionButton: "Découvrir l'association",
   },
   plugins: [
@@ -47,7 +48,7 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: {
-          default: require.resolve("./src/components/MDXPageLayout.js"),
+          default: require.resolve('./src/components/MDXPageLayout.js'),
         },
       },
     },
@@ -59,7 +60,7 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-page-creator",
+      resolve: 'gatsby-plugin-page-creator',
       options: {
         path: `${__dirname}/src/pages`,
       },
@@ -87,11 +88,11 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-source-remote-file",
+      resolve: 'gatsby-source-remote-file',
       options: {
-        url: "https://raw.githubusercontent.com/ToulouseDataViz/Hackaviz2021/main/README.md",
-        name: "hackaviz21_description",
-        ext: ".md",
+        url: 'https://raw.githubusercontent.com/ToulouseDataViz/Hackaviz2021/main/README.md',
+        name: 'hackaviz21_description',
+        ext: '.md',
       },
     },
     `gatsby-plugin-image`,
@@ -99,8 +100,13 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-material-ui`,
     `gatsby-plugin-offres-pages`,
-    `gatsby-plugin-md-from-csv`,
+    {
+      resolve: 'gatsby-plugin-md-from-csv',
+      options: {
+        nodeTypes: ['HackavizParticipantsCsv', 'SponsorsCsv'],
+      },
+    },
     `gatsby-plugin-md-from-notion-table-attribute`,
-    `gatsby-plugin-meetup-pages-notion`
+    `gatsby-plugin-meetup-pages-notion`,
   ],
-}
+};

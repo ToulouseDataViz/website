@@ -48,8 +48,7 @@ const PressReview = ({ id, title, author, category, pic_name, year, url, comment
           <Grid item xs={4} className={classes.noPadding} >
             {pic_name && (
               <Box className={classes.imageContainer}>
-                <InternalImage
-                  
+                <InternalImage                  
                   name={pic_name}
                   altText={""}
                 />
@@ -64,7 +63,7 @@ const PressReview = ({ id, title, author, category, pic_name, year, url, comment
             <Button
               link={url}
               type={'internal'}
-              text={"Plus de détails"}
+              text={"Détails"}
               size={"small"}
             />
           )}

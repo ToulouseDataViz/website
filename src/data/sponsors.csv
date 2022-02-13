@@ -1,9 +1,57 @@
 name, type, pic_name, link, description
-"Clever Age", sponsor, cleverage, https://www.clever-age.com/fr/, "Clever Age apporte une vision 360° sur les activités numériques de ses clients : transformation digitale, consulting, UX, communication interactive, développement web et mobile, exploitation, optimisation… Toute la chaîne de production de valeur est couverte. Ses 250 professionnels du digital, répartis dans plusieurs agences en France et à l’étranger, participent à la définition, à la réalisation et aux résultats de projets stratégiques.Clever Age est partenaire officiel de l’association Toulouse Dataviz et soutien ses actions. Pour Christophe Le Bot, consultant chez Clever Age et initiateur de ce partenariat, “Toulouse DataViz est une formidable occasion de découvrir les méthodes, bonnes pratiques et outils de visualisation de données. Alors que nos clients accordent une place de plus en plus importante à l’acquisition et l’utilisation de données (big data, intelligence artificielle, business intelligence, reporting…), la datavisualisation est devenue indispensable pour explorer les données sources, trouver une approche de restitution, préparer les jeux de données et montrer le résultat final. Nous sommes ravis de contribuer à la diffusion des connaissances sur ce sujet, parfaitement réalisée par Toulouse DataViz. J’apprécie tout particulièrement le format des Meetups, très participatifs : chacun peut y montrer ses travaux et ses expérimentations, les échanges apportent beaucoup d’idées et de motivation !"
-"Vector", sponsor, vector, https://www.vector.com/fr/fr/entreprise/contacts/vector-france/, "Depuis plus de 30 ans, Vector est à la pointe de l’innovation électronique et logicielle pour le développement des systèmes embarqués, et compte plus de 3000 collaborateurs présents dans 26 différentes filiales qui innovent chaque jour pour proposer aux industriels une plateforme professionnelle de matériels et de composants logiciels les aidant à simplifier et à faciliter la gestion d’environnements complexes.Répondant à la demande croissante d’outils d’aide à la décision pour le pilotage des projets informatiques, son outil “Squore for Software Analytics” propose une solution complète de vérification et de validation des systèmes logiciels embarquées complexes, qui est devenue la référence pour les grands comptes industriels utilisant ou développant des logiciels et systèmes embarqués à haut niveau d’exigences sécuritaires. Vector a choisi d’être partenaire officiel de Toulouse Dataviz afin de contribuer à la diffusion des bonnes pratiques de la datavisualisation. “En tant qu’éditeur d’un outil adaptant les techniques de la Business Intelligence à l’ingénierie logicielle, la visualisation de données est au cœur de nos préoccupations. Participer aux meetups de Dataviz, échanger sur les dernières avancées et nouvelles tendances en matière de restitution et de partage de données représente un atout important pour notre équipe R&D. Les meetups sont l’occasion de découvrir non seulement de nouvelles visualisations mais également de nouvelles technologies, de nouvelles bibliothèques. Cinq de nos ingénieurs y participent régulièrement et montrent un intérêt croissant.” rapporte Patrick Sardin, Directeur R&D de Squore."
-"Makina Corpus", sponsor, makinacorpus, https://makina-corpus.com/, 
-"Datasens", sponsor, datasens, http://datasens.fr/,
-"Perceptible", sponsor, perceptible, https://perceptible.fr/,
-"étincelle coworking", lieu, etincelle, http://www.coworking-toulouse.com/, 
-"Coworking Harrycow", lieu, harrycow, https://www.harrycow.com/, 
-"La Cantine Toulouse", lieu, lacantine, http://lacantine-toulouse.org/,
+"Clever Age", sponsor, cleverage, https://www.clever-age.com/fr/, "**Clever Age** apporte une vision 360° sur les activités numériques de ses clients : transformation digitale, consulting, UX, communication interactive, développement web et mobile, exploitation, optimisation… Toute la chaîne de production de valeur est couverte. 
+
+Ses 250 professionnels du digital, répartis dans plusieurs agences en France et à l’étranger, participent à la définition, à la réalisation et aux résultats de projets stratégiques. 
+
+**Clever Age est partenaire officiel de l’association Toulouse Dataviz et soutien ses actions**. Pour Christophe Le Bot, consultant chez Clever Age et initiateur de ce partenariat : “Toulouse DataViz est une formidable occasion de découvrir les méthodes, bonnes pratiques et outils de visualisation de données. Alors que nos clients accordent une place de plus en plus importante à l’acquisition et l’utilisation de données (big data, intelligence artificielle, business intelligence, reporting…), la datavisualisation est devenue indispensable pour explorer les données sources, trouver une approche de restitution, préparer les jeux de données et montrer le résultat final. Nous sommes ravis de contribuer à la diffusion des connaissances sur ce sujet, parfaitement réalisée par Toulouse DataViz. 
+
+J’apprécie tout particulièrement le format des Meetups, très participatifs : chacun peut y montrer ses travaux et ses expérimentations, les échanges apportent beaucoup d’idées et de motivation !”"
+"Vector", sponsor, vector, https://www.vector.com/fr/fr/entreprise/contacts/vector-france/, "Depuis plus de 30 ans, **Vector** est à la pointe de l’innovation électronique et logicielle pour le développement des systèmes embarqués, et compte plus de 3000 collaborateurs présents dans 26 différentes filiales qui innovent chaque jour pour proposer aux industriels une plateforme professionnelle de matériels et de composants logiciels les aidant à simplifier et à faciliter la gestion d’environnements complexes. 
+
+Répondant à la demande croissante d’outils d’aide à la décision pour le pilotage des projets informatiques, son outil *“Squore for Software Analytics”* propose une solution complète de vérification et de validation des systèmes logiciels embarquées complexes, qui est devenue la référence pour les grands comptes industriels utilisant ou développant des logiciels et systèmes embarqués à haut niveau d’exigences sécuritaires.
+
+**Vector a choisi d’être partenaire officiel de Toulouse Dataviz** afin de contribuer à la diffusion des bonnes pratiques de la datavisualisation. “En tant qu’éditeur d’un outil adaptant les techniques de la Business Intelligence à l’ingénierie logicielle, la visualisation de données est au cœur de nos préoccupations. 
+
+Participer aux meetups de Dataviz, échanger sur les dernières avancées et nouvelles tendances en matière de restitution et de partage de données représente un atout important pour notre équipe R&D. Les meetups sont l’occasion de découvrir non seulement de nouvelles visualisations mais également de nouvelles technologies, de nouvelles bibliothèques. Cinq de nos ingénieurs y participent régulièrement et montrent un intérêt croissant.” rapporte Patrick Sardin, Directeur R&D de Squore."
+"Makina Corpus", sponsor, makinacorpus, https://makina-corpus.com/, "
+
+**Makina Corpus** est une société de services numériques qui conçoit et développe des applications innovantes en utilisant exclusivement des logiciels libres.
+
+La société s'est spécialisée dans le développement d'applications métiers, de portails complexes et d'applications cartographiques.
+"
+"Datasens", sponsor, datasens, http://datasens.fr/,"**DATASENS** accompagne les entreprises et réalise des Analyses et des Visualisations de données.
+
+Révélez vos données pour rechercher de l’information, se questionner, détecter des signaux faibles, se projeter et décider !
+
+Alain Ottenheimer : “En créant DATASENS, je partage aujourd’hui ma passion et mon expertise auprès d’entreprises qui cherchent à développer une approche concrète de valorisation de leur patrimoine data. J’ai acquis une grande sensibilité à l’analyse et à la visualisation de données durant ma carrière d’ingénieur et de manager au sein de grands groupes internationaux dans l’industrie automobile, aéronautique et spatiale. Ce parcours m’a permis de développer un savoir-faire en pilotage des processus métiers et de comprendre les mécanismes de décision au sein de l’entreprise. En développant des compétences informatiques en analyse de données et en visualisation de données, DATASENS fournit un service complet de qualité.”"
+
+"Perceptible", sponsor, perceptible, https://perceptible.fr/,"
+**Perceptible** percevoir - comprendre - agir : Rendre visible les indicateurs vitaux à la décision
+
+- Focalisé sur les indicateurs clés : Trop de tableaux de bord sont conçus comme la somme des reporting des différentes fonctions. S'il n'est pas l'image stricte des objectifs stratégiques, le tableau de bord devient du pdf sur l'imprimante ou de multiples écrans que chacun consultent à sa façon. Au lieu d'une vision commune, la mosaïque de réalités engendre des décisions non alignées. Le bon tableau de bord tient sur une page.
+
+- Regarde vers l'avant, explique et prédit : En général dans les organisations beaucoup d'énergie est consacrée à chiffrer précisément le passé ou le temps réel. Mais ... et le futur ? Le suivi précis des réalisations est certes vital à l'organisation, mais c'est devant que cela se passe ! Il vaut mieux conduire en regardant le pare brise que le rétroviseur pour anticiper difficultés et opportunités.
+
+- Rend visible les chiffres et leur donne du sens : De belles tables de chiffres avec deux décimales et des camemberts aux secteurs colorés à la queue leu leu. C'est le contexte qui donne à une valeur numérique isolée sa signification. L'information utile se trouve dans l'historique de l'évolution et la relation avec les autres indicateurs en amont et en aval." 
+"étincelle coworking", lieu, etincelle, http://www.coworking-toulouse.com/, "**Etincelle coworking** Un écrin au service de la réussite de vos projets.
+
+Sur 200m2, place Wilson, nous proposons des espaces dédiés au travail, aux collaborations et aux synergies.
+- Work : Un des meilleurs endroits pour travailler à Toulouse : Hyper centre, lumineux et spacieux.
+- Share : Partagez vos projets et vos idées et trouver les soutiens pour les réaliser
+- Grow : Augmentez vos compétences et développez votre activité grâce aux nombreux événements et formations"
+"Coworking Harrycow", lieu, harrycow, https://www.harrycow.com/, "**HarryCow**, un espace de travail à partager sans modération.
+
+Vous avez un projet ? Vous êtes curieux ? De passage à Toulouse ou résident ? À la recherche d’un lieu stimulant pour travailler ? Besoin d’un espace pour un événement ou d’une salle de réunion ? Recevoir des clients dans un cadre atypique et convivial ? Quel que soit votre profil professionnel :
+Faites le “Made in Harrycow” !
+
+- Coworking / Télétravail : Optimisez vos ambitions professionnelles dans un écosystème efficace, en totale liberté, toute quiétude mais sans solitude.
+
+- Espaces : Que vous soyez indépendants, salariés, chefs d’entreprise, étudiants et plus encore : profitez d’un lieu atypique, d’un cadre stimulant et d’un esprit convivial. 
+
+- Services : En plus des “Basics” (fibre HD, matériel, animations, débats …), l’“Indispensable” : une écoute attentive et des réponses selon vos besoins. 
+"
+"La Cantine Toulouse", lieu, lacantine, http://lacantine-toulouse.org/,"Depuis sa création en 2000, l’association **La Mêlée** a pour objectif de promouvoir les nouveaux usages du numérique. L’association propose au sein de ses deux tiers-lieux **Nova Mêlée** et **La Cantine Toulouse**, un espace de coworking ouvert à tous (sans réservation nécessaire), mêlant à la fois convivialité et experts du numérique. 
+
+Nous proposons également des salles de réunion, et accueillons de nombreux évènements (conférences, hackathon, formations…).
+
+Nos 2 lieux détiennent le label “Tiers Lieux Occitanie”, label de la Région Occitanie. "
