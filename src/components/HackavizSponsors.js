@@ -42,9 +42,11 @@ const HackavizSponsors = ({ currentHackaviz }) => {
       {hackavizSponsors.map(({ sponsor_pic }) => {
         const sponsorPic = getPic(sponsorsPics, sponsor_pic);
         return (
-          <Grid item className={classes.imageContainer}>
-            <GatsbyImage image={sponsorPic} alt={sponsor_pic} className={classes.gatsbyImageCentered} />
-          </Grid>
+          <a href={'/sponsors'} target="_blank" rel="noreferrer">
+            <Grid item className={classes.imageContainer}>
+              <GatsbyImage image={sponsorPic} alt={sponsor_pic} className={classes.gatsbyImageCentered} />
+            </Grid>
+          </a>
         );
       })}
     </Grid>
