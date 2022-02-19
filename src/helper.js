@@ -12,7 +12,7 @@ export const getVideoEmbedId = videoLink => {
       timeStartArg = `?start=${timeStartMatch[1]}`;
     }
     const videoLinkMatch = videoLink.match(regexpVideoId);
-    return videoLinkMatch ? videoLinkMatch[1] + timeStartArg : null;
+    return videoLinkMatch ? videoLinkMatch[1] + timeStartArg : new URL(videoLink)?.pathname;
   }
   return null;
 };
