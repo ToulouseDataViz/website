@@ -1,9 +1,11 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
 export const useEventsNotion = () => {
-  const { allNotionDatabase: { nodes } } = useStaticQuery(graphql`
-    query { 
-      allNotionDatabase(filter: {title: {eq: "meetups_full"}}) {
+  const {
+    allNotionDatabase: { nodes },
+  } = useStaticQuery(graphql`
+    query {
+      allNotionDatabase(filter: { title: { eq: "meetups_full" } }) {
         nodes {
           childrenNotionPage {
             title
@@ -44,6 +46,20 @@ export const useEventsNotion = () => {
               videoLink {
                 url
               }
+              PresLink {
+                url
+              }
+              PresLink2 {
+                url
+              }
+              PresLink3 {
+                url
+              }
+              VignetteLink {
+                rich_text {
+                  plain_text
+                }
+              }
             }
             childMarkdownDescriptionFromNotion {
               childrenMarkdownRemark {
@@ -67,6 +83,9 @@ export const useEventsNotion = () => {
     date: properties.Date?.date?.start,
     meetupLink: properties.meetupLink?.url,
     videoLink: properties.videoLink?.url,
+    place: properties.place,
+    presLinks: [properties.PresLink, properties.PresLink2, properties.PresLink3],
+    vignetteLink: properties.VignetteLink,
   }));
 };
 
