@@ -2,7 +2,7 @@ import React from 'react';
 import Button from './components/Button';
 
 // strip out some values since YouTube embed API is different from YouTube main API
-const regexpVideoId = /v=(.+?(?=\&|$))/;
+const regexpVideoId = /v=(.+?(?=&|$))/;
 const regexpVideoStartTime = /t=(\d*)s/;
 export const getVideoEmbedId = videoLink => {
   if (videoLink) {
@@ -39,7 +39,7 @@ export const parseMarkdownToString = markdownText => {
     .replace(/^### (.*$)/gim, '$1')
     .replace(/^## (.*$)/gim, '$1')
     .replace(/^# (.*$)/gim, '$1')
-    .replace(/^\> (.*$)/gim, '$1')
+    .replace(/^> (.*$)/gim, '$1')
     .replace(/\*\*(.*)\*\*/gim, '$1')
     .replace(/\*(.*)\*/gim, '$1')
     .replace(/!\[(.*?)\]\((.*?)\)/gim, '')
