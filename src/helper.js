@@ -24,7 +24,7 @@ export const formatH1 = ({ children, ...props }) => (
     <h2>{children}</h2>
   </header>
 );
-export const formatIframe = props => <iframe style={{ backgroundColor: 'white' }} {...props} />;
+export const formatIframe = props => <iframe title={"embeddedVideo"} style={{ backgroundColor: 'white' }} {...props} />;
 export const formatLink = ({ href, children, ...props }) => (
   <Button link={href} text={children} size={'small'} {...props} />
 );

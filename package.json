@@ -23,7 +23,7 @@
     "gatsby-plugin-sass": "^4.3.0",
     "gatsby-plugin-sharp": "^3.4.0",
     "gatsby-source-filesystem": "^3.3.0",
-    "gatsby-source-notion-api": "^0.10.0",
+    "gatsby-source-notion-api": "^0.11.0",
     "gatsby-source-remote-file": "^0.4.0",
     "gatsby-transformer-csv": "^3.3.0",
     "gatsby-transformer-remark": "^4.0.0",
@@ -44,8 +44,8 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "gatsby clean",
+    "format": "prettier --write '**/*.js'"
   },
   "devDependencies": {
     "gatsby-source-notion": "github:alvis/gatsby-source-notion#c97d301",
