@@ -8,12 +8,13 @@ import { IconContext } from 'react-icons';
 import { FaMeetup, FaYoutube } from 'react-icons/fa';
 import { CgFileDocument } from 'react-icons/cg';
 
-import { parseMarkdownToString } from '../helper';
-
+import { parseMarkdownToString, localiseDate } from '../helper';
+import usePics from '../hooks/usePics';
+import Gallery from '../components/Gallery';
 const useStyles = makeStyles(theme => ({
   meetup: {
     padding: theme.spacing(2),
-    height: '400px',
+    height: '580px',
     display: 'flex',
     flexDirection: 'column',
   },
@@ -22,45 +23,81 @@ const useStyles = makeStyles(theme => ({
 const Event = ({
   meetupid,
   title,
-  place,
   date,
   videoLink,
   meetupLink,
   descriptionRawString,
   presLinks,
   vignetteLink,
+  lecturers,
 }) => {
   const classes = useStyles();
   const description = parseMarkdownToString(descriptionRawString);
-  const dateConvert = new Date(date.slice(0, 4), date.slice(5, 7) - 1, date.slice(8, 10));
-  const options = { year: 'numeric', month: 'long', day: 'numeric' };
-  console.log(presLinks);
+  const frenchDate = localiseDate(date);
+  const meetupPics = usePics().filter(({ relativeDirectory, name }) => {
+    return relativeDirectory === `meetup-pics/${meetupid}`;
+  });
+  const maxImageHeight = '150px';
   return (
-    <Grid item xs={12} sm={4}>
+    <Grid item xs={12} sm={6} md={4}>
       <Box className={`${classes.meetup} container-background`}>
-        <div style={{ height: '110px', paddingBottom: '10px' }}>
+        <div style={{ minHeight: '100px', paddingBottom: '10px' }}>
           <Link to={`/event/${meetupid}`} style={{ borderBottom: 'none' }}>
-            <h4>{title}</h4>
+            <h5>{title}</h5>
           </Link>
         </div>
 
-        <Grid
+        <div
           container
           direction="column"
           style={{ flex: 1 }}
           flexDirection="column"
           justify="space-between"
-          alignItems="normal"
-        >
-          <IconContext.Provider value={{ size: '1.5em' }}>
-            <span style={{ paddingBottom: '10px' }}>{dateConvert.toLocaleDateString('FR-fr', options)}</span>
-            {descriptionRawString && <p style={{ flex: 1 }}>{`${description.substring(0, 190)}...`}</p>}
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          alignItems="normal">
+          <div
+            style={{
+              paddingBottom: '10px',
+              fontSize: 'small',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+            }}>
+            <div style={{ flex: '1' }}>{frenchDate}</div>
+            <div style={{ flex: '1', textAlign: 'right' }}>{lecturers ? lecturers : 'Toulouse DataViz'}</div>
+          </div>
+          {meetupPics.length > 0 && (
+            <Box style={{ height: maxImageHeight, marginBottom: '10px' }}>
+              <Gallery
+                style={{ height: maxImageHeight }}
+                picsToDisplay={meetupPics}
+                limit={1}
+                decorator={false}
+                maxHeight={maxImageHeight}
+              />
+            </Box>
+          )}
+          {descriptionRawString && (
+            <div style={{ height: '21vh', overflow: 'hidden' }}>
+              <div style={{ height: '18vh', fontSize: '15px' }}>{description}</div>
+              <div
+                style={{
+                  height: '40px',
+                  width: '100%',
+                  position: 'sticky',
+                  background: 'linear-gradient(rgba(26, 30, 45, 0.5),rgba(26, 30, 45, 1))',
+                }}></div>
+            </div>
+          )}
+
+          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <IconContext.Provider value={{ size: '1.5em' }}>
               {videoLink && (
                 <a href={videoLink} target="_blank" rel="noreferrer" className="icon">
                   <FaYoutube />
                 </a>
               )}
+              {!videoLink && <div style={{ width: '26px' }}></div>}
+
               {presLinks &&
                 presLinks.map(presLink => {
                   if (presLink) {
@@ -78,9 +115,10 @@ const Event = ({
                   <FaMeetup />
                 </a>
               )}
-            </div>
-          </IconContext.Provider>
-        </Grid>
+              {!meetupLink && <div style={{ width: '26px' }}></div>}
+            </IconContext.Provider>
+          </div>
+        </div>
       </Box>
     </Grid>
   );

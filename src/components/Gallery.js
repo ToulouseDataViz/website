@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { GatsbyImage } from "gatsby-plugin-image";
+import React, { useEffect, useState } from 'react';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 import { makeStyles } from '@material-ui/core/styles';
 import { Box } from '@material-ui/core';
@@ -10,7 +10,7 @@ import usePics from '../hooks/usePics';
 
 const useStyles = makeStyles(theme => ({
   galleryLarge: {
-    margin: theme.spacing(2,0),
+    margin: theme.spacing(2, 0),
     display: 'grid',
     gridTemplateColumns: 'repeat(5, 1fr)',
     gridGap: '1em',
@@ -30,30 +30,30 @@ const useStyles = makeStyles(theme => ({
     '& > :nth-child(6n + 4)': {
       gridColumn: 'span 1',
       gridRow: 'span 1',
-    }
     },
-  gallerySmall:{
-    margin: theme.spacing(1,0),
+  },
+  gallerySmall: {
+    margin: theme.spacing(1, 0),
     display: 'grid',
     gridTemplateColumns: 'repeat(8, 1fr)',
     gridGap: '1em',
   },
-  image: {
+
+  imageHover: {
     boxShadow: '0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19)',
 
     '&:hover': {
       transform: 'scale(2)',
-      transition:' all ease 1s',
+      transition: ' all ease 1s',
       zIndex: '42',
     },
   },
 }));
 
-const Gallery = ({ picsToDisplay = null, type = 'large', limit = null }) => {
+const Gallery = ({ picsToDisplay = null, type = 'large', limit = null, decorator = true, maxHeight = '200px' }) => {
   const classes = useStyles();
   const defaultMeetupPics = usePics().filter(({ relativeDirectory }) => relativeDirectory.startsWith('meetup-pics'));
   const refreshPeriodInSeconds = 10000;
-  
 
   const [pics, setPics] = useState([]);
 
@@ -62,7 +62,7 @@ const Gallery = ({ picsToDisplay = null, type = 'large', limit = null }) => {
 
     if (limit) {
       // get [limit] random element
-      pics = pics.sort(() => Math.random() - Math.random()).slice(0, limit)
+      pics = pics.sort(() => Math.random() - Math.random()).slice(0, limit);
     }
     setPics(pics); // set State
   };
@@ -79,17 +79,30 @@ const Gallery = ({ picsToDisplay = null, type = 'large', limit = null }) => {
    effect will only be triggered only once (on mount and unmount)
    https://reactjs.org/docs/hooks-effect.html#tip-optimizing-performance-by-skipping-effects
   */
-
-  return (
-    <Box className={clsx({ 
-      [classes.galleryLarge]: (type === 'large'), 
-      [classes.gallerySmall]: type === 'small'}
-    )}>
-      {pics.map(({ id, gatsbyImageData },i) => (
-        <GatsbyImage key={id} image={gatsbyImageData} className={classes.image}/>
-      ))}
-    </Box>
-  );
-}
+  if (decorator) {
+    return (
+      <Box
+        className={clsx({
+          [classes.galleryLarge]: type === 'large',
+          [classes.gallerySmall]: type === 'small',
+        })}>
+        {pics.map(({ id, gatsbyImageData }, i) => (
+          <GatsbyImage key={id} image={gatsbyImageData} className={classes.imageHover} />
+        ))}
+      </Box>
+    );
+  } else {
+    console.log(pics[0]);
+    return pics.map(({ id, gatsbyImageData }, i) => (
+      <GatsbyImage
+        key={id}
+        image={gatsbyImageData}
+        style={{ height: maxHeight }}
+        imgStyle={{ height: maxHeight }}
+        objectFit="contain"
+      />
+    ));
+  }
+};
 
 export default Gallery;

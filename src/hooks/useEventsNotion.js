@@ -1,5 +1,8 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
+function notionRichTextToString(notionProperty) {
+  return notionProperty?.rich_text?.map(({ plain_text }) => plain_text).join('');
+}
 export const useEventsNotion = () => {
   const {
     allNotionDatabase: { nodes },
@@ -33,9 +36,7 @@ export const useEventsNotion = () => {
               }
               place {
                 rich_text {
-                  text {
-                    content
-                  }
+                  plain_text
                 }
               }
               description {
@@ -60,6 +61,11 @@ export const useEventsNotion = () => {
                   plain_text
                 }
               }
+              presentateurs {
+                rich_text {
+                  plain_text
+                }
+              }
             }
             childMarkdownDescriptionFromNotion {
               childrenMarkdownRemark {
@@ -78,14 +84,15 @@ export const useEventsNotion = () => {
     meetupid: properties.meetupid?.number,
     title,
     status: properties.Status?.select?.name,
-    descriptionRawString: properties.description?.rich_text?.map(({ plain_text }) => plain_text).join(''),
+    descriptionRawString: notionRichTextToString(properties.description),
     descriptionHtmlAst: childrenMarkdownDescriptionFromNotion[0]?.childrenMarkdownRemark[0]?.htmlAst,
     date: properties.Date?.date?.start,
     meetupLink: properties.meetupLink?.url,
     videoLink: properties.videoLink?.url,
-    place: properties.place,
+    place: notionRichTextToString(properties.place),
     presLinks: [properties.PresLink, properties.PresLink2, properties.PresLink3],
     vignetteLink: properties.VignetteLink,
+    lecturers: notionRichTextToString(properties.presentateurs),
   }));
 };
 

@@ -24,7 +24,7 @@ export const formatH1 = ({ children, ...props }) => (
     <h2>{children}</h2>
   </header>
 );
-export const formatIframe = props => <iframe title={"embeddedVideo"} style={{ backgroundColor: 'white' }} {...props} />;
+export const formatIframe = props => <iframe title={'embeddedVideo'} style={{ backgroundColor: 'white' }} {...props} />;
 export const formatLink = ({ href, children, ...props }) => (
   <Button link={href} text={children} size={'small'} {...props} />
 );
@@ -48,3 +48,10 @@ export const parseMarkdownToString = markdownText => {
 
   return htmlText.trim();
 };
+
+export function localiseDate(date) {
+  const dateConvert = new Date(date.slice(0, 4), date.slice(5, 7) - 1, date.slice(8, 10));
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const frenchDate = dateConvert.toLocaleDateString('FR-fr', options);
+  return frenchDate;
+}
