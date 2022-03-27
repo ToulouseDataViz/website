@@ -1,22 +1,18 @@
-import { graphql } from "gatsby"
+import { graphql } from 'gatsby';
 
 import PageBanner from '../../components/PageBanner';
 import Button from '../../components/Button';
 import HackavizFooter from '../../components/HackavizFooter';
 
-<PageBanner 
-  styleId={1}
-  title={"Hackaviz 2021"}
-  description={"Les données"}
-/>
+<PageBanner styleId={1} title={'Hackaviz 2022'} description={'Les données'} />
 
 <section id="one">
 <div className="inner">
 
 <Button
-  link={"https://github.com/ToulouseDataViz/Hackaviz2021"}
-  display={"special"}
-  text={"Voir la page Github dédiée aux données"}
+  link={'https://github.com/ToulouseDataViz/Hackaviz2022'}
+  display={'special'}
+  text={'Voir la page Github dédiée aux données'}
 />
 
 <div
@@ -24,14 +20,14 @@ import HackavizFooter from '../../components/HackavizFooter';
   dangerouslySetInnerHTML={{ __html: props.data.allFile.nodes[0].childMarkdownRemark.html }}
 />
 
-<HackavizFooter year={'2021'} />
+<HackavizFooter year={'2022'} />
 
 </div>
 </section>
 
 export const pageQuery = graphql`
   query {
-    allFile(filter: {name: {eq: "hackaviz21_description"}}) {
+    allFile(filter: { name: { eq: "hackaviz22_description" } }) {
       nodes {
         childMarkdownRemark {
           html
@@ -39,5 +35,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
-
+`;
