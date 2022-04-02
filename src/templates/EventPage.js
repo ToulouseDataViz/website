@@ -8,7 +8,6 @@ import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import YoutubeEmbed from '../components/YoutubeEmbed';
 import Gallery from '../components/Gallery';
-import Button from '../components/Button';
 import MarkdownText from '../components/MarkdownText';
 import PrevNextPage from '../components/PrevNextPage';
 

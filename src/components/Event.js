@@ -14,11 +14,26 @@ import Gallery from '../components/Gallery';
 const useStyles = makeStyles(theme => ({
   meetup: {
     padding: theme.spacing(2),
-    height: '580px',
+    height: '630px',
     display: 'flex',
     flexDirection: 'column',
   },
 }));
+
+const renderLecturers = value => {
+  if (value.length < 40) {
+    return value;
+  } else {
+    const lecturerArray = value.split(';');
+    const abbrevLecturerArrays = lecturerArray.map(lecturer => {
+      const lecturerSpace = lecturer.indexOf(' ');
+      const lecturerFirstName = lecturer.slice(0, lecturerSpace - 1);
+      const lecturerLastName = lecturer.slice(lecturerSpace);
+      return lecturerFirstName.slice(0, 1) + '. ' + lecturerLastName;
+    });
+    return abbrevLecturerArrays.join(';');
+  }
+};
 
 const Event = ({
   meetupid,
@@ -34,16 +49,24 @@ const Event = ({
   const classes = useStyles();
   const description = parseMarkdownToString(descriptionRawString);
   const frenchDate = localiseDate(date);
-  const meetupPics = usePics().filter(({ relativeDirectory, name }) => {
+
+  const expectedMeetupPics = usePics().filter(({ relativeDirectory, name }) => {
     return relativeDirectory === `meetup-pics/${meetupid}`;
   });
+  const defaultMeetupPics = usePics().filter(({ relativeDirectory, name }) => {
+    return relativeDirectory === `meetup-pics/0`;
+  });
+
+  const meetupPics = expectedMeetupPics.length > 0 ? expectedMeetupPics : defaultMeetupPics;
+
   const maxImageHeight = '150px';
+
   return (
     <Grid item xs={12} sm={6} md={4}>
       <Box className={`${classes.meetup} container-background`}>
-        <div style={{ minHeight: '100px', paddingBottom: '10px' }}>
+        <div style={{ minHeight: '130px', paddingBottom: '10px' }}>
           <Link to={`/event/${meetupid}`} style={{ borderBottom: 'none' }}>
-            <h5>{title}</h5>
+            <h4>{title}</h4>
           </Link>
         </div>
 
@@ -57,36 +80,42 @@ const Event = ({
           <div
             style={{
               paddingBottom: '10px',
-              fontSize: 'small',
+              fontSize: '0.9em',
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'space-between',
             }}>
             <div style={{ flex: '1' }}>{frenchDate}</div>
-            <div style={{ flex: '1', textAlign: 'right' }}>{lecturers ? lecturers : 'Toulouse DataViz'}</div>
+            <div style={{ flex: '1', textAlign: 'right' }}>
+              {lecturers ? renderLecturers(lecturers) : 'Toulouse DataViz'}
+            </div>
           </div>
           {meetupPics.length > 0 && (
-            <Box style={{ height: maxImageHeight, marginBottom: '10px' }}>
-              <Gallery
-                style={{ height: maxImageHeight }}
-                picsToDisplay={meetupPics}
-                limit={1}
-                decorator={false}
-                maxHeight={maxImageHeight}
-              />
-            </Box>
+            <Link to={`/event/${meetupid}`} style={{ borderBottom: 'none' }}>
+              <Box style={{ height: maxImageHeight, marginBottom: '10px' }}>
+                <Gallery
+                  style={{ height: maxImageHeight }}
+                  picsToDisplay={meetupPics}
+                  limit={1}
+                  decorator={false}
+                  maxHeight={maxImageHeight}
+                />
+              </Box>
+            </Link>
           )}
           {descriptionRawString && (
-            <div style={{ height: '21vh', overflow: 'hidden' }}>
-              <div style={{ height: '18vh', fontSize: '15px' }}>{description}</div>
-              <div
-                style={{
-                  height: '40px',
-                  width: '100%',
-                  position: 'sticky',
-                  background: 'linear-gradient(rgba(26, 30, 45, 0.5),rgba(26, 30, 45, 1))',
-                }}></div>
-            </div>
+            <Link to={`/event/${meetupid}`} style={{ borderBottom: 'none' }}>
+              <div style={{ height: '190px', overflow: 'hidden' }}>
+                <div style={{ height: '130px', fontSize: '0.9em' }}>{description}</div>
+                <div
+                  style={{
+                    height: '60px',
+                    width: '100%',
+                    position: 'sticky',
+                    background: 'linear-gradient(rgba(26, 30, 45, 0.5),rgba(26, 30, 45, 1))',
+                  }}></div>
+              </div>
+            </Link>
           )}
 
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
