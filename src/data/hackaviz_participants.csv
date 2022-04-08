@@ -1,6 +1,8 @@
 hackaviz,nom,pic_name,outils,prix,description,link,link2
 2022,Alain Ferlac,2022-ferlac,Python et Powerpoint,,"Qui sont les bénéficiaires des subventions versées pour les œuvres classées comme disques.
 On constate que de 2016 à 2020 les 3 majors du disque (Universal, Sony et Warner) récupèrent la même somme (30 M€) que les 1795 autres sociétés de production alors qu'elles ne réalisent que 400 vs 4054 projets.",/hackaviz/2022-ferlac.pdf,
+2022,Reunan Bellec,2022-bellec,"Majoritairement D3.js, Python et pandas pour la préparation des données, Node.js pour l'algorithme de positionnement des nœuds du graphe.",1er prix,Cette visualisation a pour but de visualiser les transferts d'argents par les organismes collecteurs de la copie privée. On peut ainsi observer quels sont les domaines les plus impactés.,https://hextracton.gitlab.io/dataviz-22/,
+2022,"Joachim Béaslas, Guillaume Poullain (Vector France)",2022-beaslas,Squore et la librairie Highcharts,2ème prix,Evolution du financement des projets artistiques par la copie privée en France : COVID or not COVID ?,http://djoman.com/hackaviz2022/,
 2022,Mickael Marchese,2022-marchese,"plotly
 Pandas",3ème prix,"""Copie Privée, A qui profite la redevance ?"" est une data storytelling interactive permettant au public de découvrir quel types d'oeuvres sont subventionnées par la redevance pour copie privée.",https://marchese.fr/hackaviz2022/,
 2022,Brice Renouf,2022-renouf,"Python, Excel, Tableau.",Prix spécial,"Les subventions dans l'industrie du divertissement ne semble pas un sujet des plus passionnant... Mais détrompez-vous ! A travers de nombreux chiffres et exemples, je vous propose de plonger dans ce mystérieux univers.",https://public.tableau.com/app/profile/brice.renouf/viz/subventionsco/dashboard,
@@ -29,7 +31,6 @@ Langage Cypher pour importer les données et exécuter des algorithmes de graph 
 Visualisation avec les outils Neo4j Browser, Bloom et NeoDash.",,"Dans le monde des données, connections vaut mieux que collections.
 Dit autrement, la valeur des données est dans leurs relations.
 Pour comprendre les données des collecteurs qui distribue des aides pour protéger les auteurs, je vous propose de stocker et visualiser les données sous forme de graphes. Les noeuds et les relations remplacent les tables et les colonnes. Cela permet une analyse systémique des aides accordées et révèle que les aides ne sont pas distribuées par hasard...",/hackaviz/2022-rouyer.pdf,
-2022,"Joachim Béaslas, Guillaume Poullain (Vector France)",2022-beaslas,Squore et la librairie Highcharts,2ème prix,Evolution du financement des projets artistiques par la copie privée en France : COVID or not COVID ?,http://djoman.com/hackaviz2022/,
 2022,Vincent Roger,2022-roger,"Python, pandas, Bokeh",,J'ai produit deux visualisations interactives représentant l'évolution du nombre d'aides allouées (par type). Plus de détails sur le lien.,http://vincent-roger.fr/blog/dev/2022/04/03/hackaviz_fr.html,
 2022,Emilie Dufresne,2022-dufresne,"Datawrapper : schémas 
 Observablehq : stockage des schémas 
@@ -45,7 +46,6 @@ Donc un grand merci à tous les artistes. Je ne vous abandonne pas sans rien, vo
 2022,"Skander Boudawara, Houcem Chaabane, Fethallah Diss (Les howmz)",2022-boudawara,"Paint + Google Sheets + Google slides + Microsoft Excel
 ",Prix coup de pouce,Nous avons voulu faire une étude de l’impact COVID sur les RDP en analysant les catégories d’oeuvres les plus impactées. Nous avons constaté au passage une diminution du nombre d'organismes de collection et la présence de monopoles. ,/hackaviz/2022-boudawara.pdf,
 2022,Georges Corbineau,2022-corbineau,"JS, D3, LayerCake, Svelte, ThreeJS",,Reprise de la présentation du mécanisme de la copie privée en ce concentrant sur les projets.,https://granahir-bucket.s3.eu-west-2.amazonaws.com/TDV2022/index.html,
-2022,Reunan Bellec,2022-bellec,"Majoritairement D3.js, Python et pandas pour la préparation des données, Node.js pour l'algorithme de positionnement des nœuds du graphe.",1er prix,Cette visualisation a pour but de visualiser les transferts d'argents par les organismes collecteurs de la copie privée. On peut ainsi observer quels sont les domaines les plus impactés.,https://hextracton.gitlab.io/dataviz-22/,
 2021,"Julie Auque, Pierre-Arnaud Auque",2021-aucque,"Excel, Python, D3js, Leaflet",1er prix,"*Ouvrir avec Firefox pour toutes les fonctionnalités*
 
 Vous êtes **auto-entrepreneur** ? Vous rêvez de monter votre entreprise ? Lancez-vous avec les Quartiers Prioritaires (QP) !
