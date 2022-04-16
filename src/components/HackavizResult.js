@@ -50,7 +50,7 @@ const getPrice = (prix, isDense) => {
   }
 };
 
-const HackavizResult = ({ nom, outils, prix, pic_name, link, children, columnValue, isDense = false }) => {
+const HackavizResult = ({ nom, outils, prix, pic_name, link, link2, children, columnValue, isDense = false }) => {
   const classes = useStyles();
   const resultsPics = usePics().filter(({ relativeDirectory }) => relativeDirectory === 'hackaviz-result-pics');
   const resultPic = getPic(resultsPics, pic_name);
@@ -83,6 +83,14 @@ const HackavizResult = ({ nom, outils, prix, pic_name, link, children, columnVal
             <Button
               link={link}
               text={isDense ? 'Voir' : 'Voir la réalisation'}
+              size={isDense ? 'small' : ''}
+              display={'special'}
+            />
+          )}
+          {link2 && (
+            <Button
+              link={link2}
+              text={isDense ? 'Voir' : 'Second lien'}
               size={isDense ? 'small' : ''}
               display={'special'}
             />

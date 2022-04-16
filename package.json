@@ -44,8 +44,10 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "clean": "gatsby clean",
-    "format": "prettier --write '**/*.js'"
+    "format": "prettier --write '**/*.js'",
+    "build:serve": "cd public && npx httpserver"
   },
   "devDependencies": {
     "gatsby-source-notion": "github:alvis/gatsby-source-notion#c97d301",
