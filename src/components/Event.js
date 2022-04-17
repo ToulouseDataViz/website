@@ -98,8 +98,9 @@ const Event = ({
                     style={{ height: maxImageHeight }}
                     picsToDisplay={meetupPics}
                     limit={1}
-                    decorator={false}
+                    embedInBox={false}
                     maxHeight={maxImageHeight}
+                    displayLightBoxOnClick={false}
                   />
                 </Link>
               </Box>

@@ -8,6 +8,9 @@ import clsx from 'clsx';
 
 import usePics from '../hooks/usePics';
 
+import Lightbox from 'react-awesome-lightbox';
+import 'react-awesome-lightbox/build/style.css';
+
 const useStyles = makeStyles(theme => ({
   galleryLarge: {
     margin: theme.spacing(2, 0),
@@ -43,19 +46,25 @@ const useStyles = makeStyles(theme => ({
     boxShadow: '0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19)',
 
     '&:hover': {
-      transform: 'scale(2)',
-      transition: ' all ease 1s',
-      zIndex: '42',
+      cursor: 'zoom-in',
     },
   },
 }));
 
-const Gallery = ({ picsToDisplay = null, type = 'large', limit = null, decorator = true, maxHeight = '200px' }) => {
+const Gallery = ({
+  picsToDisplay = null,
+  type = 'large',
+  limit = null,
+  embedInBox = true,
+  maxHeight = '200px',
+  displayLightBoxOnClick = true,
+}) => {
   const classes = useStyles();
   const defaultMeetupPics = usePics().filter(({ relativeDirectory }) => relativeDirectory.startsWith('meetup-pics'));
   const refreshPeriodInSeconds = 10000;
 
   const [pics, setPics] = useState([]);
+  const [displayLightBox, setDisplayLightBox] = useState(undefined);
 
   const getPics = () => {
     let pics = picsToDisplay ? picsToDisplay : defaultMeetupPics;
@@ -79,29 +88,55 @@ const Gallery = ({ picsToDisplay = null, type = 'large', limit = null, decorator
    effect will only be triggered only once (on mount and unmount)
    https://reactjs.org/docs/hooks-effect.html#tip-optimizing-performance-by-skipping-effects
   */
-  if (decorator) {
-    return (
-      <Box
-        className={clsx({
-          [classes.galleryLarge]: type === 'large',
-          [classes.gallerySmall]: type === 'small',
-        })}>
-        {pics.map(({ id, gatsbyImageData }, i) => (
-          <GatsbyImage key={id} image={gatsbyImageData} className={classes.imageHover} />
-        ))}
-      </Box>
-    );
+  if (!displayLightBox) {
+    if (embedInBox) {
+      return (
+        <Box
+          className={clsx({
+            [classes.galleryLarge]: type === 'large',
+            [classes.gallerySmall]: type === 'small',
+          })}>
+          {pics.map(({ id, gatsbyImageData }, i) => {
+            return (
+              <GatsbyImage
+                key={id}
+                className={classes.imageHover}
+                image={gatsbyImageData}
+                onClick={() => {
+                  displayLightBoxOnClick && setDisplayLightBox(gatsbyImageData.images.fallback.src);
+                }}
+              />
+            );
+          })}
+        </Box>
+      );
+    } else {
+      return pics.map(({ id, gatsbyImageData }, i) => {
+        return (
+          <GatsbyImage
+            key={id}
+            image={gatsbyImageData}
+            style={{ height: maxHeight }}
+            imgStyle={{ height: maxHeight }}
+            objectFit="contain"
+            onClick={() => {
+              displayLightBoxOnClick && setDisplayLightBox(gatsbyImageData.images.fallback.src);
+            }}
+          />
+        );
+      });
+    }
   } else {
-    console.log(pics[0]);
-    return pics.map(({ id, gatsbyImageData }, i) => (
-      <GatsbyImage
-        key={id}
-        image={gatsbyImageData}
-        style={{ height: maxHeight }}
-        imgStyle={{ height: maxHeight }}
-        objectFit="contain"
-      />
-    ));
+    return (
+      <Lightbox
+        image={displayLightBox}
+        title={'Image Title'}
+        showTitle={false}
+        allowRotate={false}
+        onClose={() => {
+          setDisplayLightBox(undefined);
+        }}></Lightbox>
+    );
   }
 };
 
