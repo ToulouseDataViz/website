@@ -64,11 +64,11 @@ const Event = ({
   return (
     <Grid item xs={12} sm={6} md={4}>
       <Box className={`${classes.meetup} container-background`}>
-        <Link
-          to={`/event/${meetupid}`}
-          style={{ borderBottom: 'none', flex: 1, display: 'flex', flexDirection: 'column' }}>
+        <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
           <div>
-            <h4>{title}</h4>
+            <Link to={`/event/${meetupid}`} style={{ borderBottom: 'none' }}>
+              <h4>{title}</h4>
+            </Link>
           </div>
 
           <div
@@ -93,18 +93,22 @@ const Event = ({
             </div>
             {meetupPics.length > 0 && (
               <Box style={{ height: maxImageHeight, marginBottom: '10px' }}>
-                <Gallery
-                  style={{ height: maxImageHeight }}
-                  picsToDisplay={meetupPics}
-                  limit={1}
-                  decorator={false}
-                  maxHeight={maxImageHeight}
-                />
+                <Link to={`/event/${meetupid}`} style={{ borderBottom: 'none' }}>
+                  <Gallery
+                    style={{ height: maxImageHeight }}
+                    picsToDisplay={meetupPics}
+                    limit={1}
+                    decorator={false}
+                    maxHeight={maxImageHeight}
+                  />
+                </Link>
               </Box>
             )}
             {descriptionRawString && (
               <div style={{ flex: '1', overflow: 'hidden', marginBottom: '10px' }}>
-                <div style={{ height: '160px', fontSize: '0.9em' }}>{description}</div>
+                <Link to={`/event/${meetupid}`} style={{ borderBottom: 'none' }}>
+                  <div style={{ height: '160px', fontSize: '0.9em' }}>{description}</div>
+                </Link>
               </div>
             )}
 
@@ -146,7 +150,7 @@ const Event = ({
               </IconContext.Provider>
             </div>
           </div>
-        </Link>
+        </div>
       </Box>
     </Grid>
   );

@@ -101,18 +101,22 @@ const EventPage = ({
               <div style={{ display: 'flex', alignItems: 'center' }}>
                 <ul>
                   <li>
-                    Présentations &nbsp;
-                    {presLinks.map(presLink => {
-                      if (presLink) {
-                        return (
-                          <a href={presLink.url} target="_blank" rel="noreferrer" className="icon">
-                            <CgFileDocument />
-                          </a>
-                        );
-                      } else {
-                        return <></>;
-                      }
-                    })}
+                    <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '24px' }}>
+                      Présentations : &nbsp;
+                      {presLinks.map(presLink => {
+                        if (presLink) {
+                          return (
+                            <div>
+                              <a href={presLink.url} target="_blank" rel="noreferrer" className="icon">
+                                <CgFileDocument size={'48px'} />
+                              </a>
+                            </div>
+                          );
+                        } else {
+                          return <></>;
+                        }
+                      })}
+                    </div>
                   </li>
                 </ul>
               </div>
