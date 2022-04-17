@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "gatsby";
+import React from 'react';
+import { Link } from 'gatsby';
 
-import useHomeContent from "../hooks/useHomeContent";
+import useHomeContent from '../hooks/useHomeContent';
 
 const Menu = ({ onToggleMenu }) => {
   const homeContentCsv = useHomeContent();
@@ -11,13 +11,13 @@ const Menu = ({ onToggleMenu }) => {
       <div className="inner">
         <ul className="links">
           <li>
-            <Link onClick={onToggleMenu} to={"/"}>
+            <Link onClick={onToggleMenu} to={'/'}>
               Accueil
             </Link>
           </li>
           {homeContentCsv.map(({ title, slug, isInMenu }, index) => {
-            if (isInMenu === "true") {
-              const linkContent = slug.startsWith("/") ? (
+            if (isInMenu === 'true') {
+              const linkContent = slug.startsWith('/') ? (
                 <Link onClick={onToggleMenu} to={slug}>
                   {title}
                 </Link>
@@ -31,7 +31,7 @@ const Menu = ({ onToggleMenu }) => {
           })}
         </ul>
       </div>
-      <a role="link" tabIndex={0} className="close" onClick={onToggleMenu}>
+      <a role="link" tabIndex={0} className="close" onClick={onToggleMenu} onKeyDown={onToggleMenu}>
         Close
       </a>
     </nav>

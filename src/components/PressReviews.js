@@ -4,8 +4,6 @@ import { Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { ToggleButton, ToggleButtonGroup } from '@material-ui/lab';
 
-import _vars from '../assets/scss/libs/_vars.scss';
-
 import usePressReview from '../hooks/usePressReviews';
 import PressReview from './PressReview';
 

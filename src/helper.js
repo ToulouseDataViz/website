@@ -2,7 +2,7 @@ import React from 'react';
 import Button from './components/Button';
 
 // strip out some values since YouTube embed API is different from YouTube main API
-const regexpVideoId = /v=(.+?(?=\&|$))/;
+const regexpVideoId = /v=(.+?(?=&|$))/;
 const regexpVideoStartTime = /t=(\d*)s/;
 export const getVideoEmbedId = videoLink => {
   if (videoLink) {
@@ -24,7 +24,7 @@ export const formatH1 = ({ children, ...props }) => (
     <h2>{children}</h2>
   </header>
 );
-export const formatIframe = props => <iframe style={{ backgroundColor: 'white' }} {...props} />;
+export const formatIframe = props => <iframe title={'embeddedVideo'} style={{ backgroundColor: 'white' }} {...props} />;
 export const formatLink = ({ href, children, ...props }) => (
   <Button link={href} text={children} size={'small'} {...props} />
 );
@@ -39,7 +39,7 @@ export const parseMarkdownToString = markdownText => {
     .replace(/^### (.*$)/gim, '$1')
     .replace(/^## (.*$)/gim, '$1')
     .replace(/^# (.*$)/gim, '$1')
-    .replace(/^\> (.*$)/gim, '$1')
+    .replace(/^> (.*$)/gim, '$1')
     .replace(/\*\*(.*)\*\*/gim, '$1')
     .replace(/\*(.*)\*/gim, '$1')
     .replace(/!\[(.*?)\]\((.*?)\)/gim, '')
@@ -48,3 +48,10 @@ export const parseMarkdownToString = markdownText => {
 
   return htmlText.trim();
 };
+
+export function localiseDate(date) {
+  const dateConvert = new Date(date.slice(0, 4), date.slice(5, 7) - 1, date.slice(8, 10));
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const frenchDate = dateConvert.toLocaleDateString('FR-fr', options);
+  return frenchDate;
+}
