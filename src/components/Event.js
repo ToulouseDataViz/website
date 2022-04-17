@@ -104,7 +104,7 @@ const Event = ({
             )}
             {descriptionRawString && (
               <div style={{ flex: '1', overflow: 'hidden', marginBottom: '10px' }}>
-                <div style={{ height: '200px', fontSize: '0.9em' }}>{description}</div>
+                <div style={{ height: '160px', fontSize: '0.9em' }}>{description}</div>
               </div>
             )}
 
