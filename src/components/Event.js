@@ -64,34 +64,34 @@ const Event = ({
   return (
     <Grid item xs={12} sm={6} md={4}>
       <Box className={`${classes.meetup} container-background`}>
-        <div style={{ minHeight: '130px', paddingBottom: '10px' }}>
-          <Link to={`/event/${meetupid}`} style={{ borderBottom: 'none' }}>
+        <Link
+          to={`/event/${meetupid}`}
+          style={{ borderBottom: 'none', flex: 1, display: 'flex', flexDirection: 'column' }}>
+          <div>
             <h4>{title}</h4>
-          </Link>
-        </div>
-
-        <div
-          container
-          direction="column"
-          style={{ flex: 1 }}
-          flexDirection="column"
-          justify="space-between"
-          alignItems="normal">
-          <div
-            style={{
-              paddingBottom: '10px',
-              fontSize: '0.9em',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between',
-            }}>
-            <div style={{ flex: '1' }}>{frenchDate}</div>
-            <div style={{ flex: '1', textAlign: 'right' }}>
-              {lecturers ? renderLecturers(lecturers) : 'Toulouse DataViz'}
-            </div>
           </div>
-          {meetupPics.length > 0 && (
-            <Link to={`/event/${meetupid}`} style={{ borderBottom: 'none' }}>
+
+          <div
+            container
+            direction="column"
+            style={{ flex: 1, display: 'flex', flexDirection: 'column' }}
+            flexDirection="column"
+            justify="space-between"
+            alignItems="normal">
+            <div
+              style={{
+                paddingBottom: '10px',
+                fontSize: '0.9em',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+              }}>
+              <div style={{ flex: '1' }}>{frenchDate}</div>
+              <div style={{ flex: '1', textAlign: 'right' }}>
+                {lecturers ? renderLecturers(lecturers) : 'Toulouse DataViz'}
+              </div>
+            </div>
+            {meetupPics.length > 0 && (
               <Box style={{ height: maxImageHeight, marginBottom: '10px' }}>
                 <Gallery
                   style={{ height: maxImageHeight }}
@@ -101,53 +101,52 @@ const Event = ({
                   maxHeight={maxImageHeight}
                 />
               </Box>
-            </Link>
-          )}
-          {descriptionRawString && (
-            <Link to={`/event/${meetupid}`} style={{ borderBottom: 'none' }}>
-              <div style={{ height: '190px', overflow: 'hidden' }}>
-                <div style={{ height: '130px', fontSize: '0.9em' }}>{description}</div>
-                <div
-                  style={{
-                    height: '60px',
-                    width: '100%',
-                    position: 'sticky',
-                    background: 'linear-gradient(rgba(26, 30, 45, 0.5),rgba(26, 30, 45, 1))',
-                  }}></div>
+            )}
+            {descriptionRawString && (
+              <div style={{ flex: '1', overflow: 'hidden', marginBottom: '10px' }}>
+                <div style={{ height: '200px', fontSize: '0.9em' }}>{description}</div>
               </div>
-            </Link>
-          )}
+            )}
 
-          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <IconContext.Provider value={{ size: '1.5em' }}>
-              {videoLink && (
-                <a href={videoLink} target="_blank" rel="noreferrer" className="icon">
-                  <FaYoutube />
-                </a>
-              )}
-              {!videoLink && <div style={{ width: '26px' }}></div>}
+            <div style={{ display: 'flex', justifyContent: 'space-between', position: 'relative' }}>
+              <div
+                style={{
+                  bottom: '40px',
+                  position: 'absolute',
+                  height: '60px',
+                  width: '100%',
+                  background: 'linear-gradient(rgba(26, 30, 45, 0.5),rgba(26, 30, 45, 1))',
+                }}></div>
+              <IconContext.Provider value={{ size: '1.5em' }}>
+                {videoLink && (
+                  <a href={videoLink} target="_blank" rel="noreferrer" className="icon">
+                    <FaYoutube />
+                  </a>
+                )}
+                {!videoLink && <div style={{ width: '26px' }}></div>}
 
-              {presLinks &&
-                presLinks.map(presLink => {
-                  if (presLink) {
-                    return (
-                      <a href={presLink.url} target="_blank" rel="noreferrer" className="icon">
-                        <CgFileDocument />
-                      </a>
-                    );
-                  } else {
-                    return <></>;
-                  }
-                })}
-              {meetupLink && (
-                <a href={meetupLink} target="_blank" rel="noreferrer" className="icon">
-                  <FaMeetup />
-                </a>
-              )}
-              {!meetupLink && <div style={{ width: '26px' }}></div>}
-            </IconContext.Provider>
+                {presLinks &&
+                  presLinks.map(presLink => {
+                    if (presLink) {
+                      return (
+                        <a href={presLink.url} target="_blank" rel="noreferrer" className="icon">
+                          <CgFileDocument />
+                        </a>
+                      );
+                    } else {
+                      return <></>;
+                    }
+                  })}
+                {meetupLink && (
+                  <a href={meetupLink} target="_blank" rel="noreferrer" className="icon">
+                    <FaMeetup />
+                  </a>
+                )}
+                {!meetupLink && <div style={{ width: '26px' }}></div>}
+              </IconContext.Provider>
+            </div>
           </div>
-        </div>
+        </Link>
       </Box>
     </Grid>
   );
