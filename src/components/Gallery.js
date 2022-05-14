@@ -17,6 +17,7 @@ const useStyles = makeStyles(theme => ({
     display: 'grid',
     gridTemplateColumns: 'repeat(5, 1fr)',
     gridGap: '1em',
+    textAlign: 'center',
 
     '& > :nth-child(6n + 3)': {
       gridColumn: 'span 1',
@@ -40,6 +41,7 @@ const useStyles = makeStyles(theme => ({
     display: 'grid',
     gridTemplateColumns: 'repeat(8, 1fr)',
     gridGap: '1em',
+    textAlign: 'center',
   },
 
   imageHover: {
@@ -52,11 +54,19 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Gallery = ({
+  /** list of pictures */
   picsToDisplay = null,
+  /** small/large */
   type = 'large',
+  /** max number of images to display */
   limit = null,
+  /** put image in a box container */
   embedInBox = true,
   maxHeight = '200px',
+  /**
+   * show image in a light box widget on click
+   * see https://github.com/theanam/react-awesome-lightbox#readme
+   */
   displayLightBoxOnClick = true,
 }) => {
   const classes = useStyles();
@@ -85,7 +95,7 @@ const Gallery = ({
     return () => clearInterval(interval);
   }, []);
   /*
-   effect will only be triggered only once (on mount and unmount)
+   effect will only be trigged only once (on mount and unmount)
    https://reactjs.org/docs/hooks-effect.html#tip-optimizing-performance-by-skipping-effects
   */
   if (!displayLightBox) {
@@ -96,7 +106,7 @@ const Gallery = ({
             [classes.galleryLarge]: type === 'large',
             [classes.gallerySmall]: type === 'small',
           })}>
-          {pics.map(({ id, gatsbyImageData }, i) => {
+          {pics.map(({ id, gatsbyImageData }) => {
             return (
               <GatsbyImage
                 key={id}
@@ -111,7 +121,7 @@ const Gallery = ({
         </Box>
       );
     } else {
-      return pics.map(({ id, gatsbyImageData }, i) => {
+      return pics.map(({ id, gatsbyImageData }) => {
         return (
           <GatsbyImage
             key={id}
