@@ -1,5 +1,5 @@
 import React from 'react';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import Gallery from '../components/Gallery';
 
 import { Grid, Box } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
@@ -9,7 +9,7 @@ import Button from './Button';
 import usePics from '../hooks/usePics';
 import MarkdownText from './MarkdownText';
 
-import { getPic } from '../helper';
+import { getPicName } from '../helper';
 
 const useStyles = makeStyles(theme => ({
   participants: {
@@ -50,10 +50,21 @@ const getPrice = (prix, isDense) => {
   }
 };
 
-const HackavizResult = ({ nom, outils, prix, pic_name, link, link2, children, columnValue, isDense = false }) => {
+const HackavizResult = ({
+  nom,
+  outils,
+  prix,
+  pic_name,
+  link,
+  link2,
+  children,
+  columnValue,
+  /** compact mode used in main hackaviz page */
+  isDense = false,
+}) => {
   const classes = useStyles();
   const resultsPics = usePics().filter(({ relativeDirectory }) => relativeDirectory === 'hackaviz-result-pics');
-  const resultPic = getPic(resultsPics, pic_name);
+  const resultPic = getPicName(resultsPics, pic_name);
 
   const participantStyle = clsx({
     [classes.participants]: !isDense,
@@ -65,11 +76,16 @@ const HackavizResult = ({ nom, outils, prix, pic_name, link, link2, children, co
     <Grid item xs={12} sm={columnValue}>
       <Box class={classes.content}>
         {prix && getPrice(prix, isDense)}
-        <Box class={participantStyle}>
+        <Box class={participantStyle} style={{ display: 'flex', flexDirection: 'column' }}>
           {pic_name && (
-            <Box className={classes.imageContainer}>
-              <GatsbyImage className={classes.image} image={resultPic} alt={pic_name} />
-            </Box>
+            <Gallery
+              style={isDense ? { display: 'flex' } : { height: '500px', display: 'flex' }}
+              picsToDisplay={[resultPic]}
+              limit={1}
+              embedInBox={false}
+              maxHeight={isDense ? undefined : '500px'}
+              displayLightBoxOnClick={true}
+            />
           )}
           {getName(nom, isDense)}
           {!isDense && markdownDescription && <MarkdownText className={classes.textAlign} hast={markdownDescription} />}
@@ -84,7 +100,7 @@ const HackavizResult = ({ nom, outils, prix, pic_name, link, link2, children, co
               link={link}
               text={isDense ? 'Voir' : 'Voir la réalisation'}
               size={isDense ? 'small' : ''}
-              display={'special'}
+              style={isDense ? { width: '100px', alignSelf: 'center' } : { width: '220px', alignSelf: 'center' }}
             />
           )}
           {link2 && (
@@ -92,7 +108,7 @@ const HackavizResult = ({ nom, outils, prix, pic_name, link, link2, children, co
               link={link2}
               text={isDense ? 'Voir' : 'Second lien'}
               size={isDense ? 'small' : ''}
-              display={'special'}
+              style={isDense ? { width: '100px', alignSelf: 'center' } : { width: '220px', alignSelf: 'center' }}
             />
           )}
         </Box>

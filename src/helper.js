@@ -17,7 +17,8 @@ export const getVideoEmbedId = videoLink => {
   return null;
 };
 
-export const getPic = (pics, myName) => pics.find(({ name }) => myName === name)?.gatsbyImageData;
+export const getPicName = (pics, myName) => pics.find(({ name }) => myName === name);
+export const getPic = (pics, myName) => getPicName(pics, myName)?.gatsbyImageData;
 
 export const formatH1 = ({ children, ...props }) => (
   <header className="major" {...props}>
