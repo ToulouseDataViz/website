@@ -18,7 +18,7 @@ const OffrePage = ({ data: { markdownRemark: { frontmatter: { title } , htmlAst 
       <PageBanner 
         styleId={4}
         title={"Nos offres"}
-        description={"Pret, partez, visualiez !"}
+        description={"Pret, partez, visualisez !"}
       />
 
       <div id="main" className="alt">
