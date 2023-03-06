@@ -26,7 +26,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline',
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -115,6 +114,28 @@ module.exports = {
       },
     },
     `gatsby-plugin-md-from-notion-table-attribute`,
-    `gatsby-plugin-meetup-pages-notion`,
+    `gatsby-plugin-meetup-pages-notion`, 
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {
+          "/public/**/*.html": [
+            "cache-control: public",
+            "cache-control:  max-age=0", 
+            "cache-control: must-revalidate"
+          ],
+          "/sw.js": [
+            "cache-control: public",
+            "cache-control:  max-age=0", 
+            "cache-control: must-revalidate"
+          ],
+          "/public/page-data/*": [
+            "cache-control: public",
+            "cache-control:  max-age=0", 
+            "cache-control: must-revalidate"
+          ]
+        }
+      },
+    },
   ],
 };
