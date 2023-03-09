@@ -11,19 +11,17 @@ import HackavizFooter from '../../components/HackavizFooter';
 
 <Button link={'https://github.com/ToulouseDataViz/Hackaviz-2023'} text={'Voir la page Github dédiée aux données'} />
 
-<!--
 <div
   className="blog-post-content"
   dangerouslySetInnerHTML={{ __html: props.data.allFile.nodes[0].childMarkdownRemark.html }}
 />
--->
+
 
 <HackavizFooter year={'2023'} />
 
 </div>
 </section>
 
-<!--
 export const pageQuery = graphql`
   query {
     allFile(filter: { name: { eq: "hackaviz23_description" } }) {
@@ -35,4 +33,3 @@ export const pageQuery = graphql`
     }
   }
 `;
--->
