@@ -102,14 +102,14 @@ module.exports = {
         ext: '.md',
       },
     },
-    {
+    /* {
       resolve: 'gatsby-source-remote-file',
       options: {
         url: 'https://raw.githubusercontent.com/ToulouseDataViz/Hackaviz-2023/main/README.md',
         name: 'hackaviz23_description',
         ext: '.md',
       },
-    },
+    }, */
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -122,27 +122,19 @@ module.exports = {
       },
     },
     `gatsby-plugin-md-from-notion-table-attribute`,
-    `gatsby-plugin-meetup-pages-notion`, 
+    `gatsby-plugin-meetup-pages-notion`,
     {
       resolve: `gatsby-plugin-netlify`,
       options: {
         headers: {
-          "/public/**/*.html": [
-            "cache-control: public",
-            "cache-control:  max-age=0", 
-            "cache-control: must-revalidate"
+          '/public/**/*.html': ['cache-control: public', 'cache-control:  max-age=0', 'cache-control: must-revalidate'],
+          '/sw.js': ['cache-control: public', 'cache-control:  max-age=0', 'cache-control: must-revalidate'],
+          '/public/page-data/*': [
+            'cache-control: public',
+            'cache-control:  max-age=0',
+            'cache-control: must-revalidate',
           ],
-          "/sw.js": [
-            "cache-control: public",
-            "cache-control:  max-age=0", 
-            "cache-control: must-revalidate"
-          ],
-          "/public/page-data/*": [
-            "cache-control: public",
-            "cache-control:  max-age=0", 
-            "cache-control: must-revalidate"
-          ]
-        }
+        },
       },
     },
   ],
