@@ -100,7 +100,7 @@ const HackavizResult = ({
               link={link}
               text={isDense ? 'Voir' : 'Voir la réalisation'}
               size={isDense ? 'small' : ''}
-              style={isDense ? { width: '100px', alignSelf: 'center' } : { width: '220px', alignSelf: 'center' }}
+              style={isDense ? { width: '100px', alignSelf: 'center' } : { alignSelf: 'center' }}
             />
           )}
           {link2 && (
@@ -108,7 +108,7 @@ const HackavizResult = ({
               link={link2}
               text={isDense ? 'Voir' : 'Second lien'}
               size={isDense ? 'small' : ''}
-              style={isDense ? { width: '100px', alignSelf: 'center' } : { width: '220px', alignSelf: 'center' }}
+              style={isDense ? { width: '100px', alignSelf: 'center' } : { alignSelf: 'center' }}
             />
           )}
         </Box>
