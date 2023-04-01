@@ -10,7 +10,7 @@ do
     case "$1" in
         -c) 
             echo "convert files!"
-            convert=true
+            convert="true"
             ;;
         *) echo "-c to convert"
             exit 0
@@ -24,9 +24,10 @@ find src static -type f \( -name \*.png -o -name \*.jp* -o -name \*.webm \) | wh
    file_size_kb=`du -k "$f" | cut -f1`
    file_info=$(identify -format "%wx%h\n" "$f")
    echo "Will be resized: $f ($file_size_kb kB) $file_info"
-   if [[ convert ]]
+   if [ ! -z "$convert" ];
    then
-    mogrify -resize ''"$W"x"$H"'' "$f"
+    # see https://developers.google.com/speed/docs/insights/OptimizeImages
+    mogrify -sampling-factor 4:2:0 -strip -quality 85  -resize ''"$W"x"$H"'' "$f"
    fi
   fi
 done
