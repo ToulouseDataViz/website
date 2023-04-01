@@ -1,4 +1,41 @@
 hackaviz,nom,pic_name,outils,prix,description,link,link2
+2023,Christophe Rousse,2023-rousse,"J'ai utilisé l'outil Alteryx pour un peu de cleaning des données et pour regrouper les noms d'opérateurs proches (ex: ""Bouygues Energie et Services"" et ""Bougues E&S"").
+Tout le reste a été réalisé avec l'outil Tableau.",1er prix,"Cette visualisation présente la progressivité géographie et temporelle des implantations de stations de recharge de véhicules électriques sur les 8 dernières années.
+Chaque point représentant une station de recharge, cela permet en particulier de constater que la stratégie d'implantation des différents opérateurs repose sur des investissements locaux ou régionaux. Evident pour des Opérateurs ""locaux"" comme Sorégies ou Siège27, la visualisation met en évidence les investissements localisés des Opérateurs Nationaux.",/hackaviz/2023-rousse.pdf,
+2023,Brice Renouf,2023-renouf,"Excel, Python, Tableau",2ieme prix,"Peut-on profiter pleinement de la Bretagne avec une voiture électrique ?
+Cette visualisation va vous permettre de découvrir la Bretagne sous un autre angle et de connaître le déploiement des stations de recharge à travers plusieurs critères.
+N'hésitez pas à cliquer un peu partout, tout est interactif.
+Bon voyage ! ",https://public.tableau.com/app/profile/brice.renouf/viz/Hackaviz_2023/dashboard,
+2023,"Mathieu Chevallier, Jeroen Schouten, Charles Cledat (SPALLIAN)",2023-chevallier,"- Exploration et data preprocessing : Python, Excel, Power Query
+- Stockage des données : PostgreSQL
+- Maquettage et illustrations : Figma
+- Dataviz : SPALLIAN Strategy",3ieme Prix,"Convertir sa voiture au Superéthanol-E85, est-ce rentable ? Quelles sont les avantages et les inconvénients au quotidien de la conversion pour les automobilistes ? Pour répondre à ces questions, nous avons valorisé les données de la base Prix des Carburants (DGCCRF) :
+- Visualisation et l'analyse de l'évolution hebdomadaire des prix à la pompe en 2022, par type de carburant
+- Cartographie des stations par département, selon les carburants distribués par celles-ci
+- Création d'un simulateur du temps d'amortissement financier de la conversion de son véhicule au E85",https://external.spallian.com/stat_dashboard.html?name=hackaviz_toulouse_2023&token_id=hackaviz_toulouse_2023,
+2023,Eva Omedes Domene,2023-omedesdomene,"Power BI a été utilisé pour l'analyse et Figma pour la conception de ce tableau de bord.
+
+*Seules les données de la France et de la Corse ont été prises en compte.",Prix Spécial,"Cet écran se compose de 3 onglets :
+- Analyse des stations de recharge électrique ;
+- Analyse des stations-service ;
+- Dans cette partie, nous pouvons comparer le coût d'un trajet en fonction des kilomètres sélectionnés. 
+Dans la partie consacrée à l'analyse des bornes de recharge et des stations-service, vous pouvez voir différentes mesures et graphiques, tous entièrement interactifs.",https://app.powerbi.com/view?r=eyJrIjoiYWI5ZDZmMmMtNzNlZS00MTJhLThkMjQtMmQ1MjFmZjY0YTVkIiwidCI6IjA3N2I3NjZiLTYxZjAtNGU3Yy05MzczLTkyODgzMmFhOWZlZiIsImMiOjh9,
+2023,"Anaël Delorme, François Sémécurbe (Faucheurs de Données)",2023-sémécurbe,"Python, Javascript, Css, html, Echarts et Observable",Prix coup de pouce,"Notre DataViz vise à décrire le marché émergent des bornes de recharge. Elle aborde trois points, la localisation des bornes selon les opérateurs, la répartition des bornes selon les enseignes et enfin leur degré d'ouverture à la concurrence. Les données bien qu’incomplètes nous ont permis de découvrir les enjeux autour de ces bornes et de nous positionner en tant que citoyens. Nous avons construit notre DataViz comme support de nos réflexions.
+",https://anaeldelorme.github.io/hackaviz2023/,
+2023,Benjamin Beyrie,2023-beyrie,"Python pour le preprocessing des données
+Tableau Software pour la viz",,Evolution de 2016 à nos jours de l'electrique en france métropolitaine,https://public.tableau.com/app/profile/benjamin5723/viz/BornesElec/PageDaccueil,
+2023,Samuel Kerhuel,2023-kerhuel,Tableau,,Evolution annuelle du nombre de borne de recharge electrique en France,https://public.tableau.com/app/profile/samuel.kerhuel/viz/Hackaviz2023/Dashboard1,
+2023,Valentin Delpy,2023-delpy,"Python, Jupyter Notebook (Dataprep), Dash (Front-end), Heroku (hébergement)",,"La visualisation présente l'implantation des bornes de recharge en Occitanie : emplacement, type d'implantation, opérateur chargé de l'installation, etc.",https://hackaviz2023-valentindelpy.herokuapp.com/,
+2023,Romain Pegeot,2023-pegeot,Transformation des données et visualisations réalisées avec Power BI,,Lien entre la mise en service des bornes de recharges électriques et le coût des carburants entre 2022 et 2023,/hackaviz/2023-pegeot.pdf,
+2023,"Camille Lecoq, Marie Saugey (KPBG)",2023-lecoq,Tableau Public,,Analyse de la majoration des prix du carburant sur autoroute en Nouvelle-Aquitaine.,https://public.tableau.com/app/profile/camille.lecoq/viz/ToulouseHackaviz2023KPBG/PrixdupleinenN-A?publish=yes,
+2023,Alexis Drubay,2023-drubay,"- Utilisation de MariaDB pour stocker la grande quantité de donné et l'utiliser facilement
+- Utilisation au départ de Python et du plugin Folium
+- Puis au final, utilisation de données et du plugin leaflet pour créer une carte animée",,"Cette visualisation s'appuie sur le support visuel d'une carte de la France.
+Cette carte est interactive et offre des informations supplémentaires lorsque que le curseur survole une zone.
+Cette carte évolue en fonction du scrolle de l'utilisateur, en effet sur la gauche de l'écran il y a une petite flèche qui indique la catégorie visualisée. Et lorsque l'utilisateur scrolle, la carte s'adapte à la catégorie.",https://alexis06030631.github.io/hackaviz2023/,
+2023,"Romane Bellomo, Audric Moussaoui Marchal (MS AIBesT)",2023-ralantoson,"Power BI, Python",,Cette visualisation permet de comprendre comment les prix des carburants et de l'énergie ont évolué ces dernières années et comment cela peut avoir un impact sur les choix des particuliers en matière de véhicules en France.,/hackaviz/2023-ralantoson.pdf,https://app.powerbi.com/view?r=eyJrIjoiNjMwOWM4YWUtZmZjZi00YmZlLWJlYjgtMDg0ZmQyYmJmNzlkIiwidCI6ImYxZjhjODA3LTlmYWYtNDc1NC1iNDNkLWY3YTlkODFmNmMzMSJ9
+2023,"Jessica Babin, Elise Bonotto, Elena Dupuy, Mathilde Saccareau (VizionR)",2023-bonotto,RMarkdown (Leaflet et GGplot),,"Dans cette application nous regardons le prix moyen du carburant E10 sur les années 2022/2023 dans les stations de France. N'hésitez pas à zoomer à la recherche des stations proches de chez vous. 
+Vous trouverez également le prix résumé par région avec une petite course de voitures ! C'est bien la seule course où l'on espère que sa région va perdre...  ",/hackaviz/2023-vizionR.html,https://github.com/elisebonotto/Hackaviz2023
 2022,Alain Ferlac,2022-ferlac,Python et Powerpoint,,"Qui sont les bénéficiaires des subventions versées pour les œuvres classées comme disques.
 On constate que de 2016 à 2020 les 3 majors du disque (Universal, Sony et Warner) récupèrent la même somme (30 M€) que les 1795 autres sociétés de production alors qu'elles ne réalisent que 400 vs 4054 projets.",/hackaviz/2022-ferlac.pdf,
 2022,Reunan Bellec,2022-bellec,"Majoritairement D3.js, Python et pandas pour la préparation des données, Node.js pour l'algorithme de positionnement des nœuds du graphe.",1er prix,Cette visualisation a pour but de visualiser les transferts d'argents par les organismes collecteurs de la copie privée. On peut ainsi observer quels sont les domaines les plus impactés.,https://hextracton.gitlab.io/dataviz-22/,
