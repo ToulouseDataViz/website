@@ -35,7 +35,6 @@ const HomeIndex = () => {
   const homeContentCsv = useHomeContent();
 
   const eventKey = 'Evènements';
-  const guideKey = 'Guide de dataviz';
   const clubKey = 'Le Club';
 
   return (
@@ -60,10 +59,10 @@ const HomeIndex = () => {
                 <header className="major">
                   <h3>{title}</h3>
                   <p>{subtitle}</p>
-                  {(title === eventKey || title === clubKey || title === guideKey )  && <Link to={slug} className="link primary"></Link>}
+                  {(title === eventKey || title === clubKey )  && <Link to={slug} className="link primary"></Link>}
                 </header>
                 <>
-                  {title !== eventKey && title !== clubKey && title !== guideKey && <Link to={slug} className="link primary"></Link>}
+                  {title !== eventKey && title !== clubKey && <Link to={slug} className="link primary"></Link>}
                   {title === eventKey && (
                     <div
                       style={{
@@ -78,25 +77,6 @@ const HomeIndex = () => {
                         wrapForPage={false}
                         smallFormat={true}
                       />
-                    </div>
-                  )}
-                  {title === guideKey && (
-                    <div
-                      className="inner card"
-                      style={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'end',
-                        justifyContent: 'space-between',
-                      }}>
-                      <Button
-                        link={
-                          'https://toulouse-dataviz.notion.site/33d69905ad354e0385ccb3a12df48830?v=12bec766fd194c69b56e8145f2a2c74a'
-                        }
-                        text={'Notion'}
-                      />
-                      <Button link={'https://guides.toulouse-dataviz.fr/'} text={'Cloaked'} />
-                      <Button link={'https://toulousedataviz.github.io/guide.html'} text={'GitHub Pages'} />
                     </div>
                   )}
                   {title === clubKey && (
