@@ -8,7 +8,8 @@ import useSiteMetadata from '../hooks/useSiteMetadata';
 import useHomeContent from '../hooks/useHomeContent';
 import Gallery from '../components/Gallery';
 import Events from '../components/Events';
-import Footer from '../components/Footer'
+import Footer from '../components/Footer';
+import Button from '../components/Button';
 import { incomingEventStatusName } from '../settings';
 
 import pic01 from '../assets/images/pic01.jpg';
@@ -33,8 +34,9 @@ const HomeIndex = () => {
   const { headerTitle, headerSubtitle } = useSiteMetadata();
   const homeContentCsv = useHomeContent();
 
-  const eventKey="Evènements";
-  const clubKey="Le Club";
+  const eventKey = 'Evènements';
+  const guideKey = 'Guide de dataviz';
+  const clubKey = 'Le Club';
 
   return (
     <Layout hideFooter={true}>
@@ -58,50 +60,63 @@ const HomeIndex = () => {
                 <header className="major">
                   <h3>{title}</h3>
                   <p>{subtitle}</p>
-                  {(title === eventKey || title === clubKey) && <Link to={slug} className="link primary"></Link>}
+                  {(title === eventKey || title === clubKey || title === guideKey )  && <Link to={slug} className="link primary"></Link>}
                 </header>
                 <>
-                  {(title !== eventKey && title !== clubKey) && <Link to={slug} className="link primary"></Link>}
-                  {(
-                    title === eventKey && (
-                      <div
-                        style={{
-                          minWidth:'50%',
-                          maxWidth:'450px',                          
-                        }}
-                        className="card-event card">
-                        <Events
-                          style={{ padding: '20px' }}
-                          includeStatus={[incomingEventStatusName]}
-                          displayVideoFilter={false}
-                          wrapForPage={false}
-                          smallFormat={true}
-                        />
-                      </div>
-                    )
+                  {title !== eventKey && title !== clubKey && title !== guideKey && <Link to={slug} className="link primary"></Link>}
+                  {title === eventKey && (
+                    <div
+                      style={{
+                        minWidth: '50%',
+                        maxWidth: '440px',
+                      }}
+                      className="card-event card">
+                      <Events
+                        style={{ padding: '20px' }}
+                        includeStatus={[incomingEventStatusName]}
+                        displayVideoFilter={false}
+                        wrapForPage={false}
+                        smallFormat={true}
+                      />
+                    </div>
                   )}
-                  {
-                    (
-                      title === clubKey && (
-                        <div className="inner card"  style={{
-                          
-                          display: 'flex',
-                          flexDirection: 'column',
-                          alignItems: 'end',
-                          justifyContent: 'space-between'                          
-                        }} >
-                        <Gallery type={'small'} limit={8} style={{height: "75%"}}/>
-                        <Footer hideCopyright />
-                      </div>
-                      )
-                    )
-                  }
+                  {title === guideKey && (
+                    <div
+                      className="inner card"
+                      style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'end',
+                        justifyContent: 'space-between',
+                      }}>
+                      <Button
+                        link={
+                          'https://toulouse-dataviz.notion.site/33d69905ad354e0385ccb3a12df48830?v=12bec766fd194c69b56e8145f2a2c74a'
+                        }
+                        text={'Notion'}
+                      />
+                      <Button link={'https://guides.toulouse-dataviz.fr/'} text={'Cloaked'} />
+                      <Button link={'https://toulousedataviz.github.io/guide.html'} text={'GitHub Pages'} />
+                    </div>
+                  )}
+                  {title === clubKey && (
+                    <div
+                      className="inner card"
+                      style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'end',
+                        justifyContent: 'space-between',
+                      }}>
+                      <Gallery type={'small'} limit={8} style={{ height: '75%' }} />
+                      <Footer hideCopyright />
+                    </div>
+                  )}
                 </>
               </article>
             );
           })}
         </section>
-        
       </div>
     </Layout>
   );
