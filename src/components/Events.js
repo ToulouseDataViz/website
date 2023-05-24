@@ -11,6 +11,7 @@ const Events = ({
   displayVideoFilter = true,
   wrapForPage = false,
   title = null,
+  smallFormat = undefined
 }) => {
   const events = useEventsNotion()
     .filter(({ status }) => includeStatus.includes(status))
@@ -48,7 +49,7 @@ const Events = ({
       <Grid container spacing={2}>
         {displayEvents.map(meetup => (
           <React.Fragment key={meetup.meetupid}>
-            <Event {...meetup} />
+            <Event {...meetup} smallFormat={smallFormat} />
           </React.Fragment>
         ))}
       </Grid>

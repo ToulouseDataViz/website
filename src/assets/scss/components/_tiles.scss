@@ -20,24 +20,19 @@
     @include vendor('display', 'flex');
     @include vendor(
       'transition',
-      (
-        'transform 0.25s ease',
-        'opacity 0.25s ease',
-        'filter 1s ease',
-        '-webkit-filter 1s ease'
-      )
+      ('transform 0.25s ease', 'opacity 0.25s ease', 'filter 1s ease', '-webkit-filter 1s ease')
     );
-    @include padding(4em, 4em);
+    @include padding(1em, 2em);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     cursor: default;
-    height: 30vh;
+    height: 24.3vh;
     max-height: 30em;
-    min-height: 15em;
+    min-height: 10em;
     overflow: hidden;
     position: relative;
-    width: 40%;
+    width: 55%;
 
     .image {
       display: none;
@@ -46,6 +41,7 @@
     header {
       position: relative;
       z-index: 3;
+      min-width: 160px;
     }
 
     h3 {
@@ -105,9 +101,17 @@
       opacity: 0;
     }
 
-    &:nth-child(4n - 1),
-    &:nth-child(4n - 2) {
-      width: 60%;
+    &:nth-child(2),
+    &:nth-child(3) {
+      width: 45%;
+    }
+
+    &:nth-child(5) {
+      width: 35%;
+    }
+
+    &:nth-child(6) {
+      width: 65%;
     }
 
     &:nth-child(6n - 5) {
@@ -145,14 +149,43 @@
         background-color: _palette(accent6);
       }
     }
+    & .card-event {
+      height: 95% !important;
+    }
+
+    & .card {
+      margin-left: 40px;
+      z-index: 9;
+      height: 95%;
+      background: rgba(32, 32, 32);
+      padding: 10px;
+      box-shadow: 6px 6px 3px 0px rgb(24 24 24);
+
+      &>div {
+        height: 110%;
+      }
+    }
+
+    & .event-grid {
+      width: 100% !important;
+      flex-grow: 0 !important;
+      max-width: 100% !important;
+      flex-basis: 100% !important;
+      height: 100%;
+
+      & > div,
+      & > div > div {
+        height: 100%;
+      }
+    }
   }
 
   @include breakpoint(large) {
     article {
-      @include padding(4em, 3em);
-      height: 30vh;
+      @include padding(1em, 2em);
+      height: 24.3vh;
       max-height: 30em;
-      min-height: 15em;
+      min-height: 10em;
     }
   }
 
@@ -164,7 +197,7 @@
 
   @include breakpoint(small) {
     article {
-      @include padding(3em, 1.5em);
+      @include padding(2em, 1.5em);
       height: 13em;
       max-height: none;
       min-height: 0;

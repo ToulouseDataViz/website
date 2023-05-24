@@ -8,7 +8,6 @@
 
 	#banner {
 		@include vendor('align-items', 'center');
-		@include vendor('background-image', 'url("../images/banner.jpg")');
 		@include vendor('display', 'flex');
 		@include padding(4em, 0, (2em, 0, 0, 0));
 		background-attachment: fixed;
@@ -17,10 +16,10 @@
 		background-size: cover;
 		border-bottom: 0 !important;
 		cursor: default;
-		height: 40vh;
+		height: 25vh;
 		margin-bottom: -3.25em;
 		max-height: 32em;
-		min-height: 22em;
+		min-height: 14em;
 		position: relative;
 		top: -3.25em;
 
@@ -41,7 +40,7 @@
 		}
 
 		h1 {
-			font-size: 3.25em;
+			font-size: 2.5em;
 		}
 
 		> .inner {
@@ -69,6 +68,10 @@
 						max-width: 100%;
 					}
 				}
+
+				&.major {
+					margin-bottom: 0.5em;
+				}
 			}
 
 			.content {
@@ -95,8 +98,8 @@
 		}
 
 		&.major {
-			height: 60vh;
-			min-height: 20em;
+			height: 25vh;
+			min-height: 14em;
 			max-height: 40em;
 
 			&.alt {

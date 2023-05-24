@@ -5,7 +5,7 @@ import { discordLink, gitHubLink, mailLink, twitterLink, youtubeLink, meetupLink
 import { IconContext } from 'react-icons';
 import { FaDiscord, FaGithub, FaMeetup, FaEnvelope, FaTwitter, FaYoutube, FaLinkedin } from 'react-icons/fa';
 
-const Footer = () => (
+const Footer = ({hideCopyright}) => (
   <footer id="footer">
     <div className="inner">
       <section>
@@ -48,6 +48,7 @@ const Footer = () => (
             </li>
           </ul>
         </IconContext.Provider>
+        { !hideCopyright && (
         <ul className="copyright">
           <li>
             Design: <a href="https://html5up.net">HTML5 UP</a>
@@ -55,7 +56,8 @@ const Footer = () => (
           <li>
             Template Gatsby: <a href="https://www.gatsbyjs.com/starters/codebushi/gatsby-starter-forty">Forty</a>
           </li>
-        </ul>
+        </ul>)
+        }
       </section>
     </div>
   </footer>
