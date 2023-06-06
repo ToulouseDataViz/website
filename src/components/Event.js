@@ -44,8 +44,7 @@ const Event = ({
   descriptionRawString,
   presLinks,
   vignetteLink,
-  lecturers,
-  smallFormat = undefined,
+  lecturers
 }) => {
   const classes = useStyles();
   const description = parseMarkdownToString(descriptionRawString);
@@ -74,9 +73,9 @@ const Event = ({
 
           <div
             container
-            direction={!smallFormat?"column":"row"}
-            style={{ flex: 1, display: 'flex', flexDirection: !smallFormat?"column":"row" }}
-            flexDirection={!smallFormat?"column":"row"}
+            direction={"column"}
+            style={{ flex: 1, display: 'flex', flexDirection: "column" }}
+            flexDirection={"column"}
             justify="space-between"
             alignItems="normal">
             <div
@@ -101,13 +100,13 @@ const Event = ({
                     picsToDisplay={meetupPics}
                     limit={1}
                     embedInBox={false}
-                    maxHeight={smallFormat?'80%':maxImageHeight}
+                    maxHeight={maxImageHeight}
                     displayLightBoxOnClick={false}
                   />
                 </Link>
               </Box>
             )}
-            {!smallFormat && descriptionRawString && (
+            {descriptionRawString && (
               <div style={{ flex: '1', overflow: 'hidden', marginBottom: '10px' }}>
                 <Link to={`/event/${meetupid}`} style={{ borderBottom: 'none' }}>
                   <div style={{ height: '160px', fontSize: '0.9em' }}>{description}</div>
@@ -115,7 +114,7 @@ const Event = ({
               </div>
             )}
 
-            {!smallFormat && (
+            {(
               <div style={{ display: 'flex', justifyContent: 'space-between', position: 'relative' }}>
                 <div
                   style={{

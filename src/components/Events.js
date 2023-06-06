@@ -8,10 +8,9 @@ import { pastEventStatusName } from '../settings';
 
 const Events = ({
   includeStatus = [pastEventStatusName],
-  displayVideoFilter = true,
+  
   wrapForPage = false,
-  title = null,
-  smallFormat = undefined
+  title = null
 }) => {
   const events = useEventsNotion()
     .filter(({ status }) => includeStatus.includes(status))
@@ -37,7 +36,7 @@ const Events = ({
         </header>
       )}
 
-      {displayVideoFilter && (
+      {(
         <Grid container alignItems="center">
           <FormControlLabel
             label={'Voir seulement les événements avec une vidéo'}
@@ -49,7 +48,7 @@ const Events = ({
       <Grid container spacing={2}>
         {displayEvents.map(meetup => (
           <React.Fragment key={meetup.meetupid}>
-            <Event {...meetup} smallFormat={smallFormat} />
+            <Event {...meetup} />
           </React.Fragment>
         ))}
       </Grid>

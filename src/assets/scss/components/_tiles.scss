@@ -27,12 +27,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     cursor: default;
-    height: 24.3vh;
+    height: 24vh;
     max-height: 30em;
     min-height: 10em;
     overflow: hidden;
     position: relative;
-    width: 55%;
+    width: 40%;
 
     .image {
       display: none;
@@ -41,7 +41,7 @@
     header {
       position: relative;
       z-index: 3;
-      min-width: 160px;
+      min-width: 120px;
     }
 
     h3 {
@@ -101,17 +101,25 @@
       opacity: 0;
     }
 
-    &:nth-child(2),
+    &:nth-child(2) {
+      width: 60%;
+    }
+   
     &:nth-child(3) {
-      width: 45%;
+      width: 33%;
     }
-
+     
+    &:nth-child(4) {
+      width: 33%;
+    }
     &:nth-child(5) {
-      width: 35%;
+      width: 33%;
     }
-
     &:nth-child(6) {
-      width: 65%;
+      width: 50%;
+    }
+    &:nth-child(7) {
+      width: 50%;
     }
 
     &:nth-child(6n - 5) {
@@ -150,17 +158,15 @@
       }
     }
     & .card-event {
-      height: 95% !important;
+      height: 85% !important;
     }
 
     & .card {
       margin-left: 40px;
       z-index: 9;
-      height: 95%;
-      background: rgba(18, 20, 33);
+      height: 85%;
       padding: 10px;
-      box-shadow: 3px 3px 3px 0px rgb(31 31 31 / 78%);
-
+      
       &>div {
         height: 110%;
       }
@@ -183,7 +189,7 @@
   @include breakpoint(large) {
     article {
       @include padding(1em, 2em);
-      height: 24.3vh;
+      height: 24vh;
       max-height: 30em;
       min-height: 10em;
     }
@@ -201,7 +207,7 @@
       height: 13em;
       max-height: none;
       min-height: 0;
-
+      width: 100% !important;
       h3 {
         font-size: 1.5em;
       }

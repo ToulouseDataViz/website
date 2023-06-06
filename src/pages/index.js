@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 import Helmet from 'react-helmet';
 
@@ -7,9 +7,8 @@ import Banner from '../components/Banner';
 import useSiteMetadata from '../hooks/useSiteMetadata';
 import useHomeContent from '../hooks/useHomeContent';
 import Gallery from '../components/Gallery';
-import Events from '../components/Events';
 import Footer from '../components/Footer';
-import Button from '../components/Button';
+import EventCurrent from '../components/EventCurrent';
 import { incomingEventStatusName } from '../settings';
 
 import pic01 from '../assets/images/pic01.jpg';
@@ -37,6 +36,20 @@ const HomeIndex = () => {
   const eventKey = 'Evènements';
   const clubKey = 'Le Club';
 
+  const [windowSize, setWindowSize] = useState([window.innerWidth, window.innerHeight]);
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowSize([window.innerWidth, window.innerHeight]);
+    };
+
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []);
+
   return (
     <Layout hideFooter={true}>
       <Helmet
@@ -59,24 +72,18 @@ const HomeIndex = () => {
                 <header className="major">
                   <h3>{title}</h3>
                   <p>{subtitle}</p>
-                  {(title === eventKey || title === clubKey )  && <Link to={slug} className="link primary"></Link>}
+                  {(title === eventKey || title === clubKey) && <Link to={slug} className="link primary"></Link>}
                 </header>
                 <>
                   {title !== eventKey && title !== clubKey && <Link to={slug} className="link primary"></Link>}
                   {title === eventKey && (
                     <div
                       style={{
-                        minWidth: '50%',
-                        maxWidth: '440px',
+                        minWidth: '60%',
+                        maxWidth: '400px',
                       }}
                       className="card-event card">
-                      <Events
-                        style={{ padding: '20px' }}
-                        includeStatus={[incomingEventStatusName]}
-                        displayVideoFilter={false}
-                        wrapForPage={false}
-                        smallFormat={true}
-                      />
+                      <EventCurrent style={{ padding: '20px' }} includeStatus={[incomingEventStatusName]} />
                     </div>
                   )}
                   {title === clubKey && (
@@ -88,8 +95,27 @@ const HomeIndex = () => {
                         alignItems: 'end',
                         justifyContent: 'space-between',
                       }}>
-                      <Gallery type={'small'} limit={8} style={{ height: '75%' }} />
-                      <Footer hideCopyright />
+                        <div style={{
+                          height:"90%"
+                        }}>
+                      <div
+                        style={{
+                          margin: '8px 0px',
+                          display: 'grid',
+                          gridGap: '1em',
+                          textAlign: 'center',
+                          gridTemplateColumns: `repeat(${windowSize[0] > 1024 ? 8 : 4}, 1fr)`,
+                        }}>
+                        <Gallery
+                          type={'small'}
+                          embedInBox={false}
+                          limit={windowSize[0] > 1024 ? 8 : 4}
+                          style={{ height: '75%' }}
+                          maxHeight={"100px"}
+                        />
+                      </div>
+                      </div>
+                      <Footer style={{ marginTop: '8px' }} hideCopyright />
                     </div>
                   )}
                 </>
