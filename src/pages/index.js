@@ -47,13 +47,17 @@ const HomeIndex = () => {
   const eventKey = 'Evènements';
   const clubKey = 'Le Club';
 
-  const [windowSize, setWindowSize] = useState([window.innerWidth, window.innerHeight]);
-  
+  const [windowSize, setWindowSize] = useState([
+    typeof window !== 'undefined' && window.innerWidth,
+    typeof window !== 'undefined' && window.innerHeight,
+  ]);
+
   useEffect(() => {
     const debouncedHandleResize = debounce(function handleResize() {
-      setWindowSize([window.innerWidth, window.innerHeight]);
-
-   
+      setWindowSize([
+        typeof window !== 'undefined' && window.innerWidth,
+        typeof window !== 'undefined' && window.innerHeight,
+      ]);
     }, 1000);
 
     window.addEventListener('resize', debouncedHandleResize);
@@ -63,9 +67,9 @@ const HomeIndex = () => {
     };
   }, []);
 
-  const galleryLimit = windowSize[0] < 1280 ? 4:8;
-  console.log(windowSize)
-  console.log(galleryLimit)
+  const galleryLimit = windowSize[0] < 1280 ? 4 : 8;
+  console.log(windowSize);
+  console.log(galleryLimit);
 
   return (
     <Layout hideFooter={true}>
