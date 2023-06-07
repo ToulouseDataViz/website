@@ -74,15 +74,11 @@ const EventMiniCard = ({ meetupid, title, date, lecturers }) => {
           </div>
           {meetupPics.length > 0 && (
             <Link to={`/event/${meetupid}`} style={{ borderBottom: 'none' }}>
-              {/*<GatsbyImage
+              {<GatsbyImage
+              className='ImageMiniEvent'
                 image={meetupPics[0].gatsbyImageData}
-                style={{  marginBottom: '15px',
-              
-              position: "absolute",
-              width: "170px",
-              right: "70px",
-              bottom: "10px" }}
-            />*/}
+                style={{ width: "90%" }}
+            />}
             </Link>
           )}
         </div>

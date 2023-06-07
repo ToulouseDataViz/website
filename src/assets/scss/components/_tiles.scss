@@ -64,6 +64,8 @@
       z-index: 4;
     }
 
+    
+
     &:before {
       @include vendor('transition', 'opacity 0.5s ease');
       bottom: 0;
@@ -193,11 +195,17 @@
       max-height: 30em;
       min-height: 10em;
     }
+    .ImageMiniEvent {
+      display:block;  
+    }
   }
 
   @include breakpoint(medium) {
     article {
       width: 50% !important;
+    }
+    .ImageMiniEvent {
+      display:none;  
     }
   }
 
@@ -212,6 +220,9 @@
         font-size: 1.5em;
       }
     }
+    .ImageMiniEvent {
+      display:block;  
+    }
   }
 
   @include breakpoint(xsmall) {
@@ -220,6 +231,9 @@
     article {
       height: 10em;
       width: 100% !important;
+    }
+    .ImageMiniEvent {
+      display:block;  
     }
   }
 }

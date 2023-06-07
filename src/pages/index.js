@@ -29,6 +29,17 @@ const backgroundPics = {
   pic07: pic07,
 };
 
+function debounce(fn, ms) {
+  let timer;
+  return _ => {
+    clearTimeout(timer);
+    timer = setTimeout(_ => {
+      timer = null;
+      fn.apply(this, arguments);
+    }, ms);
+  };
+}
+
 const HomeIndex = () => {
   const { headerTitle, headerSubtitle } = useSiteMetadata();
   const homeContentCsv = useHomeContent();
@@ -37,18 +48,24 @@ const HomeIndex = () => {
   const clubKey = 'Le Club';
 
   const [windowSize, setWindowSize] = useState([window.innerWidth, window.innerHeight]);
-
+  
   useEffect(() => {
-    const handleWindowResize = () => {
+    const debouncedHandleResize = debounce(function handleResize() {
       setWindowSize([window.innerWidth, window.innerHeight]);
-    };
 
-    window.addEventListener('resize', handleWindowResize);
+   
+    }, 1000);
+
+    window.addEventListener('resize', debouncedHandleResize);
 
     return () => {
-      window.removeEventListener('resize', handleWindowResize);
+      window.removeEventListener('resize', debouncedHandleResize);
     };
   }, []);
+
+  const galleryLimit = windowSize[0] < 1280 ? 4:8;
+  console.log(windowSize)
+  console.log(galleryLimit)
 
   return (
     <Layout hideFooter={true}>
@@ -95,25 +112,26 @@ const HomeIndex = () => {
                         alignItems: 'end',
                         justifyContent: 'space-between',
                       }}>
-                        <div style={{
-                          height:"90%"
-                        }}>
                       <div
                         style={{
-                          margin: '8px 0px',
-                          display: 'grid',
-                          gridGap: '1em',
-                          textAlign: 'center',
-                          gridTemplateColumns: `repeat(${windowSize[0] > 1024 ? 8 : 4}, 1fr)`,
+                          height: '90%',
                         }}>
-                        <Gallery
-                          type={'small'}
-                          embedInBox={false}
-                          limit={windowSize[0] > 1024 ? 8 : 4}
-                          style={{ height: '75%' }}
-                          maxHeight={"100px"}
-                        />
-                      </div>
+                        <div
+                          style={{
+                            margin: '8px 0px',
+                            display: 'grid',
+                            gridGap: '1em',
+                            textAlign: 'center',
+                            gridTemplateColumns: `repeat(${galleryLimit}, 1fr)`,
+                          }}>
+                          <Gallery
+                            type={'small'}
+                            embedInBox={false}
+                            limit={galleryLimit}
+                            style={{ height: '75%' }}
+                            maxHeight={'100px'}
+                          />
+                        </div>
                       </div>
                       <Footer style={{ marginTop: '8px' }} hideCopyright />
                     </div>
