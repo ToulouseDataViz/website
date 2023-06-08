@@ -30,6 +30,8 @@ const renderLecturers = value => {
   }
 };
 
+const showImage = false;
+
 const EventMiniCard = ({ meetupid, title, date, lecturers }) => {
   const classes = useStyles();
 
@@ -72,7 +74,7 @@ const EventMiniCard = ({ meetupid, title, date, lecturers }) => {
             <div >{frenchDate}</div>
             <div >{lecturers ? renderLecturers(lecturers) : 'Toulouse DataViz'}</div>
           </div>
-          {meetupPics.length > 0 && (
+          {showImage && meetupPics.length > 0 && (
             <Link to={`/event/${meetupid}`} style={{ borderBottom: 'none' }}>
               {<GatsbyImage
               className='ImageMiniEvent'

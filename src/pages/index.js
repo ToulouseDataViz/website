@@ -40,36 +40,42 @@ function debounce(fn, ms) {
   };
 }
 
+// not refreshed properly at start :(
+const useResizeHook= false;
 const HomeIndex = () => {
   const { headerTitle, headerSubtitle } = useSiteMetadata();
   const homeContentCsv = useHomeContent();
 
   const eventKey = 'Evènements';
   const clubKey = 'Le Club';
+  
+  let galleryLimit = 4;
 
-  const [windowSize, setWindowSize] = useState([
-    typeof window !== 'undefined' && window.innerWidth,
-    typeof window !== 'undefined' && window.innerHeight,
-  ]);
+  if (useResizeHook) {
+    const [windowSize, setWindowSize] = useState([
+      typeof window !== 'undefined' && window.innerWidth,
+      typeof window !== 'undefined' && window.innerHeight,
+    ]);
 
-  useEffect(() => {
-    const debouncedHandleResize = debounce(function handleResize() {
-      setWindowSize([
-        typeof window !== 'undefined' && window.innerWidth,
-        typeof window !== 'undefined' && window.innerHeight,
-      ]);
-    }, 1000);
+    useEffect(() => {
+      const debouncedHandleResize = debounce(function handleResize() {
+        setWindowSize([
+          typeof window !== 'undefined' && window.innerWidth,
+          typeof window !== 'undefined' && window.innerHeight,
+        ]);
+      }, 1000);
 
-    window.addEventListener('resize', debouncedHandleResize);
+      window.addEventListener('resize', debouncedHandleResize);
 
-    return () => {
-      window.removeEventListener('resize', debouncedHandleResize);
-    };
-  }, []);
+      return () => {
+        window.removeEventListener('resize', debouncedHandleResize);
+      };
+    }, []);
+    
 
-  const galleryLimit = windowSize[0] < 1280 ? 4 : 8;
-  console.log(windowSize);
-  console.log(galleryLimit);
+    galleryLimit = windowSize[0] < 1280 ? 4 : 8;
+  }
+  
 
   return (
     <Layout hideFooter={true}>
