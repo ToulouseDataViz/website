@@ -41,41 +41,36 @@ function debounce(fn, ms) {
 }
 
 // not refreshed properly at start :(
-const useResizeHook= false;
+const useResizeHook = false;
 const HomeIndex = () => {
   const { headerTitle, headerSubtitle } = useSiteMetadata();
   const homeContentCsv = useHomeContent();
 
   const eventKey = 'Evènements';
   const clubKey = 'Le Club';
-  
-  let galleryLimit = 4;
+  const assoKey = "L'association";
+
+  let galleryLimit = 8;
 
   if (useResizeHook) {
-    const [windowSize, setWindowSize] = useState([
-      typeof window !== 'undefined' && window.innerWidth,
-      typeof window !== 'undefined' && window.innerHeight,
-    ]);
-
-    useEffect(() => {
-      const debouncedHandleResize = debounce(function handleResize() {
-        setWindowSize([
-          typeof window !== 'undefined' && window.innerWidth,
-          typeof window !== 'undefined' && window.innerHeight,
-        ]);
-      }, 1000);
-
-      window.addEventListener('resize', debouncedHandleResize);
-
-      return () => {
-        window.removeEventListener('resize', debouncedHandleResize);
-      };
-    }, []);
-    
-
-    galleryLimit = windowSize[0] < 1280 ? 4 : 8;
+    // const [windowSize, setWindowSize] = useState([
+    //   typeof window !== 'undefined' && window.innerWidth,
+    //   typeof window !== 'undefined' && window.innerHeight,
+    // ]);
+    // useEffect(() => {
+    //   const debouncedHandleResize = debounce(function handleResize() {
+    //     setWindowSize([
+    //       typeof window !== 'undefined' && window.innerWidth,
+    //       typeof window !== 'undefined' && window.innerHeight,
+    //     ]);
+    //   }, 1000);
+    //   window.addEventListener('resize', debouncedHandleResize);
+    //   return () => {
+    //     window.removeEventListener('resize', debouncedHandleResize);
+    //   };
+    // }, []);
+    // galleryLimit = windowSize[0] < 1280 ? 4 : 8;
   }
-  
 
   return (
     <Layout hideFooter={true}>
@@ -89,7 +84,31 @@ const HomeIndex = () => {
       <Banner />
 
       <div id="main">
-        <section id="two" class="spotlights"></section>
+        <section id="two" class="spotlights">
+          <div
+            style={{
+              height: '90%',
+            }}>
+            <div
+              className="inner"
+              style={{
+                margin: '14px',
+                display: 'grid',
+                gridGap: '1em',
+                textAlign: 'center',
+                gridTemplateColumns: `repeat(${galleryLimit}, 1fr)`,
+              }}>
+              <Gallery
+                type={'small'}
+                embedInBox={false}
+                limit={galleryLimit}
+                style={{ height: '75%' }}
+                maxHeight={'100px'}
+              />
+            </div>
+            
+          </div>
+        </section>
         <section id="one" className="tiles">
           {homeContentCsv.map(({ title, subtitle, slug, backgroundPicture }, index) => {
             return (
@@ -113,36 +132,17 @@ const HomeIndex = () => {
                       <EventCurrent style={{ padding: '20px' }} includeStatus={[incomingEventStatusName]} />
                     </div>
                   )}
-                  {title === clubKey && (
+
+                  {title === assoKey && (
                     <div
                       className="inner card"
                       style={{
                         display: 'flex',
                         flexDirection: 'column',
                         alignItems: 'end',
-                        justifyContent: 'space-between',
+                        minWidth: '400px',
+                        justifyContent: 'flex-end',
                       }}>
-                      <div
-                        style={{
-                          height: '90%',
-                        }}>
-                        <div
-                          style={{
-                            margin: '8px 0px',
-                            display: 'grid',
-                            gridGap: '1em',
-                            textAlign: 'center',
-                            gridTemplateColumns: `repeat(${galleryLimit}, 1fr)`,
-                          }}>
-                          <Gallery
-                            type={'small'}
-                            embedInBox={false}
-                            limit={galleryLimit}
-                            style={{ height: '75%' }}
-                            maxHeight={'100px'}
-                          />
-                        </div>
-                      </div>
                       <Footer style={{ marginTop: '8px' }} hideCopyright />
                     </div>
                   )}

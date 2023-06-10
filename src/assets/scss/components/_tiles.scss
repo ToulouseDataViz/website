@@ -22,18 +22,18 @@
       'transition',
       ('transform 0.25s ease', 'opacity 0.25s ease', 'filter 1s ease', '-webkit-filter 1s ease')
     );
-    @include padding(1em, 2em);
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     cursor: default;
-    height: 24vh;
+    height: 17vh;
     max-height: 30em;
-    min-height: 10em;
+    min-height: 9em;
     overflow: hidden;
     position: relative;
-    width: 40%;
-
+    width: 55%;
+    padding: 5px 20px;
     .image {
       display: none;
     }
@@ -102,9 +102,12 @@
       // @include vendor('filter', 'blur(0.5em)');
       opacity: 0;
     }
-
+ 
+    &:nth-child(1),&:nth-child(2) {
+      height: 26vh;
+    }
     &:nth-child(2) {
-      width: 60%;
+      width: 45%;
     }
    
     &:nth-child(3) {
@@ -159,19 +162,22 @@
         background-color: _palette(accent6);
       }
     }
-    & .card-event {
-      height: 85% !important;
-    }
 
     & .card {
       margin-left: 40px;
       z-index: 9;
-      height: 85%;
-      padding: 10px;
+      height: 100%;
+      padding: 7px;
       
       &>div {
-        height: 110%;
+        height: 100%;
       }
+    }
+
+    & .card-event {
+      height: 100% !important;
+      min-height: 210px !important;
+      min-width: 490px !important;
     }
 
     & .event-grid {
@@ -190,28 +196,25 @@
 
   @include breakpoint(large) {
     article {
-      @include padding(1em, 2em);
+      
       height: 24vh;
       max-height: 30em;
       min-height: 10em;
+      &:nth-child(1) {
+        width: 65%;
+      }
+      &:nth-child(2) {
+        width: 35%;
+      }
     }
-    .ImageMiniEvent {
+    .mini-event-desc, .mini-event-title {
       display:block;  
-    }
+    }     
   }
 
   @include breakpoint(medium) {
     article {
-      width: 50% !important;
-    }
-    .ImageMiniEvent {
-      display:none;  
-    }
-  }
-
-  @include breakpoint(small) {
-    article {
-      @include padding(2em, 1.5em);
+      
       height: 13em;
       max-height: none;
       min-height: 0;
@@ -219,21 +222,28 @@
       h3 {
         font-size: 1.5em;
       }
+      &:nth-child(1) {
+        height: 34vh;
+      }
     }
-    .ImageMiniEvent {
-      display:block;  
-    }
+    .mini-event-desc, .mini-event-title {
+      display:none !important;  
+    }     
   }
 
-  @include breakpoint(xsmall) {
+  @media screen and (max-width: 680px) {
     display: block;
 
     article {
-      height: 10em;
-      width: 100% !important;
+      &:nth-child(1)  {
+        
+        display: flex;
+        flex-direction: column;
+        
+        height: 47vh;
+        align-items: flex-start;
+      }
     }
-    .ImageMiniEvent {
-      display:block;  
-    }
+  
   }
 }

@@ -30,7 +30,7 @@ const renderLecturers = value => {
   }
 };
 
-const showImage = false;
+const showImage = true;
 
 const EventMiniCard = ({ meetupid, title, date, lecturers }) => {
   const classes = useStyles();
@@ -47,39 +47,43 @@ const EventMiniCard = ({ meetupid, title, date, lecturers }) => {
   const meetupPics = expectedMeetupPics.length > 0 ? expectedMeetupPics : defaultMeetupPics;
 
   return (
-    <Box className={`${classes.meetup} container-background`} style={{ padding: '6px' }}>
+    <Box className={`${classes.meetup} container-background`} style={{ padding: '13px' }}>
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column' , justifyContent: "space-between"}}>
-        <div>
+        <div className='mini-event-title'>
           <Link to={`/event/${meetupid}`} style={{ borderBottom: 'none' }}>
-            <h4 style={{ margin: '0 0 0 0' }}>{title}</h4>
+            <h4 style={{ margin: '0 0 0 0', fontSize:"1.0em", 
+    maxHeight: '35px'
+ }}>{title}</h4>
           </Link>
         </div>
 
         <div
           container
           direction={'row'}
-          style={{ flex: "0 1 %", display: 'flex', flexDirection: 'row' }}
+          style={{ flex: "1", display: 'flex', flexDirection: 'row' }}
           flexDirection={'row'}
           justify="space-between"
           
           alignItems="normal">
           <div
+            className='mini-event-desc'
             style={{
-              paddingBottom: '10px',
+              paddingBottom: '0.3em',
               fontSize: '0.9em',
               display: 'flex',
               flexDirection: 'column',
-              minWidth: '50%',
+              minWidth: '150px',
+              alignSelf: "flex-end"
             }}>
             <div >{frenchDate}</div>
             <div >{lecturers ? renderLecturers(lecturers) : 'Toulouse DataViz'}</div>
           </div>
           {showImage && meetupPics.length > 0 && (
-            <Link to={`/event/${meetupid}`} style={{ borderBottom: 'none' }}>
+            <Link to={`/event/${meetupid}`} style={{ borderBottom: 'none', height:'100%',    flexDirection: 'column', alignSelf: 'center' }}>
               {<GatsbyImage
-              className='ImageMiniEvent'
+              className='mini-event-image'
                 image={meetupPics[0].gatsbyImageData}
-                style={{ width: "90%" }}
+            
             />}
             </Link>
           )}
