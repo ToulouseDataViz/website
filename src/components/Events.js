@@ -10,7 +10,8 @@ const Events = ({
   includeStatus = [pastEventStatusName],
   
   wrapForPage = false,
-  title = null
+  title = null,
+  hideVideoFilter = false
 }) => {
   const events = useEventsNotion()
     .filter(({ status }) => includeStatus.includes(status))
@@ -36,7 +37,7 @@ const Events = ({
         </header>
       )}
 
-      {(
+      {(!hideVideoFilter &&
         <Grid container alignItems="center">
           <FormControlLabel
             label={'Voir seulement les événements avec une vidéo'}

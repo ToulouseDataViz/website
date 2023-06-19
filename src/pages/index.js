@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 import Helmet from 'react-helmet';
 
@@ -46,9 +46,6 @@ const HomeIndex = () => {
   const { headerTitle, headerSubtitle } = useSiteMetadata();
   const homeContentCsv = useHomeContent();
 
-  const eventKey = 'Evènements';
-  const clubKey = 'Le Club';
-  const assoKey = "L'association";
 
   let galleryLimit = 8;
 
@@ -73,7 +70,7 @@ const HomeIndex = () => {
   }
 
   return (
-    <Layout hideFooter={true}>
+    <Layout hideFooter={false}>
       <Helmet
         title={headerTitle + ' ' + headerSubtitle}
         meta={[
@@ -84,28 +81,17 @@ const HomeIndex = () => {
       <Banner />
 
       <div id="main">
-        <section id="two" class="spotlights">
-          <div
-            style={{
-              height: '90%',
-            }}>
-            <div
-              className="inner"
+        <section id="two" class="spotlights" >
+          
+            <div className="inner">
+            <Gallery
+              type={'small'}
+              limit={8}
               style={{
-                margin: '14px',
-                display: 'grid',
-                gridGap: '1em',
-                textAlign: 'center',
-                gridTemplateColumns: `repeat(${galleryLimit}, 1fr)`,
-              }}>
-              <Gallery
-                type={'small'}
-                embedInBox={false}
-                limit={galleryLimit}
-                style={{ height: '75%' }}
-                maxHeight={'100px'}
-              />
-            </div>
+                height: '100px',
+              }}
+            />
+          
             
           </div>
         </section>
@@ -118,35 +104,9 @@ const HomeIndex = () => {
                 <header className="major">
                   <h3>{title}</h3>
                   <p>{subtitle}</p>
-                  {(title === eventKey || title === clubKey) && <Link to={slug} className="link primary"></Link>}
+                
                 </header>
-                <>
-                  {title !== eventKey && title !== clubKey && <Link to={slug} className="link primary"></Link>}
-                  {title === eventKey && (
-                    <div
-                      style={{
-                        minWidth: '60%',
-                        maxWidth: '400px',
-                      }}
-                      className="card-event card">
-                      <EventCurrent style={{ padding: '20px' }} includeStatus={[incomingEventStatusName]} />
-                    </div>
-                  )}
-
-                  {title === assoKey && (
-                    <div
-                      className="inner card"
-                      style={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'end',
-                        minWidth: '400px',
-                        justifyContent: 'flex-end',
-                      }}>
-                      <Footer style={{ marginTop: '8px' }} hideCopyright />
-                    </div>
-                  )}
-                </>
+                  <Link to={slug} className="link primary"></Link>
               </article>
             );
           })}
