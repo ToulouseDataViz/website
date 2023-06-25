@@ -1,7 +1,8 @@
 title, subtitle, slug, backgroundPicture, isInMenu
-Les évènements, Évènements passés et à venir, /evenements, pic03, true
+Evènements, Évènements passés et à venir, /evenements, pic04 , true
+Le Club, Rejoignez la communauté, /club, pic03, true
+Guide de datavisualisation,"Notre petit guide de dataviz", https://toulousedataviz.github.io/guide.html, pic07, true
+La newsletter, "Nos newsletters", https://ressources.toulouse-dataviz.fr/, pic02, true
 Hackaviz, "Prêt, partez, visualisez !", /hackaviz/2023-results, pic05, true
-L'association, "Nos missions, nos membres et nos sponsors", /association, pic01, true
-Nos offres, "Prestations", /offres, pic02, true
-Le Club, Rejoignez la communauté, /club, pic04, true
-Ressources et collections, "Les newsletters, notre sélection de dataviz, posters et livres recommandés", https://ressources.toulouse-dataviz.fr/, pic06, true
+Ressources et collections, "?otre sélection de dataviz, posters et livres recommandés", https://ressources.toulouse-dataviz.fr/collections, pic06, true
+L'association, "Nos missions & offres, nos membres et nos sponsors", /association, pic01, true

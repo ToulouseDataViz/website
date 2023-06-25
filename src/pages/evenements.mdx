@@ -1,5 +1,6 @@
 import PageBanner from '../components/PageBanner';
 import Events from '../components/Events';
+import { incomingEventStatusName } from '../settings';
 
 <PageBanner 
   styleId={1}
@@ -8,9 +9,17 @@ import Events from '../components/Events';
 />
 
 <section id="one">
+<Events
+    includeStatus={[incomingEventStatusName]}
+    displayVideoFilter={false}
+    wrapForPage={true}
+    hideVideoFilter={true}
+    title={"Les évènements à venir"}
+ />
+
 <div className="inner">
 
-<Events />
+<Events title={"Les évènements passés"} />
 
 </div>
 </section>

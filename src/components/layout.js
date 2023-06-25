@@ -5,7 +5,7 @@ import Header from './Header'
 import Menu from './Menu'
 import Footer from './Footer'
 
-const Layout = ({ children }) => {
+const Layout = ({ hideFooter, children }) => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const [loading, setLoading] = useState('is-loading');
 
@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
           <div id="wrapper">
               <Header onToggleMenu={handleToggleMenu} />
               {children}
-              <Footer />
+              {!hideFooter && <Footer />}
           </div>
           <Menu onToggleMenu={handleToggleMenu} />
       </div>

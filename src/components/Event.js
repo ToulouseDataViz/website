@@ -44,7 +44,7 @@ const Event = ({
   descriptionRawString,
   presLinks,
   vignetteLink,
-  lecturers,
+  lecturers
 }) => {
   const classes = useStyles();
   const description = parseMarkdownToString(descriptionRawString);
@@ -62,7 +62,7 @@ const Event = ({
   const maxImageHeight = '150px';
 
   return (
-    <Grid item xs={12} sm={6} md={4}>
+    <Grid item xs={12} sm={6} md={4} className="event-grid">
       <Box className={`${classes.meetup} container-background`}>
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
           <div>
@@ -73,9 +73,9 @@ const Event = ({
 
           <div
             container
-            direction="column"
-            style={{ flex: 1, display: 'flex', flexDirection: 'column' }}
-            flexDirection="column"
+            direction={"column"}
+            style={{ flex: 1, display: 'flex', flexDirection: "column" }}
+            flexDirection={"column"}
             justify="space-between"
             alignItems="normal">
             <div
@@ -85,13 +85,14 @@ const Event = ({
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'space-between',
+                minWidth: '50%',
               }}>
               <div style={{ flex: '1' }}>{frenchDate}</div>
               <div style={{ flex: '1', textAlign: 'right' }}>
                 {lecturers ? renderLecturers(lecturers) : 'Toulouse DataViz'}
               </div>
             </div>
-            {meetupPics.length > 0 && (
+            {(meetupPics.length > 0) && (
               <Box style={{ height: maxImageHeight, marginBottom: '10px' }}>
                 <Link to={`/event/${meetupid}`} style={{ borderBottom: 'none' }}>
                   <Gallery
@@ -113,43 +114,45 @@ const Event = ({
               </div>
             )}
 
-            <div style={{ display: 'flex', justifyContent: 'space-between', position: 'relative' }}>
-              <div
-                style={{
-                  bottom: '40px',
-                  position: 'absolute',
-                  height: '60px',
-                  width: '100%',
-                  background: 'linear-gradient(rgba(26, 30, 45, 0.5),rgba(26, 30, 45, 1))',
-                }}></div>
-              <IconContext.Provider value={{ size: '1.5em' }}>
-                {videoLink && (
-                  <a href={videoLink} target="_blank" rel="noreferrer" className="icon">
-                    <FaYoutube />
-                  </a>
-                )}
-                {!videoLink && <div style={{ width: '26px' }}></div>}
+            {(
+              <div style={{ display: 'flex', justifyContent: 'space-between', position: 'relative' }}>
+                <div
+                  style={{
+                    bottom: '40px',
+                    position: 'absolute',
+                    height: '60px',
+                    width: '100%',
+                    background: 'linear-gradient(rgba(26, 30, 45, 0.5),rgba(26, 30, 45, 1))',
+                  }}></div>
+                <IconContext.Provider value={{ size: '1.5em' }}>
+                  {videoLink && (
+                    <a href={videoLink} target="_blank" rel="noreferrer" className="icon">
+                      <FaYoutube />
+                    </a>
+                  )}
+                  {!videoLink && <div style={{ width: '26px' }}></div>}
 
-                {presLinks &&
-                  presLinks.map(presLink => {
-                    if (presLink) {
-                      return (
-                        <a href={presLink.url} target="_blank" rel="noreferrer" className="icon">
-                          <CgFileDocument />
-                        </a>
-                      );
-                    } else {
-                      return <></>;
-                    }
-                  })}
-                {meetupLink && (
-                  <a href={meetupLink} target="_blank" rel="noreferrer" className="icon">
-                    <FaMeetup />
-                  </a>
-                )}
-                {!meetupLink && <div style={{ width: '26px' }}></div>}
-              </IconContext.Provider>
-            </div>
+                  {presLinks &&
+                    presLinks.map(presLink => {
+                      if (presLink) {
+                        return (
+                          <a href={presLink.url} target="_blank" rel="noreferrer" className="icon">
+                            <CgFileDocument />
+                          </a>
+                        );
+                      } else {
+                        return <></>;
+                      }
+                    })}
+                  {meetupLink && (
+                    <a href={meetupLink} target="_blank" rel="noreferrer" className="icon">
+                      <FaMeetup />
+                    </a>
+                  )}
+                  {!meetupLink && <div style={{ width: '26px' }}></div>}
+                </IconContext.Provider>
+              </div>
+            )}
           </div>
         </div>
       </Box>

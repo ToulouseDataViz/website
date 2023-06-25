@@ -20,25 +20,20 @@
     @include vendor('display', 'flex');
     @include vendor(
       'transition',
-      (
-        'transform 0.25s ease',
-        'opacity 0.25s ease',
-        'filter 1s ease',
-        '-webkit-filter 1s ease'
-      )
+      ('transform 0.25s ease', 'opacity 0.25s ease', 'filter 1s ease', '-webkit-filter 1s ease')
     );
-    @include padding(4em, 4em);
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     cursor: default;
-    height: 30vh;
+    height: 22%;
     max-height: 30em;
-    min-height: 15em;
+    min-height: 8em;
     overflow: hidden;
     position: relative;
-    width: 40%;
-
+    width: 55%;
+    padding: 5px 20px;
     .image {
       display: none;
     }
@@ -46,6 +41,7 @@
     header {
       position: relative;
       z-index: 3;
+      min-width: 120px;
     }
 
     h3 {
@@ -67,6 +63,8 @@
       width: 100%;
       z-index: 4;
     }
+
+    
 
     &:before {
       @include vendor('transition', 'opacity 0.5s ease');
@@ -104,10 +102,26 @@
       // @include vendor('filter', 'blur(0.5em)');
       opacity: 0;
     }
-
-    &:nth-child(4n - 1),
-    &:nth-child(4n - 2) {
-      width: 60%;
+ 
+    &:nth-child(2) {
+      width: 45%;
+    }
+   
+    &:nth-child(3) {
+      width: 34%;
+    }
+     
+    &:nth-child(4) {
+      width: 33%;
+    }
+    &:nth-child(5) {
+      width: 33%;
+    }
+    &:nth-child(6) {
+      width: 50%;
+    }
+    &:nth-child(7) {
+      width: 50%;
     }
 
     &:nth-child(6n - 5) {
@@ -145,42 +159,85 @@
         background-color: _palette(accent6);
       }
     }
-  }
 
-  @include breakpoint(large) {
-    article {
-      @include padding(4em, 3em);
-      height: 30vh;
-      max-height: 30em;
-      min-height: 15em;
+    & .card {
+      margin-left: 40px;
+      z-index: 9;
+      height: 100%;
+      padding: 7px;
+      
+      &>div {
+        height: 100%;
+      }
     }
-  }
 
-  @include breakpoint(medium) {
-    article {
-      width: 50% !important;
+    & .card-event {
+      height: 100% !important;
+      min-height: 210px !important;
+      min-width: 490px !important;
     }
-  }
 
-  @include breakpoint(small) {
-    article {
-      @include padding(3em, 1.5em);
-      height: 13em;
-      max-height: none;
-      min-height: 0;
+    & .event-grid {
+      width: 100% !important;
+      flex-grow: 0 !important;
+      max-width: 100% !important;
+      flex-basis: 100% !important;
+      height: 100%;
 
-      h3 {
-        font-size: 1.5em;
+      & > div,
+      & > div > div {
+        height: 100%;
       }
     }
   }
 
-  @include breakpoint(xsmall) {
+  @include breakpoint(large) {
+    article {
+      
+      height: 24vh;
+      max-height: 30em;
+      min-height: 10em;
+      &:nth-child(1) {
+        width: 65%;
+      }
+      &:nth-child(2) {
+        width: 35%;
+      }
+    }
+    .mini-event-desc, .mini-event-title {
+      display:block;  
+    }     
+  }
+
+  @include breakpoint(medium) {
+    article {
+      
+      height: 13em;
+      max-height: none;
+      min-height: 0;
+      width: 100% !important;
+      h3 {
+        font-size: 1.5em;
+      }     
+    }
+    .mini-event-desc, .mini-event-title {
+      display:none !important;  
+    }     
+  }
+
+  @media screen and (max-width: 680px) {
     display: block;
 
     article {
-      height: 10em;
-      width: 100% !important;
+      &:nth-child(1)  {
+        
+        display: flex;
+        flex-direction: column;
+        
+        height: 47vh;
+        align-items: flex-start;
+      }
     }
+  
   }
 }
