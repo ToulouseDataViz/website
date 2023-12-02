@@ -115,6 +115,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-material-ui`,
     `gatsby-plugin-offres-pages`,
+    `gatsby-plugin-sponsor-pages`,
     {
       resolve: 'gatsby-plugin-md-from-csv',
       options: {

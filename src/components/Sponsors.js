@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
 const Sponsors = () => {
   const classes = useStyles();
 
-  const sponsors = useSponsors();
+  const sponsors = useSponsors().filter(({ inactive }) => !inactive).sort((a,b)=>a.rank-b.rank);
   const sponsorsPics = usePics().filter(({ relativeDirectory }) => relativeDirectory === 'sponsor-pics');
   const getPic = myName => sponsorsPics.find(({ name }) => myName === name)?.gatsbyImageData;
 
@@ -36,7 +36,6 @@ const Sponsors = () => {
       {sponsors.map(({ name, type, pic_name, link, children }) => {
         const sponsorPic = getPic(pic_name);
         const markdownDescription = children[0]?.childMarkdownRemark?.htmlAst;
-        debugger
         return (
           <React.Fragment key={name}>
             <Grid item xs={12} sm={6}>

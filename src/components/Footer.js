@@ -4,11 +4,12 @@ import { discordLink, gitHubLink, mailLink, twitterLink, youtubeLink, meetupLink
 
 import { IconContext } from 'react-icons';
 import { FaDiscord, FaGithub, FaMeetup, FaEnvelope, FaTwitter, FaYoutube, FaLinkedin } from 'react-icons/fa';
+import AssoSponsors from '../components/AssoSponsors';
 
 const Footer = ({hideCopyright}) => (
   <footer id="footer">
-    <div className="inner">
-      <section>
+    <div className="inner" style={{    display: "flex",    justifyCcontent: "space-between"}}>
+      <section style={{flex:"1"}}>
         <IconContext.Provider value={{ size: '1.5em' }}>
           <ul className="icons">
             <li>
@@ -46,8 +47,10 @@ const Footer = ({hideCopyright}) => (
                 <FaEnvelope />
               </a>
             </li>
+            
           </ul>
         </IconContext.Provider>
+        
         { !hideCopyright && (
         <ul className="copyright">
           <li>
@@ -58,6 +61,9 @@ const Footer = ({hideCopyright}) => (
           </li>
         </ul>)
         }
+      </section>
+      <section style={{flex:"1"}}>
+      <AssoSponsors/>
       </section>
     </div>
   </footer>

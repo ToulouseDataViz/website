@@ -12,10 +12,12 @@ import { getPic } from '../helper';
 const useStyles = makeStyles(theme => ({
   imageGridContainer: {
     backgroundColor: 'white',
-    padding: theme.spacing(1, 0),
+    padding: 0,
+    minHeight: '4em'
   },
   imageContainer: {
-    maxWidth: '150px',
+    width: '5.5em',
+    
   },
   gatsbyImageCentered: {
     verticalAlign: 'middle',
@@ -24,7 +26,7 @@ const useStyles = makeStyles(theme => ({
 
 const AssoSponsors = () => {
   const classes = useStyles();
-  const assoSponsors = useSponsors();
+  const assoSponsors = useSponsors().filter(({ inactive }) => !inactive).sort((a,b)=>a.rank-b.rank);
   const sponsorsPics = usePics().filter(({ relativeDirectory }) => relativeDirectory === 'sponsor-pics');
 
   return (
@@ -39,10 +41,9 @@ const AssoSponsors = () => {
       {assoSponsors.map(({ pic_name }) => {
         const sponsorPic = getPic(sponsorsPics, pic_name);
         return (
-          <a href={'sponsors'} target="_blank" rel="noreferrer">
-            <Grid item className={classes.imageContainer}>
+          <a href={`sponsor/${pic_name}`} target="_blank" rel="noreferrer">
+            <Grid item className={classes.imageContainer} >
               <GatsbyImage image={sponsorPic} alt={pic_name} className={classes.imageContainer} />
-              {/* <img src={sponsorPic.images.fallback.src} alt={pic_name} className={classes.imageContainer} /> */}
             </Grid>
           </a>
         );

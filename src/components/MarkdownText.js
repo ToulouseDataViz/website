@@ -4,7 +4,8 @@ import Rehype2react from 'rehype-react';
 import Box from '@material-ui/core/Box';
 
 import { formatH1, formatTable, formatIframe } from '../helper';
-
+// eslint-disable jsx-a11y/heading-has-content
+// eslint-disable jsx-a11y/alt-text
 const MarkdownText = ({ hast, className, ...rest }) => {
   const renderAst = new Rehype2react({
     createElement: React.createElement,

@@ -93,13 +93,14 @@
 					font-weight: _font(weight-bold);
 					letter-spacing: _font(letter-spacing-alt);
 					text-transform: uppercase;
+					margin-bottom: 1.5em;
 				}
 			}
 		}
 
 		&.major {
 			height: 22vh;
-			min-height: 22vh;
+			min-height: 10em;
 			max-height: 40em;
 
 			&.alt {

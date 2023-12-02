@@ -7,17 +7,16 @@ import Banner from '../components/Banner';
 import useSiteMetadata from '../hooks/useSiteMetadata';
 import useHomeContent from '../hooks/useHomeContent';
 import Gallery from '../components/Gallery';
-import Footer from '../components/Footer';
-import EventCurrent from '../components/EventCurrent';
-import { incomingEventStatusName } from '../settings';
 
 import pic01 from '../assets/images/pic01.jpg';
-import pic02 from '../assets/images/pic02.jpg';
+import pic02 from '../assets/images/vignette_newsletter_3.jpg';
 import pic03 from '../assets/images/pic03.jpg';
 import pic04 from '../assets/images/pic04.jpg';
 import pic05 from '../assets/images/pic05.jpg';
-import pic06 from '../assets/images/pic06.jpg';
+import pic06 from '../assets/images/vignette_collection_2.png';
 import pic07 from '../assets/images/pic07.jpg';
+
+import usePics from '../hooks/usePics';
 
 const backgroundPics = {
   pic01: pic01,
@@ -47,7 +46,7 @@ const HomeIndex = () => {
   const homeContentCsv = useHomeContent();
 
 
-  let galleryLimit = 8;
+  const galleryLimit = 8;
 
   if (useResizeHook) {
     // const [windowSize, setWindowSize] = useState([
@@ -74,8 +73,8 @@ const HomeIndex = () => {
       <Helmet
         title={headerTitle + ' ' + headerSubtitle}
         meta={[
-          { name: 'description', content: 'Sample' },
-          { name: 'keywords', content: 'sample, something' },
+          { name: 'description', content: 'site Toulouse DataViz' },
+          { name: 'keywords', content: 'Toulouse DataViz, TDV' },
         ]}></Helmet>
 
       <Banner />
@@ -86,10 +85,11 @@ const HomeIndex = () => {
             <div className="inner">
             <Gallery
               type={'small'}
-              limit={8}
+              limit={galleryLimit}
               style={{
                 height: '100px',
               }}
+              picsToDisplay={usePics().filter(({ relativeDirectory }) => relativeDirectory.startsWith('front-gallery-pics'))}
             />
           
             

@@ -10,7 +10,6 @@ import usePics from '../hooks/usePics';
 
 import Lightbox from 'react-awesome-lightbox';
 import 'react-awesome-lightbox/build/style.css';
-import zIndex from '@material-ui/core/styles/zIndex';
 
 const useStyles = makeStyles(theme => ({
   galleryLarge: {
@@ -94,7 +93,7 @@ const Gallery = ({
     }, refreshPeriodInSeconds);
 
     return () => clearInterval(interval);
-  }, [limit]);
+  }, [getPics, limit]);
   /*
    effect will only be trigged only once (on mount and unmount)
    https://reactjs.org/docs/hooks-effect.html#tip-optimizing-performance-by-skipping-effects
