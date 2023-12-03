@@ -115,7 +115,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-material-ui`,
     `gatsby-plugin-offres-pages`,
-    `gatsby-plugin-sponsor-pages`,
     {
       resolve: 'gatsby-plugin-md-from-csv',
       options: {
@@ -132,7 +131,7 @@ module.exports = {
           '/sw.js': ['cache-control: public', 'cache-control:  max-age=0', 'cache-control: must-revalidate'],
           '/public/page-data/*': [
             'cache-control: public',
-            'cache-control:  max-age=0',
+            'cache-control: max-age=0',
             'cache-control: must-revalidate',
           ],
         },

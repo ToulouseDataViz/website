@@ -34,18 +34,20 @@ const AssoSponsors = () => {
       container
       spacing={2}
       direction="row"
-      justify="space-around"
+      justifyContent="space-around"
       alignItems="center"
       className={classes.imageGridContainer}
     >
       {assoSponsors.map(({ pic_name }) => {
         const sponsorPic = getPic(sponsorsPics, pic_name);
         return (
-          <a href={`sponsor/${pic_name}`} target="_blank" rel="noreferrer">
+          <React.Fragment key={pic_name}>
+          <a href={`/sponsor/${pic_name}`}>
             <Grid item className={classes.imageContainer} >
               <GatsbyImage image={sponsorPic} alt={pic_name} className={classes.imageContainer} />
             </Grid>
           </a>
+          </React.Fragment>
         );
       })}
     </Grid>

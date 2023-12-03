@@ -86,14 +86,15 @@ const Gallery = ({
     setPics(pics); // set State
   };
 
-  useEffect(() => {
+  useEffect(() => {    
     getPics();
     const interval = setInterval(() => {
       getPics();
     }, refreshPeriodInSeconds);
 
     return () => clearInterval(interval);
-  }, [getPics, limit]);
+    /* eslint-disable-next-line react-hooks/exhaustive-deps */
+  }, [limit]);
   /*
    effect will only be trigged only once (on mount and unmount)
    https://reactjs.org/docs/hooks-effect.html#tip-optimizing-performance-by-skipping-effects
