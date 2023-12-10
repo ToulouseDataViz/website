@@ -5,10 +5,10 @@ import Header from './Header'
 import Menu from './Menu'
 import Footer from './Footer'
 
-const Layout = ({ hideFooter, children }) => {
+const Layout = ({location, hideFooter, children }) => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const [loading, setLoading] = useState('is-loading');
-  const currentPathname = window.location.pathname;
+  const currentPathname = location?.pathname;
   useEffect(() => {
     setLoading('');
   }, []);
@@ -22,7 +22,7 @@ const Layout = ({ hideFooter, children }) => {
     if (doesIncludes) {
       return true;
     }
-    return currentPathname.startsWith("/sponsor/");
+    return currentPathname?.startsWith("/sponsor/");
   }
 
   return (

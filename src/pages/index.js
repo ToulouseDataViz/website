@@ -43,7 +43,7 @@ function debounce(fn, ms) {
 
 // not refreshed properly at start :(
 const useResizeHook = false;
-const HomeIndex = () => {
+const HomeIndex = ({location}) => {
   const { headerTitle, headerSubtitle } = useSiteMetadata();
   const homeContentCsv = useHomeContent();
 
@@ -71,7 +71,7 @@ const HomeIndex = () => {
   }
 
   return (
-    <Layout hideFooter={false}>
+    <Layout location={location} hideFooter={false}>
       <Helmet
         title={headerTitle + ' ' + headerSubtitle}
         meta={[
