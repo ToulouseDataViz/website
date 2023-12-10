@@ -45,11 +45,12 @@ export const Sponsor = ({ id }) => {
     const classes = useStyles();
     const sponsors = useSponsors().filter(({ inactive }) => !inactive).sort((a, b) => a.rank - b.rank);
 
+    const sponsorsPics = usePics().filter(({ relativeDirectory }) => relativeDirectory === 'sponsor-pics');
+
     const sponsor = sponsors.find(sponsor => sponsor.pic_name === id)
     if (sponsor===undefined) {
         return <div>Sponsor non trouvé !</div>
     }
-    const sponsorsPics = usePics().filter(({ relativeDirectory }) => relativeDirectory === 'sponsor-pics');
     const getPic = myName => sponsorsPics.find(({ name }) => myName === name)?.gatsbyImageData;
 
     const renderSponsor = (sponsor) => {

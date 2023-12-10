@@ -4,12 +4,12 @@ import { discordLink, gitHubLink, mailLink, twitterLink, youtubeLink, meetupLink
 
 import { IconContext } from 'react-icons';
 import { FaDiscord, FaGithub, FaMeetup, FaEnvelope, FaTwitter, FaYoutube, FaLinkedin } from 'react-icons/fa';
-import AssoSponsors from '../components/AssoSponsors';
+import FooterSponsors from '../components/FooterSponsors';
 
-const Footer = ({hideCopyright}) => (
+const Footer = ({ hideCopyright, hideSponsors }) => (
   <footer id="footer">
-    <div className="inner" style={{    display: "flex",    justifyCcontent: "space-between"}}>
-      <section style={{flex:"1"}}>
+    <div className="inner" style={{ display: "flex", justifyContent: "space-between" }}>
+      <section style={{ flex: "1" }}>
         <IconContext.Provider value={{ size: '1.5em' }}>
           <ul className="icons">
             <li>
@@ -47,24 +47,24 @@ const Footer = ({hideCopyright}) => (
                 <FaEnvelope />
               </a>
             </li>
-            
+
           </ul>
         </IconContext.Provider>
-        
-        { !hideCopyright && (
-        <ul className="copyright">
-          <li>
-            Design: <a href="https://html5up.net">HTML5 UP</a>
-          </li>
-          <li>
-            Template Gatsby: <a href="https://www.gatsbyjs.com/starters/codebushi/gatsby-starter-forty">Forty</a>
-          </li>
-        </ul>)
+
+        {!hideCopyright && (
+          <ul className="copyright">
+            <li>
+              Design: <a href="https://html5up.net">HTML5 UP</a>
+            </li>
+            <li>
+              Template Gatsby: <a href="https://www.gatsbyjs.com/starters/codebushi/gatsby-starter-forty">Forty</a>
+            </li>
+          </ul>)
         }
       </section>
-      <section style={{flex:"1"}}>
-      <AssoSponsors/>
-      </section>
+      {!hideSponsors && <section style={{ flex: "1", display: "flex" }}>
+        <FooterSponsors style={{ flex: "1" }} />
+      </section>}
     </div>
   </footer>
 );

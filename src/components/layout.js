@@ -8,24 +8,33 @@ import Footer from './Footer'
 const Layout = ({ hideFooter, children }) => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const [loading, setLoading] = useState('is-loading');
-
-  useEffect(() => { 
+  const currentPathname = window.location.pathname;
+  useEffect(() => {
     setLoading('');
   }, []);
 
   const handleToggleMenu = () => {
-      setIsMenuVisible(!isMenuVisible);
+    setIsMenuVisible(!isMenuVisible);
+  }
+  const noSponsorPathnames = ["/sponsors", "/", ""]
+  const enableSponsors = () => {
+    const doesIncludes = noSponsorPathnames.includes(currentPathname)
+    if (doesIncludes) {
+      return true;
+    }
+    return currentPathname.startsWith("/sponsor/");
   }
 
   return (
-      <div className={`body ${loading} ${isMenuVisible ? 'is-menu-visible' : ''}`}>
-          <div id="wrapper">
-              <Header onToggleMenu={handleToggleMenu} />
-              {children}
-              {!hideFooter && <Footer />}
-          </div>
-          <Menu onToggleMenu={handleToggleMenu} />
+    <div className={`body ${loading} ${isMenuVisible ? 'is-menu-visible' : ''}`}>
+
+      <div id="wrapper">
+        <Header onToggleMenu={handleToggleMenu} />
+        {children}
+        {!hideFooter && <Footer hideSponsors={enableSponsors()} />}
       </div>
+      <Menu onToggleMenu={handleToggleMenu} />
+    </div>
   )
 }
 

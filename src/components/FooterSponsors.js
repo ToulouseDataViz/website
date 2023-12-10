@@ -1,5 +1,4 @@
 import React from 'react';
-import { GatsbyImage } from 'gatsby-plugin-image';
 
 import { Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
@@ -10,23 +9,21 @@ import usePics from '../hooks/usePics';
 import { getPic } from '../helper';
 
 const useStyles = makeStyles(theme => ({
-  imageGridContainer: {
-    backgroundColor: 'white',
+  container: {   
     padding: 0,
-    minHeight: '4em'
+    alignSelf: "center"
   },
-  imageContainer: {
-    width: '5.5em',
-    
-  },
-  gatsbyImageCentered: {
-    verticalAlign: 'middle',
-  },
+
+  link: {
+    marginRight:"0.25em"
+  }
+
+
 }));
 
-const AssoSponsors = () => {
+const FooterSponsors = () => {
   const classes = useStyles();
-  const assoSponsors = useSponsors().filter(({ inactive }) => !inactive).sort((a,b)=>a.rank-b.rank);
+  const FooterSponsors = useSponsors().filter(({ inactive }) => !inactive).sort((a,b)=>a.rank-b.rank);
   const sponsorsPics = usePics().filter(({ relativeDirectory }) => relativeDirectory === 'sponsor-pics');
 
   return (
@@ -36,16 +33,15 @@ const AssoSponsors = () => {
       direction="row"
       justifyContent="space-around"
       alignItems="center"
-      className={classes.imageGridContainer}
+      className={classes.container}
     >
-      {assoSponsors.map(({ pic_name }) => {
+      Nos sponsors : 
+      {FooterSponsors.map(({ name, pic_name }) => {
         const sponsorPic = getPic(sponsorsPics, pic_name);
         return (
           <React.Fragment key={pic_name}>
-          <a href={`/sponsor/${pic_name}`}>
-            <Grid item className={classes.imageContainer} >
-              <GatsbyImage image={sponsorPic} alt={pic_name} className={classes.imageContainer} />
-            </Grid>
+          <a className={classes.link} href={`/sponsor/${pic_name}`}>
+            {name}
           </a>
           </React.Fragment>
         );
@@ -54,4 +50,4 @@ const AssoSponsors = () => {
   );
 };
 
-export default AssoSponsors;
+export default FooterSponsors;

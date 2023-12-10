@@ -15,6 +15,7 @@ import pic04 from '../assets/images/pic04.jpg';
 import pic05 from '../assets/images/pic05.jpg';
 import pic06 from '../assets/images/vignette_collection_2.png';
 import pic07 from '../assets/images/pic07.jpg';
+import pic08 from '../assets/images/logo_sponsors_vignette.png';
 
 import usePics from '../hooks/usePics';
 
@@ -26,6 +27,7 @@ const backgroundPics = {
   pic05: pic05,
   pic06: pic06,
   pic07: pic07,
+  pic08: pic08,
 };
 
 function debounce(fn, ms) {

@@ -28,7 +28,7 @@
     background-size: cover;
     cursor: default;
     height: 22%;
-    max-height: 30em;
+    max-height: 15em;
     min-height: 8em;
     overflow: hidden;
     position: relative;
@@ -103,8 +103,12 @@
       opacity: 0;
     }
  
+    &:nth-child(1) {
+      width: 50%;
+    }
+
     &:nth-child(2) {
-      width: 45%;
+      width: 50%;
     }
    
     &:nth-child(3) {
@@ -118,10 +122,13 @@
       width: 33%;
     }
     &:nth-child(6) {
-      width: 50%;
+      width: 25%;
     }
     &:nth-child(7) {
       width: 50%;
+    }
+    &:nth-child(8) {
+      width: 25%;
     }
 
     &:nth-child(6n - 5) {
@@ -225,19 +232,14 @@
     }     
   }
 
-  @media screen and (max-width: 680px) {
-    display: block;
-
+  @media screen and (min-width: 1919px) and (min-height: 954px) {
     article {
-      &:nth-child(1)  {
-        
-        display: flex;
-        flex-direction: column;
-        
-        height: 47vh;
-        align-items: flex-start;
-      }
-    }
-  
+      
+      height: 7em;
+      max-height: 7em;
+      min-height: 7em;
+     }  
   }
+
+
 }
