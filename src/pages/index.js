@@ -43,7 +43,7 @@ function debounce(fn, ms) {
 
 // not refreshed properly at start :(
 const useResizeHook = false;
-const HomeIndex = ({location}) => {
+const HomeIndex = ({ location }) => {
   const { headerTitle, headerSubtitle } = useSiteMetadata();
   const homeContentCsv = useHomeContent();
 
@@ -83,8 +83,8 @@ const HomeIndex = ({location}) => {
 
       <div id="main">
         <section id="two" class="spotlights" >
-          
-            <div className="inner">
+
+          <div className="inner" style={{ display: "flex", flexDirection: "row", gap: "16px" }}>
             <Gallery
               type={'small'}
               limit={galleryLimit}
@@ -93,8 +93,15 @@ const HomeIndex = ({location}) => {
               }}
               picsToDisplay={usePics().filter(({ relativeDirectory }) => relativeDirectory.startsWith('front-gallery-pics'))}
             />
-          
-            
+            <Link style={{
+              border: "1px solid",
+              margin: "8px",
+              fontSize: "0.8em",
+              padding: "9px 9px",
+              display: "flex",
+              alignSelf: "center",
+              fontWeight: "bold"
+            }} to={"/galerie"} className="link primary">Galerie</Link>
           </div>
         </section>
         <section id="one" className="tiles">
@@ -106,9 +113,9 @@ const HomeIndex = ({location}) => {
                 <header className="major">
                   <h3>{title}</h3>
                   <p>{subtitle}</p>
-                
+
                 </header>
-                  <Link to={slug} className="link primary"></Link>
+                <Link to={slug} className="link primary"></Link>
               </article>
             );
           })}
