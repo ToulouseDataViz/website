@@ -37,7 +37,6 @@ const FooterSponsors = () => {
     >
       Nos sponsors : 
       {FooterSponsors.map(({ name, pic_name }) => {
-        const sponsorPic = getPic(sponsorsPics, pic_name);
         return (
           <React.Fragment key={pic_name}>
           <a className={classes.link} href={`/sponsor/${pic_name}`}>
