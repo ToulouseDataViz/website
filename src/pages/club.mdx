@@ -1,5 +1,4 @@
 import PageBanner from '../components/PageBanner';
-import Gallery from '../components/Gallery';
 import Button from '../components/Button';
 
 import { newslettersUrl, clubInscriptionLink, discordLink } from '../settings';
@@ -24,10 +23,15 @@ En vous inscrivant gratuitement au club :
 - vous pourrez échanger avec la **communauté** via notre Discord Toulouse dataviz
 - vous pourrez publier vos DataVisualisations sur le site TDV _(sous conditions – nous contacter)_
 
-<ul className="actions">
+<ul className="actions" style={{paddingTop:"10px"}}>
   <li>
     <a href={clubInscriptionLink} target="_blank" rel="noreferrer" className="button medium">
       S'inscrire
+    </a>
+  </li>
+  <li>
+   <a href={"https://www.meetup.com/fr-FR/Meetup-Visualisation-des-donnees-Toulouse/"} target="_blank" rel="noreferrer" className="button medium">
+      Rejoignez-nous sur Meetup
     </a>
   </li>
   <li>
@@ -41,8 +45,6 @@ En vous inscrivant gratuitement au club :
     </a>
   </li>
 </ul>
-
-<Gallery />
 
 </div>
 </section>

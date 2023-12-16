@@ -4,13 +4,11 @@
   "version": "1.0.0",
   "author": "Hunter Chang",
   "dependencies": {
-    "@aotten/scatterplot-routes-en-occitanie-v2-0": "https://api.observablehq.com/@aotten/scatterplot-routes-en-occitanie-v2-0.tgz?v=3",
     "@material-ui/core": "^4.11.4",
     "@material-ui/lab": "^4.0.0-alpha.60",
     "@material-ui/styles": "^4.11.4",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
-    "@observablehq/runtime": "^4.8.2",
     "clsx": "^1.1.1",
     "dotenv": "^8.2.0",
     "gatsby": "^3.3.0",

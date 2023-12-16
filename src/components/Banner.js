@@ -7,7 +7,7 @@ import { Grid } from '@material-ui/core';
 import useSiteMetadata from '../hooks/useSiteMetadata';
 
 const Banner = () => {
-	const { headline, description, actionButton } = useSiteMetadata();
+	const { headline, description } = useSiteMetadata();
 
 	return (
 		<section id="banner" className="major">

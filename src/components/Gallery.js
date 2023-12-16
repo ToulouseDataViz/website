@@ -10,7 +10,6 @@ import usePics from '../hooks/usePics';
 
 import Lightbox from 'react-awesome-lightbox';
 import 'react-awesome-lightbox/build/style.css';
-import zIndex from '@material-ui/core/styles/zIndex';
 
 const useStyles = makeStyles(theme => ({
   galleryLarge: {
@@ -87,13 +86,14 @@ const Gallery = ({
     setPics(pics); // set State
   };
 
-  useEffect(() => {
+  useEffect(() => {    
     getPics();
     const interval = setInterval(() => {
       getPics();
     }, refreshPeriodInSeconds);
 
     return () => clearInterval(interval);
+    /* eslint-disable-next-line react-hooks/exhaustive-deps */
   }, [limit]);
   /*
    effect will only be trigged only once (on mount and unmount)

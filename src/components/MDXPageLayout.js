@@ -11,8 +11,8 @@ const components = {
   iframe: (props, i) => formatIframe(props),
 };
 
-const MDXPageLayout = ({ children }) => (
-  <Layout>
+const MDXPageLayout = ({ location, children }) => (
+  <Layout location={location} >
     <MDXProvider
       components={components}
     >

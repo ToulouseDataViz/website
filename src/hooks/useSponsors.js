@@ -7,17 +7,19 @@ export const useSponsors = () => {
     query {
       allSponsorsCsv {
         nodes {
+          inactive
+          rank
           name
           type
           pic_name
-          link
+          link                   
           children {
             ... on markdownDescriptionFromCsv {
               childMarkdownRemark {
                 htmlAst
               }
             }
-          }
+          }          
         }
       }
     }

@@ -47,7 +47,7 @@ const Hackaviz = () => {
               {hasWinners && (
                 <>
                   <hr />
-                  <h3>{'Les gagnants et gagnantes'}</h3>
+                  <h3>{'Les gagnantes et gagnants'}</h3>
                   <Grid container spacing={2} direction="row" justify="space-between" alignItems="flex-start">
                     {winners.map(participant => {
                       const mergedProps = { ...participant, ...winnersColumn };
