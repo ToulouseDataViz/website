@@ -8,7 +8,7 @@ import { IconContext } from 'react-icons';
 import { FaMeetup, FaYoutube } from 'react-icons/fa';
 import { CgFileDocument } from 'react-icons/cg';
 
-import { parseMarkdownToString, localiseDate } from '../helper';
+import { parseMarkdownToString, localiseDate } from '../utils/misc';
 import usePics from '../hooks/usePics';
 import Gallery from '../components/Gallery';
 const useStyles = makeStyles(theme => ({
@@ -44,7 +44,7 @@ const Event = ({
   descriptionRawString,
   presLinks,
   vignetteLink,
-  lecturers
+  lecturers,
 }) => {
   const classes = useStyles();
   const description = parseMarkdownToString(descriptionRawString);
@@ -73,9 +73,9 @@ const Event = ({
 
           <div
             container
-            direction={"column"}
-            style={{ flex: 1, display: 'flex', flexDirection: "column" }}
-            flexDirection={"column"}
+            direction={'column'}
+            style={{ flex: 1, display: 'flex', flexDirection: 'column' }}
+            flexDirection={'column'}
             justify="space-between"
             alignItems="normal">
             <div
@@ -92,7 +92,7 @@ const Event = ({
                 {lecturers ? renderLecturers(lecturers) : 'Toulouse DataViz'}
               </div>
             </div>
-            {(meetupPics.length > 0) && (
+            {meetupPics.length > 0 && (
               <Box style={{ height: maxImageHeight, marginBottom: '10px' }}>
                 <Link to={`/event/${meetupid}`} style={{ borderBottom: 'none' }}>
                   <Gallery
@@ -114,7 +114,7 @@ const Event = ({
               </div>
             )}
 
-            {(
+            {
               <div style={{ display: 'flex', justifyContent: 'space-between', position: 'relative' }}>
                 <div
                   style={{
@@ -152,7 +152,7 @@ const Event = ({
                   {!meetupLink && <div style={{ width: '26px' }}></div>}
                 </IconContext.Provider>
               </div>
-            )}
+            }
           </div>
         </div>
       </Box>

@@ -7,7 +7,7 @@ import Gallery from '../components/Gallery';
 import Button from './Button';
 
 import usePics from '../hooks/usePics';
-import { getPicName } from '../helper';
+import { getPicName } from '../utils/misc';
 
 const useStyles = makeStyles({
   imageContainer: {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { MDXProvider } from '@mdx-js/react';
-import { formatH1, formatTable, formatIframe } from '../helper';
+import { formatH1, formatTable, formatIframe } from '../utils/misc';
 
 import Layout from './layout';
 
@@ -12,12 +12,8 @@ const components = {
 };
 
 const MDXPageLayout = ({ location, children }) => (
-  <Layout location={location} >
-    <MDXProvider
-      components={components}
-    >
-      {children}
-    </MDXProvider>
+  <Layout location={location}>
+    <MDXProvider components={components}>{children}</MDXProvider>
   </Layout>
 );
 

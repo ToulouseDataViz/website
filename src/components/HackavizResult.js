@@ -9,7 +9,7 @@ import Button from './Button';
 import usePics from '../hooks/usePics';
 import MarkdownText from './MarkdownText';
 
-import { getPicName } from '../helper';
+import { getPicName } from '../utils/misc';
 
 const useStyles = makeStyles(theme => ({
   participants: {

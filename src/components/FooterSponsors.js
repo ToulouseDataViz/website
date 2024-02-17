@@ -6,24 +6,24 @@ import { makeStyles } from '@material-ui/core/styles';
 import useSponsors from '../hooks/useSponsors';
 import usePics from '../hooks/usePics';
 
-import { getPic } from '../helper';
+import { getPic } from '../utils/misc';
 
 const useStyles = makeStyles(theme => ({
-  container: {   
+  container: {
     padding: 0,
-    alignSelf: "center"
+    alignSelf: 'center',
   },
 
   link: {
-    marginRight:"0.25em"
-  }
-
-
+    marginRight: '0.25em',
+  },
 }));
 
 const FooterSponsors = () => {
   const classes = useStyles();
-  const FooterSponsors = useSponsors().filter(({ inactive }) => !inactive).sort((a,b)=>a.rank-b.rank);
+  const FooterSponsors = useSponsors()
+    .filter(({ inactive }) => !inactive)
+    .sort((a, b) => a.rank - b.rank);
   const sponsorsPics = usePics().filter(({ relativeDirectory }) => relativeDirectory === 'sponsor-pics');
 
   return (
@@ -33,15 +33,14 @@ const FooterSponsors = () => {
       direction="row"
       justifyContent="space-around"
       alignItems="center"
-      className={classes.container}
-    >
-      Nos sponsors : 
+      className={classes.container}>
+      Nos sponsors :
       {FooterSponsors.map(({ name, pic_name }) => {
         return (
           <React.Fragment key={pic_name}>
-          <a className={classes.link} href={`/sponsor/${pic_name}`}>
-            {name}
-          </a>
+            <a className={classes.link} href={`/sponsor/${pic_name}`}>
+              {name}
+            </a>
           </React.Fragment>
         );
       })}

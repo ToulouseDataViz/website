@@ -5,20 +5,20 @@ import { Grid, Box } from '@material-ui/core';
 import useHackaviz from '../hooks/useHackaviz';
 import useHackavizParticipants from '../hooks/useHackavizParticipants';
 
-import YoutubeEmbed from '../components/YoutubeEmbed';
-import Button from '../components/Button';
+import YoutubeEmbed from './YoutubeEmbed';
+import Button from './Button';
 import HackavizResult from './HackavizResult';
-import { getVideoEmbedId } from '../helper';
+import { getVideoEmbedId } from '../utils/misc';
 import { pastEventStatusName } from '../settings';
 
-const Hackaviz = () => {
+const HackavizPreviousEditions = () => {
   const hackavizs = useHackaviz().filter(item => item.status === pastEventStatusName);
   const hackavizParticipants = useHackavizParticipants();
   const winnersColumn = { columnValue: 2, isDense: true };
 
   return (
     <section className="spotlights">
-      {hackavizs.map(({ hackaviz, status, date, videoLink, description }) => {
+      {hackavizs.map(({ hackaviz, _status, date, videoLink, description }) => {
         const currentHackaviz = hackaviz;
         const videoEmbedId = getVideoEmbedId(videoLink);
         const winners = hackavizParticipants.filter(({ hackaviz, prix }) => hackaviz === currentHackaviz && prix);
@@ -71,4 +71,4 @@ const Hackaviz = () => {
     </section>
   );
 };
-export default Hackaviz;
+export default HackavizPreviousEditions;

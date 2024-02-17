@@ -1,10 +1,10 @@
 import React from 'react';
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 import { Grid } from '@material-ui/core';
 
 import usePics from '../hooks/usePics';
-import { getPic } from '../helper';
+import { getPic } from '../utils/misc';
 
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -20,19 +20,10 @@ const InternalImage = ({ name, altText }) => {
   const pics = usePics();
   const image = getPic(pics, name);
   return (
-    <Grid
-      container
-      direction="row"
-      justify="center"
-      alignItems="center"
-    >
-      <GatsbyImage 
-        image={image} 
-        alt={altText} 
-        class={classes.image} 
-      />
+    <Grid container direction="row" justify="center" alignItems="center">
+      <GatsbyImage image={image} alt={altText} class={classes.image} />
     </Grid>
   );
-}
+};
 
 export default InternalImage;

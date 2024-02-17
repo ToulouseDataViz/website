@@ -13,7 +13,7 @@ import PrevNextPage from '../components/PrevNextPage';
 
 import useEventsNotion from '../hooks/useEventsNotion';
 import usePics from '../hooks/usePics';
-import { getVideoEmbedId, localiseDate } from '../helper';
+import { getVideoEmbedId, localiseDate } from '../utils/misc';
 import { pastEventStatusName } from '../settings';
 import { CgFileDocument } from 'react-icons/cg';
 
