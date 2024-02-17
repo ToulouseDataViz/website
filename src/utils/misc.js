@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './components/Button';
+import Button from '../components/Button';
 
 // strip out some values since YouTube embed API is different from YouTube main API
 const regexpVideoId = /v=(.+?(?=&|$))/;
