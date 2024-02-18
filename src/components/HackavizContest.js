@@ -50,7 +50,7 @@ const HackavizContest = ({ startDate, endDate, tallyFormUrl, partyDate }) => {
               Date limite de remise des contributions : <b>{getLocaleDate(endDate)}</b>
             </li>
             <li>
-              Hackaviz Party : Présentation des réalisations et remise des prix : <b>{getLocaleDate(partyDate)}</b>
+              Hackaviz Party - Présentation des réalisations et remise des prix : <b>{getLocaleDate(partyDate)}</b>
             </li>
           </ul>
           <div align="center">
