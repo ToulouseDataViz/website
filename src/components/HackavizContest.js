@@ -83,7 +83,7 @@ const HackavizContest = ({ startDate, endDate, tallyFormUrl, partyDate }) => {
               </div>
             </>
           )}
-          {!isTimeToRelease && <i>Données disponibles le {getLocaleDate(endDate)}</i>}
+          {!isTimeToRelease && <i>Données disponibles le {getLocaleDate(startDate)}</i>}
           <h1>LES RÈGLES, L'ÉVALUATION et L'HACKAVIZ PARTY</h1>
           <Button link={`/hackaviz/reglement`} type={'internal'} text={'Voir le détail'} />
           <HackavizFooter year={year} />
