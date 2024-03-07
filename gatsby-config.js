@@ -110,6 +110,14 @@ module.exports = {
         ext: '.md',
       },
     },
+    {
+      resolve: 'gatsby-source-remote-file',
+      options: {
+        url: 'https://raw.githubusercontent.com/Toulouse-Dataviz/hackaviz-2024/main/README.md',
+        name: 'hackaviz24_description',
+        ext: '.md',
+      },
+    },
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
