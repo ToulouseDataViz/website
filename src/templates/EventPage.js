@@ -17,6 +17,14 @@ import { getVideoEmbedId, localiseDate } from '../utils/misc';
 import { pastEventStatusName } from '../settings';
 import { CgFileDocument } from 'react-icons/cg';
 
+const isValidUrl = urlString => {
+  try {
+    return Boolean(new URL(urlString));
+  } catch (e) {
+    return false;
+  }
+};
+
 const useStyles = makeStyles(theme => ({
   meetupnavitem: {
     margin: theme.spacing(1, 0),
@@ -70,7 +78,7 @@ const EventPage = ({
               <h1>Les évènements</h1>
             </header>
             <Grid container>
-              {meetupLink && (
+              {meetupLink && isValidUrl(meetupLink) && (
                 <Box className={classes.griditemmargin}>
                   <a href={meetupLink} className="icon alt fa-meetup">
                     <span className="label">Meetup</span>
@@ -104,7 +112,7 @@ const EventPage = ({
                     <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '24px' }}>
                       Présentations : &nbsp;
                       {presLinks.map(presLink => {
-                        if (presLink) {
+                        if (presLink && presLink.url && isValidUrl(presLink.url)) {
                           return (
                             <div>
                               <a href={presLink.url} target="_blank" rel="noreferrer" className="icon">
