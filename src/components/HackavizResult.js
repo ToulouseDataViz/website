@@ -61,6 +61,7 @@ const HackavizResult = ({
   columnValue,
   /** compact mode used in main hackaviz page */
   isDense = false,
+  description = '',
 }) => {
   const classes = useStyles();
   const resultsPics = usePics().filter(({ relativeDirectory }) => relativeDirectory === 'hackaviz-result-pics');
