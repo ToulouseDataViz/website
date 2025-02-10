@@ -5,23 +5,26 @@ import PageBanner from './PageBanner';
 
 import InternalImage from './InternalImage';
 import HackavizFooter from './HackavizFooter';
-import { getLocaleYear, formatOrdinals, getLocaleMonth, getLocaleDate } from '../utils/hackaviz';
+import { getLocaleYear, formatOrdinals, getLocaleMonth, getLocaleDate, dateDiffInDays } from '../utils/hackaviz';
 
 const veryFirstHackavizYear = 2018;
 
 /**
  * render contest presentation
- * @param startDate start date of hackaviz submission  eg. new Date("2024-03-08") in ISO format YYYY-MM-DD
- * @param startDate end date of hackaviz submission
- * @param tallyFormUrl URL of tally submission form
- * @param partyDate hackaviz party
+ * @param {Date} startDate start date of hackaviz submission  eg. new Date("2024-03-08") in ISO format YYYY-MM-DD
+ * @param {Date} endDate end date of hackaviz submission
+ * @param {string} tallyFormUrl URL of tally submission form
+ * @param {Date} partyDate hackaviz party
+ * @param {?string} extraMessage optional string
  */
-const HackavizContest = ({ startDate, endDate, tallyFormUrl, partyDate }) => {
+const HackavizContest = ({ startDate, endDate, tallyFormUrl, partyDate, extraMessage }) => {
   const year = getLocaleYear(startDate);
 
   const ranking = Number.parseInt(year) - veryFirstHackavizYear + 1;
 
   const isTimeToRelease = startDate.getTime() < new Date().getTime();
+  const nbDays = dateDiffInDays(startDate, endDate)
+
   return (
     <>
       <PageBanner
@@ -40,8 +43,8 @@ const HackavizContest = ({ startDate, endDate, tallyFormUrl, partyDate }) => {
             </div>
           </div>
           <h1> LE PRINCIPE</h1> Raconter une histoire avec des graphiques, à partir d’un jeu de données inédit, seul ou
-          en équipe. A partir du moment ou les données sont mises à disposition, les candidats ont 10 jours pour rendre
-          leur création.
+          en équipe. A partir du moment ou les données sont mises à disposition, les candidats ont {nbDays} jours pour rendre
+          leur création. {extraMessage}
           <ul>
             <li>
               Date de mise à disposition des données : <b>{getLocaleDate(startDate)}</b>
