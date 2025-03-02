@@ -16,8 +16,9 @@ const veryFirstHackavizYear = 2018;
  * @param {string} tallyFormUrl URL of tally submission form
  * @param {Date} partyDate hackaviz party
  * @param {?string} extraMessage optional string
+ * @param {?Array<{url: string, buttonLabel: string}>} customDataButtons replace mdx hackaviz data page by custom buttons
  */
-const HackavizContest = ({ startDate, endDate, tallyFormUrl, partyDate, extraMessage }) => {
+const HackavizContest = ({ startDate, endDate, tallyFormUrl, partyDate, extraMessage, customDataButtons }) => {
   const year = getLocaleYear(startDate);
 
   const ranking = Number.parseInt(year) - veryFirstHackavizYear + 1;
@@ -61,29 +62,42 @@ const HackavizContest = ({ startDate, endDate, tallyFormUrl, partyDate, extraMes
           </div>
           <h1>PRÉPARER L’HACKAVIZ</h1> Voici des newsletters pour vous préparer à l'hackaviz. Elles ont été écrites pour
           l'hackaviz précédent mais elles restent toujours d'actualité.
-          <Button
-            link={'https://newsletters.toulouse-dataviz.fr/newsletter--toulouse-dataviz-13--spcial-hackaviz-2021'}
-            text={'#13 - Spécial Hackaviz 1/4'}
-          />
-          <Button
-            link={'https://newsletters.toulouse-dataviz.fr/newsletter--toulouse-dataviz-14--spcial-hackaviz-2021'}
-            text={'#14 - Spécial Hackaviz 2/4'}
-          />
-          <Button
-            link={'https://newsletters.toulouse-dataviz.fr/newsletter--toulouse-dataviz-15--spcial-hackaviz-2021'}
-            text={'#15 - Spécial Hackaviz 3/4'}
-          />
-          <Button
-            link={'https://newsletters.toulouse-dataviz.fr/newsletter--toulouse-dataviz-16--spcial-hackaviz-2021'}
-            text={'#16 - Spécial Hackaviz 4/4'}
-          />
+          <div>
+            <Button
+              link={'https://newsletters.toulouse-dataviz.fr/newsletter--toulouse-dataviz-13--spcial-hackaviz-2021'}
+              text={'#13 - Spécial Hackaviz 1/4'}
+            />
+            <Button
+              link={'https://newsletters.toulouse-dataviz.fr/newsletter--toulouse-dataviz-14--spcial-hackaviz-2021'}
+              text={'#14 - Spécial Hackaviz 2/4'}
+            />
+            <Button
+              link={'https://newsletters.toulouse-dataviz.fr/newsletter--toulouse-dataviz-15--spcial-hackaviz-2021'}
+              text={'#15 - Spécial Hackaviz 3/4'}
+            />
+            <Button
+              link={'https://newsletters.toulouse-dataviz.fr/newsletter--toulouse-dataviz-16--spcial-hackaviz-2021'}
+              text={'#16 - Spécial Hackaviz 4/4'}
+            />
+          </div>
           <h1>LE JEU DE DONNÉES</h1>
           {isTimeToRelease && (
             <>
-              <div>Cette année, nous proposons un jeu de données inédit</div>
-              <div align="center">
-                <Button link={`/hackaviz/${year}-data`} type={'internal'} text={'Télécharger les données'} />
-              </div>
+              <div>Cette année, nous proposons un jeu de données inédit.</div>
+              {customDataButtons &&
+                <div align="center">
+                  <div style={{ display: "flex", justifyContent: "center" }}>
+                    {customDataButtons.map(customDataButton =>
+                      <Button link={customDataButton.url} text={customDataButton.buttonLabel} />)
+                    }
+                  </div>
+                </div>
+              }
+              {!customDataButtons && (
+                <div align="center">
+                  <Button link={`/hackaviz/${year}-data`} type={'internal'} text={'Télécharger les données'} />
+                </div>)
+              }
             </>
           )}
           {!isTimeToRelease && <i>Données disponibles le {getLocaleDate(startDate)}</i>}
