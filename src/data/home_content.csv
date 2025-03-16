@@ -1,7 +1,7 @@
 title, subtitle, slug, backgroundPicture, isInMenu
 Evènements, Évènements passés et à venir, /evenements, picEvenements , true
 Hackaviz, "Prêt, partez, visualisez !", /hackaviz/2025-contest, picHackaviz, true
-Exposition, "DataGraff", https://exposition.toulouse-dataviz.fr/, picExposition, true
+Exposition, "DataGraff 2025", https://exposition.toulouse-dataviz.fr/, picExposition, true
 Guide de datavisualisation,"Notre petit guide de dataviz", https://toulouse-dataviz.notion.site/4cea244c76d0407b9722d300e798a3c2?v=f3b7a520de214623a766a5b68456097b&pvs=74/, picGuide, true
 La newsletter, "Nos newsletters", https://ressources.toulouse-dataviz.fr/, picNewsletter, true
 Ressources, "Notre sélection de dataviz et de livres", https://ressources.toulouse-dataviz.fr/collections, picRessources, true
