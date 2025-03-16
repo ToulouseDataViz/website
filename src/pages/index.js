@@ -8,38 +8,31 @@ import useSiteMetadata from '../hooks/useSiteMetadata';
 import useHomeContent from '../hooks/useHomeContent';
 import Gallery from '../components/Gallery';
 
-import pic01 from '../assets/images/pic01.jpg';
-import pic02 from '../assets/images/vignette_newsletter_3.jpg';
-import pic03 from '../assets/images/pic03.jpg';
-import pic04 from '../assets/images/pic04.jpg';
-import pic05 from '../assets/images/pic05.jpg';
-import pic06 from '../assets/images/vignette_collection_2.png';
-import pic07 from '../assets/images/pic07.jpg';
-import pic08 from '../assets/images/logo_sponsors_vignette.png';
-
+//TODO: fix that hell - the picture are included here to be processed by the nightmare framework named Gatsby 
+import picAssociation from '../assets/images/picAssociation.jpg';
+import picNewsletter from '../assets/images/vignette_newsletter_3.jpg';
+import picClub from '../assets/images/picClub.jpg';
+import picEvenements from '../assets/images/picEvenements.jpg';
+import picHackaviz from '../assets/images/picHackaviz.jpg';
+import picRessources from '../assets/images/vignette_collection_2.png';
+import picGuide from '../assets/images/picGuide.jpg';
+import picSponsors from '../assets/images/logo_sponsors_vignette.png';
+import picExposition from '../assets/images/picExposition.jpg';
 import usePics from '../hooks/usePics';
 
+//TODO: fix that hell - why so much
 const backgroundPics = {
-  pic01: pic01,
-  pic02: pic02,
-  pic03: pic03,
-  pic04: pic04,
-  pic05: pic05,
-  pic06: pic06,
-  pic07: pic07,
-  pic08: pic08,
+  picAssociation: picAssociation,
+  picNewsletter: picNewsletter,
+  picClub: picClub,
+  picExposition: picExposition,
+  picEvenements: picEvenements,
+  picHackaviz: picHackaviz,
+  picRessources: picRessources,
+  picGuide: picGuide,
+  picSponsors: picSponsors,
 };
 
-function debounce(fn, ms) {
-  let timer;
-  return _ => {
-    clearTimeout(timer);
-    timer = setTimeout(_ => {
-      timer = null;
-      fn.apply(this, arguments);
-    }, ms);
-  };
-}
 
 // not refreshed properly at start :(
 const useResizeHook = false;
@@ -84,7 +77,7 @@ const HomeIndex = ({ location }) => {
       <div id="main">
         <section id="two" class="spotlights" >
 
-          <div className="inner" style={{ display: "flex", flexDirection: "row", gap: "16px" }}>
+          <div data-testid="main-gallery" className="inner" style={{ display: "flex", flexDirection: "row", gap: "16px" }}>
             <Gallery
               type={'small'}
               limit={galleryLimit}
@@ -104,7 +97,7 @@ const HomeIndex = ({ location }) => {
             }} to={"/galerie"} className="link primary">Galerie</Link>
           </div>
         </section>
-        <section id="one" className="tiles">
+        <section data-testid="main-tiles" id="one" className="tiles">
           {homeContentCsv.map(({ title, subtitle, slug, backgroundPicture }, index) => {
             return (
               <article
