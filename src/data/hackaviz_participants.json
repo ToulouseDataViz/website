@@ -1,0 +1,1226 @@
+{
+  "2018": [
+    {
+      "nom": "Guillaume Devailly, Yann Labrune (équipe Genepi@INRA)",
+      "pic_name": "2018-genepi",
+      "outils": "R,paquets here, tidyverse, cowplot, ggrepel, knitr, GhitHub",
+      "prix": "Prix spécial du jury",
+      "link": "/hackaviz/2018/occitaniedesvilles_Guillaume_devailly.pdf"
+    },
+    {
+      "nom": "Mélanie Suescun",
+      "pic_name": "2018-suescun",
+      "outils": "R packages - dplyr, reshape, ggplot2. Geojsonio, Leaflet + OpenStreetMap, PowerPoint",
+      "prix": "Prix de la pertinence",
+      "link": "/hackaviz/2018/Présentation_HackaViz2018_MelanieSUESCUN.pdf"
+    },
+    {
+      "nom": "Edith Maulandi",
+      "pic_name": "2018-maulandi",
+      "outils": "Python (pandas + jupyter notebook), D3.js  (d3-legend, d3-annotation, d3-text-wrapper), Bootstrap Scrollspy\n",
+      "prix": "1er prix",
+      "link": "https://emaulandi.github.io/occitanie-hackaviz2018/"
+    },
+    {
+      "nom": "Romain Leysenne, Julien Dillingham, Raphaël Jadeau, Maxime Boichon (Equipe : Les poulains de Guigui)",
+      "pic_name": "2018-poulains",
+      "outils": "Excel, R pour les statistiques, Adobe Illustrator et Adobe XD pour la visualisation",
+      "prix": "Prix de l'originalité",
+      "link": "https://xd.adobe.com/view/42ec91fb-9de2-4af5-86b6-87b0084cf6c4/?fullscreen"
+    },
+    {
+      "nom": "Theo Rousselle, Frédéric Kingue, Matthieu Olivari, Clément Borel, (Equipe : LP MIND)",
+      "pic_name": "2018-lpmind",
+      "outils": "Illustrator, html",
+      "prix": "Mention spéciale",
+      "link": "https://clemb.github.io/HackaViz2018/index.html"
+    },
+    {
+      "nom": "Yahia Mehdi Seddik Cherifi",
+      "pic_name": "2018-cherifi",
+      "outils": "R (packages : tidyverse + geojsonio + cartography)",
+      "link": "/hackaviz/2018/hackviz2018-1_Mehdi_Cherifi.pdf"
+    },
+    {
+      "nom": "Bastien Sellah",
+      "pic_name": "2018-sellah",
+      "outils": "Tableau software",
+      "link": "http://tabsoft.co/2GHqH7G"
+    },
+    {
+      "nom": "Thibault Nidelet",
+      "pic_name": "2018-nidelet",
+      "outils": "R + shiny",
+      "link": "https://tnidelet.shinyapps.io/HackVizOccitanie/"
+    },
+    {
+      "nom": "Paul Mycek, Coralie Mycek, Vincent Chabot, Alexandre Philip (Equipe : Statziki)",
+      "pic_name": "2018-statziki",
+      "outils": "Python (numpy, pandas, matplotlib, shapeley, json), Qgis, Javascript, HTML, CSS, Code de création de cartogrammes",
+      "link": "https://cocaux.gitlab.io/hackaviz/"
+    },
+    {
+      "nom": "Stéphanie Fourcade, Vincent Boyer, Mathilde Fontanie (Equipe : VISEO MicroStrategy)",
+      "pic_name": "2018-microstrategy",
+      "outils": "EMicroStrategy 10.10",
+      "link": "/hackaviz/2018/Hackaviz-Toulouse-2018-Team-VISEO-Final.pdf"
+    },
+    {
+      "nom": "Bérengère Mathieu, Marianne Lajante, Jérémie Pardou, Benjamin Manguin (Equipe : Makina Corpus)",
+      "pic_name": "2018-makinacorpus",
+      "outils": "Observablehq, D3.js, Leaflet",
+      "link": "https://beta.observablehq.com/@m-marianne/1-le-crash-de-2008-mythe-ou-realite-la-preuve-par-les-chiffres"
+    },
+    {
+      "nom": "Clément Lesaulnier",
+      "pic_name": "2018-lesaulnier",
+      "outils": "d3.js (d3-geo, ndjson, topojson,d3-scale-chromatic)",
+      "link": "https://clesauln.github.io/hackaviz/index.html"
+    },
+    {
+      "nom": "Lucie Sieys",
+      "pic_name": "2018-sieys",
+      "outils": "Excel, QGIS, Illustrator",
+      "link": "/hackaviz/2018/L.Sieys_.pdf"
+    },
+    {
+      "nom": "Hamza Belbachir, Amine Lamriben, (Equipe : Haminzaviz)",
+      "pic_name": "2018-haminzaviz",
+      "outils": "Tableau software",
+      "link": "https://public.tableau.com/profile/hamza.belbachir#!/vizhome/Haminzaviz1/HackAviz_Hamza_Amine"
+    },
+    {
+      "nom": "Alain Roan (hors concours)",
+      "pic_name": "2018-roan",
+      "outils": "Observablehq, d3.js",
+      "link": "https://beta.observablehq.com/@alainro/hackaviz-toulouse-2018"
+    }
+  ],
+  "2019": [
+    {
+      "nom": "Tony HAUCK",
+      "pic_name": "2019-hauck",
+      "outils": "QGIS, Excel, Python, Mapbox, Mapbox API pour les itinéraires entre deux communes, D3.js, C3.js, Scrollama.js",
+      "prix": "1er prix",
+      "description": "Le blog de Tony : [Une plongée dans les dessous du Hackaviz 2019](https://tonyhauck.com/blog/2019/04/11/une-plongee-dans-les-dessous-du-hackaviz-2019/)",
+      "link": "https://tonyhauck.com/dataviz/story.html"
+    },
+    {
+      "nom": "Tristan GUILLEVIN",
+      "pic_name": "2019-guillevain",
+      "outils": "Tableau Software",
+      "prix": "2ème prix",
+      "link": "https://public.tableau.com/shared/ZD2492J8Z?:showVizHome=no"
+    },
+    {
+      "nom": "Nolwenn LANNUEL, Sébastien QUINAULT (Équipe COVIRIAF)",
+      "pic_name": "2019-lannuel-quinault",
+      "outils": "R (packages circlize, ggplot2, ggmap, cartography) Powerpoint",
+      "prix": "Prix spécial du jury",
+      "link": "/hackaviz/2019/COVIRIAF.pdf"
+    },
+    {
+      "nom": "Mathilde MOUSSET",
+      "pic_name": "2019-mousset",
+      "outils": "R(tidyverse+sf), Inkspace, powerpoint",
+      "prix": "Prix de l'élégance",
+      "link": "/hackaviz/2019/Hackaviz2019_MOUSSET_MATHILDE.pdf"
+    },
+    {
+      "nom": "Vincent DAGNEAUX, Pierre VINCENOT (Équipe Immédiateam)",
+      "pic_name": "2019-dagneaux-vincenot",
+      "outils": "Open Refine, Google sheet, Datawrapper, Google Sheet, Google Data Studio, Carto et Flowmap Blue, WordPress, thème Divi",
+      "prix": "Prix de la pertinence",
+      "description": "Le blog de Pierre : [Dans les coulisses d'une datavisualisation #Hackaviz 2019](https://www.linkedin.com/pulse/dans-les-coulisses-dune-datavisualisation-hackaviz-2019-vincenot/)",
+      "link": "https://immediatlab.fr/hackaviz-2019-ces-villes-desertes-par-les-actifs/"
+    },
+    {
+      "nom": "Sarodja NAMINZO, Louis VOISINE, Benoit CHABRIER (Équipe DATACLIC)",
+      "pic_name": "2019-dataclic",
+      "outils": "Tableau Software",
+      "link": "http://tdv2019.sgarlab.fr/"
+    },
+    {
+      "nom": "Christina OVEZIK, He WANG, Clément BOYER (Équipe 3DT AKKA)",
+      "pic_name": "2019-akka",
+      "outils": "Power BI",
+      "link": "https://app.powerbi.com/view?r=eyJrIjoiZDBmYzM3MGQtZjMzZS00ZmQzLThmMjktOWE4NDIyMzMwNzgwIiwidCI6ImVkMGUzNDE0LTZlNTYtNDU0Yy04YTgyLWViODBiZWZiNzM4YiIsImMiOjh9"
+    },
+    {
+      "nom": "Julien DEMEAUX",
+      "pic_name": "2019-demeaux",
+      "outils": "Tableau Software",
+      "link": "https://public.tableau.com/profile/julien.demeaux6710#!/vizhome/Hackaviz2019_final/HackaViz2019"
+    },
+    {
+      "nom": "Benoit PATIGNY",
+      "pic_name": "2019-patigny",
+      "outils": "Power BI",
+      "link": "https://app.powerbi.com/view?r=eyJrIjoiOTRjZjlmOWEtNDJjOS00MjM0LWIzODQtNmJlYTIwMGM4MTA3IiwidCI6IjNhYmVkMjAzLTdiNjAtNDQyMi04MjQ2LTUyYTZjZDNiOTc2NiIsImMiOjh9"
+    },
+    {
+      "nom": "Timothy HORIA",
+      "pic_name": "2019-horia",
+      "outils": "D3js, Jquery, Bootstrap",
+      "link": "http://download.rplusplus.com/hackaviz/index.html"
+    },
+    {
+      "nom": "Loïc DESTOBERE, Maxence Godet, Eric VERCRUYSSE (Equipe Velvet Consulting)",
+      "pic_name": "2019-velvet",
+      "outils": "Tableau Software",
+      "link": "https://public.tableau.com/profile/maxence.godet#!/vizhome/Temporaire/TempsDeTrajetOccitanie"
+    },
+    {
+      "nom": "Mehdi CHERIFI",
+      "pic_name": "2019-cherifi",
+      "outils": "R",
+      "link": "https://drive.google.com/open?id=1hK2sc7CkZVRzSaAgq2i4KLObNXzC5cN4"
+    },
+    {
+      "nom": "Robin DELMAS",
+      "pic_name": "2019-delmas",
+      "outils": "Pyscripter (IDE), Python 3.6, Bibliothèques : requests, shapely, geojson, pandaso\nGéoservice itinéraires du portail IGN, Mapbox",
+      "link": "https://api.mapbox.com/styles/v1/damaeris/cjtrcdbg201nb1fltsrghxsdn.html?fresh=true&title=true&access_token=pk.eyJ1IjoiZGFtYWVyaXMiLCJhIjoiY2pha3hyMDI4Mm54ODJxcnp3cDBvdDBjOSJ9.4SlJT5ZTwHC_aIC__o7TPg#8.9/43.6179/1.6682"
+    },
+    {
+      "nom": "Vincent VIVANLOC",
+      "pic_name": "2019-vivanloc",
+      "outils": "LibreOffice calc, Prototype written in Typescript with Leaflet + OpenStreetMap, Typescript Leaflet Template Ardian Shala, Leaflet plugins (GeometryUtil, SemiCircle & PolylineOffset), Pure CSS tooltip, VSCode, Gimp, Inkscape",
+      "link": "https://github.com/vvivanloc/hackaviz2019/"
+    },
+    {
+      "nom": "Gregory GOSSE, Pierre MARTIN (Équipe viz'ards)",
+      "pic_name": "2019-gosse-martin",
+      "outils": "Excel, Tableau public, Illustrator, 3DSMAX, Python, Django, D3.js",
+      "link": "https://drive.google.com/file/d/1Mf7jfFALKM4tR1mSevm0SNYUVlUnn7Qg/view?usp=sharing"
+    },
+    {
+      "nom": "Jean-Francois POUSTIS",
+      "pic_name": "2019-poustis",
+      "outils": "Non renseigné",
+      "link": "/hackaviz/2019/Poustis_HACKAVIZ_2019.pdf"
+    },
+    {
+      "nom": "Amine El GHAYATE",
+      "pic_name": "2019-elghayate",
+      "outils": "Bootstrap, Javascript, Php",
+      "link": "https://github.com/elgamine-dev/psychic-happiness"
+    },
+    {
+      "nom": "bastien SELLAH",
+      "pic_name": "2019-sellah",
+      "outils": "Tableau Software",
+      "link": "https://public.tableau.com/profile/bastien.sellah#!/vizhome/LOCCITANIE-HACKAVIZ_2019/LOCCITANIE-HACKAVIZ_2019"
+    },
+    {
+      "nom": "Emilie DELPUECH, Yann LABRUNE, Guillaume DEVAILLY (Équipe : génépi)",
+      "pic_name": "2019-genepi",
+      "outils": "ggplot2 et le tidyverse, gganimate, sf, visNetwork plotly",
+      "link": "https://gdevailly.github.io/hackaviz2019/migration_pendulaire_occitanie_hackaviz2019.html"
+    },
+    {
+      "nom": "Hilal BALOUT",
+      "pic_name": "2019-balout",
+      "outils": "Non renseigné",
+      "link": "https://drive.google.com/file/d/1ruqe9h7p3bxkDIxwSAN9aIjqn7u2T7II/view?usp=sharing"
+    },
+    {
+      "nom": "Mélanie SUESCUN",
+      "pic_name": "2019-suescin",
+      "outils": "Non renseigné",
+      "link": "/hackaviz/2019/HackaViz2019-Melanie-SUESCUN.pdf"
+    },
+    {
+      "nom": "Joachim BEASLAS",
+      "pic_name": "2019-beaslas",
+      "outils": "Squore, Highcharts",
+      "link": "http://hackaviz2019.djoman.com/"
+    },
+    {
+      "nom": "Florent ECORCHARD",
+      "pic_name": "2019-echorchard",
+      "outils": "mama's flow",
+      "link": "https://ve.link/HACKVIZ2019"
+    },
+    {
+      "nom": "Sarah DEROSAIS, Rebecca MEDDAHI, Matthieu SIRVENT (Équipe LP MIND)",
+      "pic_name": "2019-lpmind",
+      "outils": "Tableau Software",
+      "link": "https://public.tableau.com/profile/matthieusirvent#!/vizhome/Tableau_Hackaviz2019/Tableaudebord1"
+    },
+    {
+      "nom": "Guillaume RICHARD",
+      "pic_name": "2019-richard",
+      "outils": "Non renseigné",
+      "link": "https://drive.google.com/file/d/18I9lSQIa2ylrI9UDJRaqGbKZ0fVfJFzb/view?usp=sharing"
+    },
+    {
+      "nom": "Edith MAULANDI (hors concours)",
+      "pic_name": "2019-maulandi",
+      "outils": "Kepler.gl",
+      "link": "/hackaviz/2019/Edith-Soumission.pdf"
+    }
+  ],
+  "2020": [
+    {
+      "nom": "Timothée DELUBAC et Olga Tihhonova (équipe : Pixel & Poivre)",
+      "pic_name": "2020-delubac-tihhonova",
+      "outils": "Python, D3, HTML, CSS, JavaScript",
+      "prix": "1er prix",
+      "description": "Le guide du voyageur en Occitanie _(Hitchhiker's Guide to Occitània)_ vous propose de découvrir lequel des départements de notre région se prêtera le mieux à vos prochaines vacances. Pensez à prendre votre serviette !",
+      "link": "https://olgatihhonova.github.io/hackaviz2020/"
+    },
+    {
+      "nom": "Evgenii MUNIN",
+      "pic_name": "2020-munin",
+      "outils": "Data processing: Python (pandas, geopandas), Viz: Tableau",
+      "description": "L'analyse est faite sur les aspects suivants :\n- L'attractivité relative des départements de l'Occitanie mesurée comme le rapport entre les nuitées sur la capacité totale d'hébergement pour chaque mois de l'année 2018.\n- Les origines principales des visiteurs _(France ou étranger)_;\n- Le rapport entre les touristes vacanciers / non-vacanciers pour chaque mois de l'année 2018.",
+      "link": "https://public.tableau.com/profile/evgenii.munin#!/vizhome/hackaviz2020_evgenii_munin/Dashboard1"
+    },
+    {
+      "nom": "Simon LAFOSSE",
+      "pic_name": "2020-lafosse",
+      "outils": "Tableau Software, Tableau Prep, Mapbox",
+      "prix": "Prix de la pertinence",
+      "description": "Benvengut !\nDes milliers de personnes qui viennent visiter la région Occitanie tout au long de l'année. Mais ces touristes, qui sont-t-ils exactement ? pourquoi et à quelle période de l'année viennent-ils ? et enfin est-ce que la région a la capacité de les accueillir ?\n\nBenvengut _(Bienvenue en Occitan)_ dans cette visualisation interactive qui vous permettra d'obtenir un éclairage sur les réponses à ces questions.",
+      "link": "https://public.tableau.com/profile/simon.lafosse#!/vizhome/HV2020-Test/Benvengut-Part01"
+    },
+    {
+      "nom": "Xavier RAUCH",
+      "pic_name": "2020-rauch",
+      "outils": "MicroStrategy 2020, D3.JS (custom viz), SVG (maps, ring chart, pictos), The Noun Project (icons)",
+      "description": "_Ouvrir avec Chrome - Nom de l'utilisateur : HACKAVIZ - Mot de passe: HACKAVIZ2020_\n- Quels départements attirent le plus de touristes étrangers ?\n- Quel sont leurs départements favoris en fonction de leur nationalité ?\n- Quelle est la nationalité numéro 1 dans chaque département de la région ?\n- Où les Occitans font-ils eux-mêmes du tourisme en Occitanie ?",
+      "link": "https://env-185525.customer.cloud.microstrategy.com/MicroStrategy/servlet/mstrWeb?evt=3140&src=mstrWeb.3140&documentID=0BAE9CF011EA647792A90080EF25EBF9&Server=ENV-185525LAIOUSE1&Project=MicroStrategy%20Tutorial&Port=34952&connmode=8&ru=1&share=1"
+    },
+    {
+      "nom": "Christophe LOUAT (équipe Sensee)",
+      "pic_name": "2020-louat",
+      "outils": "Python, d3js",
+      "prix": "Prix de l'histoire",
+      "description": "Dans cette visualisation, nous observons les nationalités dominantes par département au cours des saisons. L'Europe du sud privilégie ainsi les département pyrénéens et les anglais l'intérieur des terres. Les départements côtiers voient défiler toutes les nationalités au cours de l'année.",
+      "link": "https://festive-murdock-ceedcc.netlify.com/"
+    },
+    {
+      "nom": "Julien DEMEAUX",
+      "pic_name": "2020-demeaux",
+      "outils": "Tableau Desktop + Tableau Prep Builder",
+      "prix": "2ème prix",
+      "description": "Les **1001 nuits occitanes**, une analyse des nuitées et flux touristiques en Occitanie en 2018 en 3 actes.\n1. Les visiteurs métropolitains\n2. A l'intérieur de la région\n3. L'Occitanie, terre de vacances",
+      "link": "https://public.tableau.com/profile/padatawan#!/vizhome/Hackaviz2020-Les1001nuitsoccitanes/Hackaviz2020?publish=yes"
+    },
+    {
+      "nom": "Florent POUSSEROT (équipe : Visualizar)",
+      "pic_name": "2020-pousserot",
+      "outils": "omniscope, javascript, html, css, flourish, vega-lite",
+      "description": "Einar est avant tout un fan de musique. Dans son pays, le Danemark, c'est une star.\nSon rêve, créer un Festival de musique de Métal en plein air.\nPour cela, il a entendu parler d'une nouvelle terre, appelé Occitanie.\nPour intégrer la route des festivals d'Occitanie, Einar doit trouver sa destination finale et la période idéale.",
+      "link": "https://go.aws/2J4H28v"
+    },
+    {
+      "nom": "Nolwenn LANNUEL - Sébastien QUINAULT (équipe : NoLaSéQui)",
+      "pic_name": "2020-lannuel",
+      "outils": "R Studio, PowerPoint",
+      "prix": "Prix spécial du jury",
+      "description": "Le tourisme en Occitanie décomposé en trois grandes parties :\n1. La provenance des touristes est évoquée, et notamment la domination totale des Français parmi l'ensemble des voyageurs en Occitanie.\n2. La destination des touristes est, cette fois-ci, mise en valeur ainsi que l'influence majeure du département de l'Hérault.\n3. La double saisonnalité de la région occitane est mise en évidence grâce à une carte miroir de la fréquentation des départements en hiver et en été.",
+      "link": "/hackaviz/2020/Dataviz_V3 - nolwenn.lannuel_gmail.com.pdf"
+    },
+    {
+      "nom": "Jérôme RAKOTOMANGA (équipe : Clever Age)",
+      "pic_name": "2020-rakotomanga",
+      "outils": "D3.js",
+      "description": "Cette série de carte de chaleur met en exergue **les variations du volume de nuitées** dans une année _(2018)_ entre les départements d'Occitanie.On remarque rapidement des patterns (avec des intensités relatives différentes) et des points communs.",
+      "link": "/hackaviz/2020/RAKOTOMANGA.pdf"
+    },
+    {
+      "nom": "Vincent ROGER",
+      "pic_name": "2020-roger",
+      "outils": "Python, pandas, Bokeh",
+      "description": "L'Occitanie est un territoire vaste et attirant une grande quantité de touristes. Parmi les départements de cette région, un irréductible sort du lot : la Lozère.\n\nC'est un département avec une faible affluence de touristes comparé au tourisme en Occitanie _(voir la seconde figure)_. Malgré tout, ce département possède une capacité de logement hôtelière en deçà de son affluence touristique _(voir la première figure)_."
+    },
+    {
+      "nom": "Christien DA COSTA",
+      "pic_name": "2020-dacosta",
+      "outils": "Excel - Tableau",
+      "description": "Cette histoire est le résultat de ces premiers jours de confinement. On y parle tourisme, géographie, réforme territoriale, météo et vélo. Le tout avec une charte graphique très\u2026 Occitane ! Alors, quoi de mieux pour passer le temps? Soyez casanier les amis, prenez soin de vous !",
+      "link": "/hackaviz/2020/viz_da_costa - Christian DA COSTA.png"
+    },
+    {
+      "nom": "Thierry MALON",
+      "pic_name": "2020-malon",
+      "outils": "Javascript",
+      "description": "Au travers de cette interface interactive, découvrez le tourisme en Occitanie au fil de l'année, par jour, par semaine ou par mois. Vous pouvez cliquer sur un département d'Occitanie et voir d'où proviennent les touristes sur la carte de France, ou cliquer sur un département de la carte de France, et voir la répartition des touristes qui en viennent sur la région occitane.\n\nUn **mode histoire**, guidé, permet de découvrir les différentes fonctionnalités au fur et à mesure.",
+      "link": "https://tmalon.github.io/"
+    },
+    {
+      "nom": "Xavier DELPIERRE",
+      "pic_name": "2020-delpierre",
+      "outils": "Excel,Python 3, Spyder, GIMP, Libre Office Impress, Kate",
+      "description": "J'ai fais diverses analyses sur la popularité de l'été et du tourisme en fonction de l'attractivité pour les différents départements. Les fonds de carte viennent de http://pacha-cartographe.fr/.\n\nLes outils utilisés sont Excel pour explorer visuellement les données et les nettoyer, Python 3 avec l'IDE Spyder pour les images de graphes et des traitements,Kate pour les modification de texte, GIMP pour colorer les cartes enfin Libre Office Impress pour l'assemblage final.",
+      "link": "/hackaviz/2020/dataavizxavdel0.pdf"
+    },
+    {
+      "nom": "Paul HUGUES",
+      "pic_name": "2020-hugues",
+      "outils": "MS Excel et Powerpoint 2013",
+      "description": "Aperçu de la saisonnalité et de la répartition des touristes par département. En prime, un focus sur les départements \u201cmoins visités\u201d.",
+      "link": "/hackaviz/2020/Hackaviz_v2 - Paul Hugues.pdf"
+    },
+    {
+      "nom": "Vincent VIVANLOC",
+      "pic_name": "2020-vivanloc",
+      "outils": "Tableau, PowerBI, LibreOffice, Python, TypeScript, js-year-calendar",
+      "description": "Tourisme en Occitanie : typologie des touristes et tourismes",
+      "link": "https://public.tableau.com/profile/vincent3704#!/vizhome/Classeur1_15845602565630/TourismeenOccitanie2018"
+    },
+    {
+      "nom": "Nathalie RICHER",
+      "pic_name": "2020-richer",
+      "outils": "Tableau",
+      "description": "Nuitées sous les étoiles occitanes est une visualisation accessible à tous. Visiteurs, hôteliers, entrepreneurs peuvent explorer leurs zones d'intérêts et apprécier les fréquentations mensuelle et journalière des visiteurs de l'Occitanie. C'est une visualisation interactive, réalisée avec Tableau, qui permet une exploration croisée des données.",
+      "link": "https://public.tableau.com/views/HACKAVIZ2020/OCCITANIE?:display_count=y&:toolbar=n&:origin=viz_share_link"
+    },
+    {
+      "nom": "Nadine MIKEM - Salima CHEKOUFF (équipe VELVET CONSULTING 2)",
+      "pic_name": "2020-mikem-chekouff",
+      "outils": "Alteryx et Tableau",
+      "description": "Après avoir exploré les données sources, nous avons pensé qu'un guide sur l'investissement dans le domaine touristique en Occitanie, peut faire de notre visualisation une histoire intéressante.\n\nCelle-ci servira comme étude globale qui porte sur **les départements les plus visités en Occitanie** et les périodes de l'année avec une haute fréquentation touristique.",
+      "link": "https://public.tableau.com/profile/nadine.mikem#!/vizhome/Tourisme2/Histoire"
+    },
+    {
+      "nom": "Laure MICHAUD (équipe : DataNoobs)",
+      "pic_name": "2020-michaud",
+      "outils": "R, ArcGIS, QGIS, YouTube, Python, Libre Calc",
+      "description": "Nous avons mis en évidence plusieurs phénomènes du tourisme dans la région Occitanie durant l'année 2018. Dans un premier temps, nous nous intéressons au tourisme saisonnier avec l'attrait des côtes littorales. Ensuite, nous observons les origines des touristes qui se rendent en Occitanie. Et enfin, nous avons déterminé quels sont les départements où il est plus judicieux d'investir dans un hébergement touristique.",
+      "link": "https://sites.google.com/view/datanoob/accueil"
+    },
+    {
+      "nom": "Emilie LEGEAY (équipe : Aosis)",
+      "pic_name": "2020-legeay",
+      "outils": "Microsoft Power BI",
+      "description": "Nous avons choisi une approche progicielle en utilisant la solution Microsoft Power Bi. Cette approche nous a permis d'utiliser des fonctionnalités standard, des visualisations standards et avancées de l'outil. Nous avons choisi de visualiser les données pour étudier la capacité, la caractérisation des territoires et leurs saisonnalité (regroupés en cluster), l'influence des événements.",
+      "link": "/hackaviz/2020/Hackaviz - emilie legeay.pdf"
+    },
+    {
+      "nom": "Abir FAROUZI (équipe : ESI-SBA)",
+      "pic_name": "2020-farouzi",
+      "outils": "Python, Highcharts.js, Highmaps.js, Material design bootstrap, animate.css-wow.js , sticky-sidebar.js ",
+      "description": "Occitanie est l'une des destinations incontournables dans la France.\nEntre châteaux, culture et beauté de sa nature laissons les chiffres touristiques de 2018 vous raconter l'histoire d'une région parfaite pour votre prochain séjour. Notre contribution met en évidence : La participation nationale et internationale des touristes",
+      "link": "https://tdv-esi-sba.000webhostapp.com/"
+    },
+    {
+      "nom": "Mélanie SUESCUN",
+      "pic_name": "2020-suescun",
+      "outils": "R",
+      "description": "Visualisation autour du thème du tourisme en Occitanie. Première analyse basée sur le nombre d'hébergements dans la région, la répartition par département, afin de voir les départements les plus touristiques, mais également les départements qui sont très dépendants vis-à-vis des touristes. Une deuxième analyse qui revient sur les attraits de la région Occitanie (évènements et météo), avec mise en parallèle avec les périodes où les touristes viennent en Occitanie, ainsi que de leur origine.",
+      "link": "/hackaviz/2020/HackaViz2020-SUESCUN_Melanie - Mélanie Suescun.pdf"
+    },
+    {
+      "nom": "Eugénie Clément",
+      "pic_name": "2020-clement",
+      "outils": "Excel, R, PowerPoint",
+      "description": "La région Occitanie attire de nombreux voyageurs mais qui sont-ils ? L'Occitanie attire-t-elle plus de Français que d'étrangers ?\nOù vont-ils et quand viennent-ils ? Sont-ils nombreux en été ou en hiver ? Autant de réponses que vous allez découvrir dans cette infographie. De la Lozère aux Pyrénées-Orientales, découvrez le territoire occitan comme vous ne l'avez jamais vu. Vous trouverez une infographie contenant divers graphiques. Bonne lecture.",
+      "link": "/hackaviz/2020/infographie_eugenie_clement_v2 - Eugénie CLEMENT.pdf"
+    },
+    {
+      "nom": "Tom BRUNELLE",
+      "pic_name": "2020-brunelle",
+      "outils": "RShiny",
+      "description": "Première création en DataViz pour ma part, j'ai tenté de représenter de manière simple et claire les données touristiques d'Occitanie par de la cartographie interactive et des graphiques via l'application RShiny Dashboard. En espérant que ma contribution vous plaise.",
+      "link": "https://hackaviz2020brunelle.shinyapps.io/hackaviz/"
+    },
+    {
+      "nom": "Jennifer EMPIS",
+      "pic_name": "2020-empis",
+      "outils": "QlikSense",
+      "link": "/hackaviz/2020/HackavizEmpis - Jennifer E.pdf"
+    },
+    {
+      "nom": "Guillaume RICHARD",
+      "pic_name": "2020-richard",
+      "outils": "WebPack, Highcharts",
+      "description": "Dans cette dataviz, je montre quels sont les lieux d'origines des touristes, et leurs départements favoris.",
+      "link": "http://hackaviz.guillaume-richard.fr/"
+    },
+    {
+      "nom": "Houssameddine YOUSFI (équipe DaVinCi)",
+      "pic_name": "2020-yousfi",
+      "outils": "Python (NumPy, Panda), Javascript( Highcharts)",
+      "description": "Étude statistique des données liées aux réservations hôtelières dans la région d'Occitanie. Cette étude est menée sur trois volets. 1- Le volume de réservations et la capacité d'accueil de chaque département de cette région. 2- Le flux national et International de réservations. 3- Les motifs liés aux réservations.",
+      "link": "https://davinci-hackaviz.netlify.com/"
+    },
+    {
+      "nom": "Hanan JEMMAL (équipe JEMMAL)",
+      "pic_name": "2020-jemmal",
+      "outils": "Java Script, Particles.js, Chart.js, Html, CSS, Bootstrap",
+      "description": "Le tourisme dans la région Occitanie en 2018 : départements attractifs, départements interactifs. La capacité d'hébergement et le nombre de nuitées en vue.",
+      "link": "http://www.cmg.ma/hackaviz2020/"
+    },
+    {
+      "nom": "Bastien SELLAH",
+      "pic_name": "2020-sellah",
+      "outils": "Tableau",
+      "description": "Tout au long de l'année des milliers de touristes se rendent en région Occitanie. Avec plus de 200 événements organisés, vous trouverez forcément votre bonheur ! Consulter notre DataViz interactive pour planifier vos prochains week-ends à partir de données datant de 2018, fournies par le Comité Régional du Tourisme _(CRT)_.",
+      "link": "https://public.tableau.com/views/UNWEEK-ENDENOCCITANIE-HACKAVIZ2020/UNWEEK-ENDENOCCITANIE-HACKAVIZ2020?:display_count=y&publish=yes&:origin=viz_share_link"
+    },
+    {
+      "nom": "Fabien BARRIAU (équipe : ADELAT)",
+      "pic_name": "2020-barriau",
+      "outils": "Python, Tableau, http://draw.io/",
+      "description": "Nous avons réalisé une analyse du tourisme d'Occitanie en analysant 3 axes: Le dynamisme de la mer, l'activité de la ville et la tranquillité de la montagne et de l'arrière pays. Une illustration des points marquants a été réalisé sous Tableau et Qlik Sense.",
+      "link": "/hackaviz/2020/Hackaviz2020_ADELAT - Loutrageta DK.pdf"
+    },
+    {
+      "nom": "Antoine POURRAT (équipe ORESYS TOULOUSE)",
+      "pic_name": "2020-pourrat",
+      "outils": "Tableau software",
+      "description": "Le tourisme en Occitanie : tout un programme! Grâce au jeu de données proposé par Toulouse Dataviz, Oresys Toulouse vous propose de partir en exploration pour découvrir les chiffres clefs du secteur, si important pour notre région, et avoir un premier aperçu de la richesse du patrimoine occitan : naturel, culturel, religieux, et même sportif!",
+      "link": "https://public.tableau.com/profile/cl.ment.pages#!/vizhome/TourismeenOccitanie/TourismeenOccitanie"
+    },
+    {
+      "nom": "Joachim BEASLAS (équipe Squoring Technologies)",
+      "pic_name": "2020-beaslas",
+      "outils": "Squore et la librairie Highcharts",
+      "description": "Animation temporelle qui retrace l'année 2018 en regardant le nombre de nuitées effectuées dans chaque département.",
+      "link": "http://hackaviz2020.djoman.com/"
+    },
+    {
+      "nom": "Jean-Baptiste BARRE (équipe : Baba & Fred)",
+      "pic_name": "2020-barre",
+      "outils": "R + librairies dygraph,treemap,htmlwidget, Mapbox, Postgres/Postgis",
+      "description": "Nous connaissons bien l'Occitanie. Famille, copains, vins, soleil, mer, montagnes\u2026 les raisons de s'y rendre ne manquent pas. Nous ne sommes pas _(et de loin)_ les seuls à le penser: en 2018, 16 millions de personnes sont venues y séjourner ! D'où viennent-ils ? A quels moments de l'année ? Dans quels départements d'Occitanie ? Pour une raison inconnue ou inavouable, ces questions vous obsèdent ? Venez, on va en parler :).",
+      "link": "https://siddt.inrae.fr/module_webmapping/hackaviz/index.php"
+    },
+    {
+      "nom": "Jorge GALICIA - M TRIBAK (Data Chercheurs)",
+      "pic_name": "2020-galicia",
+      "outils": "Excel, javascript, d3, amcharts, scrollama",
+      "description": "Notre visualisation nous donne une idée générale de la répartition des touristes en Occitanie. Nous présentons des graphiques de la répartition par département, mois et lieu d'origine. L'histoire racontée nous permet de détecter les départements les plus touristiques, en haute ou basse saison, selon le climat et le mois de l'année. De plus, nous montrons une analyse détaillée de la répartition des touristes étrangers dans chaque département.",
+      "link": "http://data-chercheurs.visdomlab.com/"
+    },
+    {
+      "nom": "Elodie TENET",
+      "pic_name": "2020-tenet",
+      "outils": "Excel, javascript, d3, amcharts, scrollama",
+      "description": "Répartition du tourisme en Occitanie, en fonction des départements, des saisons et des types d'hébergements pour 2018. En tant qu'infographiste non spécialisée dans la data, le nombre de données à traiter n'a pas était simple. Un challenge sympa à refaire.",
+      "link": "/hackaviz/2020/tourisme-en-occitanie_2018_elodie-t - Elodie Diddy.pdf"
+    },
+    {
+      "nom": "Samuel KERHUEL (équipe TBS)",
+      "pic_name": "2020-kerhuel",
+      "outils": "Tableau, Python",
+      "description": "Ce tableau de bord vous fait voyager en Occitanie et vous embarque dans une analyse du tourisme en région Occitanie.\nIl analyse le phénomène touristique sous plusieurs angles:\n1. D'où viennent les visiteurs?\n2. Où vont-ils?",
+      "link": "https://public.tableau.com/views/animation_15847448932850/DataViz2020?:display_count=y&publish=yes&:origin=viz_share_link"
+    },
+    {
+      "nom": "Medhi CHERIFI",
+      "pic_name": "2020-cherifi",
+      "outils": "R, R-Studio, des packages: Tidyverse, Rmarkdown, DT",
+      "description": "R, R-Studio, des packages sympas, une analyse et pas mal de travail, vous obtenez _(en plus c'est mon premier essai avec Rmarkdown)_. Je me suis amuser, j'espère que vous aimerez lire et visualiser le résultat. Merci.",
+      "link": "https://cmehdi213.github.io/"
+    },
+    {
+      "nom": "Gregory GOSSE",
+      "pic_name": "2020-gosse",
+      "outils": "Non mentionné",
+      "description": "En 2018 les établissements de la région Occitanie ont accueilli leurs hôtes en totalisant plus de 200 millions de nuitées. Quels sont les départements les plus attractifs ? Comment la fréquentation est-elle répartie pour chaque département le long de l'année et en fonction du jour de la semaine ?\nLe \u2018Streamgraph' peut-il apporter un éclairage sur ces questions \u2026 ?\nIl ne sera d'aucune aide pour apprendre à prononcer Benvenguda, Bienvenue en Occitan.",
+      "link": "http://gg31400.pythonanywhere.com/hackaviz20/"
+    },
+    {
+      "nom": "Alain OTTENHEIMER (hors concours)",
+      "pic_name": "2020-ottenheimer",
+      "outils": "observablehq, d3.js, illustrator",
+      "description": "Je ne pouvais résister à la tentation de réaliser une viz après avoir préparé les données. J'ai privilégié une approche _\u00ab Show Me the Number\u00bb_ pour avoir une vue d'ensemble des jeux de données et détecter visuellement les informations cachées. Cette viz présente des cartogrammes des départements positionnés sur une carte de l'Occitanie avec des diagrammes en ligne et en barre. Plus d'un million de données brutes sont visualisées. Le format vectoriel permet de rechercher les détails en zoomant dans le pdf.",
+      "link": "/hackaviz/2020/nuitées_hackaviz2020_AO.pdf"
+    }
+  ],
+  "2021": [
+    {
+      "nom": "Julie Auque, Pierre-Arnaud Auque",
+      "pic_name": "2021-aucque",
+      "outils": "Excel, Python, D3js, Leaflet",
+      "prix": "1er prix",
+      "description": "*Ouvrir avec Firefox pour toutes les fonctionnalités*\n\nVous êtes **auto-entrepreneur** ? Vous rêvez de monter votre entreprise ? Lancez-vous avec les Quartiers Prioritaires (QP) !\nDes avantages fiscaux inédits, une main d'oeuvre qui n'attend que vous, des jeunes disponibles pour des contrats d'apprentissage et des localisations souvent centrales dans nos villes d'Occitanie !\nVoici un outil qui devrait vous aider à faire votre choix pour poser vos valises dans la ville idéale par rapport à votre projet.",
+      "link": "https://pdeuxa.github.io/TeamOc_HackViz21/"
+    },
+    {
+      "nom": "Philippe Mallet-Ladeira",
+      "pic_name": "2021-mallet",
+      "outils": "Python(Pandas, Geopandas), Scrollama, D3js",
+      "prix": "2ème prix",
+      "description": "Nous regardons la démographie des Quartiers Prioritaires en Occitanie et son influence dans le classement des communes selon différents critères.",
+      "link": "https://phml.github.io/hackaviz2021/"
+    },
+    {
+      "nom": "Guillemette Crozet",
+      "pic_name": "2021-crozet",
+      "outils": "Illustrator",
+      "prix": "3ème prix",
+      "description": "Comparé au volume de données proposées, je n'en ai pas utilisé beaucoup. Je me suis attachée à travailler la forme pour servir le fond (couleur, mise en page, typo, graphes, pictogrammes).\nLe format poster a au moins **3 degrés de lecture** : de loin, à 30 cm, de près. Chaque élément du visuel participe à donner envie de s'approcher de plus en plus près pour lire et comprendre.\n\nL'esthétique participe du fait que le lecteur doit s'investir afin de préciser, s'il le désire, la valeur des chiffres. J'ai voulu faire un visuel pédagogique où comment *\"lire du visuel\"*, un peu comme on apprend à lire un texte pouren retirer quelque chose. C'est le travail du data designer : simplicité et clarté grâce au graphisme afin de *\"faire parler\"* la data.",
+      "link": "/hackaviz/2021/crozet.pdf"
+    },
+    {
+      "nom": "Loïc Donot",
+      "pic_name": "2021-donot",
+      "outils": "QGIS, Postgre/gis, Highcharts.js, OpenLayers, jQuery, Bootstrap",
+      "description": "Il s'agit d'un outil visant à comparer différents indicateurs à divers niveaux géographiques *(région, département, commune, quartier)*.\nLa page comporte 3 grandes zones d'affichage :\n- A gauche, un graphique affichant les populations qui sert aussi de menu de sélection\n- Au centre, un graphique de type radar affiche 6 indicateurs\n- A droite, une carte dynamique qui affiche l'emprise des zones géographiques sélectionnées.\n3 boutons situés au dessus  du menu de sélection permettent de voir quel niveau géographique est affiché, et de supprimer des éléments sélectionnés.",
+      "link": "https://loicbcn.github.io/hackaviz_2021/"
+    },
+    {
+      "nom": "Giuseppe Melillo, Thomas Cabrol, Marie-Cécile Maoui-Bounab, Brice Renouf",
+      "pic_name": "2021-melillo",
+      "outils": "Tableau Public",
+      "prix": "Prix spécial",
+      "description": "Paule souhaite créer une agence d'emploi pour la population défavorisée.\nAide-la à trouver la ville et le quartier le plus approprié !",
+      "link": "https://public.tableau.com/app/profile/brice.renouf/viz/Hackathon_2021_16315469453390/pauleemploi"
+    },
+    {
+      "nom": "Ru Yun, Huang Xuran, Fu Jingxin",
+      "pic_name": "2021-ru",
+      "outils": "Python, Tableau, Excel, Procreate",
+      "description": "Voulez-vous **acheter un logement** dans les quartiers prioritaires en Occitanie? Découvrez les informations que nous vous offrons dans cette visualisation!",
+      "link": "https://public.tableau.com/app/profile/yun.ru7807/viz/Hackaviz2021_TSE_GroupH/Dashboard1?publish=yes"
+    },
+    {
+      "nom": "Alexandra Amani, Raquel Alcaraz Serna, Lucie Bertiere, Dot Ricart Martinez, Sophie Cuvillier",
+      "pic_name": "2021-amani",
+      "outils": "R-studio, Tableau, Excel et Kepler",
+      "description": "Nous avons décidé de raconter l'histoire de la précarité des quartiers prioritaires toulousains. Pour ce faire nous nous sommes focalisés sur les **déterminants de la précarité** sur ces quartiers. Nous avons donc divisé le poster en 3 axes : population et revenus / emploi / mesures du gouvernement.",
+      "link": "/hackaviz/2021/amani.pdf"
+    },
+    {
+      "nom": "Silvia Romanelli",
+      "pic_name": "2021-romanelli",
+      "outils": "Alteryx, Tableau, Illustrator",
+      "prix": "Prix zen",
+      "description": "Aperçu interactif de quelques données démographiques et statistiques des quartiers prioritaires d'Occitanie, d'abord du point de vue d'un habitant et ensuite en agrandissant la perspective pour explorer les données de manière comparative entre tous les quartiers prioritaires de la région.",
+      "link": "https://public.tableau.com/views/HackavizToulouse/HACKAVIZ?:language=fr-FR&publish=yes&:display_count=n&:origin=viz_share_link"
+    },
+    {
+      "nom": "Alain Ottenheimer",
+      "pic_name": "2021-ottenheimer",
+      "outils": "d3.js, observablehq, excel, QGIS, illustrator, Vsual Studio Code HTML",
+      "description": "*HORS CONCOURS*\n\nEn représentant les données sur une vue globale, des formes apparaissent et révèlent des informations. Une forte disparité est observée entre le nombre de ventes par habitant entre les  quartiers prioritaires (QP). Deux groupes se détachent, les QP des centres villes et les QP périphériques.\n\nLes caractéristiques associées aux QP confirment elles  la pertinence de ces deux regroupements? Qu'est-ce-qui pourrait expliquer un tel écart du nombre de vente?\n",
+      "link": "http://www.datasens.fr/H2021_QP/H2021_QP.html"
+    },
+    {
+      "nom": "Nhat Thang Le, Gia Bao Huynh, Emir Dakin Tarik, Yann Imbert",
+      "pic_name": "2021-thang",
+      "outils": "Python",
+      "link": "/hackaviz/2021/thang.pdf"
+    },
+    {
+      "nom": "Vincent Roger",
+      "pic_name": "2021-roger",
+      "outils": "pandas, python, bokeh, jekylls",
+      "description": "Mon travail est une visualisation du cumul des **transactions foncières** dans la région Occitanie sur les années de 2016 à 2020. En passant la souris sur les villes correspondant aux données reçu des détails sur le type de transaction et la valeur moyenne de ces transactions sont fournis.",
+      "link": "https://website.vincent-roger.fr/blog/dev/2021/09/19/hackaviz_fr.html"
+    },
+    {
+      "nom": "Mathis Garcia",
+      "pic_name": "2021-garcia",
+      "outils": "Tableau Software et R",
+      "description": "Cette visualisation a été orienté selon deux axes :\n- La visualisation des quartiers prioritaires par communes selon des **indicateurs clés**.\n- L'analyse de **corrélation** entre ces différents indicateurs.",
+      "link": "https://public.tableau.com/views/Hackaviz_2021/FicheCommune?:language=fr-FR&publish=yes&:display_count=n&:origin=viz_share_link"
+    },
+    {
+      "nom": "Murugesh Manthiramoorthi",
+      "pic_name": "2021-murugesh",
+      "outils": "Tableau Desktop, Jupyter Notebooks, Python",
+      "description": "Avec des données de transactions foncières entre 2016 et 2020, il est possible d'étudier **l'impact de la Covid-19** sur l'industrie immobilière Toulousaine. En outre, sur la base des données, les quartiers les plus rentables selon différents critères sont interprétées. Enfin, les transactions foncières sont comparées à des indicateurs économiques pour comprendre l'impact des indicateurs économiques sur l'immobilier.",
+      "link": "https://public.tableau.com/app/profile/murugesh.manthiramoorthi/viz/UnKuttiStorydeImmobilieresaToulouse/UnePetiteHistoiresurltatdelimmobilierToulouse#1"
+    },
+    {
+      "nom": "Abdou Diouck",
+      "pic_name": "2021-diouck",
+      "outils": "Postgres, Mapbox, Morris.js, Laravel, HTML",
+      "description": "**Portrait des Quartiers politiques de la ville** : Un panorama  d'indicateurs à travers cinq thèmes *(démographie, niveau de vie médian et pauvreté, éducation, les marchés de l'immobilier et du travail)*.\n\nUn outil cartographique permettant de représenter des indicateurs et de visualiser les données sous forme de cartes interactives, tableaux, graphiques, fiches de synthèse. Ces indicateurs vont pouvoir servir de socle à une observation des quartiers politiques de la ville.",
+      "link": "https://qpv.geoafrica.fr"
+    },
+    {
+      "nom": "Grégory Gosse",
+      "pic_name": "2021-gosse",
+      "outils": "Python, D3.js",
+      "description": "Cartographie et cumul en surface des transactions immobilières par quartier et type de local.",
+      "link": "http://gg31400.pythonanywhere.com/hackaviz21/"
+    },
+    {
+      "nom": "Havion Hanae, Lechene Helene, Millet Sebastien, Merlaud Louise, Soler Romane",
+      "pic_name": "2021-havion",
+      "outils": "Tableau, Rstudio, Powerpoint",
+      "description": "Nous avons cherché à montrer **comment l'espace est occupé** dans les quartiers prioritaires en Occitanie.\n\nNous nous sommes focalisés sur des valeurs géographiques, de taille et de distance pour notre étude, en regardant la localisation et la taille des logements puis leur distance relative aux écoles.",
+      "link": "/hackaviz/2021/havion.pdf"
+    },
+    {
+      "nom": "Lannuel Nolwenn, Quinault Sébastien",
+      "pic_name": "2021-lannuel",
+      "outils": "R, Markdown, Flexdashboard, package dplyr, high charter",
+      "description": "- Une première vision de la localisation des quartiers prioritaires en Occitanie et des indicateurs clés.\n- Un **clustering des QP en 4 classes** et le zoom sur les communes de Toulouse et Montpellier.\n- Une analyse des dynamiques des transactions financières selon les 4 classes de QP.",
+      "link": "https://github.com/sebastienQNLT/HACKAVIZ21/blob/main/Hacka2021.html"
+    },
+    {
+      "nom": "Allan Kostka, Apolline Saliou, Colombe Becquart, Adrien Bertucci ",
+      "pic_name": "2021-kostka",
+      "outils": "Infogram",
+      "description": "Il s'agit d'une représentation graphique des quartiers prioritaires en Hérault.\nLe premier graphique montre que c'est le département d'Occitanie qui compte le plus d'habitants en quartier prioritaire. L'analyse de l'Hérault est composée d'une carte et de chiffres clés sur le département.\nLa deuxième page  se concentre sur les cinq quartiers du département dont la situation est la plus critique *(en termes de taux de pauvreté)* et compare ces quartiers à travers différents indicateurs. ",
+      "link": "https://infogram.com/projet-data-visualisation-groupe-g-1h7j4dv7x0xkv4n?live"
+    },
+    {
+      "nom": "Marie Philippe, Claire Serraz, Nassab Abdallah, Khadija Hasfia, Santiago Ruiz",
+      "pic_name": "2021-serraz",
+      "outils": "Python, R, InDesign, Photoshop",
+      "description": "Le but de notre projet est de permettre aux habitants de Toulouse, notamment des quartiers prioritaires, d'en s'avoir plus sur leur quartier.\nNous nous sommes intéressés à **3 indicateurs socioéconomique** : le taux de femmes, de chômeurs et d'étrangers parmi la population.\n\nAinsi, pour chaque indicateur vous pourrez trouver une carte représentant les quartiers dont les couleurs indiquant si le taux est plutôt élevé ou faible ainsi qu'un diagramme en bâtons. ",
+      "link": "/hackaviz/2021/serraz.pdf"
+    },
+    {
+      "nom": "Alain Ferlac",
+      "pic_name": "2021-ferlac",
+      "outils": "Streamlit, Python",
+      "description": "Présentation des transactions immobilières dans les quartiers prioritaires d'Occitanie entre 2016 et 2020 :\n- Introduction donnant des infos générales sur les transactions\n- Choix d'un emplacement + graphe du nombre de type de biens mutés par année de cet emplacement + carte de l'emplacement\n- Sélection de communes, nbre pièces et années, graphes de comparaison des prix et surfaces des appartements de cette sélection\n[Lien du repo](https://github.com/aferlac/Hackaviz2021)",
+      "link": "https://share.streamlit.io/aferlac/hackaviz2021/main/Hackaviz2021_st.py"
+    },
+    {
+      "nom": "Solène Urband, Corentin Lartigue Prono, Pierre Dupré pierre, Esteban Meynier, Ryiad Haji",
+      "pic_name": "2021-urband",
+      "outils": "Logiciel Tableau",
+      "description": "Notre étude cherche à répondre à une problématique courante pour les jeunes ménages de la région: **ou s'installer** pour assurer un bon établissement scolaire à ses enfants tout en restant un zone d'activité professionnelle importante ?\n\nCette question s'avère particulièrement importante pour les ménages possédant de faibles revenus.\nPour cela, nos avons exploré les donnés mise à disposition suivant deux axes majeurs: le nombre d'établissements scolaires publics et privés ainsi que le taux de demandeurs d'emplois dans les quartiers prioritaires.",
+      "link": "/hackaviz/2021/urband.pdf"
+    },
+    {
+      "nom": "Xavier Rauch",
+      "pic_name": "2021-rauch",
+      "outils": "MicroStrategy 2021, SVG, Icons8",
+      "description": "Accès : utiliser Google Chrome, user : HACKAVIZ, mot de passe: TDVIZ2021\n\nAvec une approche *\"infographie\"*, petit exercice de style utilisant différents types *\"alternatifs\"* de visualisation d'indicateurs, de classement ou de comparaison de 2 valeurs.\nLa version interactive permet de sélectionner un QP, afin de comparer notamment ses indicateurs de niveau de vie avec ceux des autres quartiers prioritaires de la commune, du département ou de la région.",
+      "link": "https://tinyurl.com/54k6p3ua"
+    },
+    {
+      "nom": "Amine Aït, Charlotte Bredy-Maux, Adamou Issa",
+      "pic_name": "2021-ait",
+      "outils": "Python, html, JavaScript, plotly",
+      "description": "Les Small Multiple de Choroplèthes cartographient **la précarité de l'emploi** au sein des populations les plus vulnérables des Quartiers Prioritaires en territoire Occitan.\n\nLe taux d'activité des femmes y est ainsi inférieur de 16,2 points par rapport à celui des hommes. En particulier, près d'une femme sur deux est en dehors de l'emploi contre une femme sur trois dans les quartiers environnants.\n\nCes cartes présentent le pourcentage de Femmes et d'Etrangers Actifs. On observe un important clustering des populations sous-employées en périphérie des villes, avec par exemple 16% des étrangers actifs à la Conte, Carcassonne.",
+      "link": "https://moulbn.github.io/"
+    },
+    {
+      "nom": "Elodie Tenet",
+      "pic_name": "2021-tenet",
+      "outils": "Excel,Illustrator",
+      "description": "Les différentes données ont été triées pour ne faire ressortir que le foncier industriel dans les quartiers prioritaires. Le but était de voir si la **crise du Covid-19** avait eu un impact sur les transactions de locaux professionnels.",
+      "link": "/hackaviz/2021/tenet.pdf"
+    },
+    {
+      "nom": "Joachim Beaslas , Guillaume Poullain",
+      "pic_name": "2021-beaslas",
+      "outils": "Squore, Highchart",
+      "description": "Aperçu des ventes immobilières dans les quartiers prioritaires en Occitanie entre 2016 et 2020",
+      "link": "/hackaviz/2021/beaslas.pdf"
+    },
+    {
+      "nom": "Melvin Marre, Clarysse Hadrien, Golbe Succes, Abdallah Mahoudi, Tony Lamadonperie",
+      "pic_name": "2021-marre",
+      "outils": "Rstudio, Tableau",
+      "description": "*\"Le meilleur programme anti-pauvreté est une éducation de classe mondiale .\"* Barack Obama\nQuels sont les départements et villes dont les quartiers prioritaires sont les plus en manque d'établissements de service aux particuliers par habitants ?",
+      "link": "https://sites.google.com/view/lesmugiwaras"
+    },
+    {
+      "nom": "Frédéric Bellanger, Lolita Dayraut",
+      "pic_name": "2021-dayrault",
+      "outils": "Qlik Sense",
+      "description": "L'attractivité des quartiers prioritaires d'une commune présente un défi considérable, dans le sens où elle connecte des questions démographiques, soci-économiques et d'infrastructures.\nAgir en faveur du développement des quartiers prioritaires suppose d'identifier les indicateurs qui transformeront les besoins peu ou mal satisfaits en nouvelles opportunités.\n\nCette analyse a pour objectif d'inciter les communes à mettre en lumière le potentiel de ces quartiers prioritaires et inspirer les acheteurs immobiliers à investipouraccompagner la croissance des quartiers.",
+      "link": "/hackaviz/2021/dayrault.pdf"
+    },
+    {
+      "nom": "Karima Lamkharbech, Gregory Noël, Loïc Valat, Clément Mouelle",
+      "pic_name": "2021-noel",
+      "outils": "SAP Analytics Cloud, Alteryx, Tableau Software",
+      "description": "Analyse à la **maille des départements/communes** : analyse du positionnement relatif d'une commune d'un point de vue géographique et vis-à-vis d'une liste d'indicateurs prédéfinis *(valeur foncière moyenne des transactions, taux de pauvreté, etc.)*.\nAnalyse à la **maille des communes/qp**: analyse du positionnement relatif d'un QP d'un point de vue géographique et vis à vis de sa dynamique des transactions (\u20ac) au cours du temps.",
+      "link": "https://public.tableau.com/views/Hackaviz-Toulouse2021-TeamVISEOviz/QP-Contexte?:language=fr-FR&:display_count=n&:origin=viz_share_link"
+    }
+  ],
+  "2022": [
+    {
+      "nom": "Alain Ferlac",
+      "pic_name": "2022-ferlac",
+      "outils": "Python et Powerpoint",
+      "description": "Qui sont les bénéficiaires des subventions versées pour les oeuvres classées comme disques.\nOn constate que de 2016 à 2020 les 3 majors du disque (Universal, Sony et Warner) récupèrent la même somme (30 M\u20ac) que les 1795 autres sociétés de production alors qu'elles ne réalisent que 400 vs 4054 projets.",
+      "link": "/hackaviz/2022/ferlac.pdf"
+    },
+    {
+      "nom": "Reunan Bellec",
+      "pic_name": "2022-bellec",
+      "outils": "Majoritairement D3.js, Python et pandas pour la préparation des données, Node.js pour l'algorithme de positionnement des noeuds du graphe.",
+      "prix": "1er prix",
+      "description": "Cette visualisation a pour but de visualiser les transferts d'argents par les organismes collecteurs de la copie privée. On peut ainsi observer quels sont les domaines les plus impactés.",
+      "link": "https://hextracton.gitlab.io/dataviz-22/"
+    },
+    {
+      "nom": "Joachim Béaslas, Guillaume Poullain (Vector France)",
+      "pic_name": "2022-beaslas",
+      "outils": "Squore et la librairie Highcharts",
+      "prix": "2ème prix",
+      "description": "Evolution du financement des projets artistiques par la copie privée en France : COVID or not COVID ?",
+      "link": "http://djoman.com/hackaviz2022/"
+    },
+    {
+      "nom": "Mickael Marchese",
+      "pic_name": "2022-marchese",
+      "outils": "plotly\nPandas",
+      "prix": "3ème prix",
+      "description": "\"Copie Privée, A qui profite la redevance ?\" est une data storytelling interactive permettant au public de découvrir quel types d'oeuvres sont subventionnées par la redevance pour copie privée.",
+      "link": "https://marchese.fr/hackaviz2022/"
+    },
+    {
+      "nom": "Brice Renouf",
+      "pic_name": "2022-renouf",
+      "outils": "Python, Excel, Tableau.",
+      "prix": "Prix spécial",
+      "description": "Les subventions dans l'industrie du divertissement ne semble pas un sujet des plus passionnant... Mais détrompez-vous ! A travers de nombreux chiffres et exemples, je vous propose de plonger dans ce mystérieux univers.",
+      "link": "https://public.tableau.com/app/profile/brice.renouf/viz/subventionsco/dashboard"
+    },
+    {
+      "nom": "Murugesh Manthiramoorthi, Kalairani Vignesh, Vignesh Ganeshraj (Cosmonautes)",
+      "pic_name": "2022-vignesh",
+      "outils": "Python, Streamlit, Plotly ",
+      "description": "Le tableau de bord montre la répartition du projet dans chaque oeuvre. Il montre des mesures clés telles que le montant total, le nombre total de bénéficiaires et leur pourcentage global. D'autres résultats incluent l'effet de la récente pandémie, les changements dans le temps et les contributions de chaque collecteur de fonds.  Il aide le grand public à comparer différentes oeuvres sur différentes variables.",
+      "link": "https://share.streamlit.io/niral-dataviz/hackaviz_2022/main/main.py"
+    },
+    {
+      "nom": "Samuel Kerhuel",
+      "pic_name": "2022-kerhuel",
+      "outils": "Power BI",
+      "description": "Analyse du montant selon différentes dimensions\n\nPour lire la réalisation Power BI (pbix), cela nécessite l'installation de l'application Power BI Desktop au préalable. L'application est téléchargeable gratuitement.  ",
+      "link": "/hackaviz/2022/kerhuel.pbix",
+      "link2": "/hackaviz/2022/kerhuel.pdf"
+    },
+    {
+      "nom": "Clément Cogne, Fanny Lacroix, Maxime Perrin (Alliance4U)",
+      "pic_name": "2022-lacroix",
+      "outils": "Power BI",
+      "description": "Nous avons voulu faire une visualisation ludique en partant d'un premier constat :\nles créations et les diffusions du spectacle vivant ont chuté en 2020, nous avons cherché à savoir comment cela s'impactait sur les différents types d'oeuvres et sur les bénéficiaires.\n\nPour lire la réalisation Power BI (pbix), cela nécessite l'installation de l'application Power BI Desktop au préalable. L'application est téléchargeable gratuitement.  ",
+      "link": "/hackaviz/2022/lacroix.pbix",
+      "link2": "/hackaviz/2022/lacroix.pdf"
+    },
+    {
+      "nom": "Guillaume Richard",
+      "pic_name": "2022-richard",
+      "outils": "PHP\nCSS/Bootstrap 4\nJS/Datatable/ChartJS",
+      "description": "Ma visualisation montre les financement donnée par les collecteurs, entre les années 2016 à 2020.",
+      "link": "http://hackaviz.guillaume-richard.fr/"
+    },
+    {
+      "nom": "Denis Bories, Xavier Rauch (NORD-SUD DATAVIZ)",
+      "pic_name": "2022-rauch",
+      "outils": "Python (bibliothèques : Pandas, Numpy, Nltk, Matplotlib, Scikit learn (KMeans))\nTableau\nMicroStrategy\nVitara Charts\nWordClouds.com\nThe Noun Project\nExcel, Word, PowerPoint",
+      "description": "Fruit de la collaboration entre un prof de Toulouse et un consultant BI parisien (qui ne se connaissaient pas il y a 3 jours), cette visualisation présente 6 clusters construits à partir des données textuelles pour la \"création de films\" en analysant les descriptifs des projets, pour identifier les organismes proposant des aides selon le projet proposé. Chacun avec ses propres outils, approche, expérience et sensibilité, nous avons essayé d'atteindre le Graal : être à la fois BEAU et INTELLIGENT",
+      "link": "/hackaviz/2022/rauch.pdf"
+    },
+    {
+      "nom": "Elodie Tenet",
+      "pic_name": "2022-tenet",
+      "outils": "Excel, Illustrator, Indesign",
+      "description": "Rapport entre les répartitions des adhérents aux sociétés de collectes de droits d'auteur et les répartitions des budgets.\nLe PDF est statique mais une petite animation est visible avec le lien donné.",
+      "link": "https://indd.adobe.com/view/b7740565-3361-43c0-ae97-772203c3462e",
+      "link2": "/hackaviz/2022/tenet.pdf"
+    },
+    {
+      "nom": "Nicolas Rouyer",
+      "pic_name": "2022-rouyer",
+      "outils": "Base de données graphe Neo4j\nLangage Cypher pour importer les données et exécuter des algorithmes de graph data science.\nVisualisation avec les outils Neo4j Browser, Bloom et NeoDash.",
+      "description": "Dans le monde des données, connections vaut mieux que collections.\nDit autrement, la valeur des données est dans leurs relations.\nPour comprendre les données des collecteurs qui distribue des aides pour protéger les auteurs, je vous propose de stocker et visualiser les données sous forme de graphes. Les noeuds et les relations remplacent les tables et les colonnes. Cela permet une analyse systémique des aides accordées et révèle que les aides ne sont pas distribuées par hasard...",
+      "link": "/hackaviz/2022/rouyer.pdf"
+    },
+    {
+      "nom": "Vincent Roger",
+      "pic_name": "2022-roger",
+      "outils": "Python, pandas, Bokeh",
+      "description": "J'ai produit deux visualisations interactives représentant l'évolution du nombre d'aides allouées (par type). Plus de détails sur le lien.",
+      "link": "http://vincent-roger.fr/blog/dev/2022/04/03/hackaviz_fr.html"
+    },
+    {
+      "nom": "Emilie Dufresne",
+      "pic_name": "2022-dufresne",
+      "outils": "Datawrapper : schémas\nObservablehq : stockage des schémas\nExcel : traitement résidus et gros chiffres (SACEM qui finance SACEM)\nCanva : mise en page",
+      "description": "Tout commence par un son jazzy au loin, en s'approchant on aperçoit un groupe de musique qui se retrouve pour partager leur amour du rythme. Confrontés à la quarantaine ils se réinventent et démarrent le projet fou de sortir un CD en compilant les parties de chacun.\nLaissez-vous embarquer dans cette analyse folle du jeu de données AidesCréation qui révèle la réalité artistique de ce projet de sortie de CD, appuyé par la COPIE PRIVEE au travers de la société SACEM. De la genèse de la filière, aux postes des acteurs concernés, vous serez au centre même de la crise de la culture qui a frappée en 2020.\n\nLes notes sonnent mais sont séparés de leurs publics. Les ordinateurs viennent servir d'interface pour réinventer la création d'art, la diffusion, la formation et même l'éducation. L'annulation à la dernière minute de concerts, de spectacles, qui avaient déjà été préparés sont tout de même rétribués. SACEM est même son propre contributeur pour l'album de ANADA GROWS.\n\nLes données seront à remettre en perspective l'année prochaine. Il est soit question de la fermeture de beaucoup d'entre elles, ou bien simplement d'une absence de réponse au sondage. Personnellement je reste positive, puisque l'art est tout ce qui nourrit notre âme, il est nécessaire, vitale...\n\nDonc un grand merci à tous les artistes. Je ne vous abandonne pas sans rien, voici une liste d'outils merveilleux pour mobiliser et traiter les données. Il faut juste cliquer sur les copyright... A très vite...",
+      "link": "https://observablehq.com/@emyduf/hackaviz-2022",
+      "link2": "/hackaviz/2022/dufresne.pdf"
+    },
+    {
+      "nom": "Skander Boudawara, Houcem Chaabane, Fethallah Diss (Les howmz)",
+      "pic_name": "2022-boudawara",
+      "outils": "Paint + Google Sheets + Google slides + Microsoft Excel\n",
+      "prix": "Prix coup de pouce",
+      "description": "Nous avons voulu faire une étude de l'impact COVID sur les RDP en analysant les catégories d'oeuvres les plus impactées. Nous avons constaté au passage une diminution du nombre d'organismes de collection et la présence de monopoles.",
+      "link": "/hackaviz/2022/boudawara.pdf"
+    },
+    {
+      "nom": "Georges Corbineau",
+      "pic_name": "2022-corbineau",
+      "outils": "JS, D3, LayerCake, Svelte, ThreeJS",
+      "description": "Reprise de la présentation du mécanisme de la copie privée en ce concentrant sur les projets.",
+      "link": "https://granahir-bucket.s3.eu-west-2.amazonaws.com/TDV2022/index.html"
+    }
+  ],
+  "2023": [
+    {
+      "nom": "Christophe Rousse",
+      "pic_name": "2023-rousse",
+      "outils": "J'ai utilisé l'outil Alteryx pour un peu de cleaning des données et pour regrouper les noms d'opérateurs proches (ex: \"Bouygues Energie et Services\" et \"Bougues E&S\").\nTout le reste a été réalisé avec l'outil Tableau.",
+      "prix": "1er prix",
+      "description": "Cette visualisation présente la progressivité géographie et temporelle des implantations de stations de recharge de véhicules électriques sur les 8 dernières années.\nChaque point représentant une station de recharge, cela permet en particulier de constater que la stratégie d'implantation des différents opérateurs repose sur des investissements locaux ou régionaux. Evident pour des Opérateurs \"locaux\" comme Sorégies ou Siège27, la visualisation met en évidence les investissements localisés des Opérateurs Nationaux.",
+      "link": "/hackaviz/2023/rousse.pdf"
+    },
+    {
+      "nom": "Brice Renouf",
+      "pic_name": "2023-renouf",
+      "outils": "Excel, Python, Tableau",
+      "prix": "2ieme prix",
+      "description": "Peut-on profiter pleinement de la Bretagne avec une voiture électrique ?\nCette visualisation va vous permettre de découvrir la Bretagne sous un autre angle et de conna\u00eetre le déploiement des stations de recharge à travers plusieurs critères.\nN'hésitez pas à cliquer un peu partout, tout est interactif.\nBon voyage ! ",
+      "link": "https://public.tableau.com/app/profile/brice.renouf/viz/Hackaviz_2023/dashboard"
+    },
+    {
+      "nom": "Mathieu Chevallier, Jeroen Schouten, Charles Cledat (SPALLIAN)",
+      "pic_name": "2023-chevallier",
+      "outils": "- Exploration et data preprocessing : Python, Excel, Power Query\n- Stockage des données : PostgreSQL\n- Maquettage et illustrations : Figma\n- Dataviz : SPALLIAN Strategy",
+      "prix": "3ieme Prix",
+      "description": "Convertir sa voiture au Superéthanol-E85, est-ce rentable ? Quelles sont les avantages et les inconvénients au quotidien de la conversion pour les automobilistes ? Pour répondre à ces questions, nous avons valorisé les données de la base Prix des Carburants (DGCCRF) :\n- Visualisation et l'analyse de l'évolution hebdomadaire des prix à la pompe en 2022, par type de carburant\n- Cartographie des stations par département, selon les carburants distribués par celles-ci\n- Création d'un simulateur du temps d'amortissement financier de la conversion de son véhicule au E85",
+      "link": "https://external.spallian.com/stat_dashboard.html?name=hackaviz_toulouse_2023&token_id=hackaviz_toulouse_2023"
+    },
+    {
+      "nom": "Eva Omedes Domene",
+      "pic_name": "2023-omedesdomene",
+      "outils": "Power BI a été utilisé pour l'analyse et Figma pour la conception de ce tableau de bord.\n\n*Seules les données de la France et de la Corse ont été prises en compte.",
+      "prix": "Prix Spécial",
+      "description": "Cet écran se compose de 3 onglets :\n- Analyse des stations de recharge électrique ;\n- Analyse des stations-service ;\n- Dans cette partie, nous pouvons comparer le coût d'un trajet en fonction des kilomètres sélectionnés.\nDans la partie consacrée à l'analyse des bornes de recharge et des stations-service, vous pouvez voir différentes mesures et graphiques, tous entièrement interactifs.",
+      "link": "https://app.powerbi.com/view?r=eyJrIjoiYWI5ZDZmMmMtNzNlZS00MTJhLThkMjQtMmQ1MjFmZjY0YTVkIiwidCI6IjA3N2I3NjZiLTYxZjAtNGU3Yy05MzczLTkyODgzMmFhOWZlZiIsImMiOjh9"
+    },
+    {
+      "nom": "Anaël Delorme, François Sémécurbe (Faucheurs de Données)",
+      "pic_name": "2023-sémécurbe",
+      "outils": "Python, Javascript, Css, html, Echarts et Observable",
+      "prix": "Prix coup de pouce",
+      "description": "Notre DataViz vise à décrire le marché émergent des bornes de recharge. Elle aborde trois points, la localisation des bornes selon les opérateurs, la répartition des bornes selon les enseignes et enfin leur degré d'ouverture à la concurrence. Les données bien qu'incomplètes nous ont permis de découvrir les enjeux autour de ces bornes et de nous positionner en tant que citoyens. Nous avons construit notre DataViz comme support de nos réflexions.\n",
+      "link": "https://anaeldelorme.github.io/hackaviz2023/"
+    },
+    {
+      "nom": "Benjamin Beyrie",
+      "pic_name": "2023-beyrie",
+      "outils": "Python pour le preprocessing des données\nTableau Software pour la viz",
+      "description": "Evolution de 2016 à nos jours de l'electrique en france métropolitaine",
+      "link": "https://public.tableau.com/app/profile/benjamin5723/viz/BornesElec/PageDaccueil"
+    },
+    {
+      "nom": "Samuel Kerhuel",
+      "pic_name": "2023-kerhuel",
+      "outils": "Tableau",
+      "description": "Evolution annuelle du nombre de borne de recharge electrique en France",
+      "link": "https://public.tableau.com/app/profile/samuel.kerhuel/viz/Hackaviz2023/Dashboard1"
+    },
+    {
+      "nom": "Valentin Delpy",
+      "pic_name": "2023-delpy",
+      "outils": "Python, Jupyter Notebook (Dataprep), Dash (Front-end), Heroku (hébergement)",
+      "description": "La visualisation présente l'implantation des bornes de recharge en Occitanie : emplacement, type d'implantation, opérateur chargé de l'installation, etc.",
+      "link": "https://hackaviz2023-valentindelpy.herokuapp.com/"
+    },
+    {
+      "nom": "Romain Pegeot",
+      "pic_name": "2023-pegeot",
+      "outils": "Transformation des données et visualisations réalisées avec Power BI",
+      "description": "Lien entre la mise en service des bornes de recharges électriques et le coût des carburants entre 2022 et 2023",
+      "link": "/hackaviz/2023/pegeot.pdf"
+    },
+    {
+      "nom": "Camille Lecoq, Marie Saugey (KPBG)",
+      "pic_name": "2023-lecoq",
+      "outils": "Tableau Public",
+      "description": "Analyse de la majoration des prix du carburant sur autoroute en Nouvelle-Aquitaine.",
+      "link": "https://public.tableau.com/app/profile/camille.lecoq/viz/ToulouseHackaviz2023KPBG/PrixdupleinenN-A?publish=yes"
+    },
+    {
+      "nom": "Alexis Drubay",
+      "pic_name": "2023-drubay",
+      "outils": "- Utilisation de MariaDB pour stocker la grande quantité de donné et l'utiliser facilement\n- Utilisation au départ de Python et du plugin Folium\n- Puis au final, utilisation de données et du plugin leaflet pour créer une carte animée",
+      "description": "Cette visualisation s'appuie sur le support visuel d'une carte de la France.\nCette carte est interactive et offre des informations supplémentaires lorsque que le curseur survole une zone.\nCette carte évolue en fonction du scrolle de l'utilisateur, en effet sur la gauche de l'écran il y a une petite flèche qui indique la catégorie visualisée. Et lorsque l'utilisateur scrolle, la carte s'adapte à la catégorie.",
+      "link": "https://alexis06030631.github.io/hackaviz2023/"
+    },
+    {
+      "nom": "Romane Bellomo, Audric Moussaoui Marchal (MS AIBesT)",
+      "pic_name": "2023-ralantoson",
+      "outils": "Power BI, Python",
+      "description": "Cette visualisation permet de comprendre comment les prix des carburants et de l'énergie ont évolué ces dernières années et comment cela peut avoir un impact sur les choix des particuliers en matière de véhicules en France.",
+      "link": "/hackaviz/2023/ralantoson.pdf",
+      "link2": "https://app.powerbi.com/view?r=eyJrIjoiNjMwOWM4YWUtZmZjZi00YmZlLWJlYjgtMDg0ZmQyYmJmNzlkIiwidCI6ImYxZjhjODA3LTlmYWYtNDc1NC1iNDNkLWY3YTlkODFmNmMzMSJ9"
+    },
+    {
+      "nom": "Jessica Babin, Elise Bonotto, Elena Dupuy, Mathilde Saccareau (VizionR)",
+      "pic_name": "2023-bonotto",
+      "outils": "RMarkdown (Leaflet et GGplot)",
+      "description": "Dans cette application nous regardons le prix moyen du carburant E10 sur les années 2022/2023 dans les stations de France. N'hésitez pas à zoomer à la recherche des stations proches de chez vous.\nVous trouverez également le prix résumé par région avec une petite course de voitures ! C'est bien la seule course où l'on espère que sa région va perdre...  ",
+      "link": "/hackaviz/2023/vizionR.html",
+      "link2": "https://github.com/elisebonotto/Hackaviz2023"
+    }
+  ],
+  "2024": [
+    {
+      "nom": "Emilie Dufresne",
+      "pic_name": "2024-dufresne",
+      "outils": "Tableau desktop, power point, canva",
+      "description": "App pour choisir un événement des JO et planifier sa journée",
+      "link": "/hackaviz/2024/dufresne.pdf"
+    },
+    {
+      "nom": "Rachel Koehler",
+      "pic_name": "2024-koehler",
+      "outils": "Python (analyse de données) en parallèle à Excel.Rawgraph (au détriment de D3js, par manque de temps), Powerpoint",
+      "description": "C'est avec regret que je vous soumets mon \"affiche\",(enfin un brouillon) j'en suis plutôt deçue, m'étant trop focalisé sur l'aspect \"analyse\" que visuel.  Le projet initial était de mettre en lumière les JO 24 comme un outil en faveur de la sphère économique présentielle francilienne. Avec en premier une analyse temporelle de l'offre des billets, puis spatiale.",
+      "link": "/hackaviz/2024/koehler.pdf"
+    },
+    {
+      "nom": "Estibaliz Legarreta",
+      "pic_name": "2024-legarreta",
+      "outils": "Microsoft Excel et Adobe Illustrator.",
+      "prix": "1er prix",
+      "description": "Cette visualisation met en évidence l'affluence attendue pour les Jeux Olympiques de Paris 2024, en passant d'une perspective générale à une vision plus détaillée.  - Nous commençons par une carte de la France, suivi d'un zoom sur la région Parisienne. Enfin, la présentation est complétée par un calendrier d'affluence des jeux suivant la localisation.",
+      "link": "/hackaviz/2024/legarreta.pdf"
+    },
+    {
+      "nom": "Loïc Donot",
+      "pic_name": "2024-donot",
+      "outils": "- QGIS (Visualisation et import des données dans postgis) - Postgis (Requêtes + conversions des résultats en json - csv) - [roughViz.js](https://github.com/jwilber/roughViz) - Bootstrap + [Bootswach sketchy](https://bootswatch.com/sketchy/) - [Minus Font](https://www.cdnfonts.com/minus.font) - Les données utilisées sont les sessions hors cérémonie des jeux olympiques possédant au moins une indication de prix, tout genre confondu. Les jeux paralympiques ne sont pas pris en compte, d'une part pour une raison de temps, car leurs prix sont dans d'autres colonnes, et d'autre part parce qu'ils sont bien moins chers et auraient nuit au propos :).",
+      "prix": "2ème prix",
+      "description": "L'idée est de proposer une page d'apparence fanzine fait à la main, qui critique, sans trop de mauvaise foi, les prix pratiqués pour ces JO. - L'accent est mis sur les différences de tarifs entre les sessions de qualification et celles avec remise de médailles. - Le premier graphique expose ces différences par site, et le second montre une répartition par discipline. - Je doute, mais je soumets quand même, car l'important, c'est ... LA MÉDAILLE.",
+      "link": "https://loicbcn.github.io/hackaviz2024/"
+    },
+    {
+      "nom": "Thibaud Frere, Benjamin Vaxelaire",
+      "pic_name": "2024-frere",
+      "outils": "L'outil à été réalisé grâce à : Digging et experimentation : Tableau - Site web : les librairies principales sont : React, R3F, d3.js - Le code est disponible ici : https://github.com/tfrere/jo-2024-timeline-hackaton-dataviz",
+      "prix": "3ème prix",
+      "description": "Le projet consiste en une simple timeline 3D contenant la suite d'évènements des Jeux Olympiques et Paralympiques 2024. La timeline est désignée en allant chercher les codes esthétiques d'une piste de course. - - Deux timelines à disposition, Olympiques et Paralympiques. - - Dans une timeline : - - scroll : déplacement sur l'axe temporel, - - clique : possibilité de filtrer par discipline en cliquant sur une tuile d'une discipline spécifique, le filtre va \"cacher\" celles qui ne sont pas de ce type. Un second clique dessus ou un clique sur une autre tuile viendra réinitialiser le filtre. - - L'outil se veut etre une interface assez générique. - Utile pour une personne cherchant à avoir une overview rapide du contenu des JO's. ",
+      "link": "https://vax-frere.github.io/jo-2024-timeline-hackaton-dataviz/"
+    },
+    {
+      "nom": "Simon Lafosse",
+      "pic_name": "2024-lafosse",
+      "outils": "Tableau",
+      "prix": "Prix spécial",
+      "description": "Cher(e) Data Visualist, \u00c0 l'aube des Jeux Olympiques de Paris 2024, le monde se prépare à vivre un événement sportif sans précédent, marqué par l'excellence athlétique, l'unité et la diversité. Dévoilons les dimensions cruciales de la parité, de la visibilité et de l'accessibilité qui façonnent l'expérience des Jeux, révélant les progrès accomplis et les défis à relever pour rendre cet événement inclusif et accessible à tous.",
+      "link": "https://public.tableau.com/app/profile/simon.lafosse/viz/JO2024/Main"
+    },
+    {
+      "nom": "Victor Vitel, Alexandre Schortgen, Audrey Difernand",
+      "pic_name": "2024-vitel",
+      "outils": "Powerpoint, Python (Dash, Plotly), GIMP",
+      "prix": "Prix coup de coeur",
+      "description": "\u00ab Citius, Altius, Fortius - Communiter\u00bb, telle est la devise des Jeux Olympiques et Paralympiques depuis 2020. \u00ab Communiter \u00bb, du latin communis signifie \u00ab ensemble \u00bb en français. C'est de ce dernier mot que nous est venu l'inspiration pour la création de cette visualisation en jeu de \u00ab société \u00bb dans un objectif de jeu ensemble. Préparez-vous, échauffez-vous et placez-vous sur la case départ. Pour chaque carte épreuve, vous verrez appara\u00eetre le prix des billets en fonction des catégories. Sportivement, JOPOLY ",
+      "link": "https://hackaviz-2024-jopoly.onrender.com"
+    },
+    {
+      "nom": "Laure Miral",
+      "pic_name": "2024-miral",
+      "outils": "Nous avons utilisé Tableau pour réaliser notre viz et Excel pour dépivoter le jeu de donnée (version 3 du jeu de donnée).",
+      "description": "Inspiré les dossiers que peuvent produire les journaux sportifs (ex : L'équipe Explore), nous avons crée une visualisation pour mettre en avant un sujet qui nous tenait à coeur : les Jeux Paralympiques. A travers les \"chapitres\" ci-dessous nous espérons vous donner envie de participer à cette grande fête ! - \u00ab COMME UNE ENVIE DE DÉCALER SES VACANCES \u00bb, qui vous permettra d'en apprendre davantage sur les disciplines des Jeux Paralympiques, les lieux des épreuves et les dates. Passez sur les boutons villes et jours pour en savoir plus ainsi que sur les Phryges (mascotte officielle des Jeux Olympiques et Paralympiques de Paris 2024) pour découvrir toutes les disciplines. - \u00ab INCLUSIF \u2026 \u00c0 TOUT PRIX ! \u00bb, qui illustre la différence des prix moyens par catégorie entre les Jeux Olympiques et Paralympiques. (avec un detail par phase de la compétition : qualification et médaille) - \u00ab DU CLASSIQUE \u2026 ET DE L'INEDIT ! \u00bb, pour découvrir les deux disciplines Paralympiques qui n'ont pas d'équivalent Olympiques : la Boccia et le Goalball.",
+      "link": "https://public.tableau.com/app/profile/laure.miral/viz/OresysTeam_JeuxParalympiques_final/DashboardFinale?publish=yes"
+    },
+    {
+      "nom": "Clément Bravo",
+      "pic_name": "2024-bravo",
+      "outils": "Power BI",
+      "description": "Avez-vous prévu de venir assister aux Jeux Olympiques et Paralympiques 2024 dans une des villes hôtes ? Que vous craigniez d'avoir une petite soif ou que vous souhaitiez juste découvrir des restaurants locaux, cette visualisation est pensée comme un outil interactif vous permettant de trouver le restaurant qu'il vous faut (ou un fast-food ou un distributeur de boissons si cela vous suffit !). - Pour cela, il suffit de sélectionner les différents filtres : ville, épreuves olympiques, type de restauration, date et même la distance maximale que vous souhaitez parcourir entre le lieu des épreuves et le restaurant. - - PS : Suite à un problème d'authentification de nos comptes Microsoft, il nous est impossible de partager directement le rapport interactif, il peut être accessible pour un détenteur d'un compte Pro. Si vous n'en avez pas, vous pouvez trouver un aperçu de notre rapport via le fichier PDF. Nous préconisons quand même le rapport interactif qui représente réellement notre travail.",
+      "link": "https://1drv.ms/p/s!AnRKh2UH7QXYsCXVTEjqlkKut7Gp?e=nLET4m",
+      "link2": "/hackaviz/2024/bravo.pdf"
+    },
+    {
+      "nom": "Rémi Meste",
+      "pic_name": "2024-meste",
+      "outils": "- Canva.com - Python3.11 + librairies analytiques et dataviz - Excel - Hypothèses de travail:- Je ne me suis basé uniquement sur les données brute pour ce travail.- Seule hypothèse / approximation faite : 60% des spectateurs consomment au moins un repas alimentaire et 80 % consomment au moins une boisson. - Note:Malgré les difficultés avec la qualité des données ce travail était très intéressant",
+      "description": "Cette visualisation retrace l'évolution des Jeux olympiques 2024 ainsi que l'impact sur la restauration au niveau local, tout en métant en avant l'évenement olympique. - Il me semblait important de mettre également en lumière les jeux paralympiques trop souvent masqués par les olympiques. - L'objectif était de mettre en lumière cette édition 2024 par des chiffres analytiques tout en mettant en avant l'impact géographique et économique (alimentaire lié) ainsi que prendre du recul sur les types de restauration proposés ainsi que l'évolution des consomation dans le temps.",
+      "link": "/hackaviz/2024/meste.pdf"
+    },
+    {
+      "nom": "Vincent Roquelaure",
+      "pic_name": "2024-roquelaure",
+      "outils": "MyReport",
+      "description": "Vous êtes un restaurateur, sélectionnez votre restaurant parmi la liste (une recherche à la main est possible). Sélectionnez le lieu. - L'onglet Environnement permet d'avoir une vision globale comparative entre votre restaurant et les concurrents. - \u2022 Lieux d'épreuves à proximité de votre restaurant - \u2022 Les sessions prévues sur ces lieux - L'onglet Stratégie établissement apporte des détails pour entamer une vision globale stratégique - \u2022 Votre score - \u2022 Détails de ce score - \u2022 Combien de concurrents - \u2022 Quelles épreuves concernent votre restaurant ? - \u2022 Quels jours/horaires d'affluence ?",
+      "link": "https://hackaviz-2024.myreport.fr/strategie_restaurateur.html"
+    },
+    {
+      "nom": "Matthieu Durand",
+      "pic_name": "2024-durand",
+      "outils": "Suite logicielle MyReport Business Evolution - Site: https://www.myreport.fr/",
+      "description": "Ce tableau de bord permet d'avoir une vue d'ensemble des Jeux de Paris 2024, de visualiser les épreuves, de créer son propre itinéraire et d'estimer les coûts, ainsi que de faciliter le choix de restaurants à proximité des sites des épreuves. - Sur chaque page, vous pouvez modifier l'affichage des données en sélectionnant des conditions dans le volet gauche. - Pour plus d'informations sur la page en cours, cliquez sur l'icône \"i\" d'informations ou l'icône \"abc\" du glossaire.",
+      "link": "https://hackaviz-2024.myreport.fr/olympique.html"
+    },
+    {
+      "nom": "Guillemette Crozet",
+      "pic_name": "2024-crozet",
+      "outils": "Outils utilisés : Illustrator - Format poster 50x70 cm - Concernant les données brutes, je reste étonnée qu'il n'y ait pas de place prévues pour les spectateurs en fauteuils pour toutes les épreuves des jeux. - Parfois les fichiers Excel s'ouvrent tronqués sur mon ordi, alors peut-être est-ce un bug...",
+      "description": "J'ai voulu représenter toutes les catégories des prix des places pur chaque épreuve, quelque soit la phase de qualifications, afin de pouvoir comparer. J'ai représenté sur un même poster les épreuves olympiques et paralympiques + les prix des places pour tous les spectateurs : valides et ceux en fauteuil. Sur cette dataviz, les places pour fauteuils sont cantonnées aux épreuves paralympiques : à vérifier si ce n'est pas un problème de données brutes tellement ça me para\u00eet étonnant. Si non, alors Ce poster de données se veut à destination des professionnels et moins du grand public.",
+      "link": "/hackaviz/2024/crozet.png"
+    },
+    {
+      "nom": "François Semecurbe",
+      "pic_name": "2024-semecurbe",
+      "outils": "L'ensemble du travail a été réalisé avec des outils Open Source : - R et Python pour l'analyse des données ; - Observable Framework pour les prototypes (chaque équiper(e) travaillait sur son onglet thématique) ; - Enfin, le framework Svelte pour produire le site interactif (les graphiques sont en D3 et echart).",
+      "description": "Notre site a été conçu pour éclairer l'expérience des (télé-)spectateurs. Nous avons ainsi essayé de répondre à 3 questions : - - Les épreuves ne se cantonne Paris ? Ne devrions-nous pas parler plutôt des JO de la France ? - - Quelle gastronomie, les spectateurs vont-ils découvrir aux environs des enceintes sportives ? - - Toutes les épreuves n'ont pas la même exposition horaire ? - Notre site a été optimisé pour les smartphones et laptop.",
+      "link": "https://anaeldelorme.github.io/hackaviz2024/"
+    },
+    {
+      "nom": "Loic Pelfort",
+      "pic_name": "2024-pelfort",
+      "outils": "liste des outils utilisés: - EXCEL - ALTERYX  - TABLEAU  - Diverses ressources web",
+      "description": "Bonjour, - ma visualisation comporte deux grandes parties : - - 1) une partie purement graphique qui est une interprétation des anneaux olympiques à partir des données de discipline et épreuves présentes dans le fichier \"paris 2024\" - - 2) la seconde partie utilise les données de \"paris 2024\" et \"restaurants_proximité\" pour consulter les information liés à une ville puis de cibler sur une épreuve spécifique",
+      "link": "https://public.tableau.com/app/profile/loic.pelfort/viz/HACKAVIZJ_O2024/TableaudebordJO"
+    },
+    {
+      "nom": "Eva Omedes Domene",
+      "pic_name": "2024-omedes_domene",
+      "outils": "J'ai utilisé Power BI pour charger et visualiser les données, et Figma comme outil de conception.",
+      "description": "Ce tableau de bord, réalisé avec Power BI, présente des informations organisées sur plusieurs onglets pour une compréhension aisée des données. Vous pouvez explorer les détails sur les cérémonies olympiques, analyser la diversité des sports représentés et identifier dans quels stades vous aurez plus d'options pour manger, car ceux avec le plus de restaurants sont mis en évidence. Tous les visuels sont interactifs, vous permettant d'explorer et de filtrer les données selon vos intérêts spécifiques.",
+      "link": "https://app.powerbi.com/view?r=eyJrIjoiZDRhOWRkNDgtZDliNy00MzY2LWFlNGItZTdiOTY5YWQyNDlkIiwidCI6IjA3N2I3NjZiLTYxZjAtNGU3Yy05MzczLTkyODgzMmFhOWZlZiIsImMiOjh9"
+    },
+    {
+      "nom": "Alexis Drubay",
+      "pic_name": "2024-drubay",
+      "outils": "Tableau & DataGrip",
+      "description": "Cette visualisation étudie l'évolution économique de la restauration depuis l'annonce des JO en France jusqu'en 2024. Elle explore les différents événements politiques et économiques de l'enjeu de l'offre de restauration en analysant les moments phares du développement économique lié aux JO.",
+      "link": "https://public.tableau.com/views/TDV-Hackaviz2024_17107122984650/TDV-Paris2024?:language=fr-FR&:sid=&:display_count=n&:origin=viz_share_link",
+      "link2": "/hackaviz/2024/drubay.pdf"
+    },
+    {
+      "nom": "Sébastien Maurouard",
+      "pic_name": "2024-maurouard",
+      "outils": "Python pour la manipulation des données",
+      "description": "Les Olympotes, c'est un outil pour trouver où boire, où manger, et des coéquipier(e)s pour célébrer ensemble les jeux olympiques au plus proches des lieux d'épreuves. Choisis ta ville, ton sport préféré et ton type de resto, notre dévoué Coach Jim se chargera de t'indiquer où et quand sortir ton plus beau jogging pour retrouver d'autres fans et échanger autour d'un plat ou d'un verre! N'oublie pas de t'hydrater et de faire quelques pas chassés en rentrant pour garder la forme ;-)",
+      "link": "https://www.geogis.fr/hackaviz2024/"
+    },
+    {
+      "nom": "Enora Le mignon",
+      "pic_name": "2024-le_mignon",
+      "outils": "Excel et illustrator - Comme je suis graphiste, je n'ai pas pu raconter l'histoire que je voulais (l'égalité aux JO) par manque de compétences sur le traitement des données (je n'ai pas réussi à trouver le moyen de savoir combien de médailles étaient remises). J'ai donc choisi des données non discutables que j'ai pu traiter seule et qui me permettaient de raconter une histoire, faire une petite enquête.",
+      "description": "Comment l'officialisation d'une ville hôte de Jeux Olympiques peut impacter la créations de restaurants? - L'annonce Paris hôte des JO 2024 a généré la création de restaurants dans un rayon d' 1,5 km autour des sites olympiques mais uniquement à Paris. Les autres villes ne sont pas impactées (même en proche banlieue) malgré qu'elle reçoivent plus de 50% des évènements. - Ce qui soulève la question de l'accessibilité pour les personnes à mobilité réduite, surtout quand on sait que 43% des évènements paralympiques ont lieu en banlieue parisienne (cérémonies, médailles ou qualifications).",
+      "link": "/hackaviz/2024/enora.jpeg"
+    },
+    {
+      "nom": "Juan José Cervilla",
+      "pic_name": "2024-cervilla",
+      "outils": "J'ai utilisé notamment python avec dash-plotly (https://plotly.com/dash/). Ce framework utilise flask pour créer l'application web. HTML et CSS sera aussi utilisé.",
+      "description": "L'objectif de l'application est de pouvoir faire une analyse par session des Jeux Olympiques. Sur le côté gauche, vous aurez le contrôle pour rechercher selon différents critères la session souhaitée. Dans la partie centrale droite, d'abord, il y aura une affichage des principales informations. Après, on trouve une analyse par prix de cette session et ensuite vous pourrez voir les types de restaurants qui se trouvent à proximité du lieu où se déroule la session, tout cela grâce à des cartes, des graphiques et des tableaux récapitulatifs. - Note : Je voudrais vous mentionner que le lien URL de l'application est mieux de le visualiser dans une écran d'ordinateur et normalement ça prends autour 15 secondes pour s'ouvrir! \u00c0 bientôt ! ",
+      "link": "https://hackaviz-jeux-olympiques.onrender.com/"
+    },
+    {
+      "nom": "Christophe Rousse",
+      "pic_name": "2024-rousse",
+      "outils": "J'ai réalisé ma visualisation avec l'outil Tableau Desktop",
+      "description": "Vous souhaitez assister aux épreuves des Jeux Olympiques et Paralympiques de Paris 2024.",
+      "link": "https://public.tableau.com/views/JOParis2024/Paris2024?:language=fr-FR&:sid=&:display_count=n&:origin=viz_share_link"
+    },
+    {
+      "nom": "Tsara Ralantoson",
+      "pic_name": "2024-ralantoson",
+      "outils": "Python, Tableau",
+      "description": "Cette application vous donne tous les renseignements utiles pour organiser votre séjour : disciplines, dates et détail des différentes épreuves, ... et même les restaurants à proximité des lieux des épreuves - Cette visualisation permet de voir l'accessibilité des sites paralympiques (et olympiques) à Paris. Cet indice prend en compte différents paramètres, tels que la disponibilité et le prix des places PFR, la capacité du site...",
+      "link": "https://public.tableau.com/app/profile/tiana.r/viz/Hackaviz_2024/Hackaviz"
+    }
+  ],
+  "2025": [
+    {
+      "nom": "Hugo Durbano",
+      "pic_name": "2025-durbano",
+      "outils": "Seuls les outils Power Query et Power BI ont \u00e9t\u00e9 utilis\u00e9s pour cette Dataviz.",
+      "description": "L'eau monte, la ville retient son souffle \u2013 Ce rapport analyse les neuf crues majeures ayant frapp\u00e9 Toulouse en un si\u00e8cle et demi, avec un focus particulier sur la crue de janvier 2022. \u00c0 travers des donn\u00e9es sur les pr\u00e9cipitations, le niveau de l\u2019eau et le d\u00e9bit de la Garonne, il met en lumi\u00e8re l\u2019impact des crues sur la ville et souligne l\u2019importance de la surveillance hydrologique et des mesures de pr\u00e9vention pour mieux anticiper les risques d\u2019inondation.",
+      "link": "https://app.powerbi.com/view?r=eyJrIjoiMWRkMDBmYjUtMzViMy00OWRjLWExYzAtOTUwOGZmZjM5YmVhIiwidCI6ImY2MGM2Y2I2LWI3N2UtNGI5Ni04N2E1LTIzMWNhMjQyM2ZiMiIsImMiOjEwfQ%3D%3D&rd=width"
+    },
+    {
+      "nom": "Alain Ferlac",
+      "pic_name": "2025-ferlac",
+      "outils": "Python : Pandas (traitement des donn\u00e9es), Matplotlib (graphes), Folium (carte), Inkscape (pr\u00e9sentation)",
+      "description": "Ce poster pr\u00e9sente les hauteurs d'eau des 9 grandes crues de la Garonne \u00e0 Toulouse et le nombre de jours avec la hauteur du fleuve au Pont Neuf depuis 1857.",
+      "link": "/hackaviz/2025/ferlac.pdf"
+    },
+    {
+      "nom": "Christophe Rousse",
+      "pic_name": "2025-rousse",
+      "outils": "La visualisation est r\u00e9alis\u00e9e avec l'outil Tableau (la version gratuite)\nJ'ai \u00e9galement utilis\u00e9 l'outil Alteryx pour nettoyer les donn\u00e9es et les mettre en forme de mani\u00e8re \u00e0 optimiser la r\u00e9alisation de la visualisation.",
+      "description": "Ma visualisation se concentre sur la crue de 2022.\nUne premi\u00e8re partie pr\u00e9sente le fleuve et les diff\u00e9rentes stations hydrom\u00e9triques dont sont issues les donn\u00e9es de hauteur d'eau et de d\u00e9bit.\nLa deuxi\u00e8me partie pr\u00e9sente les donn\u00e9es de la crue 2022 avec les \u00e9volutions heure par heure des hauteurs et d\u00e9bits d'eau. A ces courbes d'\u00e9volution sont ajout\u00e9es 2 cartes :\n- la carte des pr\u00e9cipitations quotidiennes\n- la carte des diff\u00e9rents cours d'eau dont la largeur est d\u00e9pendante du d\u00e9bit\nUn param\u00e8tre permet de choisir un cr\u00e9neau horaire pendant la p\u00e9riode de la crue pour mieux appr\u00e9hender la situation aux diff\u00e9rents moments marquants de cet \u00e9v\u00e9nement.",
+      "link": "https://public.tableau.com/app/profile/christophe.rousse/viz/CestuneGaronne/GaronneCrue2022"
+    },
+    {
+      "nom": "Vincent Roger",
+      "pic_name": "2025-roger",
+      "outils": "Python\nPandas\nPlotly\nStreamlit",
+      "description": "Exploration des niveaux d\u2019eau et des pr\u00e9cipitations \u00e0 Toulouse\nCette visualisation interactive permet d\u2019analyser l\u2019\u00e9volution des niveaux d\u2019eau et des pr\u00e9cipitations \u00e0 Toulouse et en Occitanie.\n\n\ud83d\udcc8 Graphique des niveaux d\u2019eau\n\n- Il affiche la hauteur d\u2019eau quotidienne, avec une couleur indiquant l\u2019acc\u00e9l\u00e9ration ou la d\u00e9c\u00e9l\u00e9ration du niveau d\u2019eau :\n    - Orange : Forte d\u00e9c\u00e9l\u00e9ration\n    - Gris : \u00c9volution stable\n    - Violet : Forte acc\u00e9l\u00e9ration\n- L\u2019utilisateur peut s\u00e9lectionner une plage temporelle en cliquant et glissant sur le graphique.\n\n\ud83d\uddfa\ufe0f Carte des pr\u00e9cipitations\n\n- Repr\u00e9sente les stations m\u00e9t\u00e9o ayant enregistr\u00e9 le plus de pr\u00e9cipitations sur la p\u00e9riode s\u00e9lectionn\u00e9e.\n- Couleur : Variation des pr\u00e9cipitations (\u00e9cart-type)\n- Taille des cercles : Quantit\u00e9 totale de pr\u00e9cipitations enregistr\u00e9e\n- Un survol des stations affiche le total des pr\u00e9cipitations et leur variabilit\u00e9 (pr\u00e9cision \u00e0 deux d\u00e9cimales).\n\n\ud83c\udf9b\ufe0f Filtres interactifs\n\n- Choisissez une plage de dates via la barre lat\u00e9rale.\n- Ajustez le nombre de stations affich\u00e9es sur la carte.\n\nCette visualisation dynamique offre une exploration fluide et pr\u00e9cise des donn\u00e9es hydrom\u00e9t\u00e9orologiques toulousaines. \ud83c\udf0a\ud83d\udca7\n",
+      "link": "https://vroger11-hackaviz-2025.streamlit.app/"
+    },
+    {
+      "nom": "Miles Bryony",
+      "pic_name": "2025-bryony",
+      "outils": "d3.js in ObservableHQ (hosted on my website)\n\nProcess (English - sorry)\n* download all the data\n* look at  hydrometry + rainfall stations on the map\n* work out which stations had hydrometry or water flow data (23)\n* visualised these on multiple line charts to get a sense of the patterns\n* pulled the flood year and date extents from the hydrometry data\n* realised the only stations with complete data  1875 -> 2022 were Pont Neuf - 2 codes, same position - decided to focus on this.\n* looked at waterflow in the closest upstream + downstream stations but ended up discounting this as no data before 1905 and I wanted to simplify\n* went down a route of looking at areas which affect flooding (ie Lower Pyrennes) but discounted as wanted to simplify\n* pulled out the Pont Neuf data with rainfall data from the nearest station and visualised on line charts\n * discounted 1859 as no rainfall data in close range\n* discounted 1879 as flood not as significant as the rest\n* worked out the design and then coded it up!",
+      "description": "PONT NEUF, Toulouse - Le seul pont survivant de le crue de 1875.  Gr\u00e2ce aux d\u00e9fenses, il n\u2019a plus \u00e9t\u00e9 mis \u00e0 rude \u00e9preuve.\n\nPassez la souris sur les graphiques lin\u00e9aires pour voir le niveau d'eau changer \u00e0 mesure que la crue augmente et diminue.",
+      "link": "http://bmdata.co.uk/ToulouseHackaviz/"
+    },
+    {
+      "nom": "Brice Renouf",
+      "pic_name": "2025-renouf",
+      "outils": "Excel, Figma, Tableau",
+      "description": "Toulouse et la Garonne, une grande histoire d\u2019amour\u2026 jusqu\u2019\u00e0 ce que l\u2019eau monte un peu trop ! Ce dashboard est l\u00e0 pour vous aider \u00e0 suivre de pr\u00e8s le niveau du fleuve et anticiper les crues.",
+      "link": "https://public.tableau.com/app/profile/brice.renouf/viz/Hackaviz_2025/visualization"
+    },
+    {
+      "nom": "Sandrine & Oph\u00e9lie Berger & Gaudin",
+      "pic_name": "2025-bergergaudin",
+      "outils": "Notebooks pour l'exploration de donn\u00e9es (via Google Collab)\nCanva pour la mise en place ",
+      "description": "Cet article de journal \"vintage\" illustre l\u2019engagement progressif de la ville et des autorit\u00e9s pour une gestion plus proactive des risques de crue, afin de mieux prot\u00e9ger les habitants et les infrastructures face aux caprices de la Garonne.\nA travers  les deux repr\u00e9sentations de donn\u00e9es que nous vous proposons, nous avons souhait\u00e9 mettre en avant la multitude d'\u00e9v\u00e8nements de crues au fil du temps au niveau du Pont Neuf de Toulouse et l'augmentation du nombre de stations install\u00e9es sur la Garonne mais aussi au niveau des affluents (m\u00eame lointains !)  et du nombre de mesures effectu\u00e9es au cours des ann\u00e9es, des informations pr\u00e9cieuses pour agir en terme de pr\u00e9vention aupr\u00e8s des populations, d'autant plus en pr\u00e9vision des impacts du r\u00e9chauffement climatique.",
+      "link": "/hackaviz/2025/bergergaudin.pdf"
+    },
+    {
+      "nom": "Brooklyn H.",
+      "pic_name": "2025-hbrooklyn",
+      "outils": "Data: Python, pandas, data wrangler, numpy, matplotlib, seaborn.\nDev: React, Three-js, vite\nOutil de PAO et de traitement d'image (GIMP, Photoshop).",
+      "description": "Dans le tumulte des courbes sinueuses d'un joyplot, les variations du niveau d'eau de la Garonne se d\u00e9ploient comme les souvenirs d'un pass\u00e9 r\u00e9volu. Le fleuve, \u00e9ternel t\u00e9moin au flot indolent porte en lui le rythme d'un temps parfois furieux entrecoup\u00e9 de silences pesants. Chaque variation du m\u00eame graphique murmure autant d'histoires oubli\u00e9es et \u00e0 travers les lignes enchev\u00eatr\u00e9es, les donn\u00e9es nous livrent des r\u00e9cits de prosp\u00e9rit\u00e9 et de d\u00e9sastre d'une histoire collective et complexe. \nDans cette exploration, il est \u00e9galement possible de configurer du swag une mani\u00e8re l\u00e9g\u00e8re d'endosser virtuellement ce qui devient un pont entre le pass\u00e9 et le pr\u00e9sent pour red\u00e9couvrir la Garonne sous un angle nouveau. Cette brochure est un bonus, elle vient en compl\u00e9ment de la r\u00e9alisation interactive que je viens de soumettre.",
+      "link": "https://brooks-code.github.io/miniature-fortnight",
+      "link2": "/hackaviz/2025/hbrooklyn.pdf"
+    },
+
+    {
+      "nom": "Estibaliz Legarreta",
+      "pic_name": "2025-legarreta",
+      "outils": "Illustrator, Microsoft Excel, R et ChatGPT",
+      "description": "Ce graphique repr\u00e9sente les d\u00e9bits de la Garonne et de ses affluents lors des crues de 1905, 1952, 1977, 2000 et 2020. L\u2019\u00e9paisseur du trac\u00e9 est proportionnelle au d\u00e9bit mesur\u00e9 (m\u00b3/s), illustrant l\u2019intensit\u00e9 des crues.\n\nLes points blancs signalent les stations hydrom\u00e9triques, montrant l\u2019\u00e9volution du r\u00e9seau de surveillance. On observe les variations des d\u00e9bits et l\u2019augmentation progressive des stations, t\u00e9moignant d\u2019un suivi accru des crues.\n\nCe visuel met en perspective l\u2019\u00e9volution hydrologique du bassin de la Garonne sur plus d\u2019un si\u00e8cle.\n\n",
+      "link": "/hackaviz/2025/legarreta.pdf"
+    },
+    {
+      "nom": "Laure Miral",
+      "pic_name": "2025-miral",
+      "outils": "Excel, Power BI, Power Point, Figma",
+      "description": "\"1875. 1952. 2022. Trois \u00e9poques, une m\u00eame mal\u00e9diction. \u00c0 chaque g\u00e9n\u00e9ration, elle revient. Tapie dans l\u2019ombre, elle attend son heure. Puis le tonnerre gronde. La pluie s\u2019abat. Et la Cruelle, la D\u00e9ferlante, le Bug se r\u00e9veillent... Trois noms, une seule et m\u00eame personne : la Garonne. Habituellement si paisible, elle sort de son lit, balayant tout sur son passage, rappelant aux toulousains qu\u2019elle ne dort jamais vraiment\u2026\" \n\nVous l'aurez compris, ces quelques mots sont le teaser d'un thriller horrifique, dans lequel la Garonne prend vie. D\u00e9couvrez, \u00e0 travers des visualisations, comment ce serial crueminel a frapp\u00e9 les toulousains au fil des \u00e2ges !\n\nUne affiche de film co-r\u00e9alis\u00e9e par Bastien, Laure et Lucas.",
+      "link": "/hackaviz/2025/miral.pdf"
+    },
+    {
+      "nom": "Aya El Abdi",
+      "pic_name": "2025-elabdi",
+      "outils": "Snowflake, PowerBi, VSCode Python (pandas, matplotlib, numpy)",
+      "description": "D\u00e9couvrez comment les pr\u00e9cipitations influen\u00e7aient les crues de la Garonne \u00e0 travers l\u2019histoire. Ajustez la pluie, observez la mont\u00e9e des eaux et comparez avec les grandes inondations du pass\u00e9. Une immersion interactive au c\u0153ur des flots d\u2019antan !",
+      "link": "https://app.powerbi.com/view?r=eyJrIjoiZjM1MWNiZWItNGFlMi00YWVkLTljMjUtODE4MWMwOTkxMDUyIiwidCI6ImQ4MDVkZmMxLTEyNzYtNDAxZi04MDBlLTc1MjRmM2FjODZmMCJ9&pageName=3ddaf590528017b61150"
+    },
+    {
+      "nom": "Jean-Paul Grandgirard",
+      "pic_name": "2025-grandgirard",
+      "outils": "Une base de donn\u00e9e SQL pour la mise en relation et l\u2019extraction des donn\u00e9es\nGitHub pour le partage\nGoogle spreadsheet\nChart.js pour pr\u00e9senter les graphiques brutes\nFigma pour la mise en forme finale",
+      "description": "Bienvenue dans cette pr\u00e9sentation consacr\u00e9e aux crues majeures qui ont fa\u00e7onn\u00e9 l'histoire de la Garonne depuis un si\u00e8cle et demi. De 1857 \u00e0 2022, nous vous invitons \u00e0 explorer neuf \u00e9v\u00e9nements hydrologiques exceptionnels qui ont profond\u00e9ment marqu\u00e9 le paysage, transform\u00e9 les politiques d'am\u00e9nagement du territoire et forg\u00e9 la m\u00e9moire collective des populations riveraines.\n\nCette pr\u00e9sentation se concentre sur les hauteurs d'eau mesur\u00e9es au Pont Neuf \u00e0 Toulouse. Pour chaque ann\u00e9e de crue historique, nous avons mis en relation plusieurs donn\u00e9es : la hauteur d'eau maximum mesur\u00e9e chaque mois au Pont Neuf, la pluviom\u00e9trie cumul\u00e9e des 5 jours pr\u00e9c\u00e9dant l'\u00e9v\u00e9nement (moyenn\u00e9e sur l'ensemble des donn\u00e9es disponibles sur le bassin versant de la Garonne) et la hauteur d'eau moyenne mensuelle, moyenne effectu\u00e9e sur les 20 ann\u00e9es entourant la crue.\n",
+      "link": "https://dtv.civibox.fr/index.html"
+    },
+    {
+      "nom": "C\u00e9dric Dupuch",
+      "pic_name": "2025-dupuch",
+      "outils": "manipulation des donn\u00e9es : pandas, geopandas\nstockage/affichage des donn\u00e9es : BigQuery, Looker Studio",
+      "description": "Explorez les crues de Toulouse \u00e0 l'aide de chiffre cl\u00e9s et obtenez des informations d\u00e9taill\u00e9es sur chaque station hydrom\u00e9trique.",
+      "link": "https://lookerstudio.google.com/reporting/2db917b9-16a7-4bd5-a405-dec9a29e52b9/page/gLm7E?s=qM3HZu6xl08"
+    },
+    {
+      "nom": "Emilie Dufresne",
+      "pic_name": "2025-dufresne",
+      "outils": "Canva, Jupyter, Plotly, MapBox, Photoshop,\nStreamlit",
+      "description": "Depuis Toulouse, cap au sud pour d\u00e9couvrir un panorama unique de la Garonne et des Pyr\u00e9n\u00e9es. Le Pont Neuf date de 1544, ce qui fait de lui le plus Vieux pont de la Garonne. Les travaux ont dur\u00e9 un si\u00e8cle o\u00f9 le chantier a \u00e9t\u00e9 soumis \u00e0 des crues d\u00e9vastatrices et \u00e0 un lit de la Garonne trompeur. D'o\u00f9 \u00e9merge cette source, r\u00e9ponse en image ou bien depuis une version plus interactive : https://github.com/EmyDuf/gdp-dashboard/blob/main/streamlit_app.py",
+      "link": "/hackaviz/2025/dufresne.pdf",
+      "link2": "https://github.com/EmyDuf/gdp-dashboard/blob/main/streamlit_app.py"
+    }
+  ]
+}

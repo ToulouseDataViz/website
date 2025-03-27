@@ -86,7 +86,7 @@ const Gallery = ({
     setPics(pics); // set State
   };
 
-  useEffect(() => {    
+  useEffect(() => {
     getPics();
     const interval = setInterval(() => {
       getPics();
@@ -107,7 +107,7 @@ const Gallery = ({
             [classes.galleryLarge]: type === 'large',
             [classes.gallerySmall]: type === 'small',
           })}>
-          {pics.map(({ id, gatsbyImageData }) => {
+          {pics && pics.map(({ id, gatsbyImageData }) => {
             return (
               <GatsbyImage
                 key={id}
@@ -122,16 +122,16 @@ const Gallery = ({
         </Box>
       );
     } else {
-      return pics.map(({ id, gatsbyImageData }) => {
+      return pics && pics.map((pic) => {
         return (
-          <GatsbyImage
-            key={id}
-            image={gatsbyImageData}
+          pic && <GatsbyImage
+            key={pic?.id}
+            image={pic?.gatsbyImageData}
             style={{ height: maxHeight }}
             imgStyle={{ height: maxHeight }}
             objectFit="contain"
             onClick={() => {
-              displayLightBoxOnClick && setDisplayLightBox(gatsbyImageData.images.fallback.src);
+              displayLightBoxOnClick && setDisplayLightBox(pic?.gatsbyImageData.images.fallback.src);
             }}
           />
         );

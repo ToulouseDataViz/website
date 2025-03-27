@@ -7,8 +7,8 @@ import clsx from 'clsx';
 
 import Button from './Button';
 import usePics from '../hooks/usePics';
-import MarkdownText from './MarkdownText';
-
+import markdownit from 'markdown-it'
+import sanitizeHtml from 'sanitize-html';
 import { getPicName } from '../utils/misc';
 
 const useStyles = makeStyles(theme => ({
@@ -50,6 +50,8 @@ const getPrice = (prix, isDense) => {
   }
 };
 
+const md = markdownit();
+
 const HackavizResult = ({
   nom,
   outils,
@@ -57,11 +59,10 @@ const HackavizResult = ({
   pic_name,
   link,
   link2,
-  children,
+  description,
   columnValue,
   /** compact mode used in main hackaviz page */
   isDense = false,
-  description = '',
 }) => {
   const classes = useStyles();
   const resultsPics = usePics().filter(({ relativeDirectory }) => relativeDirectory === 'hackaviz-result-pics');
@@ -71,7 +72,8 @@ const HackavizResult = ({
     [classes.participants]: !isDense,
   });
 
-  const markdownDescription = children[0]?.childMarkdownRemark?.htmlAst;
+  const markdownDescription = description ? md.render(description) : "";
+  const markdownOutils = outils ? md.render(outils) : "";
 
   return (
     <Grid item xs={12} sm={columnValue}>
@@ -80,7 +82,7 @@ const HackavizResult = ({
         <Box class={participantStyle} style={{ display: 'flex', flexDirection: 'column' }}>
           {pic_name && (
             <Gallery
-              style={isDense ? { display: 'flex' } : { height: '500px', display: 'flex' }}
+              style={isDense ? { display: 'flex' } : { maxHeight: '500px', height: '500px', display: 'flex' }}
               picsToDisplay={[resultPic]}
               limit={1}
               embedInBox={false}
@@ -88,12 +90,12 @@ const HackavizResult = ({
               displayLightBoxOnClick={true}
             />
           )}
-          {getName(nom, isDense)}
-          {!isDense && markdownDescription && <MarkdownText className={classes.textAlign} hast={markdownDescription} />}
+          <div style={{ minHeight: "6.5em" }}>{getName(nom, isDense)}</div>
+          {!isDense && markdownDescription && <div dangerouslySetInnerHTML={{ __html: sanitizeHtml(markdownDescription) }} />}
           {!isDense && (
             <p>
               <b>Outils</b>
-              {`: ${outils}`}
+              <span dangerouslySetInnerHTML={{ __html: sanitizeHtml(markdownOutils) }} />
             </p>
           )}
           {link && (

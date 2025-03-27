@@ -2,16 +2,16 @@ import React from 'react';
 
 import { Grid } from '@material-ui/core';
 
-import useHackavizParticipants from '../hooks/useHackavizParticipants';
+import _hackavizParticipants from '../data/hackaviz_participants.json';
 import HackavizResult from './HackavizResult';
 
 const HackavizResults = ({ currentHackaviz }) => {
-  const hackavizParticipants = useHackavizParticipants().filter(({ hackaviz }) => hackaviz === currentHackaviz);
+  const hackavizParticipants = _hackavizParticipants[currentHackaviz];
 
   const winnersColumn = { columnValue: 6 };
   const othersColumn = { columnValue: 4 };
-  const winners = hackavizParticipants.filter(({ hackaviz, prix }) => hackaviz === currentHackaviz && prix);
-  const others = hackavizParticipants.filter(({ hackaviz, prix }) => hackaviz === currentHackaviz && !prix);
+  const winners = hackavizParticipants.filter(({ prix }) => prix);
+  const others = hackavizParticipants.filter(({ prix }) => !prix);
   const hasWinners = winners.length > 0;
   const otherHeadline = hasWinners ? 'et toutes les autres contributions' : 'Les contributions';
 

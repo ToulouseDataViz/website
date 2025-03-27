@@ -3,7 +3,7 @@ import React from 'react';
 import { Grid, Box } from '@material-ui/core';
 
 import useHackaviz from '../hooks/useHackaviz';
-import useHackavizParticipants from '../hooks/useHackavizParticipants';
+import _hackavizParticipants from '../data/hackaviz_participants.json';
 
 import YoutubeEmbed from './YoutubeEmbed';
 import Button from './Button';
@@ -13,7 +13,7 @@ import { pastEventStatusName } from '../settings';
 
 const HackavizPreviousEditions = () => {
   const hackavizs = useHackaviz().filter(item => item.status === pastEventStatusName);
-  const hackavizParticipants = useHackavizParticipants();
+  const hackavizParticipants = _hackavizParticipants;
   const winnersColumn = { columnValue: 2, isDense: true };
 
   return (
@@ -21,7 +21,7 @@ const HackavizPreviousEditions = () => {
       {hackavizs.map(({ hackaviz, _status, date, videoLink, description }) => {
         const currentHackaviz = hackaviz;
         const videoEmbedId = getVideoEmbedId(videoLink);
-        const winners = hackavizParticipants.filter(({ hackaviz, prix }) => hackaviz === currentHackaviz && prix);
+        const winners = hackavizParticipants[currentHackaviz].filter(({ prix }) => prix !== undefined);
         const hasWinners = winners.length !== 0;
 
         return (

@@ -21,12 +21,15 @@ export const usePics = () => {
     }
   `);
 
-  return nodes.map(({ id, name, relativeDirectory, childImageSharp: { gatsbyImageData } }) => ({
-    id: id,
-    relativeDirectory: relativeDirectory,
-    name: name,
-    gatsbyImageData: gatsbyImageData,
-  }));
+  return nodes.map(({ id, name, relativeDirectory, childImageSharp }) => {
+    const _imageData = childImageSharp;
+    return {
+      id: id,
+      relativeDirectory: relativeDirectory,
+      name: name,
+      gatsbyImageData: _imageData && _imageData.gatsbyImageData,
+    }
+  });
 };
 
 export default usePics;
