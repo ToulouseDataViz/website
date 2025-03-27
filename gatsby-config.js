@@ -126,7 +126,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-md-from-csv',
       options: {
-        nodeTypes: ['HackavizParticipantsCsv', 'SponsorsCsv'],
+        nodeTypes: ['SponsorsCsv'],
       },
     },
     `gatsby-plugin-md-from-notion-table-attribute`,

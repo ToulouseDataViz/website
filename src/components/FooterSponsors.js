@@ -4,9 +4,6 @@ import { Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 import useSponsors from '../hooks/useSponsors';
-import usePics from '../hooks/usePics';
-
-import { getPic } from '../utils/misc';
 
 const useStyles = makeStyles(theme => ({
   container: {
@@ -24,7 +21,6 @@ const FooterSponsors = () => {
   const FooterSponsors = useSponsors()
     .filter(({ inactive }) => !inactive)
     .sort((a, b) => a.rank - b.rank);
-  const sponsorsPics = usePics().filter(({ relativeDirectory }) => relativeDirectory === 'sponsor-pics');
 
   return (
     <Grid
