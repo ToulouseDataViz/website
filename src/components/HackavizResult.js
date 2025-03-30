@@ -92,10 +92,10 @@ const HackavizResult = ({
           )}
           <div style={{ minHeight: "6.5em" }}>{getName(nom, isDense)}</div>
           {!isDense && markdownDescription && <div dangerouslySetInnerHTML={{ __html: sanitizeHtml(markdownDescription) }} />}
-          {!isDense && (
+          {!isDense && markdownOutils && (
             <p>
               <b>Outils</b>
-              <span dangerouslySetInnerHTML={{ __html: sanitizeHtml(markdownOutils) }} />
+              <div dangerouslySetInnerHTML={{ __html: sanitizeHtml(markdownOutils) }} />
             </p>
           )}
           {link && (
