@@ -10,6 +10,7 @@ import usePics from '../hooks/usePics';
 import markdownit from 'markdown-it'
 import sanitizeHtml from 'sanitize-html';
 import { getPicName } from '../utils/misc';
+import { hackavizResultDescription, hackavizResultTools } from './HackavizResult.scss';
 
 const useStyles = makeStyles(theme => ({
   participants: {
@@ -91,29 +92,31 @@ const HackavizResult = ({
             />
           )}
           <div style={{ minHeight: "6.5em" }}>{getName(nom, isDense)}</div>
-          {!isDense && markdownDescription && <div dangerouslySetInnerHTML={{ __html: sanitizeHtml(markdownDescription) }} />}
+          {!isDense && markdownDescription && <div className={clsx('hackavizResultDescription')} dangerouslySetInnerHTML={{ __html: sanitizeHtml(markdownDescription) }} />}
           {!isDense && markdownOutils && (
             <p>
               <b>Outils</b>
-              <div dangerouslySetInnerHTML={{ __html: sanitizeHtml(markdownOutils) }} />
+              <div className={clsx('hackavizResultTools')} dangerouslySetInnerHTML={{ __html: sanitizeHtml(markdownOutils) }} />
             </p>
           )}
-          {link && (
-            <Button
-              link={link}
-              text={isDense ? 'Voir' : 'Voir la réalisation'}
-              size={isDense ? 'small' : ''}
-              style={isDense ? { width: '100px', alignSelf: 'center' } : { alignSelf: 'center' }}
-            />
-          )}
-          {link2 && (
-            <Button
-              link={link2}
-              text={isDense ? 'Voir' : 'Second lien'}
-              size={isDense ? 'small' : ''}
-              style={isDense ? { width: '100px', alignSelf: 'center' } : { alignSelf: 'center' }}
-            />
-          )}
+          <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 'auto', alignSelf: 'center' }}>
+            {link && (
+              <Button
+                link={link}
+                text={isDense ? 'Voir' : 'Voir la réalisation'}
+                size={isDense ? 'small' : ''}
+                style={isDense ? { width: '100px', alignSelf: 'center' } : { alignSelf: 'center' }}
+              />
+            )}
+            {link2 && (
+              <Button
+                link={link2}
+                text={isDense ? 'Voir' : 'Second lien'}
+                size={isDense ? 'small' : ''}
+                style={isDense ? { width: '100px', alignSelf: 'center' } : { alignSelf: 'center' }}
+              />
+            )}
+          </div>
         </Box>
       </Box>
     </Grid>
