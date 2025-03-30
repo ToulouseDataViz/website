@@ -595,7 +595,7 @@
       "link": "https://public.tableau.com/views/HackavizToulouse/HACKAVIZ?:language=fr-FR&publish=yes&:display_count=n&:origin=viz_share_link"
     },
     {
-      "nom": "Alain Ottenheimer",
+      "nom": "Alain Ottenheimer (hors concours)",
       "pic_name": "2021-ottenheimer",
       "outils": "d3.js, observablehq, excel, QGIS, illustrator, Vsual Studio Code HTML",
       "description": "*HORS CONCOURS*\n\nEn représentant les données sur une vue globale, des formes apparaissent et révèlent des informations. Une forte disparité est observée entre le nombre de ventes par habitant entre les  quartiers prioritaires (QP). Deux groupes se détachent, les QP des centres villes et les QP périphériques.\n\nLes caractéristiques associées aux QP confirment elles  la pertinence de ces deux regroupements? Qu'est-ce-qui pourrait expliquer un tel écart du nombre de vente?\n",
@@ -1221,6 +1221,21 @@
       "description": "Depuis Toulouse, cap au sud pour d\u00e9couvrir un panorama unique de la Garonne et des Pyr\u00e9n\u00e9es. Le Pont Neuf date de 1544, ce qui fait de lui le plus Vieux pont de la Garonne. Les travaux ont dur\u00e9 un si\u00e8cle o\u00f9 le chantier a \u00e9t\u00e9 soumis \u00e0 des crues d\u00e9vastatrices et \u00e0 un lit de la Garonne trompeur. D'o\u00f9 \u00e9merge cette source, r\u00e9ponse en image ou bien depuis une version plus interactive : https://github.com/EmyDuf/gdp-dashboard/blob/main/streamlit_app.py",
       "link": "/hackaviz/2025/dufresne.pdf",
       "link2": "https://github.com/EmyDuf/gdp-dashboard/blob/main/streamlit_app.py"
+    },
+    {
+      "nom": "Alain Ottenheimer (hors concours)",
+      "pic_name": "2025-ottenheimer",
+      "outils": "Python, ObservableHQ, Adobe Illustrator",
+      "description": "Comme de nombreux fleuves, la Garonne a connu des crues depuis des siècles. Depuis 1856, son niveau est mesuré quotidiennement, permettant de représenter avec précision le niveau maximal atteint chaque année. Ce diagramme en sucette illustre, année après année, la hauteur d'eau maximale enregistrée sur le quai de Tounis, près du Pont Neuf. La crue exceptionnelle de 1875 se distingue nettement, surpassant tous les autres événements. La crue récente de 2022 figure parmi les plus fortes enregistrées au cours des 150 dernières années. Bien que spectaculaire, elle reste inférieure de 4 mètres à celle de 1875. Visualisation réalisée dans le cadre de l'exposition [Datagraff 2025](https://exposition.toulouse-dataviz.fr/).",
+      "link": "/hackaviz/2025/ottenheimer.webp"
+    },
+
+    {
+      "nom": "Loïc Donot (hors concours)",
+      "pic_name": "2025-donot",
+      "outils": "OpenLayers, highcharts.com, jquery",
+      "description": "L'idée était de retracer la crue depuis son origine, la pluie. Puis la voir se propager sur les affluents et la Garonne jusqu'à Toulouse. Sur la carte, les points gris sont les stations pluvio. et les points bleus, les stations hydrométriques.",
+      "link": "https://loicbcn.github.io/hackaviz2025/"
     }
   ]
 }
