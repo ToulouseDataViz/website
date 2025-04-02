@@ -1124,101 +1124,100 @@
     {
       "nom": "Hugo Durbano",
       "pic_name": "2025-durbano",
-      "outils": "Seuls les outils Power Query et Power BI ont \u00e9t\u00e9 utilis\u00e9s pour cette Dataviz.",
-      "description": "L'eau monte, la ville retient son souffle \u2013 Ce rapport analyse les neuf crues majeures ayant frapp\u00e9 Toulouse en un si\u00e8cle et demi, avec un focus particulier sur la crue de janvier 2022. \u00c0 travers des donn\u00e9es sur les pr\u00e9cipitations, le niveau de l\u2019eau et le d\u00e9bit de la Garonne, il met en lumi\u00e8re l\u2019impact des crues sur la ville et souligne l\u2019importance de la surveillance hydrologique et des mesures de pr\u00e9vention pour mieux anticiper les risques d\u2019inondation.",
+      "outils": "Seuls les outils Power Query et Power BI ont été utilisés pour cette Dataviz.",
+      "description": "L'eau monte, la ville retient son souffle \u2013 Ce rapport analyse les neuf crues majeures ayant frappé Toulouse en un siècle et demi, avec un focus particulier sur la crue de janvier 2022. \u00c0 travers des données sur les précipitations, le niveau de l'eau et le débit de la Garonne, il met en lumière l'impact des crues sur la ville et souligne l'importance de la surveillance hydrologique et des mesures de prévention pour mieux anticiper les risques d'inondation.",
       "link": "https://app.powerbi.com/view?r=eyJrIjoiMWRkMDBmYjUtMzViMy00OWRjLWExYzAtOTUwOGZmZjM5YmVhIiwidCI6ImY2MGM2Y2I2LWI3N2UtNGI5Ni04N2E1LTIzMWNhMjQyM2ZiMiIsImMiOjEwfQ%3D%3D&rd=width"
     },
     {
       "nom": "Alain Ferlac",
       "pic_name": "2025-ferlac",
-      "outils": "Python : Pandas (traitement des donn\u00e9es), Matplotlib (graphes), Folium (carte), Inkscape (pr\u00e9sentation)",
-      "description": "Ce poster pr\u00e9sente les hauteurs d'eau des 9 grandes crues de la Garonne \u00e0 Toulouse et le nombre de jours avec la hauteur du fleuve au Pont Neuf depuis 1857.",
+      "outils": "Python : Pandas (traitement des données), Matplotlib (graphes), Folium (carte), Inkscape (présentation)",
+      "description": "Ce poster présente les hauteurs d'eau des 9 grandes crues de la Garonne à Toulouse et le nombre de jours avec la hauteur du fleuve au Pont Neuf depuis 1857.",
       "link": "/hackaviz/2025/ferlac.pdf"
     },
     {
       "nom": "Christophe Rousse",
       "pic_name": "2025-rousse",
-      "outils": "La visualisation est r\u00e9alis\u00e9e avec l'outil Tableau (la version gratuite)\nJ'ai \u00e9galement utilis\u00e9 l'outil Alteryx pour nettoyer les donn\u00e9es et les mettre en forme de mani\u00e8re \u00e0 optimiser la r\u00e9alisation de la visualisation.",
-      "description": "Ma visualisation se concentre sur la crue de 2022.\nUne premi\u00e8re partie pr\u00e9sente le fleuve et les diff\u00e9rentes stations hydrom\u00e9triques dont sont issues les donn\u00e9es de hauteur d'eau et de d\u00e9bit.\nLa deuxi\u00e8me partie pr\u00e9sente les donn\u00e9es de la crue 2022 avec les \u00e9volutions heure par heure des hauteurs et d\u00e9bits d'eau. A ces courbes d'\u00e9volution sont ajout\u00e9es 2 cartes :\n- la carte des pr\u00e9cipitations quotidiennes\n- la carte des diff\u00e9rents cours d'eau dont la largeur est d\u00e9pendante du d\u00e9bit\nUn param\u00e8tre permet de choisir un cr\u00e9neau horaire pendant la p\u00e9riode de la crue pour mieux appr\u00e9hender la situation aux diff\u00e9rents moments marquants de cet \u00e9v\u00e9nement.",
+      "outils": "La visualisation est réalisée avec l'outil Tableau (la version gratuite)\nJ'ai également utilisé l'outil Alteryx pour nettoyer les données et les mettre en forme de manière à optimiser la réalisation de la visualisation.",
+      "description": "Ma visualisation se concentre sur la crue de 2022.\nUne première partie présente le fleuve et les différentes stations hydrométriques dont sont issues les données de hauteur d'eau et de débit.\nLa deuxième partie présente les données de la crue 2022 avec les évolutions heure par heure des hauteurs et débits d'eau. A ces courbes d'évolution sont ajoutées 2 cartes :\n- la carte des précipitations quotidiennes\n- la carte des différents cours d'eau dont la largeur est dépendante du débit\nUn paramètre permet de choisir un créneau horaire pendant la période de la crue pour mieux appréhender la situation aux différents moments marquants de cet événement.",
       "link": "https://public.tableau.com/app/profile/christophe.rousse/viz/CestuneGaronne/GaronneCrue2022"
     },
     {
       "nom": "Vincent Roger",
       "pic_name": "2025-roger",
       "outils": "Python\nPandas\nPlotly\nStreamlit",
-      "description": "Exploration des niveaux d\u2019eau et des pr\u00e9cipitations \u00e0 Toulouse\nCette visualisation interactive permet d\u2019analyser l\u2019\u00e9volution des niveaux d\u2019eau et des pr\u00e9cipitations \u00e0 Toulouse et en Occitanie.\n\n\ud83d\udcc8 Graphique des niveaux d\u2019eau\n\n- Il affiche la hauteur d\u2019eau quotidienne, avec une couleur indiquant l\u2019acc\u00e9l\u00e9ration ou la d\u00e9c\u00e9l\u00e9ration du niveau d\u2019eau :\n    - Orange : Forte d\u00e9c\u00e9l\u00e9ration\n    - Gris : \u00c9volution stable\n    - Violet : Forte acc\u00e9l\u00e9ration\n- L\u2019utilisateur peut s\u00e9lectionner une plage temporelle en cliquant et glissant sur le graphique.\n\n\ud83d\uddfa\ufe0f Carte des pr\u00e9cipitations\n\n- Repr\u00e9sente les stations m\u00e9t\u00e9o ayant enregistr\u00e9 le plus de pr\u00e9cipitations sur la p\u00e9riode s\u00e9lectionn\u00e9e.\n- Couleur : Variation des pr\u00e9cipitations (\u00e9cart-type)\n- Taille des cercles : Quantit\u00e9 totale de pr\u00e9cipitations enregistr\u00e9e\n- Un survol des stations affiche le total des pr\u00e9cipitations et leur variabilit\u00e9 (pr\u00e9cision \u00e0 deux d\u00e9cimales).\n\n\ud83c\udf9b\ufe0f Filtres interactifs\n\n- Choisissez une plage de dates via la barre lat\u00e9rale.\n- Ajustez le nombre de stations affich\u00e9es sur la carte.\n\nCette visualisation dynamique offre une exploration fluide et pr\u00e9cise des donn\u00e9es hydrom\u00e9t\u00e9orologiques toulousaines. \ud83c\udf0a\ud83d\udca7\n",
+      "description": "Exploration des niveaux d'eau et des précipitations à Toulouse\nCette visualisation interactive permet d'analyser l'évolution des niveaux d'eau et des précipitations à Toulouse et en Occitanie.\n\n\ud83d\udcc8 Graphique des niveaux d'eau\n\n- Il affiche la hauteur d'eau quotidienne, avec une couleur indiquant l'accélération ou la décélération du niveau d'eau :\n    - Orange : Forte décélération\n    - Gris : \u00c9volution stable\n    - Violet : Forte accélération\n- L'utilisateur peut sélectionner une plage temporelle en cliquant et glissant sur le graphique.\n\n\ud83d\uddfa\ufe0f Carte des précipitations\n\n- Représente les stations météo ayant enregistré le plus de précipitations sur la période sélectionnée.\n- Couleur : Variation des précipitations (écart-type)\n- Taille des cercles : Quantité totale de précipitations enregistrée\n- Un survol des stations affiche le total des précipitations et leur variabilité (précision à deux décimales).\n\n\ud83c\udf9b\ufe0f Filtres interactifs\n\n- Choisissez une plage de dates via la barre latérale.\n- Ajustez le nombre de stations affichées sur la carte.\n\nCette visualisation dynamique offre une exploration fluide et précise des données hydrométéorologiques toulousaines. \ud83c\udf0a\ud83d\udca7\n",
       "link": "https://vroger11-hackaviz-2025.streamlit.app/"
     },
     {
-      "nom": "Miles Bryony",
+      "nom": "Bryony Miles",
       "pic_name": "2025-bryony",
       "outils": "d3.js in ObservableHQ (hosted on my website)\n\nProcess (English - sorry)\n* download all the data\n* look at  hydrometry + rainfall stations on the map\n* work out which stations had hydrometry or water flow data (23)\n* visualised these on multiple line charts to get a sense of the patterns\n* pulled the flood year and date extents from the hydrometry data\n* realised the only stations with complete data  1875 -> 2022 were Pont Neuf - 2 codes, same position - decided to focus on this.\n* looked at waterflow in the closest upstream + downstream stations but ended up discounting this as no data before 1905 and I wanted to simplify\n* went down a route of looking at areas which affect flooding (ie Lower Pyrennes) but discounted as wanted to simplify\n* pulled out the Pont Neuf data with rainfall data from the nearest station and visualised on line charts\n * discounted 1859 as no rainfall data in close range\n* discounted 1879 as flood not as significant as the rest\n* worked out the design and then coded it up!",
-      "description": "PONT NEUF, Toulouse - Le seul pont survivant de le crue de 1875.  Gr\u00e2ce aux d\u00e9fenses, il n\u2019a plus \u00e9t\u00e9 mis \u00e0 rude \u00e9preuve.\n\nPassez la souris sur les graphiques lin\u00e9aires pour voir le niveau d'eau changer \u00e0 mesure que la crue augmente et diminue.",
+      "description": "PONT NEUF, Toulouse - Le seul pont survivant de le crue de 1875.  Grâce aux défenses, il n'a plus été mis à rude épreuve.\n\nPassez la souris sur les graphiques linéaires pour voir le niveau d'eau changer à mesure que la crue augmente et diminue.",
       "link": "http://bmdata.co.uk/ToulouseHackaviz/"
     },
     {
       "nom": "Brice Renouf",
       "pic_name": "2025-renouf",
       "outils": "Excel, Figma, Tableau",
-      "description": "Toulouse et la Garonne, une grande histoire d\u2019amour\u2026 jusqu\u2019\u00e0 ce que l\u2019eau monte un peu trop ! Ce dashboard est l\u00e0 pour vous aider \u00e0 suivre de pr\u00e8s le niveau du fleuve et anticiper les crues.",
+      "description": "Toulouse et la Garonne, une grande histoire d'amour\u2026 jusqu'à ce que l'eau monte un peu trop ! Ce dashboard est là pour vous aider à suivre de près le niveau du fleuve et anticiper les crues.",
       "link": "https://public.tableau.com/app/profile/brice.renouf/viz/Hackaviz_2025/visualization"
     },
     {
-      "nom": "Sandrine & Oph\u00e9lie Berger & Gaudin",
+      "nom": "Les Fraises - Sandrine Berger & Ophélie Gaudin",
       "pic_name": "2025-bergergaudin",
-      "outils": "Notebooks pour l'exploration de donn\u00e9es (via Google Collab)\nCanva pour la mise en place ",
-      "description": "Cet article de journal \"vintage\" illustre l\u2019engagement progressif de la ville et des autorit\u00e9s pour une gestion plus proactive des risques de crue, afin de mieux prot\u00e9ger les habitants et les infrastructures face aux caprices de la Garonne.\nA travers  les deux repr\u00e9sentations de donn\u00e9es que nous vous proposons, nous avons souhait\u00e9 mettre en avant la multitude d'\u00e9v\u00e8nements de crues au fil du temps au niveau du Pont Neuf de Toulouse et l'augmentation du nombre de stations install\u00e9es sur la Garonne mais aussi au niveau des affluents (m\u00eame lointains !)  et du nombre de mesures effectu\u00e9es au cours des ann\u00e9es, des informations pr\u00e9cieuses pour agir en terme de pr\u00e9vention aupr\u00e8s des populations, d'autant plus en pr\u00e9vision des impacts du r\u00e9chauffement climatique.",
+      "outils": "Notebooks pour l'exploration de données (via Google Collab)\nCanva pour la mise en place ",
+      "description": "Cet article de journal \"vintage\" illustre l'engagement progressif de la ville et des autorités pour une gestion plus proactive des risques de crue, afin de mieux protéger les habitants et les infrastructures face aux caprices de la Garonne.\nA travers  les deux représentations de données que nous vous proposons, nous avons souhaité mettre en avant la multitude d'évènements de crues au fil du temps au niveau du Pont Neuf de Toulouse et l'augmentation du nombre de stations installées sur la Garonne mais aussi au niveau des affluents (m\u00eame lointains !)  et du nombre de mesures effectuées au cours des années, des informations précieuses pour agir en terme de prévention auprès des populations, d'autant plus en prévision des impacts du réchauffement climatique.",
       "link": "/hackaviz/2025/bergergaudin.pdf"
     },
     {
       "nom": "Brooklyn H.",
       "pic_name": "2025-hbrooklyn",
       "outils": "Data: Python, pandas, data wrangler, numpy, matplotlib, seaborn.\nDev: React, Three-js, vite\nOutil de PAO et de traitement d'image (GIMP, Photoshop).",
-      "description": "Dans le tumulte des courbes sinueuses d'un joyplot, les variations du niveau d'eau de la Garonne se d\u00e9ploient comme les souvenirs d'un pass\u00e9 r\u00e9volu. Le fleuve, \u00e9ternel t\u00e9moin au flot indolent porte en lui le rythme d'un temps parfois furieux entrecoup\u00e9 de silences pesants. Chaque variation du m\u00eame graphique murmure autant d'histoires oubli\u00e9es et \u00e0 travers les lignes enchev\u00eatr\u00e9es, les donn\u00e9es nous livrent des r\u00e9cits de prosp\u00e9rit\u00e9 et de d\u00e9sastre d'une histoire collective et complexe. \nDans cette exploration, il est \u00e9galement possible de configurer du swag une mani\u00e8re l\u00e9g\u00e8re d'endosser virtuellement ce qui devient un pont entre le pass\u00e9 et le pr\u00e9sent pour red\u00e9couvrir la Garonne sous un angle nouveau. Cette brochure est un bonus, elle vient en compl\u00e9ment de la r\u00e9alisation interactive que je viens de soumettre.",
+      "description": "Dans le tumulte des courbes sinueuses d'un joyplot, les variations du niveau d'eau de la Garonne se déploient comme les souvenirs d'un passé révolu. Le fleuve, éternel témoin au flot indolent porte en lui le rythme d'un temps parfois furieux entrecoupé de silences pesants. Chaque variation du m\u00eame graphique murmure autant d'histoires oubliées et à travers les lignes enchev\u00eatrées, les données nous livrent des récits de prospérité et de désastre d'une histoire collective et complexe. \nDans cette exploration, il est également possible de configurer du swag une manière légère d'endosser virtuellement ce qui devient un pont entre le passé et le présent pour redécouvrir la Garonne sous un angle nouveau. Cette brochure est un bonus, elle vient en complément de la réalisation interactive que je viens de soumettre.",
       "link": "https://brooks-code.github.io/miniature-fortnight",
       "link2": "/hackaviz/2025/hbrooklyn.pdf"
     },
-
     {
       "nom": "Estibaliz Legarreta",
       "pic_name": "2025-legarreta",
       "outils": "Illustrator, Microsoft Excel, R et ChatGPT",
-      "description": "Ce graphique repr\u00e9sente les d\u00e9bits de la Garonne et de ses affluents lors des crues de 1905, 1952, 1977, 2000 et 2020. L\u2019\u00e9paisseur du trac\u00e9 est proportionnelle au d\u00e9bit mesur\u00e9 (m\u00b3/s), illustrant l\u2019intensit\u00e9 des crues.\n\nLes points blancs signalent les stations hydrom\u00e9triques, montrant l\u2019\u00e9volution du r\u00e9seau de surveillance. On observe les variations des d\u00e9bits et l\u2019augmentation progressive des stations, t\u00e9moignant d\u2019un suivi accru des crues.\n\nCe visuel met en perspective l\u2019\u00e9volution hydrologique du bassin de la Garonne sur plus d\u2019un si\u00e8cle.\n\n",
+      "description": "Ce graphique représente les débits de la Garonne et de ses affluents lors des crues de 1905, 1952, 1977, 2000 et 2020. L'épaisseur du tracé est proportionnelle au débit mesuré (m\u00b3/s), illustrant l'intensité des crues.\n\nLes points blancs signalent les stations hydrométriques, montrant l'évolution du réseau de surveillance. On observe les variations des débits et l'augmentation progressive des stations, témoignant d'un suivi accru des crues.\n\nCe visuel met en perspective l'évolution hydrologique du bassin de la Garonne sur plus d'un siècle.\n\n",
       "link": "/hackaviz/2025/legarreta.pdf"
     },
     {
-      "nom": "Laure Miral",
+      "nom": "La prochaine vague - Laure Miral, Bastien Lapabe et Lucas Delestre",
       "pic_name": "2025-miral",
       "outils": "Excel, Power BI, Power Point, Figma",
-      "description": "\"1875. 1952. 2022. Trois \u00e9poques, une m\u00eame mal\u00e9diction. \u00c0 chaque g\u00e9n\u00e9ration, elle revient. Tapie dans l\u2019ombre, elle attend son heure. Puis le tonnerre gronde. La pluie s\u2019abat. Et la Cruelle, la D\u00e9ferlante, le Bug se r\u00e9veillent... Trois noms, une seule et m\u00eame personne : la Garonne. Habituellement si paisible, elle sort de son lit, balayant tout sur son passage, rappelant aux toulousains qu\u2019elle ne dort jamais vraiment\u2026\" \n\nVous l'aurez compris, ces quelques mots sont le teaser d'un thriller horrifique, dans lequel la Garonne prend vie. D\u00e9couvrez, \u00e0 travers des visualisations, comment ce serial crueminel a frapp\u00e9 les toulousains au fil des \u00e2ges !\n\nUne affiche de film co-r\u00e9alis\u00e9e par Bastien, Laure et Lucas.",
+      "description": "\"1875. 1952. 2022. Trois époques, une m\u00eame malédiction. \u00c0 chaque génération, elle revient. Tapie dans l'ombre, elle attend son heure. Puis le tonnerre gronde. La pluie s'abat. Et la Cruelle, la Déferlante, le Bug se réveillent... Trois noms, une seule et m\u00eame personne : la Garonne. Habituellement si paisible, elle sort de son lit, balayant tout sur son passage, rappelant aux toulousains qu'elle ne dort jamais vraiment\u2026\" \n\nVous l'aurez compris, ces quelques mots sont le teaser d'un thriller horrifique, dans lequel la Garonne prend vie. Découvrez, à travers des visualisations, comment ce serial crueminel a frappé les toulousains au fil des âges !\n\nUne affiche de film co-réalisée par Bastien, Laure et Lucas.",
       "link": "/hackaviz/2025/miral.pdf"
     },
     {
-      "nom": "Aya El Abdi",
+      "nom": "Thélio - Alexandra Catesson, Chloé Garçonnet, Houda Chemiel, Julia Vilas, Dylan Wilson, Paul Boissiere, Denise Sanchez et Aya El Abdi",
       "pic_name": "2025-elabdi",
       "outils": "Snowflake, PowerBi, VSCode Python (pandas, matplotlib, numpy)",
-      "description": "D\u00e9couvrez comment les pr\u00e9cipitations influen\u00e7aient les crues de la Garonne \u00e0 travers l\u2019histoire. Ajustez la pluie, observez la mont\u00e9e des eaux et comparez avec les grandes inondations du pass\u00e9. Une immersion interactive au c\u0153ur des flots d\u2019antan !",
+      "description": "Découvrez comment les précipitations influençaient les crues de la Garonne à travers l'histoire. Ajustez la pluie, observez la montée des eaux et comparez avec les grandes inondations du passé. Une immersion interactive au c\u0153ur des flots d'antan !",
       "link": "https://app.powerbi.com/view?r=eyJrIjoiZjM1MWNiZWItNGFlMi00YWVkLTljMjUtODE4MWMwOTkxMDUyIiwidCI6ImQ4MDVkZmMxLTEyNzYtNDAxZi04MDBlLTc1MjRmM2FjODZmMCJ9&pageName=3ddaf590528017b61150"
     },
     {
-      "nom": "Jean-Paul Grandgirard",
+      "nom": "Clever Age - Olivia Combari, Romain Vernandé, Alexandre Pugnet, Jean-Paul Grandgirard, Johan Debat, Gaëtan Boudard, Jean Marc Larroque, Jérôme Sommet, Mathieu Muller et Mélanie Platon",
       "pic_name": "2025-grandgirard",
-      "outils": "Une base de donn\u00e9e SQL pour la mise en relation et l\u2019extraction des donn\u00e9es\nGitHub pour le partage\nGoogle spreadsheet\nChart.js pour pr\u00e9senter les graphiques brutes\nFigma pour la mise en forme finale",
-      "description": "Bienvenue dans cette pr\u00e9sentation consacr\u00e9e aux crues majeures qui ont fa\u00e7onn\u00e9 l'histoire de la Garonne depuis un si\u00e8cle et demi. De 1857 \u00e0 2022, nous vous invitons \u00e0 explorer neuf \u00e9v\u00e9nements hydrologiques exceptionnels qui ont profond\u00e9ment marqu\u00e9 le paysage, transform\u00e9 les politiques d'am\u00e9nagement du territoire et forg\u00e9 la m\u00e9moire collective des populations riveraines.\n\nCette pr\u00e9sentation se concentre sur les hauteurs d'eau mesur\u00e9es au Pont Neuf \u00e0 Toulouse. Pour chaque ann\u00e9e de crue historique, nous avons mis en relation plusieurs donn\u00e9es : la hauteur d'eau maximum mesur\u00e9e chaque mois au Pont Neuf, la pluviom\u00e9trie cumul\u00e9e des 5 jours pr\u00e9c\u00e9dant l'\u00e9v\u00e9nement (moyenn\u00e9e sur l'ensemble des donn\u00e9es disponibles sur le bassin versant de la Garonne) et la hauteur d'eau moyenne mensuelle, moyenne effectu\u00e9e sur les 20 ann\u00e9es entourant la crue.\n",
+      "outils": "Une base de donnée SQL pour la mise en relation et l'extraction des données\nGitHub pour le partage\nGoogle spreadsheet\nChart.js pour présenter les graphiques brutes\nFigma pour la mise en forme finale",
+      "description": "Bienvenue dans cette présentation consacrée aux crues majeures qui ont façonné l'histoire de la Garonne depuis un siècle et demi. De 1857 à 2022, nous vous invitons à explorer neuf événements hydrologiques exceptionnels qui ont profondément marqué le paysage, transformé les politiques d'aménagement du territoire et forgé la mémoire collective des populations riveraines.\n\nCette présentation se concentre sur les hauteurs d'eau mesurées au Pont Neuf à Toulouse. Pour chaque année de crue historique, nous avons mis en relation plusieurs données : la hauteur d'eau maximum mesurée chaque mois au Pont Neuf, la pluviométrie cumulée des 5 jours précédant l'événement (moyennée sur l'ensemble des données disponibles sur le bassin versant de la Garonne) et la hauteur d'eau moyenne mensuelle, moyenne effectuée sur les 20 années entourant la crue.\n",
       "link": "https://dtv.civibox.fr/index.html"
     },
     {
-      "nom": "C\u00e9dric Dupuch",
+      "nom": "Cédric Dupuch",
       "pic_name": "2025-dupuch",
-      "outils": "manipulation des donn\u00e9es : pandas, geopandas\nstockage/affichage des donn\u00e9es : BigQuery, Looker Studio",
-      "description": "Explorez les crues de Toulouse \u00e0 l'aide de chiffre cl\u00e9s et obtenez des informations d\u00e9taill\u00e9es sur chaque station hydrom\u00e9trique.",
+      "outils": "manipulation des données : pandas, geopandas\nstockage/affichage des données : BigQuery, Looker Studio",
+      "description": "Explorez les crues de Toulouse à l'aide de chiffre clés et obtenez des informations détaillées sur chaque station hydrométrique.",
       "link": "https://lookerstudio.google.com/reporting/2db917b9-16a7-4bd5-a405-dec9a29e52b9/page/gLm7E?s=qM3HZu6xl08"
     },
     {
       "nom": "Emilie Dufresne",
       "pic_name": "2025-dufresne",
       "outils": "Canva, Jupyter, Plotly, MapBox, Photoshop,\nStreamlit",
-      "description": "Depuis Toulouse, cap au sud pour d\u00e9couvrir un panorama unique de la Garonne et des Pyr\u00e9n\u00e9es. Le Pont Neuf date de 1544, ce qui fait de lui le plus Vieux pont de la Garonne. Les travaux ont dur\u00e9 un si\u00e8cle o\u00f9 le chantier a \u00e9t\u00e9 soumis \u00e0 des crues d\u00e9vastatrices et \u00e0 un lit de la Garonne trompeur. D'o\u00f9 \u00e9merge cette source, r\u00e9ponse en image ou bien depuis une version plus interactive : https://github.com/EmyDuf/gdp-dashboard/blob/main/streamlit_app.py",
+      "description": "Depuis Toulouse, cap au sud pour découvrir un panorama unique de la Garonne et des Pyrénées. Le Pont Neuf date de 1544, ce qui fait de lui le plus Vieux pont de la Garonne. Les travaux ont duré un siècle o\u00f9 le chantier a été soumis à des crues dévastatrices et à un lit de la Garonne trompeur. D'o\u00f9 émerge cette source, réponse en image ou bien depuis une version plus interactive : https://github.com/EmyDuf/gdp-dashboard/blob/main/streamlit_app.py",
       "link": "/hackaviz/2025/dufresne.pdf",
       "link2": "https://github.com/EmyDuf/gdp-dashboard/blob/main/streamlit_app.py"
     },
