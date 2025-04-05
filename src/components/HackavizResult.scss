@@ -1,10 +1,4 @@
-.hackavizResultDescription {
-  height: 13em;
-  max-height: 13em;
-  overflow: auto;
-  padding-right: 1em;
-  margin-bottom: 1em;
-
+.fancyScrollbar {
   &::-webkit-scrollbar {
     width: 12px;
   }
@@ -20,24 +14,25 @@
   }
 }
 
+.hackavizResultDescription {
+  height: 13em;
+  max-height: 13em;
+  overflow: auto;
+  padding-right: 1em;
+  margin-bottom: 1em;
+}
+
 .hackavizResultTools {
   height: 7em;
   max-height: 7em;
   overflow: auto;
   padding-right: 1em;
   margin-bottom: 1em;
+}
 
-  &::-webkit-scrollbar {
-    width: 12px;
-  }
-
-  &::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px #ff990040;
-    border-radius: 10px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px #ff990080;
-  }
+.hackavizResultPeopleNames {
+  min-height: 6.5em;
+  max-height: 10em;
+  overflow: auto;
+  font-size: 0.95rem;
 }

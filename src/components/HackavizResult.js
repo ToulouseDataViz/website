@@ -10,7 +10,7 @@ import usePics from '../hooks/usePics';
 import markdownit from 'markdown-it'
 import sanitizeHtml from 'sanitize-html';
 import { getPicName } from '../utils/misc';
-import { hackavizResultDescription, hackavizResultTools } from './HackavizResult.scss';
+import { fancyScrollbar, hackavizResultDescription, hackavizResultTools, hackavizResultPeopleNames } from './HackavizResult.scss';
 
 const useStyles = makeStyles(theme => ({
   participants: {
@@ -91,12 +91,12 @@ const HackavizResult = ({
               displayLightBoxOnClick={true}
             />
           )}
-          <div style={{ minHeight: "6.5em" }}>{getName(nom, isDense)}</div>
-          {!isDense && markdownDescription && <div className={clsx('hackavizResultDescription')} dangerouslySetInnerHTML={{ __html: sanitizeHtml(markdownDescription) }} />}
+          <div className={clsx("fancyScrollbar", 'hackavizResultPeopleNames')}>{getName(nom, isDense)}</div>
+          {!isDense && markdownDescription && <div className={clsx("fancyScrollbar", 'hackavizResultDescription')} dangerouslySetInnerHTML={{ __html: sanitizeHtml(markdownDescription) }} />}
           {!isDense && markdownOutils && (
             <p>
               <b>Outils</b>
-              <div className={clsx('hackavizResultTools')} dangerouslySetInnerHTML={{ __html: sanitizeHtml(markdownOutils) }} />
+              <div className={clsx("fancyScrollbar", 'hackavizResultTools')} dangerouslySetInnerHTML={{ __html: sanitizeHtml(markdownOutils) }} />
             </p>
           )}
           <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: 'auto', alignSelf: 'center' }}>

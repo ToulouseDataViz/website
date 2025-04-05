@@ -1,7 +1,14 @@
 {
   "2018": [
     {
-      "nom": "Guillaume Devailly, Yann Labrune (équipe Genepi@INRA)",
+      "nom": "Edith Maulandi",
+      "pic_name": "2018-maulandi",
+      "outils": "Python (pandas + jupyter notebook), D3.js  (d3-legend, d3-annotation, d3-text-wrapper), Bootstrap Scrollspy\n",
+      "prix": "1er prix",
+      "link": "https://emaulandi.github.io/occitanie-hackaviz2018/"
+    },
+    {
+      "nom": "Guillaume Devailly, Yann Labrune (Genepi@INRA)",
       "pic_name": "2018-genepi",
       "outils": "R,paquets here, tidyverse, cowplot, ggrepel, knitr, GhitHub",
       "prix": "Prix spécial du jury",
@@ -15,21 +22,14 @@
       "link": "/hackaviz/2018/Présentation_HackaViz2018_MelanieSUESCUN.pdf"
     },
     {
-      "nom": "Edith Maulandi",
-      "pic_name": "2018-maulandi",
-      "outils": "Python (pandas + jupyter notebook), D3.js  (d3-legend, d3-annotation, d3-text-wrapper), Bootstrap Scrollspy\n",
-      "prix": "1er prix",
-      "link": "https://emaulandi.github.io/occitanie-hackaviz2018/"
-    },
-    {
-      "nom": "Romain Leysenne, Julien Dillingham, Raphaël Jadeau, Maxime Boichon (Equipe : Les poulains de Guigui)",
+      "nom": "Romain Leysenne, Julien Dillingham, Raphaël Jadeau, Maxime Boichon (Les poulains de Guigui)",
       "pic_name": "2018-poulains",
       "outils": "Excel, R pour les statistiques, Adobe Illustrator et Adobe XD pour la visualisation",
       "prix": "Prix de l'originalité",
       "link": "https://xd.adobe.com/view/42ec91fb-9de2-4af5-86b6-87b0084cf6c4/?fullscreen"
     },
     {
-      "nom": "Theo Rousselle, Frédéric Kingue, Matthieu Olivari, Clément Borel, (Equipe : LP MIND)",
+      "nom": "Theo Rousselle, Frédéric Kingue, Matthieu Olivari, Clément Borel, (LP MIND)",
       "pic_name": "2018-lpmind",
       "outils": "Illustrator, html",
       "prix": "Mention spéciale",
@@ -54,19 +54,19 @@
       "link": "https://tnidelet.shinyapps.io/HackVizOccitanie/"
     },
     {
-      "nom": "Paul Mycek, Coralie Mycek, Vincent Chabot, Alexandre Philip (Equipe : Statziki)",
+      "nom": "Paul Mycek, Coralie Mycek, Vincent Chabot, Alexandre Philip (Statziki)",
       "pic_name": "2018-statziki",
       "outils": "Python (numpy, pandas, matplotlib, shapeley, json), Qgis, Javascript, HTML, CSS, Code de création de cartogrammes",
       "link": "https://cocaux.gitlab.io/hackaviz/"
     },
     {
-      "nom": "Stéphanie Fourcade, Vincent Boyer, Mathilde Fontanie (Equipe : VISEO MicroStrategy)",
+      "nom": "Stéphanie Fourcade, Vincent Boyer, Mathilde Fontanie (VISEO MicroStrategy)",
       "pic_name": "2018-microstrategy",
       "outils": "EMicroStrategy 10.10",
       "link": "/hackaviz/2018/Hackaviz-Toulouse-2018-Team-VISEO-Final.pdf"
     },
     {
-      "nom": "Bérengère Mathieu, Marianne Lajante, Jérémie Pardou, Benjamin Manguin (Equipe : Makina Corpus)",
+      "nom": "Bérengère Mathieu, Marianne Lajante, Jérémie Pardou, Benjamin Manguin (Makina Corpus)",
       "pic_name": "2018-makinacorpus",
       "outils": "Observablehq, D3.js, Leaflet",
       "link": "https://beta.observablehq.com/@m-marianne/1-le-crash-de-2008-mythe-ou-realite-la-preuve-par-les-chiffres"
@@ -84,7 +84,7 @@
       "link": "/hackaviz/2018/L.Sieys_.pdf"
     },
     {
-      "nom": "Hamza Belbachir, Amine Lamriben, (Equipe : Haminzaviz)",
+      "nom": "Hamza Belbachir, Amine Lamriben, (Haminzaviz)",
       "pic_name": "2018-haminzaviz",
       "outils": "Tableau software",
       "link": "https://public.tableau.com/profile/hamza.belbachir#!/vizhome/Haminzaviz1/HackAviz_Hamza_Amine"
@@ -113,7 +113,7 @@
       "link": "https://public.tableau.com/shared/ZD2492J8Z?:showVizHome=no"
     },
     {
-      "nom": "Nolwenn LANNUEL, Sébastien QUINAULT (Équipe COVIRIAF)",
+      "nom": "Nolwenn LANNUEL, Sébastien QUINAULT (COVIRIAF)",
       "pic_name": "2019-lannuel-quinault",
       "outils": "R (packages circlize, ggplot2, ggmap, cartography) Powerpoint",
       "prix": "Prix spécial du jury",
@@ -127,7 +127,7 @@
       "link": "/hackaviz/2019/Hackaviz2019_MOUSSET_MATHILDE.pdf"
     },
     {
-      "nom": "Vincent DAGNEAUX, Pierre VINCENOT (Équipe Immédiateam)",
+      "nom": "Vincent DAGNEAUX, Pierre VINCENOT (Immédiateam)",
       "pic_name": "2019-dagneaux-vincenot",
       "outils": "Open Refine, Google sheet, Datawrapper, Google Sheet, Google Data Studio, Carto et Flowmap Blue, WordPress, thème Divi",
       "prix": "Prix de la pertinence",
@@ -135,13 +135,13 @@
       "link": "https://immediatlab.fr/hackaviz-2019-ces-villes-desertes-par-les-actifs/"
     },
     {
-      "nom": "Sarodja NAMINZO, Louis VOISINE, Benoit CHABRIER (Équipe DATACLIC)",
+      "nom": "Sarodja NAMINZO, Louis VOISINE, Benoit CHABRIER (DATACLIC)",
       "pic_name": "2019-dataclic",
       "outils": "Tableau Software",
       "link": "http://tdv2019.sgarlab.fr/"
     },
     {
-      "nom": "Christina OVEZIK, He WANG, Clément BOYER (Équipe 3DT AKKA)",
+      "nom": "Christina OVEZIK, He WANG, Clément BOYER (3DT AKKA)",
       "pic_name": "2019-akka",
       "outils": "Power BI",
       "link": "https://app.powerbi.com/view?r=eyJrIjoiZDBmYzM3MGQtZjMzZS00ZmQzLThmMjktOWE4NDIyMzMwNzgwIiwidCI6ImVkMGUzNDE0LTZlNTYtNDU0Yy04YTgyLWViODBiZWZiNzM4YiIsImMiOjh9"
@@ -189,7 +189,7 @@
       "link": "https://github.com/vvivanloc/hackaviz2019/"
     },
     {
-      "nom": "Gregory GOSSE, Pierre MARTIN (Équipe viz'ards)",
+      "nom": "Gregory GOSSE, Pierre MARTIN (viz'ards)",
       "pic_name": "2019-gosse-martin",
       "outils": "Excel, Tableau public, Illustrator, 3DSMAX, Python, Django, D3.js",
       "link": "https://drive.google.com/file/d/1Mf7jfFALKM4tR1mSevm0SNYUVlUnn7Qg/view?usp=sharing"
@@ -213,7 +213,7 @@
       "link": "https://public.tableau.com/profile/bastien.sellah#!/vizhome/LOCCITANIE-HACKAVIZ_2019/LOCCITANIE-HACKAVIZ_2019"
     },
     {
-      "nom": "Emilie DELPUECH, Yann LABRUNE, Guillaume DEVAILLY (Équipe : génépi)",
+      "nom": "Emilie DELPUECH, Yann LABRUNE, Guillaume DEVAILLY (génépi)",
       "pic_name": "2019-genepi",
       "outils": "ggplot2 et le tidyverse, gganimate, sf, visNetwork plotly",
       "link": "https://gdevailly.github.io/hackaviz2019/migration_pendulaire_occitanie_hackaviz2019.html"
@@ -243,7 +243,7 @@
       "link": "https://ve.link/HACKVIZ2019"
     },
     {
-      "nom": "Sarah DEROSAIS, Rebecca MEDDAHI, Matthieu SIRVENT (Équipe LP MIND)",
+      "nom": "Sarah DEROSAIS, Rebecca MEDDAHI, Matthieu SIRVENT (LP MIND)",
       "pic_name": "2019-lpmind",
       "outils": "Tableau Software",
       "link": "https://public.tableau.com/profile/matthieusirvent#!/vizhome/Tableau_Hackaviz2019/Tableaudebord1"
@@ -263,7 +263,7 @@
   ],
   "2020": [
     {
-      "nom": "Timothée DELUBAC et Olga Tihhonova (équipe : Pixel & Poivre)",
+      "nom": "Timothée DELUBAC et Olga Tihhonova (Pixel & Poivre)",
       "pic_name": "2020-delubac-tihhonova",
       "outils": "Python, D3, HTML, CSS, JavaScript",
       "prix": "1er prix",
@@ -277,14 +277,7 @@
       "description": "L'analyse est faite sur les aspects suivants :\n- L'attractivité relative des départements de l'Occitanie mesurée comme le rapport entre les nuitées sur la capacité totale d'hébergement pour chaque mois de l'année 2018.\n- Les origines principales des visiteurs _(France ou étranger)_;\n- Le rapport entre les touristes vacanciers / non-vacanciers pour chaque mois de l'année 2018.",
       "link": "https://public.tableau.com/profile/evgenii.munin#!/vizhome/hackaviz2020_evgenii_munin/Dashboard1"
     },
-    {
-      "nom": "Simon LAFOSSE",
-      "pic_name": "2020-lafosse",
-      "outils": "Tableau Software, Tableau Prep, Mapbox",
-      "prix": "Prix de la pertinence",
-      "description": "Benvengut !\nDes milliers de personnes qui viennent visiter la région Occitanie tout au long de l'année. Mais ces touristes, qui sont-t-ils exactement ? pourquoi et à quelle période de l'année viennent-ils ? et enfin est-ce que la région a la capacité de les accueillir ?\n\nBenvengut _(Bienvenue en Occitan)_ dans cette visualisation interactive qui vous permettra d'obtenir un éclairage sur les réponses à ces questions.",
-      "link": "https://public.tableau.com/profile/simon.lafosse#!/vizhome/HV2020-Test/Benvengut-Part01"
-    },
+
     {
       "nom": "Xavier RAUCH",
       "pic_name": "2020-rauch",
@@ -292,14 +285,7 @@
       "description": "_Ouvrir avec Chrome - Nom de l'utilisateur : HACKAVIZ - Mot de passe: HACKAVIZ2020_\n- Quels départements attirent le plus de touristes étrangers ?\n- Quel sont leurs départements favoris en fonction de leur nationalité ?\n- Quelle est la nationalité numéro 1 dans chaque département de la région ?\n- Où les Occitans font-ils eux-mêmes du tourisme en Occitanie ?",
       "link": "https://env-185525.customer.cloud.microstrategy.com/MicroStrategy/servlet/mstrWeb?evt=3140&src=mstrWeb.3140&documentID=0BAE9CF011EA647792A90080EF25EBF9&Server=ENV-185525LAIOUSE1&Project=MicroStrategy%20Tutorial&Port=34952&connmode=8&ru=1&share=1"
     },
-    {
-      "nom": "Christophe LOUAT (équipe Sensee)",
-      "pic_name": "2020-louat",
-      "outils": "Python, d3js",
-      "prix": "Prix de l'histoire",
-      "description": "Dans cette visualisation, nous observons les nationalités dominantes par département au cours des saisons. L'Europe du sud privilégie ainsi les département pyrénéens et les anglais l'intérieur des terres. Les départements côtiers voient défiler toutes les nationalités au cours de l'année.",
-      "link": "https://festive-murdock-ceedcc.netlify.com/"
-    },
+
     {
       "nom": "Julien DEMEAUX",
       "pic_name": "2020-demeaux",
@@ -309,14 +295,14 @@
       "link": "https://public.tableau.com/profile/padatawan#!/vizhome/Hackaviz2020-Les1001nuitsoccitanes/Hackaviz2020?publish=yes"
     },
     {
-      "nom": "Florent POUSSEROT (équipe : Visualizar)",
+      "nom": "Florent POUSSEROT (Visualizar)",
       "pic_name": "2020-pousserot",
       "outils": "omniscope, javascript, html, css, flourish, vega-lite",
       "description": "Einar est avant tout un fan de musique. Dans son pays, le Danemark, c'est une star.\nSon rêve, créer un Festival de musique de Métal en plein air.\nPour cela, il a entendu parler d'une nouvelle terre, appelé Occitanie.\nPour intégrer la route des festivals d'Occitanie, Einar doit trouver sa destination finale et la période idéale.",
       "link": "https://go.aws/2J4H28v"
     },
     {
-      "nom": "Nolwenn LANNUEL - Sébastien QUINAULT (équipe : NoLaSéQui)",
+      "nom": "Nolwenn LANNUEL - Sébastien QUINAULT (NoLaSéQui)",
       "pic_name": "2020-lannuel",
       "outils": "R Studio, PowerPoint",
       "prix": "Prix spécial du jury",
@@ -324,7 +310,23 @@
       "link": "/hackaviz/2020/Dataviz_V3 - nolwenn.lannuel_gmail.com.pdf"
     },
     {
-      "nom": "Jérôme RAKOTOMANGA (équipe : Clever Age)",
+      "nom": "Simon LAFOSSE",
+      "pic_name": "2020-lafosse",
+      "outils": "Tableau Software, Tableau Prep, Mapbox",
+      "prix": "Prix de la pertinence",
+      "description": "Benvengut !\nDes milliers de personnes qui viennent visiter la région Occitanie tout au long de l'année. Mais ces touristes, qui sont-t-ils exactement ? pourquoi et à quelle période de l'année viennent-ils ? et enfin est-ce que la région a la capacité de les accueillir ?\n\nBenvengut _(Bienvenue en Occitan)_ dans cette visualisation interactive qui vous permettra d'obtenir un éclairage sur les réponses à ces questions.",
+      "link": "https://public.tableau.com/profile/simon.lafosse#!/vizhome/HV2020-Test/Benvengut-Part01"
+    },
+    {
+      "nom": "Christophe LOUAT (Sensee)",
+      "pic_name": "2020-louat",
+      "outils": "Python, d3js",
+      "prix": "Prix de l'histoire",
+      "description": "Dans cette visualisation, nous observons les nationalités dominantes par département au cours des saisons. L'Europe du sud privilégie ainsi les département pyrénéens et les anglais l'intérieur des terres. Les départements côtiers voient défiler toutes les nationalités au cours de l'année.",
+      "link": "https://festive-murdock-ceedcc.netlify.com/"
+    },
+    {
+      "nom": "Jérôme RAKOTOMANGA (Clever Age)",
       "pic_name": "2020-rakotomanga",
       "outils": "D3.js",
       "description": "Cette série de carte de chaleur met en exergue **les variations du volume de nuitées** dans une année _(2018)_ entre les départements d'Occitanie.On remarque rapidement des patterns (avec des intensités relatives différentes) et des points communs.",
@@ -379,28 +381,28 @@
       "link": "https://public.tableau.com/views/HACKAVIZ2020/OCCITANIE?:display_count=y&:toolbar=n&:origin=viz_share_link"
     },
     {
-      "nom": "Nadine MIKEM - Salima CHEKOUFF (équipe VELVET CONSULTING 2)",
+      "nom": "Nadine MIKEM - Salima CHEKOUFF (VELVET CONSULTING 2)",
       "pic_name": "2020-mikem-chekouff",
       "outils": "Alteryx et Tableau",
       "description": "Après avoir exploré les données sources, nous avons pensé qu'un guide sur l'investissement dans le domaine touristique en Occitanie, peut faire de notre visualisation une histoire intéressante.\n\nCelle-ci servira comme étude globale qui porte sur **les départements les plus visités en Occitanie** et les périodes de l'année avec une haute fréquentation touristique.",
       "link": "https://public.tableau.com/profile/nadine.mikem#!/vizhome/Tourisme2/Histoire"
     },
     {
-      "nom": "Laure MICHAUD (équipe : DataNoobs)",
+      "nom": "Laure MICHAUD (DataNoobs)",
       "pic_name": "2020-michaud",
       "outils": "R, ArcGIS, QGIS, YouTube, Python, Libre Calc",
       "description": "Nous avons mis en évidence plusieurs phénomènes du tourisme dans la région Occitanie durant l'année 2018. Dans un premier temps, nous nous intéressons au tourisme saisonnier avec l'attrait des côtes littorales. Ensuite, nous observons les origines des touristes qui se rendent en Occitanie. Et enfin, nous avons déterminé quels sont les départements où il est plus judicieux d'investir dans un hébergement touristique.",
       "link": "https://sites.google.com/view/datanoob/accueil"
     },
     {
-      "nom": "Emilie LEGEAY (équipe : Aosis)",
+      "nom": "Emilie LEGEAY (Aosis)",
       "pic_name": "2020-legeay",
       "outils": "Microsoft Power BI",
       "description": "Nous avons choisi une approche progicielle en utilisant la solution Microsoft Power Bi. Cette approche nous a permis d'utiliser des fonctionnalités standard, des visualisations standards et avancées de l'outil. Nous avons choisi de visualiser les données pour étudier la capacité, la caractérisation des territoires et leurs saisonnalité (regroupés en cluster), l'influence des événements.",
       "link": "/hackaviz/2020/Hackaviz - emilie legeay.pdf"
     },
     {
-      "nom": "Abir FAROUZI (équipe : ESI-SBA)",
+      "nom": "Abir FAROUZI (ESI-SBA)",
       "pic_name": "2020-farouzi",
       "outils": "Python, Highcharts.js, Highmaps.js, Material design bootstrap, animate.css-wow.js , sticky-sidebar.js ",
       "description": "Occitanie est l'une des destinations incontournables dans la France.\nEntre châteaux, culture et beauté de sa nature laissons les chiffres touristiques de 2018 vous raconter l'histoire d'une région parfaite pour votre prochain séjour. Notre contribution met en évidence : La participation nationale et internationale des touristes",
@@ -441,14 +443,14 @@
       "link": "http://hackaviz.guillaume-richard.fr/"
     },
     {
-      "nom": "Houssameddine YOUSFI (équipe DaVinCi)",
+      "nom": "Houssameddine YOUSFI (DaVinCi)",
       "pic_name": "2020-yousfi",
       "outils": "Python (NumPy, Panda), Javascript( Highcharts)",
       "description": "Étude statistique des données liées aux réservations hôtelières dans la région d'Occitanie. Cette étude est menée sur trois volets. 1- Le volume de réservations et la capacité d'accueil de chaque département de cette région. 2- Le flux national et International de réservations. 3- Les motifs liés aux réservations.",
       "link": "https://davinci-hackaviz.netlify.com/"
     },
     {
-      "nom": "Hanan JEMMAL (équipe JEMMAL)",
+      "nom": "Hanan JEMMAL (JEMMAL)",
       "pic_name": "2020-jemmal",
       "outils": "Java Script, Particles.js, Chart.js, Html, CSS, Bootstrap",
       "description": "Le tourisme dans la région Occitanie en 2018 : départements attractifs, départements interactifs. La capacité d'hébergement et le nombre de nuitées en vue.",
@@ -462,28 +464,28 @@
       "link": "https://public.tableau.com/views/UNWEEK-ENDENOCCITANIE-HACKAVIZ2020/UNWEEK-ENDENOCCITANIE-HACKAVIZ2020?:display_count=y&publish=yes&:origin=viz_share_link"
     },
     {
-      "nom": "Fabien BARRIAU (équipe : ADELAT)",
+      "nom": "Fabien BARRIAU (ADELAT)",
       "pic_name": "2020-barriau",
       "outils": "Python, Tableau, http://draw.io/",
       "description": "Nous avons réalisé une analyse du tourisme d'Occitanie en analysant 3 axes: Le dynamisme de la mer, l'activité de la ville et la tranquillité de la montagne et de l'arrière pays. Une illustration des points marquants a été réalisé sous Tableau et Qlik Sense.",
       "link": "/hackaviz/2020/Hackaviz2020_ADELAT - Loutrageta DK.pdf"
     },
     {
-      "nom": "Antoine POURRAT (équipe ORESYS TOULOUSE)",
+      "nom": "Antoine POURRAT (ORESYS TOULOUSE)",
       "pic_name": "2020-pourrat",
       "outils": "Tableau software",
       "description": "Le tourisme en Occitanie : tout un programme! Grâce au jeu de données proposé par Toulouse Dataviz, Oresys Toulouse vous propose de partir en exploration pour découvrir les chiffres clefs du secteur, si important pour notre région, et avoir un premier aperçu de la richesse du patrimoine occitan : naturel, culturel, religieux, et même sportif!",
       "link": "https://public.tableau.com/profile/cl.ment.pages#!/vizhome/TourismeenOccitanie/TourismeenOccitanie"
     },
     {
-      "nom": "Joachim BEASLAS (équipe Squoring Technologies)",
+      "nom": "Joachim BEASLAS (Squoring Technologies)",
       "pic_name": "2020-beaslas",
       "outils": "Squore et la librairie Highcharts",
       "description": "Animation temporelle qui retrace l'année 2018 en regardant le nombre de nuitées effectuées dans chaque département.",
       "link": "http://hackaviz2020.djoman.com/"
     },
     {
-      "nom": "Jean-Baptiste BARRE (équipe : Baba & Fred)",
+      "nom": "Jean-Baptiste BARRE (Baba & Fred)",
       "pic_name": "2020-barre",
       "outils": "R + librairies dygraph,treemap,htmlwidget, Mapbox, Postgres/Postgis",
       "description": "Nous connaissons bien l'Occitanie. Famille, copains, vins, soleil, mer, montagnes\u2026 les raisons de s'y rendre ne manquent pas. Nous ne sommes pas _(et de loin)_ les seuls à le penser: en 2018, 16 millions de personnes sont venues y séjourner ! D'où viennent-ils ? A quels moments de l'année ? Dans quels départements d'Occitanie ? Pour une raison inconnue ou inavouable, ces questions vous obsèdent ? Venez, on va en parler :).",
@@ -504,7 +506,7 @@
       "link": "/hackaviz/2020/tourisme-en-occitanie_2018_elodie-t - Elodie Diddy.pdf"
     },
     {
-      "nom": "Samuel KERHUEL (équipe TBS)",
+      "nom": "Samuel KERHUEL (TBS)",
       "pic_name": "2020-kerhuel",
       "outils": "Tableau, Python",
       "description": "Ce tableau de bord vous fait voyager en Occitanie et vous embarque dans une analyse du tourisme en région Occitanie.\nIl analyse le phénomène touristique sous plusieurs angles:\n1. D'où viennent les visiteurs?\n2. Où vont-ils?",
@@ -870,7 +872,7 @@
       "nom": "Brice Renouf",
       "pic_name": "2023-renouf",
       "outils": "Excel, Python, Tableau",
-      "prix": "2ieme prix",
+      "prix": "2ème prix",
       "description": "Peut-on profiter pleinement de la Bretagne avec une voiture électrique ?\nCette visualisation va vous permettre de découvrir la Bretagne sous un autre angle et de conna\u00eetre le déploiement des stations de recharge à travers plusieurs critères.\nN'hésitez pas à cliquer un peu partout, tout est interactif.\nBon voyage ! ",
       "link": "https://public.tableau.com/app/profile/brice.renouf/viz/Hackaviz_2023/dashboard"
     },
@@ -878,7 +880,7 @@
       "nom": "Mathieu Chevallier, Jeroen Schouten, Charles Cledat (SPALLIAN)",
       "pic_name": "2023-chevallier",
       "outils": "- Exploration et data preprocessing : Python, Excel, Power Query\n- Stockage des données : PostgreSQL\n- Maquettage et illustrations : Figma\n- Dataviz : SPALLIAN Strategy",
-      "prix": "3ieme Prix",
+      "prix": "3ème Prix",
       "description": "Convertir sa voiture au Superéthanol-E85, est-ce rentable ? Quelles sont les avantages et les inconvénients au quotidien de la conversion pour les automobilistes ? Pour répondre à ces questions, nous avons valorisé les données de la base Prix des Carburants (DGCCRF) :\n- Visualisation et l'analyse de l'évolution hebdomadaire des prix à la pompe en 2022, par type de carburant\n- Cartographie des stations par département, selon les carburants distribués par celles-ci\n- Création d'un simulateur du temps d'amortissement financier de la conversion de son véhicule au E85",
       "link": "https://external.spallian.com/stat_dashboard.html?name=hackaviz_toulouse_2023&token_id=hackaviz_toulouse_2023"
     },
@@ -886,7 +888,7 @@
       "nom": "Eva Omedes Domene",
       "pic_name": "2023-omedesdomene",
       "outils": "Power BI a été utilisé pour l'analyse et Figma pour la conception de ce tableau de bord.\n\n*Seules les données de la France et de la Corse ont été prises en compte.",
-      "prix": "Prix Spécial",
+      "prix": "Prix spécial",
       "description": "Cet écran se compose de 3 onglets :\n- Analyse des stations de recharge électrique ;\n- Analyse des stations-service ;\n- Dans cette partie, nous pouvons comparer le coût d'un trajet en fonction des kilomètres sélectionnés.\nDans la partie consacrée à l'analyse des bornes de recharge et des stations-service, vous pouvez voir différentes mesures et graphiques, tous entièrement interactifs.",
       "link": "https://app.powerbi.com/view?r=eyJrIjoiYWI5ZDZmMmMtNzNlZS00MTJhLThkMjQtMmQ1MjFmZjY0YTVkIiwidCI6IjA3N2I3NjZiLTYxZjAtNGU3Yy05MzczLTkyODgzMmFhOWZlZiIsImMiOjh9"
     },
@@ -1150,12 +1152,12 @@
       "link": "https://vroger11-hackaviz-2025.streamlit.app/"
     },
     {
-      "nom": "Bryony Miles",
-      "pic_name": "2025-bryony",
-      "outils": "d3.js in ObservableHQ (hosted on my website)\n\nProcess (English - sorry)\n* download all the data\n* look at  hydrometry + rainfall stations on the map\n* work out which stations had hydrometry or water flow data (23)\n* visualised these on multiple line charts to get a sense of the patterns\n* pulled the flood year and date extents from the hydrometry data\n* realised the only stations with complete data  1875 -> 2022 were Pont Neuf - 2 codes, same position - decided to focus on this.\n* looked at waterflow in the closest upstream + downstream stations but ended up discounting this as no data before 1905 and I wanted to simplify\n* went down a route of looking at areas which affect flooding (ie Lower Pyrennes) but discounted as wanted to simplify\n* pulled out the Pont Neuf data with rainfall data from the nearest station and visualised on line charts\n * discounted 1859 as no rainfall data in close range\n* discounted 1879 as flood not as significant as the rest\n* worked out the design and then coded it up!",
-      "description": "PONT NEUF, Toulouse - Le seul pont survivant de le crue de 1875.  Grâce aux défenses, il n'a plus été mis à rude épreuve.\n\nPassez la souris sur les graphiques linéaires pour voir le niveau d'eau changer à mesure que la crue augmente et diminue.",
-      "link": "http://bmdata.co.uk/ToulouseHackaviz/",
-      "prix": "3ème prix"
+      "nom": "Olivia Combari, Romain Vernandé, Alexandre Pugnet, Jean-Paul Grandgirard, Johan Debat, Gaëtan Boudard, Jean Marc Larroque, Jérôme Sommet, Mathieu Muller et Mélanie Platon (Clever Age)",
+      "pic_name": "2025-grandgirard",
+      "outils": "Une base de donnée SQL pour la mise en relation et l'extraction des données\nGitHub pour le partage\nGoogle spreadsheet\nChart.js pour présenter les graphiques brutes\nFigma pour la mise en forme finale",
+      "description": "Bienvenue dans cette présentation consacrée aux crues majeures qui ont façonné l'histoire de la Garonne depuis un siècle et demi. De 1857 à 2022, nous vous invitons à explorer neuf événements hydrologiques exceptionnels qui ont profondément marqué le paysage, transformé les politiques d'aménagement du territoire et forgé la mémoire collective des populations riveraines.\n\nCette présentation se concentre sur les hauteurs d'eau mesurées au Pont Neuf à Toulouse. Pour chaque année de crue historique, nous avons mis en relation plusieurs données : la hauteur d'eau maximum mesurée chaque mois au Pont Neuf, la pluviométrie cumulée des 5 jours précédant l'événement (moyennée sur l'ensemble des données disponibles sur le bassin versant de la Garonne) et la hauteur d'eau moyenne mensuelle, moyenne effectuée sur les 20 années entourant la crue.\n",
+      "link": "https://dtv.civibox.fr/index.html",
+      "prix": "1er prix"
     },
     {
       "nom": "Brice Renouf",
@@ -1166,7 +1168,23 @@
       "prix": "2ème prix"
     },
     {
-      "nom": "Les Fraises - Sandrine Berger & Ophélie Gaudin",
+      "nom": "Bryony Miles",
+      "pic_name": "2025-bryony",
+      "outils": "d3.js in ObservableHQ (hosted on my website)\n\nProcess (English - sorry)\n* download all the data\n* look at  hydrometry + rainfall stations on the map\n* work out which stations had hydrometry or water flow data (23)\n* visualised these on multiple line charts to get a sense of the patterns\n* pulled the flood year and date extents from the hydrometry data\n* realised the only stations with complete data  1875 -> 2022 were Pont Neuf - 2 codes, same position - decided to focus on this.\n* looked at waterflow in the closest upstream + downstream stations but ended up discounting this as no data before 1905 and I wanted to simplify\n* went down a route of looking at areas which affect flooding (ie Lower Pyrennes) but discounted as wanted to simplify\n* pulled out the Pont Neuf data with rainfall data from the nearest station and visualised on line charts\n * discounted 1859 as no rainfall data in close range\n* discounted 1879 as flood not as significant as the rest\n* worked out the design and then coded it up!",
+      "description": "PONT NEUF, Toulouse - Le seul pont survivant de le crue de 1875.  Grâce aux défenses, il n'a plus été mis à rude épreuve.\n\nPassez la souris sur les graphiques linéaires pour voir le niveau d'eau changer à mesure que la crue augmente et diminue.",
+      "link": "http://bmdata.co.uk/ToulouseHackaviz/",
+      "prix": "3ème prix"
+    },
+    {
+      "nom": "Laure Miral, Bastien Lapabe et Lucas Delestre (La prochaine vague)",
+      "pic_name": "2025-miral",
+      "outils": "Excel, Power BI, Power Point, Figma",
+      "description": "\"1875. 1952. 2022. Trois époques, une m\u00eame malédiction. \u00c0 chaque génération, elle revient. Tapie dans l'ombre, elle attend son heure. Puis le tonnerre gronde. La pluie s'abat. Et la Cruelle, la Déferlante, le Bug se réveillent... Trois noms, une seule et m\u00eame personne : la Garonne. Habituellement si paisible, elle sort de son lit, balayant tout sur son passage, rappelant aux toulousains qu'elle ne dort jamais vraiment\u2026\" \n\nVous l'aurez compris, ces quelques mots sont le teaser d'un thriller horrifique, dans lequel la Garonne prend vie. Découvrez, à travers des visualisations, comment ce serial crueminel a frappé les toulousains au fil des âges !\n\nUne affiche de film co-réalisée par Bastien, Laure et Lucas.",
+      "link": "/hackaviz/2025/miral.pdf",
+      "prix": "Prix spécial du jury"
+    },
+    {
+      "nom": "Sandrine Berger & Ophélie Gaudin (Les Fraises)",
       "pic_name": "2025-bergergaudin",
       "outils": "Notebooks pour l'exploration de données (via Google Collab)\nCanva pour la mise en place ",
       "description": "Cet article de journal \"vintage\" illustre l'engagement progressif de la ville et des autorités pour une gestion plus proactive des risques de crue, afin de mieux protéger les habitants et les infrastructures face aux caprices de la Garonne.\nA travers  les deux représentations de données que nous vous proposons, nous avons souhaité mettre en avant la multitude d'évènements de crues au fil du temps au niveau du Pont Neuf de Toulouse et l'augmentation du nombre de stations installées sur la Garonne mais aussi au niveau des affluents (m\u00eame lointains !)  et du nombre de mesures effectuées au cours des années, des informations précieuses pour agir en terme de prévention auprès des populations, d'autant plus en prévision des impacts du réchauffement climatique.",
@@ -1188,27 +1206,11 @@
       "link": "/hackaviz/2025/legarreta.pdf"
     },
     {
-      "nom": "La prochaine vague - Laure Miral, Bastien Lapabe et Lucas Delestre",
-      "pic_name": "2025-miral",
-      "outils": "Excel, Power BI, Power Point, Figma",
-      "description": "\"1875. 1952. 2022. Trois époques, une m\u00eame malédiction. \u00c0 chaque génération, elle revient. Tapie dans l'ombre, elle attend son heure. Puis le tonnerre gronde. La pluie s'abat. Et la Cruelle, la Déferlante, le Bug se réveillent... Trois noms, une seule et m\u00eame personne : la Garonne. Habituellement si paisible, elle sort de son lit, balayant tout sur son passage, rappelant aux toulousains qu'elle ne dort jamais vraiment\u2026\" \n\nVous l'aurez compris, ces quelques mots sont le teaser d'un thriller horrifique, dans lequel la Garonne prend vie. Découvrez, à travers des visualisations, comment ce serial crueminel a frappé les toulousains au fil des âges !\n\nUne affiche de film co-réalisée par Bastien, Laure et Lucas.",
-      "link": "/hackaviz/2025/miral.pdf",
-      "prix": "Prix Spécial du Jury"
-    },
-    {
-      "nom": "Thélio - Alexandra Catesson, Chloé Garçonnet, Houda Chemiel, Julia Vilas, Dylan Wilson, Paul Boissiere, Denise Sanchez et Aya El Abdi",
+      "nom": "Alexandra Catesson, Chloé Garçonnet, Houda Chemiel, Julia Vilas, Dylan Wilson, Paul Boissiere, Denise Sanchez et Aya El Abdi (Thélio)",
       "pic_name": "2025-elabdi",
       "outils": "Snowflake, PowerBi, VSCode Python (pandas, matplotlib, numpy)",
       "description": "Découvrez comment les précipitations influençaient les crues de la Garonne à travers l'histoire. Ajustez la pluie, observez la montée des eaux et comparez avec les grandes inondations du passé. Une immersion interactive au c\u0153ur des flots d'antan !",
       "link": "https://app.powerbi.com/view?r=eyJrIjoiZjM1MWNiZWItNGFlMi00YWVkLTljMjUtODE4MWMwOTkxMDUyIiwidCI6ImQ4MDVkZmMxLTEyNzYtNDAxZi04MDBlLTc1MjRmM2FjODZmMCJ9&pageName=3ddaf590528017b61150"
-    },
-    {
-      "nom": "Clever Age - Olivia Combari, Romain Vernandé, Alexandre Pugnet, Jean-Paul Grandgirard, Johan Debat, Gaëtan Boudard, Jean Marc Larroque, Jérôme Sommet, Mathieu Muller et Mélanie Platon",
-      "pic_name": "2025-grandgirard",
-      "outils": "Une base de donnée SQL pour la mise en relation et l'extraction des données\nGitHub pour le partage\nGoogle spreadsheet\nChart.js pour présenter les graphiques brutes\nFigma pour la mise en forme finale",
-      "description": "Bienvenue dans cette présentation consacrée aux crues majeures qui ont façonné l'histoire de la Garonne depuis un siècle et demi. De 1857 à 2022, nous vous invitons à explorer neuf événements hydrologiques exceptionnels qui ont profondément marqué le paysage, transformé les politiques d'aménagement du territoire et forgé la mémoire collective des populations riveraines.\n\nCette présentation se concentre sur les hauteurs d'eau mesurées au Pont Neuf à Toulouse. Pour chaque année de crue historique, nous avons mis en relation plusieurs données : la hauteur d'eau maximum mesurée chaque mois au Pont Neuf, la pluviométrie cumulée des 5 jours précédant l'événement (moyennée sur l'ensemble des données disponibles sur le bassin versant de la Garonne) et la hauteur d'eau moyenne mensuelle, moyenne effectuée sur les 20 années entourant la crue.\n",
-      "link": "https://dtv.civibox.fr/index.html",
-      "prix": "1er prix"
     },
     {
       "nom": "Cédric Dupuch",
@@ -1232,7 +1234,6 @@
       "description": "Comme de nombreux fleuves, la Garonne a connu des crues depuis des siècles. Depuis 1856, son niveau est mesuré quotidiennement, permettant de représenter avec précision le niveau maximal atteint chaque année. Ce diagramme en sucette illustre, année après année, la hauteur d'eau maximale enregistrée sur le quai de Tounis, près du Pont Neuf. La crue exceptionnelle de 1875 se distingue nettement, surpassant tous les autres événements. La crue récente de 2022 figure parmi les plus fortes enregistrées au cours des 150 dernières années. Bien que spectaculaire, elle reste inférieure de 4 mètres à celle de 1875. Visualisation réalisée dans le cadre de l'exposition [Datagraff 2025](https://exposition.toulouse-dataviz.fr/).",
       "link": "/hackaviz/2025/ottenheimer.webp"
     },
-
     {
       "nom": "Loïc Donot (hors concours)",
       "pic_name": "2025-donot",
