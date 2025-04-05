@@ -1224,8 +1224,8 @@
       "pic_name": "2025-dufresne",
       "outils": "Canva, Jupyter, Plotly, MapBox, Photoshop,\nStreamlit",
       "description": "Depuis Toulouse, cap au sud pour découvrir un panorama unique de la Garonne et des Pyrénées. Le Pont Neuf date de 1544, ce qui fait de lui le plus Vieux pont de la Garonne. Les travaux ont duré un siècle o\u00f9 le chantier a été soumis à des crues dévastatrices et à un lit de la Garonne trompeur. D'o\u00f9 émerge cette source, réponse en image ou bien depuis une version plus interactive : https://github.com/EmyDuf/gdp-dashboard/blob/main/streamlit_app.py",
-      "link": "/hackaviz/2025/dufresne.pdf",
-      "link2": "https://github.com/EmyDuf/gdp-dashboard/blob/main/streamlit_app.py"
+      "link": "https://hackaviz-2025.streamlit.app",
+      "link2": "/hackaviz/2025/dufresne.pdf"
     },
     {
       "nom": "Alain Ottenheimer (hors concours)",
