@@ -1154,14 +1154,16 @@
       "pic_name": "2025-bryony",
       "outils": "d3.js in ObservableHQ (hosted on my website)\n\nProcess (English - sorry)\n* download all the data\n* look at  hydrometry + rainfall stations on the map\n* work out which stations had hydrometry or water flow data (23)\n* visualised these on multiple line charts to get a sense of the patterns\n* pulled the flood year and date extents from the hydrometry data\n* realised the only stations with complete data  1875 -> 2022 were Pont Neuf - 2 codes, same position - decided to focus on this.\n* looked at waterflow in the closest upstream + downstream stations but ended up discounting this as no data before 1905 and I wanted to simplify\n* went down a route of looking at areas which affect flooding (ie Lower Pyrennes) but discounted as wanted to simplify\n* pulled out the Pont Neuf data with rainfall data from the nearest station and visualised on line charts\n * discounted 1859 as no rainfall data in close range\n* discounted 1879 as flood not as significant as the rest\n* worked out the design and then coded it up!",
       "description": "PONT NEUF, Toulouse - Le seul pont survivant de le crue de 1875.  Grâce aux défenses, il n'a plus été mis à rude épreuve.\n\nPassez la souris sur les graphiques linéaires pour voir le niveau d'eau changer à mesure que la crue augmente et diminue.",
-      "link": "http://bmdata.co.uk/ToulouseHackaviz/"
+      "link": "http://bmdata.co.uk/ToulouseHackaviz/",
+      "prix": "3ème prix"
     },
     {
       "nom": "Brice Renouf",
       "pic_name": "2025-renouf",
       "outils": "Excel, Figma, Tableau",
       "description": "Toulouse et la Garonne, une grande histoire d'amour\u2026 jusqu'à ce que l'eau monte un peu trop ! Ce dashboard est là pour vous aider à suivre de près le niveau du fleuve et anticiper les crues.",
-      "link": "https://public.tableau.com/app/profile/brice.renouf/viz/Hackaviz_2025/visualization"
+      "link": "https://public.tableau.com/app/profile/brice.renouf/viz/Hackaviz_2025/visualization",
+      "prix": "2ème prix"
     },
     {
       "nom": "Les Fraises - Sandrine Berger & Ophélie Gaudin",
@@ -1190,7 +1192,8 @@
       "pic_name": "2025-miral",
       "outils": "Excel, Power BI, Power Point, Figma",
       "description": "\"1875. 1952. 2022. Trois époques, une m\u00eame malédiction. \u00c0 chaque génération, elle revient. Tapie dans l'ombre, elle attend son heure. Puis le tonnerre gronde. La pluie s'abat. Et la Cruelle, la Déferlante, le Bug se réveillent... Trois noms, une seule et m\u00eame personne : la Garonne. Habituellement si paisible, elle sort de son lit, balayant tout sur son passage, rappelant aux toulousains qu'elle ne dort jamais vraiment\u2026\" \n\nVous l'aurez compris, ces quelques mots sont le teaser d'un thriller horrifique, dans lequel la Garonne prend vie. Découvrez, à travers des visualisations, comment ce serial crueminel a frappé les toulousains au fil des âges !\n\nUne affiche de film co-réalisée par Bastien, Laure et Lucas.",
-      "link": "/hackaviz/2025/miral.pdf"
+      "link": "/hackaviz/2025/miral.pdf",
+      "prix": "Prix Spécial du Jury"
     },
     {
       "nom": "Thélio - Alexandra Catesson, Chloé Garçonnet, Houda Chemiel, Julia Vilas, Dylan Wilson, Paul Boissiere, Denise Sanchez et Aya El Abdi",
@@ -1204,7 +1207,8 @@
       "pic_name": "2025-grandgirard",
       "outils": "Une base de donnée SQL pour la mise en relation et l'extraction des données\nGitHub pour le partage\nGoogle spreadsheet\nChart.js pour présenter les graphiques brutes\nFigma pour la mise en forme finale",
       "description": "Bienvenue dans cette présentation consacrée aux crues majeures qui ont façonné l'histoire de la Garonne depuis un siècle et demi. De 1857 à 2022, nous vous invitons à explorer neuf événements hydrologiques exceptionnels qui ont profondément marqué le paysage, transformé les politiques d'aménagement du territoire et forgé la mémoire collective des populations riveraines.\n\nCette présentation se concentre sur les hauteurs d'eau mesurées au Pont Neuf à Toulouse. Pour chaque année de crue historique, nous avons mis en relation plusieurs données : la hauteur d'eau maximum mesurée chaque mois au Pont Neuf, la pluviométrie cumulée des 5 jours précédant l'événement (moyennée sur l'ensemble des données disponibles sur le bassin versant de la Garonne) et la hauteur d'eau moyenne mensuelle, moyenne effectuée sur les 20 années entourant la crue.\n",
-      "link": "https://dtv.civibox.fr/index.html"
+      "link": "https://dtv.civibox.fr/index.html",
+      "prix": "1er prix"
     },
     {
       "nom": "Cédric Dupuch",
