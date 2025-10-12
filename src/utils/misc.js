@@ -51,8 +51,12 @@ export const parseMarkdownToString = markdownText => {
 };
 
 export function localiseDate(date) {
-  const dateConvert = new Date(date.slice(0, 4), date.slice(5, 7) - 1, date.slice(8, 10));
-  const options = { year: 'numeric', month: 'long', day: 'numeric' };
-  const frenchDate = dateConvert.toLocaleDateString('FR-fr', options);
-  return frenchDate;
+  if (date) {
+    const dateConvert = new Date(date.slice(0, 4), date.slice(5, 7) - 1, date.slice(8, 10));
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const frenchDate = dateConvert.toLocaleDateString('FR-fr', options);
+    return frenchDate;
+  } else {
+    return new Date().toLocaleDateString('FR-fr', { year: 'numeric', month: 'long', day: 'numeric' });
+  }
 }
