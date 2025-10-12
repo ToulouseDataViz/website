@@ -1,8 +1,8 @@
 export const pastEventStatusName = 'Réalisé';
 export const incomingEventStatusName = 'Planifié';
 
-export const newslettersUrl = 'https://ressources.toulouse-dataviz.fr/';
-export const collectionsUrl = 'https://ressources.toulouse-dataviz.fr/collections';
+export const newslettersUrl = 'https://toulouse-dataviz.notion.site/Newsletters-061ce66f47784394a664e0c9b758ea04';
+export const collectionsUrl = 'https://toulouse-dataviz.notion.site/Collection-f0f34df72cfb4599be6ad9ae30be1d87';
 
 export const discordLink = 'https://discord.gg/Ch23qScbpc';
 export const mailLink = 'mailto:contact@toulouse-dataviz.fr';
