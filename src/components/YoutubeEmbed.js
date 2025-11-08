@@ -7,7 +7,7 @@ const useStyles = makeStyles(theme => ({
     paddingBottom: '56.25%',
     position: 'relative',
     height: 0,
-    margin: theme.spacing(2,0),
+    margin: theme.spacing(2, 0),
 
     '& > iframe': {
       left: 0,
@@ -25,6 +25,8 @@ const YoutubeEmbed = ({ title, embedId }) => {
   return (
     <div className={classes.responsiveVideo}>
       <iframe
+        id="ytplayer"
+        type="text/html"
         width="853"
         height="480"
         src={`https://www.youtube.com/embed/${embedId}`}
@@ -34,6 +36,7 @@ const YoutubeEmbed = ({ title, embedId }) => {
         webkitallowfullscreen="true"
         mozallowfullscreen="true"
         title={title}
+        referrerpolicy="strict-origin-when-cross-origin"
       />
     </div>
   );
