@@ -1,9 +1,15 @@
-nom, pic_name, nom_site, lien_site, linkedin, twitter
+nom, pic_name, nom_site, lien_site, linkedin, twitter, is_old
 Alain Ottenheimer, alaino, datasens.fr, http://datasens.fr/, http://linkedin.com/in/alainottenheimer, https://twitter.com/datasensTls
 Alain Roan, alainr, perceptible.fr, https://perceptible.fr/, https://www.linkedin.com/in/alain-roan-186361/, https://twitter.com/AlainRoan
 Christophe Bontemps, christophe, Chargé de cours statisticien – CESAP (ONU), http://data.visualisation.free.fr/, https://www.linkedin.com/in/cbontemps/, https://twitter.com/Xtophe_Bontemps
 Christophe Regouby, christopheR, Data Scientist - Airbus, https://github.com/cregouby, https://fr.linkedin.com/in/christophe-regouby-b4613848
 Vincent Vivanloc, vincent, "Développeur WebApp & DevOps - ABB", https://vvivanloc.github.io/index.beta.html, https://www.linkedin.com/in/vvivanloc/, https://twitter.com/Ze_n0p
-Vincent Roger, vroger, "Docteur en informatique (apprentissage automatique)", https://website.vincent-roger.fr/accueil.html, https://www.linkedin.com/in/vroger11/
-Houcem Eddine Chaabane , houcem, "Data Scientist - Aqsone", https://www.aqsone.com/, https://www.linkedin.com/in/houcem-eddine-chaabane/
+Edith Maulandi, edith, "Facilitation & animation - Caissalim", https://emaulandi.github.io/portfolio/, https://www.linkedin.com/in/edith-m-12329070/,,true
+Aurore Archimbaud, aurore, "Professeur Assistant - Toulouse Business School", https://aurore-archimbaud.netlify.app/, https://www.tse-fr.eu/fr/people/aurore-archimbaud-0,,true
+Vincent Roger, vroger, "Docteur en informatique (apprentissage automatique)", https://website.vincent-roger.fr/fr/, https://www.linkedin.com/in/vroger11/,,true
+Houcem Eddine Chaabane , houcem, "Data Scientist - Aqsone", https://www.aqsone.com/, https://www.linkedin.com/in/houcem-eddine-chaabane/,,true
+
+
+
+
 

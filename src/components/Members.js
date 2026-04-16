@@ -22,10 +22,12 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const Members = () => {
+const Members = ({ showOldMembers }) => {
   const classes = useStyles();
 
-  const members = useMembers();
+  const members =
+    useMembers().filter(member => (showOldMembers && member.is_old) || (!showOldMembers && !member.is_old));
+
   const teamPics = usePics().filter(({ relativeDirectory }) => relativeDirectory === 'team-pics');
 
   return (
@@ -48,7 +50,7 @@ const Members = () => {
                   )}
                 </Grid>
                 <Grid item>
-                  {lien_site ? <Button link={lien_site} text={nom_site} size={'small'} /> : <span>{nom_site}</span>}
+                  {lien_site ? <Button style={{ maxWidth: "35em", textWrap: "balance", height: "fit-content" }} link={lien_site} text={nom_site} size={'small'} /> : <span>{nom_site}</span>}
                 </Grid>
                 <Box className={classes.linkicon}>
                   <ul className="icons">

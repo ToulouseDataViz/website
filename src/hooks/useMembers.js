@@ -11,6 +11,7 @@ export const useMembers = () => {
           nom_site
           linkedin
           lien_site
+          is_old
         }
       }
     }

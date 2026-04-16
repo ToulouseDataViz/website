@@ -1,4 +1,4 @@
-import InternalImage from "../components/InternalImage"
+import InternalImage from '../components/InternalImage';
 
 import PageBanner from '../components/PageBanner';
 import Members from '../components/Members';
@@ -6,10 +6,12 @@ import Button from '../components/Button';
 import FooterSponsors from '../components/FooterSponsors';
 import PressReviews from '../components/PressReviews';
 
-<PageBanner 
-    styleId={1}
-    title={"L'association"}
-    description={"L’association Toulouse DataViz a pour but de promouvoir et de diffuser la culture de l’analyse et de la visualisation des données."}
+<PageBanner
+  styleId={1}
+  title={"L'association"}
+  description={
+    'L’association Toulouse DataViz a pour but de promouvoir et de diffuser la culture de l’analyse et de la visualisation des données.'
+  }
 />
 
 <section id="one">
@@ -23,18 +25,16 @@ import PressReviews from '../components/PressReviews';
 
 L’association **Toulouse DataViz** a pour but de promouvoir et de diffuser la culture de l’analyse et de la visualisation des données.
 
-Il y a longtemps que l’on a remarqué qu’il était plus facile de percevoir et comprendre les données sous une forme visuelle: « Un diagramme vaut mille mots ». Mais il ne suffit pas de dessiner de jolis camemberts colorés pour bien communiquer des données. 
+Il y a longtemps que l’on a remarqué qu’il était plus facile de percevoir et comprendre les données sous une forme visuelle: « Un diagramme vaut mille mots ». Mais il ne suffit pas de dessiner de jolis camemberts colorés pour bien communiquer des données.
 La visualisation de données est un véritable langage avec ses règles, sa grammaire et ses exceptions, utiles non seulement pour élaborer des messages efficaces mais aussi pour être capable de les décoder et éviter les pièges.
 
-Et les données deviennent omniprésentes: des institutions publiques, organisations internationales et certaines entreprises privées mettent leurs données dans le domaine public *(open data)*. Des quantités astronomiques de données libres sont désormais disponibles. 
+Et les données deviennent omniprésentes: des institutions publiques, organisations internationales et certaines entreprises privées mettent leurs données dans le domaine public _(open data)_. Des quantités astronomiques de données libres sont désormais disponibles.
 Certains citoyens, journalistes, étudiants ou professionnels s’en emparent pour toutes sortes d’usages. Les données sont partout et la maitrise du langage de la visualisation de données devient incontournable pour rechercher de l’information et la communiquer.
 
 **Notre ambition est d’apprendre à découvrir les vérités enfouies dans les open data, à déjouer les visualisations trompeuses et à convaincre avec des graphiques.**
 
 </div>
 </section>
-
-
 
 <section id="two" class="spotlights">
 
@@ -43,18 +43,23 @@ Certains citoyens, journalistes, étudiants ou professionnels s’en emparent po
 
 # L'équipe
 
-<Members />
+<Members showOldMembers={false} />
+
+# Les anciens de l'équipe
+
+<Members showOldMembers={true} />
 </div>
 </section>
-
 
 <section>
 <div className="inner">
 
-  # On parle de nous !
-  <PressReviews />
+# On parle de nous !
 
-  
+{' '}
+
+<PressReviews />
+
 </div>
 </section>
 
@@ -63,27 +68,17 @@ Certains citoyens, journalistes, étudiants ou professionnels s’en emparent po
 
 # Notre offre
 
-L'association Toulouse DataViz est soutenue et parrainée par des entreprises locales et par des acteurs institutionnels de l'Occitanie. 
+L'association Toulouse DataViz est soutenue et parrainée par des entreprises locales et par des acteurs institutionnels de l'Occitanie.
 
-Pour les associations à but non lucratif et les écoles, l'association fournit au cas par cas des prestations à des conditions particulières. 
+Pour les associations à but non lucratif et les écoles, l'association fournit au cas par cas des prestations à des conditions particulières.
 
-Nous offrons des conseils et apportons des services dans notre cadre associatif. Si nécessaire  nous vous aiguillons vers des professionnels de notre éco-système.
+Nous offrons des conseils et apportons des services dans notre cadre associatif. Si nécessaire nous vous aiguillons vers des professionnels de notre éco-système.
 Nous développons des tableaux de bord et explorateurs de données sur le web.
-Nous proposons des services complets  à destination des entreprises et  des collectivités.
+Nous proposons des services complets à destination des entreprises et des collectivités.
 
-
-<Button
-  link={"/offres"}
-  type={'internal'}
-  text={"Découvrez nos offres"}
-/>
-
-
+<Button link={'/offres'} type={'internal'} text={'Découvrez nos offres'} />
 
 </div>
 </section>
-
-
-
 
 </section>

@@ -1,0 +1,27 @@
+import PageBanner from '../../components/PageBanner';
+import Button from '../../components/Button';
+import HackavizResults from '../../components/HackavizResults';
+import HackavizHeader from '../../components/HackavizHeader';
+import HackavizFooter from '../../components/HackavizFooter';
+
+<PageBanner styleId={1} title={'Hackaviz'} />
+
+<section id="one">
+<div className="inner">
+
+# HACKAVIZ 2026
+
+Huitième édition
+L’association Toulouse Dataviz (TDV) organise son HACKAVIZ. Concours de visualisation de données en temps limité, seul ou en équipe, doté de récompenses, ouvert à un très large public.
+
+<HackavizHeader year={'2026'} />
+
+<div style={{ display: 'flex', justifyContent: 'center', padding: '10em 0em' }}>
+ <Button link={`https://toulouse-dataviz.notion.site/Publication-2026-342c08a98edb802fb83fd33a48a1f220`} text={"Découvrir les réalisations"} />
+ </div>
+{/*<!--<HackavizResults currentHackaviz={'2026'} /> -->*/}
+
+<HackavizFooter year={'2026'} />
+
+</div>
+</section>
