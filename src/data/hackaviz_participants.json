@@ -1252,7 +1252,7 @@
       "prix": "1er prix"
     },
     {
-      "nom": "Lisa Bonnefous (\u00e9quipe)",
+      "nom": "Lisa Bonnefous, Marie Vachelard, Alexandre Suberbielle, Jade Liong, Adeline Cenac, Christophe Huguet, Alexandre Vessereau et Romane Quintin (\u00e9quipe Pictarine)",
       "pic_name": "2026-bonnefous",
       "outils": "Ce projet est aussi une exp\u00e9rimentation m\u00e9tier : nous avons utilis\u00e9 Claude Code pour la toute premi\u00e8re fois, afin de comprendre son fonctionnement et d'\u00e9valuer l'impact que ce type d'outil peut avoir sur le quotidien d'un\u00b7e data analyst \u2014 de l'exploration des donn\u00e9es \u00e0 la mise en forme narrative et visuelle.",
       "description": "Notre angle : \nEleni na\u00eet en Gr\u00e8ce. Sofia na\u00eet au Portugal. La m\u00eame ann\u00e9e : 1985.\nEn 2008, leurs gouvernements d\u00e9pensent des sommes comparables. La crise arrive. M\u00eames cr\u00e9anciers, m\u00eames exigences \u2014 des choix oppos\u00e9s.\nEn 2023, leurs \u00c9tats d\u00e9pensent exactement le m\u00eame montant par habitant. Leurs vies ne racontent pas la m\u00eame histoire.\n\nNotre approche : \nNous avons choisi de personnifier la donn\u00e9e : plut\u00f4t qu'une comparaison abstraite de courbes budg\u00e9taires, nous suivons deux femmes fictives dont les trajectoires incarnent les cons\u00e9quences des arbitrages publics. Le format est\nun r\u00e9cit scrollant interactif, divis\u00e9 en quatre actes \u2014 2008, 2010, 2013, 2015 \u2014 jusqu'\u00e0 la r\u00e9v\u00e9lation de 2023 : 10720 \u20ac par habitant dans les deux pays, pour des r\u00e9alit\u00e9s tr\u00e8s diff\u00e9rentes.",
@@ -1260,7 +1260,7 @@
       "prix": "2ème prix"
     },
     {
-      "nom": "Chlo\u00e9 Gar\u00e7onnet (\u00e9quipe)",
+      "nom": "Chlo\u00e9 Gar\u00e7onnet et Laura Gallais (\u00e9quipe Les soeurs Gar\u00e7onnet)",
       "pic_name": "2026-gar\u00e7onnet",
       "outils": "Python : pandas/matplotlib + Canva + GitHub Copilot",
       "description": "Quelle est la recette du bonheur ?\n\nLa r\u00e9ponse est dans les donn\u00e9es !\n\nCertains pays ont trouv\u00e9 des recettes surprenantes. D'autres accumulent les signaux d'alerte. Entre les deux, une carte, des chiffres, et une question simple : qu'est-ce qui fait vraiment le bonheur d'un peuple ?\n\nCe n'est pas qu'une question de richesse nationale. C'est une question de priorit\u00e9s.",
@@ -1268,7 +1268,7 @@
       "prix": "3ème prix"
     },
     {
-      "nom": "Delphine Brajon (\u00e9quipe)",
+      "nom": "Delphine Brajon et Valentin Brajon",
       "pic_name": "2026-brajon",
       "outils": "D'abord en exploration analyse de donn\u00e9es pour une premi\u00e8re V0 (R, EXCEL, Datawrapper) puis Claude,D3 pour la version WEB et interactive",
       "description": "On s\u2019int\u00e9resse ici en particulier aux d\u00e9penses d\u2019\u00e9ducation\n-\tComment \u00e9voluent-elles ? au regard  des r\u00e9sultats \u00e9conomiques, de la d\u00e9mographie, des comp\u00e9tences scolaires des \u00e9l\u00e8ves et celles acquises par les adultes, \n-\ten comparaison avec les pays voisins de la zone Euro    --> Via un tableau interactif qui positionne tous les pays pour chacun des indicateurs",
@@ -1320,7 +1320,7 @@
       "link": "https://brooks-code.github.io/hackaviz/"
     },
     {
-      "nom": "Rachel Koehler (\u00e9quipe)",
+      "nom": "Rachel Koehler et Jéricho Cortez",
       "pic_name": "2026-koehler",
       "outils": "Python, D3.js, agent IA (Perplexity pour aider sur le calcul du score d'efficacit\u00e9 notamment, et quelques autres calculs), HTML/CSS/JS.",
       "description": "Depuis des si\u00e8cles, les \u00c9tats organisent les m\u00eames missions essentielles : soigner les corps, transmettre le savoir, garantir l\u2019ordre, redistribuer aux plus vuln\u00e9rables . Aujourd\u2019hui, ces fonctions portent des codes COFOG (GF03, GF07, GF09, GF10) et des milliards d\u2019euros, d\u00e9penser plus ne suffit plus voire pas car il appara\u00eet que la structure compte autant que le montant, et qu'ainsi nous apparait utile d'\u00e9tudier quel \u00e9tat peut encore tenir sa position d'Etat-providence ?\nCette infographie narrative confronte 16 pays de la zone euro sur 20 ans (2004\u20132023). Acte 1 rapelle les fonctions eternelles de l'Etat (retenues par notre \u00e9quipe). Acte 2 dresse le portrait budg\u00e9taire de la France face \u00e0 ses voisins. Acte 3 interroge la corr\u00e9lation d\u00e9pense/r\u00e9sultat sur sant\u00e9, s\u00e9curit\u00e9 et pauvret\u00e9. Acte 4 classe les \u00c9tats par efficacit\u00e9 fonctionnelle : qui rend le mieux la promesse, euro par euro ?\nEnjeu : au-del\u00e0 des chiffres, cette visualisation interroge la continuit\u00e9 des fonctions publiques. Les \u00c9tats modernes r\u00e9alisent-ils mieux les missions ancestrales, ou se perdent-ils dans l\u2019inflation budg\u00e9taire ? Une invitation \u00e0 repenser l\u2019efficacit\u00e9 du bien commun",
